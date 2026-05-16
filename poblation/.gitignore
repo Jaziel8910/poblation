@@ -1,10 +1,12 @@
 # Binaries
+dist/
 bin/
 *.exe
 *.exe~
 *.dll
 *.so
 *.dylib
+*.sha256
 
 # Test artifacts
 *.test
