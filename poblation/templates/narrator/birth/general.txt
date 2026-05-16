@@ -1,0 +1,140 @@
+[TEMPLATE:NARR_BIRTH_GENERAL_001]
+tags: narrator, birth, hope
+weight: 10
+---
+{child_name} nacio de {mother_name} y {father_name}. {circumstances}. Por un rato, el pueblo tuvo permiso para creer en manana.
+---
+
+[TEMPLATE:NARR_BIRTH_GENERAL_002]
+tags: narrator, birth, drama
+weight: 9
+---
+Cuando {child_name} lloro por primera vez, nadie pudo olvidar del todo {circumstances}. Aun asi, {mother_name} siguio respirando y {father_name} no supo donde poner las manos.
+---
+
+[TEMPLATE:NARR_BIRTH_GENERAL_003]
+tags: narrator, birth, quiet
+weight: 8
+---
+{child_name} llego pequeno, furioso y vivo. {mother_name} cerro los ojos. {father_name} conto dedos como si eso pudiera proteger algo.
+---
+
+[TEMPLATE:NARR_BIRTH_GENERAL_004]
+tags: narrator, birth, uncertain
+weight: 8
+---
+El nacimiento de {child_name} no arreglo {circumstances}. Solo puso una vida nueva encima del problema, respirando fuerte.
+---
+
+[TEMPLATE:NARR_BIRTH_GENERAL_005]
+tags: narrator, birth, communal
+weight: 9
+---
+{child_name} nacio y el pueblo entero bajo la voz. {mother_name} sobrevivio al trabajo. {father_name} aprendio que la esperanza tambien mancha las manos.
+---
+
+[TEMPLATE:NARR_BIRTH_GENERAL_006]
+tags: narrator, birth, funny
+weight: 7
+---
+{child_name} entro al mundo gritando como si ya tuviera quejas administrativas. {mother_name} aprobo esa energia. {father_name} parecia acusado.
+---
+
+[TEMPLATE:NARR_BIRTH_GENERAL_007]
+tags: narrator, birth, tense
+weight: 8
+---
+Nadie dijo {circumstances} en voz alta durante el nacimiento. Despues {child_name} lloro, y el silencio tuvo que moverse.
+---
+
+[TEMPLATE:NARR_BIRTH_GENERAL_008]
+tags: narrator, birth, lineage
+weight: 8
+---
+{child_name} lleva nombres que todavia no entiende: {mother_name}, {father_name}, {circumstances}. Por ahora solo lleva hambre.
+---
+
+[TEMPLATE:NARR_BIRTH_GENERAL_009]
+tags: narrator, birth, fragile
+weight: 9
+---
+{child_name} nacio vivo. En POBLATION, esa frase ya es enorme. {mother_name} lo sostuvo como quien sostiene una apuesta.
+---
+
+[TEMPLATE:NARR_BIRTH_GENERAL_010]
+tags: narrator, birth, bitterhope
+weight: 8
+---
+La llegada de {child_name} hizo llorar a quien no queria llorar. {circumstances} seguia alli, mirando desde la esquina.
+---
+
+[TEMPLATE:NARR_BIRTH_GENERAL_011]
+tags: narrator, birth, direct
+weight: 7
+---
+Nacio {child_name}. {mother_name} esta viva. {father_name} esta implicado. {circumstances}. El mundo tomo nota.
+---
+
+[TEMPLATE:NARR_BIRTH_GENERAL_012]
+tags: narrator, birth, future
+weight: 9
+---
+{child_name} no sabe que carga el futuro de todos en un cuerpo de pocas libras. Mejor asi. Que primero aprenda a dormir.
+---
+
+[TEMPLATE:NARR_BIRTH_GENERAL_013]
+tags: narrator, birth, scandal
+weight: 8
+---
+El pueblo felicito a {mother_name} y miro de reojo a {father_name}. {circumstances} hizo que cada sonrisa llegara con doble fondo.
+---
+
+[TEMPLATE:NARR_BIRTH_GENERAL_014]
+tags: narrator, birth, tender
+weight: 8
+---
+{mother_name} dijo el nombre {child_name} como si probara una puerta nueva. {father_name} lo repitio mas bajo. Afuera, el mundo siguio roto.
+---
+
+[TEMPLATE:NARR_BIRTH_GENERAL_015]
+tags: narrator, birth, survival
+weight: 10
+---
+El nacimiento de {child_name} fue una victoria pequena contra la extincion. Pequena no significa poca.
+---
+
+[TEMPLATE:NARR_BIRTH_GENERAL_016]
+tags: narrator, birth, messy
+weight: 7
+---
+{child_name} nacio entre sangre, cansancio y gente dando instrucciones que nadie pidio. {mother_name} hizo el trabajo. Los demas hicieron ruido.
+---
+
+[TEMPLATE:NARR_BIRTH_GENERAL_017]
+tags: narrator, birth, secret
+weight: 8
+---
+{child_name} llego con pulmones fuertes y preguntas esperando turno. {circumstances} no caben en una cuna, pero se acercaron igual.
+---
+
+[TEMPLATE:NARR_BIRTH_GENERAL_018]
+tags: narrator, birth, generational
+weight: 9
+---
+Con {child_name}, el mundo dejo de ser solo sobrevivientes y empezo a ser descendencia. {mother_name} y {father_name} no estaban listos. Nadie lo esta.
+---
+
+[TEMPLATE:NARR_BIRTH_GENERAL_019]
+tags: narrator, birth, plain
+weight: 7
+---
+{child_name} nacio. Comio. Lloro. Durmio. A veces la esperanza entra sin musica y con mal genio.
+---
+
+[TEMPLATE:NARR_BIRTH_GENERAL_020]
+tags: narrator, birth, final
+weight: 10
+---
+{child_name} abrio los ojos a un mundo que ya habia terminado una vez. {mother_name} lo acerco. {father_name} miro como si pidiera perdon de antemano.
+---
+

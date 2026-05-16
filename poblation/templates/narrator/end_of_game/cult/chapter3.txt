@@ -1,0 +1,7 @@
+[TEMPLATE:END_CULT_CHAPTER_3]
+tags: ending, cult, chapter3
+weight: 10
+---
+El hecho mas dramatico quedo escrito asi: {ending_dramatic_event}. Luego los relatos lo peinaron, le quitaron mugre, lo volvieron prueba. Las religiones tambien editan.
+---
+

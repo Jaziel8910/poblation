@@ -1,0 +1,7 @@
+[TEMPLATE:END_CULT_CHAPTER_1]
+tags: ending, cult, chapter1
+weight: 10
+---
+La fe que empezo como supersticion termino con ley, lider y mayoria. {ending_belief} ya no era algo que algunos repetian por miedo: era el idioma publico de {ending_settlement}.
+---
+

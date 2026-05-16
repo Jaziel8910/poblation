@@ -1,0 +1,135 @@
+[TEMPLATE:LETTER_LOVE_001]
+tags: letter, love, unsent, passionate
+weight: 10
+---
+{target_name},
+Te escribo porque mirarte ya no me alcanza y hablarte me vuelve torpe. Si esta carta aparece algun dia, perdon. Si no aparece, peor: significa que elegi seguir fingiendo.
+{self_name}
+---
+
+[TEMPLATE:LETTER_LOVE_002]
+tags: letter, love, years_old
+weight: 8
+---
+{target_name},
+Esta carta tiene anos. La he cambiado tanto que ya no se si dice lo que siento o lo que sobrevivi sintiendo. Igual sigues aqui, incluso cuando no estas.
+{self_name}
+---
+
+[TEMPLATE:LETTER_LOVE_003]
+tags: letter, love, brutal_honesty
+weight: 9
+---
+{target_name},
+No eres mi paz. A veces eres justo lo contrario. Pero cuando pienso en una vida sin ti, hasta los problemas parecen perder estructura.
+{self_name}
+---
+
+[TEMPLATE:LETTER_LOVE_004]
+tags: letter, love, afraid
+weight: 8
+---
+{target_name},
+Quisiera quererte de una forma mas limpia. No se si puedo. Lo que si se: cuando te vas, el lugar queda menos verdadero.
+{self_name}
+---
+
+[TEMPLATE:LETTER_LOVE_005]
+tags: letter, love, domestic
+weight: 8
+---
+{target_name},
+Hoy guardaste comida para mi sin decir nada. Me dio rabia lo mucho que eso hizo. Estoy enamorado de gestos que ni siquiera presentas como regalo.
+{self_name}
+---
+
+[TEMPLATE:LETTER_LOVE_006]
+tags: letter, love, impossible
+weight: 7
+---
+{target_name},
+No deberia escribir esto. Hay demasiadas razones buenas para no quererte asi. Las enumere. Ninguna logro que dejara de buscarte con los ojos.
+{self_name}
+---
+
+[TEMPLATE:LETTER_LOVE_007]
+tags: letter, love, humorous
+weight: 8
+---
+{target_name},
+Si muero antes de decirlo, revisa esta carta y burlate de mi letra. Tambien de mi cobardia. Pero no demasiado. Estaba haciendo lo que podia.
+{self_name}
+---
+
+[TEMPLATE:LETTER_LOVE_008]
+tags: letter, love, raw
+weight: 9
+---
+{target_name},
+Te quiero con una parte de mi que no negocia. La odio un poco. Tambien la obedezco mas de lo sano.
+{self_name}
+---
+
+[TEMPLATE:LETTER_LOVE_009]
+tags: letter, love, stable
+weight: 8
+---
+{target_name},
+No necesito que esto sea dramatico. A veces solo quiero envejecer discutiendo contigo por cosas pequenas y saber donde guardas el pan.
+{self_name}
+---
+
+[TEMPLATE:LETTER_LOVE_010]
+tags: letter, love, confession
+weight: 8
+---
+{target_name},
+Te amo. Lo escribo porque en papel no puedes interrumpirme con esa cara que me hace retirar verdades como si fueran armas mal apuntadas.
+{self_name}
+---
+
+[TEMPLATE:LETTER_LOVE_011]
+tags: letter, love, guilt
+weight: 7
+---
+{target_name},
+No siempre te he querido bien. A veces te quise como quien agarra algo durante una caida. No es justo. No lo vuelve falso.
+{self_name}
+---
+
+[TEMPLATE:LETTER_LOVE_012]
+tags: letter, love, late
+weight: 7
+---
+{target_name},
+Si lees esto tarde, tal vez sea porque siempre llegue tarde a lo importante. Te quise antes de admitirlo. Eso no ayuda, pero es verdad.
+{self_name}
+---
+
+[TEMPLATE:LETTER_LOVE_013]
+tags: letter, love, tender
+weight: 9
+---
+{target_name},
+Me gusta como dices mi nombre cuando estas cansado. Sale sin defensa. Me quedaria a vivir en esa version de tu voz si no fuera ridiculo.
+{self_name}
+---
+
+[TEMPLATE:LETTER_LOVE_014]
+tags: letter, love, unsent
+weight: 8
+---
+{target_name},
+Esta carta probablemente se quede doblada donde nadie la encuentre. Hay amores que no fracasan: solo no consiguen permiso.
+{self_name}
+---
+
+[TEMPLATE:LETTER_LOVE_015]
+tags: letter, love, final
+weight: 10
+---
+{target_name},
+Si manana todo se rompe, queria dejar una prueba menos cobarde que mi boca: te elegi muchas veces, incluso los dias en que elegirme a mi habria sido mas facil.
+{self_name}
+---
+

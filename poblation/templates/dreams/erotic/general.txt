@@ -1,0 +1,210 @@
+[TEMPLATE:DREAM_EROTIC_001]
+tags: dream, erotic, private, secret
+weight: 10
+---
+{dreamer_name} esta en {location} con {target_name}. La puerta no tiene cerradura, pero nadie entra. Lo raro es que {target_name} sabe de {secret_hint} y aun asi se queda.
+---
+
+[TEMPLATE:DREAM_EROTIC_002]
+tags: dream, erotic, private, direct
+weight: 9
+---
+{target_name} le acomoda el cuello de la camisa a {dreamer_name} como si eso fuera una promesa. En {location}, todo el mundo mira hacia otro lado demasiado tarde.
+---
+
+[TEMPLATE:DREAM_EROTIC_003]
+tags: dream, erotic, private, innocent
+weight: 8
+---
+{dreamer_name} y {target_name} comparten una cama enorme para dormir de verdad. Ninguno intenta nada. Eso hace que el sueno se sienta mas peligroso.
+---
+
+[TEMPLATE:DREAM_EROTIC_004]
+tags: dream, erotic, private, secret
+weight: 11
+---
+{target_name} susurra {secret_hint} como si fuera una receta. {dreamer_name} no entiende por que eso basta para que {location} se quede sin paredes.
+---
+
+[TEMPLATE:DREAM_EROTIC_005]
+tags: dream, erotic, private, direct
+weight: 8
+---
+En {location}, {target_name} usa el nombre de {dreamer_name} con una calma indecente. No pasa casi nada. El casi lo arruina todo.
+---
+
+[TEMPLATE:DREAM_EROTIC_006]
+tags: dream, erotic, private, absurd
+weight: 7
+---
+{dreamer_name} esta firmando un tratado con {target_name}. Cada clausula exige estar mas cerca. La ultima dice: no mencionar {secret_hint}.
+---
+
+[TEMPLATE:DREAM_EROTIC_007]
+tags: dream, erotic, private, innocent
+weight: 9
+---
+{target_name} lava las manos de {dreamer_name} en {location}. Es solo agua, solo dedos, solo silencio. El cerebro decide hacerlo enorme.
+---
+
+[TEMPLATE:DREAM_EROTIC_008]
+tags: dream, erotic, private, secret
+weight: 10
+---
+{dreamer_name} despierta dentro del sueno con la certeza de que {target_name} ya sabia {secret_hint}. En vez de reclamar, {target_name} sonrie como quien perdona algo peor.
+---
+
+[TEMPLATE:DREAM_EROTIC_009]
+tags: dream, erotic, private, direct
+weight: 8
+---
+{location} esta lleno de gente, pero todos hablan sin sonido. Solo se escucha a {target_name} diciendo: ven aqui, {dreamer_name}.
+---
+
+[TEMPLATE:DREAM_EROTIC_010]
+tags: dream, erotic, private, innocent
+weight: 9
+---
+{dreamer_name} y {target_name} cuentan manchas en el techo de {location}. La mano de {target_name} toca la suya por accidente y el sueno finge que fue casual.
+---
+
+[TEMPLATE:DREAM_EROTIC_011]
+tags: dream, erotic, private, secret
+weight: 10
+---
+{target_name} trae una lista de cosas que {dreamer_name} nunca dijo. La primera es {secret_hint}. La segunda no se puede leer porque la tinta late.
+---
+
+[TEMPLATE:DREAM_EROTIC_012]
+tags: dream, erotic, private, direct
+weight: 7
+---
+En {location}, {target_name} le pide a {dreamer_name} que no sea bueno por una noche. El sueno corta justo antes de que alguien responda.
+---
+
+[TEMPLATE:DREAM_EROTIC_013]
+tags: dream, erotic, private, awkward
+weight: 8
+---
+{dreamer_name} intenta besar a {target_name} y en vez de boca encuentra una pregunta: por que escondiste {secret_hint}. Igual nadie se separa.
+---
+
+[TEMPLATE:DREAM_EROTIC_014]
+tags: dream, erotic, private, innocent
+weight: 9
+---
+{target_name} se queda dormido sobre el hombro de {dreamer_name} en {location}. El deseo llega tarde, con verguenza, como si pidiera permiso.
+---
+
+[TEMPLATE:DREAM_EROTIC_015]
+tags: dream, erotic, private, direct
+weight: 8
+---
+{dreamer_name} abre una cortina y {target_name} esta al otro lado, vestido para una ocasion que no existe. {location} aplaude sin manos.
+---
+
+[TEMPLATE:DREAM_EROTIC_016]
+tags: dream, erotic, private, secret
+weight: 10
+---
+{target_name} dice que {secret_hint} no cambia nada. {dreamer_name} sabe que es mentira, pero en el sueno las mentiras tambien calientan.
+---
+
+[TEMPLATE:DREAM_EROTIC_017]
+tags: dream, erotic, private, absurd
+weight: 7
+---
+{dreamer_name} y {target_name} estan escondidos debajo de una mesa en {location}. Afuera se decide el destino del mundo; abajo, una rodilla toca otra y gana.
+---
+
+[TEMPLATE:DREAM_EROTIC_018]
+tags: dream, erotic, private, direct
+weight: 9
+---
+{target_name} mira a {dreamer_name} como si ya hubieran cruzado una linea. La linea aparece despues, pintada en el piso de {location}.
+---
+
+[TEMPLATE:DREAM_EROTIC_019]
+tags: dream, erotic, private, innocent
+weight: 8
+---
+{dreamer_name} prepara comida para {target_name}. Nadie se quita nada excepto el miedo. Por alguna razon, eso es peor.
+---
+
+[TEMPLATE:DREAM_EROTIC_020]
+tags: dream, erotic, private, secret
+weight: 10
+---
+{location} esta cubierto de notas con la letra de {target_name}. Todas dicen {secret_hint}. {dreamer_name} las guarda bajo la lengua.
+---
+
+[TEMPLATE:DREAM_EROTIC_021]
+tags: dream, erotic, private, direct
+weight: 8
+---
+{target_name} se sienta demasiado cerca de {dreamer_name} y empieza a hablar de clima. El clima en {location} decide ser piel.
+---
+
+[TEMPLATE:DREAM_EROTIC_022]
+tags: dream, erotic, private, awkward
+weight: 7
+---
+{dreamer_name} intenta actuar normal frente a {target_name}. El sueno, traicionero, pone una cama en medio de {location} y luego finge que siempre estuvo ahi.
+---
+
+[TEMPLATE:DREAM_EROTIC_023]
+tags: dream, erotic, private, secret
+weight: 10
+---
+{target_name} conoce {secret_hint} y aun asi le pide a {dreamer_name} que baile. No hay musica. Eso no detiene a nadie.
+---
+
+[TEMPLATE:DREAM_EROTIC_024]
+tags: dream, erotic, private, direct
+weight: 8
+---
+En {location}, {dreamer_name} le dice a {target_name}: no deberias estar aqui. {target_name} responde: por eso vine.
+---
+
+[TEMPLATE:DREAM_EROTIC_025]
+tags: dream, erotic, private, innocent
+weight: 9
+---
+{dreamer_name} y {target_name} se rien por algo minimo. Luego la risa se queda mirando demasiado tiempo y nadie sabe donde poner las manos.
+---
+
+[TEMPLATE:DREAM_EROTIC_026]
+tags: dream, erotic, private, secret
+weight: 10
+---
+{target_name} escribe {secret_hint} en la palma de {dreamer_name}. Cuando {dreamer_name} cierra la mano, aparece {location}.
+---
+
+[TEMPLATE:DREAM_EROTIC_027]
+tags: dream, erotic, private, direct
+weight: 8
+---
+{dreamer_name} esta de espaldas a {target_name} y aun asi sabe exactamente cuando {target_name} se acerca. El sueno no explica como. No le hace falta.
+---
+
+[TEMPLATE:DREAM_EROTIC_028]
+tags: dream, erotic, private, innocent
+weight: 7
+---
+{target_name} le presta una manta a {dreamer_name}. En la vida real eso seria nada. En el sueno, {location} se vuelve demasiado pequeno.
+---
+
+[TEMPLATE:DREAM_EROTIC_029]
+tags: dream, erotic, private, secret
+weight: 10
+---
+{dreamer_name} besa a {target_name} para que no diga {secret_hint}. {target_name} lo dice igual, contra la boca, y el sueno se corta.
+---
+
+[TEMPLATE:DREAM_EROTIC_030]
+tags: dream, erotic, private, direct
+weight: 9
+---
+{location} desaparece hasta quedar solo {dreamer_name}, {target_name} y una luz que no viene de ningun lado. Nadie pregunta si esto cuenta como pecado.
+---
+

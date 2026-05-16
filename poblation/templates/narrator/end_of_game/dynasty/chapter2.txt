@@ -1,0 +1,7 @@
+[TEMPLATE:END_DYNASTY_CHAPTER_2]
+tags: ending, dynasty, chapter2
+weight: 10
+---
+{ending_settlement} crecio, peleo, negocio, enterro a {ending_total_deaths} pobles y aun asi volvio a la misma mesa. La silla principal cambiaba de cuerpo, pero no de sangre. Esa fue la trampa elegante.
+---
+

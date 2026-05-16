@@ -1,0 +1,147 @@
+[TEMPLATE:NARR_DEATH_NATURAL_001]
+tags: narrator, death, natural, quiet
+weight: 10
+---
+{self_name} murio a los {age}. No hubo trueno, ni senal. Solo {surviving_relationships} aprendiendo a hablar de {self_name} en pasado. {legacy_hint}
+---
+
+[TEMPLATE:NARR_DEATH_NATURAL_002]
+tags: narrator, death, natural, beautiful
+weight: 9
+---
+A los {age}, {self_name} se fue mientras el dia hacia su trabajo normal. {surviving_relationships} quedaron con una silla menos y demasiadas historias. {legacy_hint}
+---
+
+[TEMPLATE:NARR_DEATH_NATURAL_003]
+tags: narrator, death, natural, banal
+weight: 8
+---
+{self_name} tenia {age} y una lista pequena de quejas pendientes. La ultima fue sobre comida fria. Despues ya no hubo despues. {legacy_hint}
+---
+
+[TEMPLATE:NARR_DEATH_NATURAL_004]
+tags: narrator, death, natural, comic
+weight: 7
+---
+{self_name} sobrevivio al fin del mundo, a {surviving_relationships}, y a varias decisiones horribles. A los {age}, perdio contra su propio cuerpo. Bastante injusto, si alguien pregunta.
+---
+
+[TEMPLATE:NARR_DEATH_NATURAL_005]
+tags: narrator, death, natural, legacy
+weight: 10
+---
+A los {age}, {self_name} dejo de necesitar manana. {surviving_relationships} todavia encontraran su forma de doblar ropa, guardar pan, discutir por nada. {legacy_hint}
+---
+
+[TEMPLATE:NARR_DEATH_NATURAL_006]
+tags: narrator, death, natural, dry
+weight: 8
+---
+Registro final: {self_name}, {age} anos. Causa probable: haber vivido suficiente. Testigos: {surviving_relationships}. Daños colaterales: la memoria de todos.
+---
+
+[TEMPLATE:NARR_DEATH_NATURAL_007]
+tags: narrator, death, natural, tender
+weight: 9
+---
+{self_name} murio viejo, que en este mundo ya cuenta como milagro. {surviving_relationships} no saben si llorar por la perdida o agradecer la demora. {legacy_hint}
+---
+
+[TEMPLATE:NARR_DEATH_NATURAL_008]
+tags: narrator, death, natural, ordinary
+weight: 8
+---
+El cuerpo de {self_name} dijo basta a los {age}. Lo dijo bajo, casi con educacion. {surviving_relationships} tuvieron que escucharlo igual.
+---
+
+[TEMPLATE:NARR_DEATH_NATURAL_009]
+tags: narrator, death, natural, ironic
+weight: 7
+---
+{self_name} paso anos diciendo que no llegaria a viejo. Llego a {age}. Gano la discusion y la perdio el mismo dia.
+---
+
+[TEMPLATE:NARR_DEATH_NATURAL_010]
+tags: narrator, death, natural, communal
+weight: 9
+---
+Cuando {self_name} murio a los {age}, {surviving_relationships} descubrieron que una persona puede ocupar mas espacio ausente que viva. {legacy_hint}
+---
+
+[TEMPLATE:NARR_DEATH_NATURAL_011]
+tags: narrator, death, natural, small
+weight: 8
+---
+No hubo grandes palabras. {self_name} tenia {age}, una manta cerca, y el cansancio correcto. {surviving_relationships} hicieron lo que se hace: quedarse.
+---
+
+[TEMPLATE:NARR_DEATH_NATURAL_012]
+tags: narrator, death, natural, comic
+weight: 6
+---
+{self_name} murio a los {age} despues de insistir durante semanas en que estaba "perfectamente". Tecnicamente, eso dejo de ser cierto. {legacy_hint}
+---
+
+[TEMPLATE:NARR_DEATH_NATURAL_013]
+tags: narrator, death, natural, memory
+weight: 9
+---
+A los {age}, {self_name} se convirtio en costumbre heredada. {surviving_relationships} repetiran frases suyas sin darse cuenta. Esa es una forma rara de seguir.
+---
+
+[TEMPLATE:NARR_DEATH_NATURAL_014]
+tags: narrator, death, natural, peaceful
+weight: 8
+---
+La muerte de {self_name} no pidio permiso, pero tampoco hizo ruido. A los {age}, eso casi parecio amable. {legacy_hint}
+---
+
+[TEMPLATE:NARR_DEATH_NATURAL_015]
+tags: narrator, death, natural, blunt
+weight: 7
+---
+{self_name} murio viejo. No todos reciben esa clase de final. {surviving_relationships} lo saben, y por eso duele de una manera mas rara.
+---
+
+[TEMPLATE:NARR_DEATH_NATURAL_016]
+tags: narrator, death, natural, legacy
+weight: 10
+---
+El ultimo trabajo de {self_name} fue dejar pruebas de que habia estado aqui: {legacy_hint}. A los {age}, eso tuvo que bastar.
+---
+
+[TEMPLATE:NARR_DEATH_NATURAL_017]
+tags: narrator, death, natural, mundane
+weight: 7
+---
+{self_name} murio entre objetos mal puestos, una taza sin lavar y {surviving_relationships} sin saber donde pararse. La vejez tambien es desorden.
+---
+
+[TEMPLATE:NARR_DEATH_NATURAL_018]
+tags: narrator, death, natural, gentle
+weight: 8
+---
+A los {age}, {self_name} se fue como se apaga una lampara vieja: no por falta de valor, sino porque ya dio todo lo que tenia.
+---
+
+[TEMPLATE:NARR_DEATH_NATURAL_019]
+tags: narrator, death, natural, social
+weight: 9
+---
+{surviving_relationships} vinieron a despedir a {self_name}. Algunos por amor. Otros por culpa. Algunos porque no venir habria dicho demasiado.
+---
+
+[TEMPLATE:NARR_DEATH_NATURAL_020]
+tags: narrator, death, natural, final
+weight: 10
+---
+{self_name}, {age} anos. Vivio despues del final del mundo y aun asi encontro finales mas pequenos. {legacy_hint}
+---
+
+[TEMPLATE:NARR_DEATH_NATURAL_021]
+tags: narrator, death, natural, comic
+weight: 6
+---
+La muerte encontro a {self_name} a los {age}. Llego tarde. {self_name} llevaba anos quejandose de que todo llegaba tarde.
+---
+

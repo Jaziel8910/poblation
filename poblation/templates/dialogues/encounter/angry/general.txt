@@ -1,0 +1,140 @@
+﻿[TEMPLATE:ENC_ANGRY_001]
+tags: dialogue, encounter, archetype:lover, content, angry
+weight: 8
+---
+En {location_name}, la rabia entra primero. El deseo decide seguir la pelea. La ternura no entra gratis aqui.
+---
+
+[TEMPLATE:ENC_ANGRY_002]
+tags: dialogue, encounter, archetype:ruler, anxious, angry
+weight: 9
+---
+[{self_name}]: No me uses para castigar a otra persona. {power_dynamic} se vuelve descarado. Nadie llama a esto reconciliacion.
+---
+
+[TEMPLATE:ENC_ANGRY_003]
+tags: dialogue, encounter, archetype:rebel, angry, angry
+weight: 10
+---
+{self_name} toca a {target_name} con orgullo herido. El cuarto se llena de friccion util. La rabia no se va; cambia de herramienta.
+---
+
+[TEMPLATE:ENC_ANGRY_004]
+tags: dialogue, encounter, archetype:caretaker, content, angry
+weight: 11
+---
+Hasta {location_atmosphere} parece discutir. {location_memory} mete otra chispa. Cada acercamiento parece reto y permiso al mismo tiempo.
+---
+
+[TEMPLATE:ENC_ANGRY_005]
+tags: dialogue, encounter, archetype:schemer, obsessive, angry
+weight: 12
+---
+{target_name} se queda por terquedad antes que por paz. Nadie viene a pedir absolucion. La ternura no entra gratis aqui.
+---
+
+[TEMPLATE:ENC_ANGRY_006]
+tags: dialogue, encounter, archetype:lover, content, angry
+weight: 8
+---
+En {location_name}, la rabia entra primero. El deseo decide seguir la pelea. Nadie llama a esto reconciliacion.
+---
+
+[TEMPLATE:ENC_ANGRY_007]
+tags: dialogue, encounter, archetype:ruler, anxious, angry
+weight: 9
+---
+[{self_name}]: No me uses para castigar a otra persona. {power_dynamic} se vuelve descarado. La rabia no se va; cambia de herramienta.
+---
+
+[TEMPLATE:ENC_ANGRY_008]
+tags: dialogue, encounter, archetype:rebel, angry, angry
+weight: 10
+---
+{self_name} toca a {target_name} con orgullo herido. El cuarto se llena de friccion util. Cada acercamiento parece reto y permiso al mismo tiempo.
+---
+
+[TEMPLATE:ENC_ANGRY_009]
+tags: dialogue, encounter, archetype:caretaker, content, angry
+weight: 11
+---
+Hasta {location_atmosphere} parece discutir. {location_memory} mete otra chispa. La ternura no entra gratis aqui.
+---
+
+[TEMPLATE:ENC_ANGRY_010]
+tags: dialogue, encounter, archetype:schemer, obsessive, angry
+weight: 12
+---
+{target_name} se queda por terquedad antes que por paz. Nadie viene a pedir absolucion. Nadie llama a esto reconciliacion.
+---
+
+[TEMPLATE:ENC_ANGRY_011]
+tags: dialogue, encounter, archetype:lover, content, angry
+weight: 8
+---
+En {location_name}, la rabia entra primero. El deseo decide seguir la pelea. La rabia no se va; cambia de herramienta.
+---
+
+[TEMPLATE:ENC_ANGRY_012]
+tags: dialogue, encounter, archetype:ruler, anxious, angry
+weight: 9
+---
+[{self_name}]: No me uses para castigar a otra persona. {power_dynamic} se vuelve descarado. Cada acercamiento parece reto y permiso al mismo tiempo.
+---
+
+[TEMPLATE:ENC_ANGRY_013]
+tags: dialogue, encounter, archetype:rebel, angry, angry
+weight: 10
+---
+{self_name} toca a {target_name} con orgullo herido. El cuarto se llena de friccion util. La ternura no entra gratis aqui.
+---
+
+[TEMPLATE:ENC_ANGRY_014]
+tags: dialogue, encounter, archetype:caretaker, content, angry
+weight: 11
+---
+Hasta {location_atmosphere} parece discutir. {location_memory} mete otra chispa. Nadie llama a esto reconciliacion.
+---
+
+[TEMPLATE:ENC_ANGRY_015]
+tags: dialogue, encounter, archetype:schemer, obsessive, angry
+weight: 12
+---
+{target_name} se queda por terquedad antes que por paz. Nadie viene a pedir absolucion. La rabia no se va; cambia de herramienta.
+---
+
+[TEMPLATE:ENC_ANGRY_016]
+tags: dialogue, encounter, archetype:lover, content, angry
+weight: 8
+---
+En {location_name}, la rabia entra primero. El deseo decide seguir la pelea. Cada acercamiento parece reto y permiso al mismo tiempo.
+---
+
+[TEMPLATE:ENC_ANGRY_017]
+tags: dialogue, encounter, archetype:ruler, anxious, angry
+weight: 9
+---
+[{self_name}]: No me uses para castigar a otra persona. {power_dynamic} se vuelve descarado. La ternura no entra gratis aqui.
+---
+
+[TEMPLATE:ENC_ANGRY_018]
+tags: dialogue, encounter, archetype:rebel, angry, angry
+weight: 10
+---
+{self_name} toca a {target_name} con orgullo herido. El cuarto se llena de friccion util. Nadie llama a esto reconciliacion.
+---
+
+[TEMPLATE:ENC_ANGRY_019]
+tags: dialogue, encounter, archetype:caretaker, content, angry
+weight: 11
+---
+Hasta {location_atmosphere} parece discutir. {location_memory} mete otra chispa. La rabia no se va; cambia de herramienta.
+---
+
+[TEMPLATE:ENC_ANGRY_020]
+tags: dialogue, encounter, archetype:schemer, obsessive, angry
+weight: 12
+---
+{target_name} se queda por terquedad antes que por paz. Nadie viene a pedir absolucion. Cada acercamiento parece reto y permiso al mismo tiempo.
+---
+

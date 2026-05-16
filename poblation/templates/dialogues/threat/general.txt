@@ -1,0 +1,161 @@
+[TEMPLATE:DLG_THREAT_001]
+tags: dialogue, threat, power
+weight: 10
+---
+[{self_name}]: Puedo hacer que nadie te escuche.
+[{target_name}]: Ya lo intentaste. Por eso estoy hablando mas alto.
+---
+
+[TEMPLATE:DLG_THREAT_002]
+tags: dialogue, threat, secret
+weight: 10
+---
+[{self_name}]: Una palabra mia y todos saben lo tuyo.
+[{target_name}]: Entonces dilo. A ver si sobrevives a lo que yo se de ti.
+---
+
+[TEMPLATE:DLG_THREAT_003]
+tags: dialogue, threat, abandonment
+weight: 9
+---
+[{self_name}]: Si cruzas esa puerta, no vuelves a tenerme.
+[{target_name}]: Que raro. Eso sono como amenaza y regalo.
+---
+
+[TEMPLATE:DLG_THREAT_004]
+tags: dialogue, threat, implicit_violence
+weight: 8
+---
+[{self_name}]: No me obligues a ensenarte hasta donde llego.
+[{target_name}]: Me estas pidiendo que le tenga miedo a tu falta de control. Paso.
+---
+
+[TEMPLATE:DLG_THREAT_005]
+tags: dialogue, threat, social
+weight: 8
+---
+[{self_name}]: La gente cree mi version.
+[{target_name}]: La gente cree lo que le conviene hasta que le cuesta.
+---
+
+[TEMPLATE:DLG_THREAT_006]
+tags: dialogue, threat, resource
+weight: 8
+---
+[{self_name}]: Sin mi, no comes.
+[{target_name}]: Con esa frase acabas de explicar por que necesito alejarme.
+---
+
+[TEMPLATE:DLG_THREAT_007]
+tags: dialogue, threat, quiet
+weight: 9
+---
+[{self_name}]: No hagas esto dificil.
+[{target_name}]: Para ti? Ese barco salio hace anos.
+---
+
+[TEMPLATE:DLG_THREAT_008]
+tags: dialogue, threat, secret, fear
+weight: 8
+---
+[{target_name}]: No puedes usar eso contra mi.
+[{self_name}]: Puedo. La pregunta es si todavia quieres probar que no soy capaz.
+---
+
+[TEMPLATE:DLG_THREAT_009]
+tags: dialogue, threat, abandonment, hurt
+weight: 7
+---
+[{self_name}]: Te dejo aqui.
+[{target_name}]: Siempre haces eso. Solo que hoy lo dices antes.
+---
+
+[TEMPLATE:DLG_THREAT_010]
+tags: dialogue, threat, violence
+weight: 7
+---
+[{self_name}]: Baja la voz.
+[{target_name}]: O que?
+[{self_name}]: No conviertas eso en invitacion.
+---
+
+[TEMPLATE:DLG_THREAT_011]
+tags: dialogue, threat, political
+weight: 8
+---
+[{self_name}]: Puedo sacar tu nombre de cada lista.
+[{target_name}]: Y yo puedo recordarles a todos por que empezamos a hacer listas.
+---
+
+[TEMPLATE:DLG_THREAT_012]
+tags: dialogue, threat, emotional
+weight: 8
+---
+[{self_name}]: Si me quisieras, pararias.
+[{target_name}]: No uses mi carino como correa. Te queda pequeno.
+---
+
+[TEMPLATE:DLG_THREAT_013]
+tags: dialogue, threat, exposure
+weight: 9
+---
+[{self_name}]: Tengo pruebas.
+[{target_name}]: Yo tengo contexto. Vamos a ver cual sangra mas bonito en publico.
+---
+
+[TEMPLATE:DLG_THREAT_014]
+tags: dialogue, threat, power, submission
+weight: 7
+---
+[{self_name}]: Pideme perdon y queda aqui.
+[{target_name}]: Prefiero irme con hambre que quedarme arrodillado.
+---
+
+[TEMPLATE:DLG_THREAT_015]
+tags: dialogue, threat, cruel
+weight: 7
+---
+[{self_name}]: Nadie va a elegirte sobre mi.
+[{target_name}]: Tal vez. Pero hoy yo si.
+---
+
+[TEMPLATE:DLG_THREAT_016]
+tags: dialogue, threat, secret, collapse
+weight: 8
+---
+[{target_name}]: Si lo dices, me arruinas.
+[{self_name}]: No. Solo hago publico lo que ya estaba podrido.
+---
+
+[TEMPLATE:DLG_THREAT_017]
+tags: dialogue, threat, violence, restrained
+weight: 7
+---
+[{self_name}]: Estoy siendo amable.
+[{target_name}]: No. Estas siendo cuidadoso porque hay testigos.
+---
+
+[TEMPLATE:DLG_THREAT_018]
+tags: dialogue, threat, abandonment, soft
+weight: 8
+---
+[{self_name}]: No voy a esperarte para siempre.
+[{target_name}]: Entonces por fin dijiste algo honesto.
+---
+
+[TEMPLATE:DLG_THREAT_019]
+tags: dialogue, threat, revenge
+weight: 7
+---
+[{self_name}]: Te vas a arrepentir.
+[{target_name}]: Probablemente. Pero no por obedecerte.
+---
+
+[TEMPLATE:DLG_THREAT_020]
+tags: dialogue, threat, final
+weight: 10
+---
+[{self_name}]: Ultima oportunidad.
+[{target_name}]: No. Ultima vez que me la vendes como favor.
+---
+

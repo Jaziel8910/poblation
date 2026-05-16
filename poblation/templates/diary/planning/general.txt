@@ -1,0 +1,140 @@
+[TEMPLATE:DIARY_PLAN_001]
+tags: diary, planning, practical
+weight: 12
+---
+Mañana necesito ordenar la cabeza antes que el día. Si no hago una lista, termino obedeciendo incendios. {settlement_name} ya tiene suficientes.
+---
+
+[TEMPLATE:DIARY_PLAN_002]
+tags: diary, planning, strategy
+weight: 10
+---
+Plan simple: hablar con {target_name} cuando esté cansado pero no irritado. Es una ventana estrecha y ridícula, pero existe.
+---
+
+[TEMPLATE:DIARY_PLAN_003]
+tags: diary, planning, ambition
+weight: 9
+---
+No quiero solo sobrevivir en {settlement_name}. Quiero dejar algo que dure más que mi mal humor.
+---
+
+[TEMPLATE:DIARY_PLAN_004]
+tags: diary, planning, manipulation
+weight: 8
+---
+Si digo la mitad correcta en el momento correcto, {target_name} hará el resto solo. Qué frase tan útil y tan fea.
+---
+
+[TEMPLATE:DIARY_PLAN_005]
+tags: diary, planning, domestic
+weight: 9
+---
+Primero arreglar el techo. Después el inventario. Después, si queda alma, revisar el desastre emocional habitual.
+---
+
+[TEMPLATE:DIARY_PLAN_006]
+tags: diary, planning, future
+weight: 8
+---
+Necesitamos pensar a más de dos días vista. O eso, o aceptar que {settlement_name} se construye con puro reflejo y mucha suerte.
+---
+
+[TEMPLATE:DIARY_PLAN_007]
+tags: diary, planning, target
+weight: 7
+---
+{target_name} responde mal a la presión directa. Anotado. El orgullo ajeno también necesita instrucciones de manejo.
+---
+
+[TEMPLATE:DIARY_PLAN_008]
+tags: diary, planning, innocent
+weight: 8
+---
+Quiero sembrar algo que no sea urgente. Una planta, una rutina, una costumbre decente. A ver si así engaño al futuro para que venga.
+---
+
+[TEMPLATE:DIARY_PLAN_009]
+tags: diary, planning, dark
+weight: 7
+---
+Hay opciones que suenan crueles hasta que las comparo con las demás. No me gusta esa clase de matemática, pero igual existe.
+---
+
+[TEMPLATE:DIARY_PLAN_010]
+tags: diary, planning, social
+weight: 8
+---
+Tal vez si dejo que {target_name} crea que la idea fue suya, salgamos de esto sin otra pelea. No es honorable. Es eficiente.
+---
+
+[TEMPLATE:DIARY_PLAN_011]
+tags: diary, planning, practical
+weight: 9
+---
+Necesito dividir mejor el trabajo. Cuando todos hacen de todo, nadie sabe cuándo algo dejó de hacerse.
+---
+
+[TEMPLATE:DIARY_PLAN_012]
+tags: diary, planning, hope
+weight: 7
+---
+Imagino {settlement_name} dentro de unos meses con menos goteras y menos paranoia. Aún no sé cuál de las dos es más cara de reparar.
+---
+
+[TEMPLATE:DIARY_PLAN_013]
+tags: diary, planning, target
+weight: 8
+---
+Si {target_name} vuelve a cerrarse, no voy a empujar. Voy a rodear. Qué romántico suena planear una conversación como si fuera una guerra pequeña.
+---
+
+[TEMPLATE:DIARY_PLAN_014]
+tags: diary, planning, control
+weight: 7
+---
+La idea es sencilla: reducir variables antes de que las variables me reduzcan a mí.
+---
+
+[TEMPLATE:DIARY_PLAN_015]
+tags: diary, planning, ambitious
+weight: 8
+---
+Quiero que {settlement_name} deje de sentirse temporal. Hace falta madera, organización y bastante menos sentimentalismo del que tengo encima.
+---
+
+[TEMPLATE:DIARY_PLAN_016]
+tags: diary, planning, secretive
+weight: 6
+---
+No todo plan puede escribirse completo. Algunos sobreviven mejor si solo existen a medias y en tinta nerviosa.
+---
+
+[TEMPLATE:DIARY_PLAN_017]
+tags: diary, planning, relationship
+weight: 8
+---
+Mañana le voy a decir a {target_name} una verdad útil y una innecesaria. La clave está en no confundir el orden.
+---
+
+[TEMPLATE:DIARY_PLAN_018]
+tags: diary, planning, practical
+weight: 7
+---
+Necesito dormir antes de decidir nada serio. La mitad de mis estrategias nocturnas son solo resentimiento con vocabulario.
+---
+
+[TEMPLATE:DIARY_PLAN_019]
+tags: diary, planning, settlement
+weight: 8
+---
+Si {settlement_name} va a seguir creciendo, alguien tiene que empezar a pensar como adulto responsable. Qué mala suerte que probablemente sea yo.
+---
+
+[TEMPLATE:DIARY_PLAN_020]
+tags: diary, planning, no_resolution
+weight: 7
+---
+Tengo un plan. Tengo tres, de hecho. Lo que no tengo es la versión de mí que no los arruina al primer imprevisto.
+---
+

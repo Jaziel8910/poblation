@@ -1,0 +1,7 @@
+[TEMPLATE:END_UTOPIA_CHAPTER_4]
+tags: ending, utopia, chapter4
+weight: 10
+---
+{ending_first_couple} no llegaron a ver todo esto. Nadie les puede devolver esa injusticia. Pero cada calle estable, cada comida compartida, cada noche sin guerra, contesta por ellos.
+---
+

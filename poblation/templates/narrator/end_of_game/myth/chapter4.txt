@@ -1,0 +1,7 @@
+[TEMPLATE:END_MYTH_CHAPTER_4]
+tags: ending, myth, chapter4
+weight: 10
+---
+{ending_settlement} gano futuro y perdio origen. Tal vez ese fue el precio correcto. Tal vez no. Pero el mundo ya no miraba hacia atras para sobrevivir; miraba hacia atras para decorar sus respuestas.
+---
+

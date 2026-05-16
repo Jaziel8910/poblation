@@ -1,0 +1,216 @@
+[TEMPLATE:DLG_CONF_LOVE_001]
+tags: dialogue, confession, love, vulnerable
+weight: 12
+---
+[{self_name}]: Me gustas.
+[{target_name}]: Ya sé.
+[{self_name}]: Qué horrible servicio al cliente.
+---
+
+[TEMPLATE:DLG_CONF_LOVE_002]
+tags: dialogue, confession, love, reciprocated
+weight: 10
+---
+[{target_name}]: Estaba esperando que lo dijeras.
+[{self_name}]: Pudiste decirlo tú.
+[{target_name}]: Sí, pero tú te ves más gracioso sufriendo.
+---
+
+[TEMPLATE:DLG_CONF_LOVE_003]
+tags: dialogue, confession, love, rejected
+weight: 8
+---
+[{self_name}]: Creo que estoy enamorado de ti.
+[{target_name}]: No me hagas cargar eso ahora.
+---
+
+[TEMPLATE:DLG_CONF_LOVE_004]
+tags: dialogue, confession, love, disaster
+weight: 7
+---
+[{target_name}]: No digas eso.
+[{self_name}]: Ya lo dije.
+[{target_name}]: Entonces desdilo.
+---
+
+[TEMPLATE:DLG_CONF_LOVE_005]
+tags: dialogue, confession, love, awkward
+weight: 9
+---
+[{self_name}]: Tenía un discurso.
+[{target_name}]: ¿Y?
+[{self_name}]: Te vi la cara y murió como un héroe inútil.
+---
+
+[TEMPLATE:DLG_CONF_LOVE_006]
+tags: dialogue, confession, love, tender
+weight: 10
+---
+[{target_name}]: Ven acá.
+[{self_name}]: ¿Eso es respuesta?
+[{target_name}]: Es mejor que la respuesta que puedo decir sin llorar.
+---
+
+[TEMPLATE:DLG_CONF_LOVE_007]
+tags: dialogue, confession, love, fear
+weight: 8
+---
+[{self_name}]: Me asusta quererte.
+[{target_name}]: A mí me asusta que lo digas con esa calma.
+---
+
+[TEMPLATE:DLG_CONF_LOVE_008]
+tags: dialogue, confession, love, too_late
+weight: 7
+---
+[{target_name}]: Hace meses habría sido distinto.
+[{self_name}]: No me digas eso.
+[{target_name}]: Entonces no llegues tarde a tu propia verdad.
+---
+
+[TEMPLATE:DLG_CONF_LOVE_009]
+tags: dialogue, confession, love, hopeful
+weight: 11
+---
+[{self_name}]: No tienes que contestar hoy.
+[{target_name}]: Qué lástima. Iba a decir que sí.
+---
+
+[TEMPLATE:DLG_CONF_LOVE_010]
+tags: dialogue, confession, love, defensive
+weight: 8
+---
+[{target_name}]: ¿Esto es amor o miedo a quedarte solo?
+[{self_name}]: No sé. Pero cuando estás tú, el miedo se calla.
+---
+
+[TEMPLATE:DLG_CONF_LOVE_011]
+tags: dialogue, confession, love, bad
+weight: 6
+---
+[{self_name}]: Te amo.
+[{target_name}]: No uses palabras grandes para arreglar actos pequeños.
+---
+
+[TEMPLATE:DLG_CONF_LOVE_012]
+tags: dialogue, confession, love, silence
+weight: 7
+---
+[{self_name}]: Di algo.
+[{target_name}]: Estoy intentando no arruinar lo único bonito de la semana.
+---
+
+[TEMPLATE:DLG_CONF_LOVE_013]
+tags: dialogue, confession, love, mutual
+weight: 10
+---
+[{target_name}]: Yo también.
+[{self_name}]: ¿También qué?
+[{target_name}]: No me hagas decirlo si ya estás temblando.
+---
+
+[TEMPLATE:DLG_CONF_LOVE_014]
+tags: dialogue, confession, love, shame
+weight: 8
+---
+[{self_name}]: No quería necesitarte así.
+[{target_name}]: Nadie se ve digno necesitando.
+---
+
+[TEMPLATE:DLG_CONF_LOVE_015]
+tags: dialogue, confession, love, impossible
+weight: 7
+---
+[{target_name}]: Yo también siento algo.
+[{self_name}]: Pero.
+[{target_name}]: Pero es el tipo de algo que incendia casas.
+---
+
+[TEMPLATE:DLG_CONF_LOVE_016]
+tags: dialogue, confession, love, humor
+weight: 9
+---
+[{self_name}]: Esto está saliendo peor en voz alta.
+[{target_name}]: No, está saliendo humano. Que es casi lo mismo.
+---
+
+[TEMPLATE:DLG_CONF_LOVE_017]
+tags: dialogue, confession, love, rejected
+weight: 8
+---
+[{target_name}]: No puedo darte eso.
+[{self_name}]: ¿No puedes o no quieres?
+[{target_name}]: No seas cruel contigo buscando diferencia.
+---
+
+[TEMPLATE:DLG_CONF_LOVE_018]
+tags: dialogue, confession, love, raw
+weight: 9
+---
+[{self_name}]: Me despierto pensando en ti.
+[{target_name}]: Eso suena bonito.
+[{self_name}]: A veces se siente como una enfermedad con buena prensa.
+---
+
+[TEMPLATE:DLG_CONF_LOVE_019]
+tags: dialogue, confession, love, cautious
+weight: 10
+---
+[{target_name}]: Si hacemos esto, no podemos fingir que no importa.
+[{self_name}]: Ya fingí demasiado. Estoy cansado.
+---
+
+[TEMPLATE:DLG_CONF_LOVE_020]
+tags: dialogue, confession, love, betrayal
+weight: 6
+---
+[{self_name}]: Te quiero.
+[{target_name}]: Elegiste un momento asqueroso para volverte valiente.
+---
+
+[TEMPLATE:DLG_CONF_LOVE_021]
+tags: dialogue, confession, love, tender
+weight: 9
+---
+[{target_name}]: Mírame.
+[{self_name}]: Si te miro, voy a repetirlo.
+[{target_name}]: Ese era el plan.
+---
+
+[TEMPLATE:DLG_CONF_LOVE_022]
+tags: dialogue, confession, love, unresolved
+weight: 8
+---
+[{self_name}]: ¿Cambió todo?
+[{target_name}]: No sé.
+[{self_name}]: Qué respuesta tan honesta y tan inútil.
+---
+
+[TEMPLATE:DLG_CONF_LOVE_023]
+tags: dialogue, confession, love, fear
+weight: 7
+---
+[{target_name}]: ¿Y si sale mal?
+[{self_name}]: Ya casi todo salió mal. Esto al menos tiene buena cara.
+---
+
+[TEMPLATE:DLG_CONF_LOVE_024]
+tags: dialogue, confession, love, denial
+weight: 8
+---
+[{self_name}]: Olvídalo.
+[{target_name}]: No.
+[{self_name}]: ¿No qué?
+[{target_name}]: No voy a dejarte esconderlo después de soltarlo.
+---
+
+[TEMPLATE:DLG_CONF_LOVE_025]
+tags: dialogue, confession, love, no_resolution
+weight: 7
+---
+[{target_name}]: No sé si puedo quererte bien.
+[{self_name}]: Yo tampoco sé pedirlo bien.
+[{target_name}]: Mal comienzo.
+[{self_name}]: Sí.
+---
+

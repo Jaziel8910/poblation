@@ -1,0 +1,28 @@
+[TEMPLATE:NARR_END_WAR_001]
+tags: narrator, ending, war
+weight: 10
+---
+La segunda extincion no necesito meteorito. Bastaron bandos, memoria, hambre y personas convencidas de que el otro lado era el verdadero fin del mundo.
+---
+
+[TEMPLATE:NARR_END_WAR_002]
+tags: narrator, ending, war
+weight: 9
+---
+Cuando termino la guerra, no quedaba nadie con fuerza para anunciar victoria. La humanidad habia aprendido otra vez como desaparecer con herramientas propias.
+---
+
+[TEMPLATE:NARR_END_WAR_003]
+tags: narrator, ending, war
+weight: 8
+---
+Los ultimos registros no son poemas. Son listas: comida perdida, casas quemadas, cuerpos sin reclamar. La guerra siempre escribe con mala letra.
+---
+
+[TEMPLATE:NARR_END_WAR_004]
+tags: narrator, ending, war
+weight: 8
+---
+El mundo habia dado una segunda oportunidad. Los pobles la usaron para organizar mejor sus rencores.
+---
+

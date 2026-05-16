@@ -1,0 +1,7 @@
+[TEMPLATE:END_WAR_CHAPTER_4]
+tags: ending, war, chapter4
+weight: 10
+---
+El ultimo evento fue: {ending_last_event}. Despues no hubo testigos, solo cosas fuera de lugar. La guerra no conquisto el mundo. Lo dejo sin quien pronunciara mundo.
+---
+

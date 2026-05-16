@@ -1,0 +1,7 @@
+[TEMPLATE:END_RESET_LAST_WORDS]
+tags: ending, reset, last_words
+weight: 10
+---
+Dos quedan. Otra vez. Que verguenza. Que oportunidad.
+---
+

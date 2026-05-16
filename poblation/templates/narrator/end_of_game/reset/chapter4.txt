@@ -1,0 +1,7 @@
+[TEMPLATE:END_RESET_CHAPTER_4]
+tags: ending, reset, chapter4
+weight: 10
+---
+{ending_first_couple} fueron el primer intento. {ending_subject} y {ending_second_subject} son el nuevo error posible. La isla no juzga. Solo ofrece madera, agua, y demasiada memoria.
+---
+

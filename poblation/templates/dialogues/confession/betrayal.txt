@@ -1,0 +1,173 @@
+[TEMPLATE:DLG_CONF_BETRAYAL_001]
+tags: dialogue, confession, betrayal, bad
+weight: 10
+---
+[{self_name}]: Fui yo.
+[{target_name}]: No.
+[{self_name}]: Si.
+[{target_name}]: No me corrijas mientras me destruyes.
+---
+
+[TEMPLATE:DLG_CONF_BETRAYAL_002]
+tags: dialogue, confession, betrayal, rare_good
+weight: 3
+---
+[{self_name}]: Te traicione.
+[{target_name}]: Ya lo sabia.
+[{self_name}]: Entonces por que sigues aqui?
+[{target_name}]: Porque queria ver si alguna vez ibas a ser valiente sin que te atraparan.
+---
+
+[TEMPLATE:DLG_CONF_BETRAYAL_003]
+tags: dialogue, confession, betrayal, very_bad
+weight: 6
+---
+[{self_name}]: No fue para hacerte dano.
+[{target_name}]: Que alivio. Casi pense que mi dolor necesitaba tu intencion para existir.
+---
+
+[TEMPLATE:DLG_CONF_BETRAYAL_004]
+tags: dialogue, confession, betrayal, bad, quiet
+weight: 9
+---
+[{target_name}]: Cuanto tiempo?
+[{self_name}]: Suficiente.
+[{target_name}]: Esa respuesta acaba de empeorarlo todo.
+---
+
+[TEMPLATE:DLG_CONF_BETRAYAL_005]
+tags: dialogue, confession, betrayal, rare_good, exhausted
+weight: 3
+---
+[{self_name}]: Si quieres irte, lo entiendo.
+[{target_name}]: No entiendes nada. Pero por primera vez no estas mintiendo. Eso cuenta poco. No cero.
+---
+
+[TEMPLATE:DLG_CONF_BETRAYAL_006]
+tags: dialogue, confession, betrayal, very_bad, rage
+weight: 7
+---
+[{target_name}]: Di mi nombre.
+[{self_name}]: Que?
+[{target_name}]: Di mi nombre mientras explicas como decidiste venderme.
+---
+
+[TEMPLATE:DLG_CONF_BETRAYAL_007]
+tags: dialogue, confession, betrayal, bad, defensive
+weight: 8
+---
+[{self_name}]: Tenia razones.
+[{target_name}]: Todo el mundo tiene razones. Los cobardes las coleccionan como permiso.
+---
+
+[TEMPLATE:DLG_CONF_BETRAYAL_008]
+tags: dialogue, confession, betrayal, aftermath
+weight: 9
+---
+[{self_name}]: Dime algo.
+[{target_name}]: Estoy decidiendo si hablarte todavia cuenta como dignidad.
+---
+
+[TEMPLATE:DLG_CONF_BETRAYAL_009]
+tags: dialogue, confession, betrayal, rare_good
+weight: 2
+---
+[{target_name}]: Gracias por decirlo.
+[{self_name}]: No merezco gracias.
+[{target_name}]: No. Pero merezco la verdad. Hoy ganamos uno de los dos.
+---
+
+[TEMPLATE:DLG_CONF_BETRAYAL_010]
+tags: dialogue, confession, betrayal, very_bad
+weight: 7
+---
+[{self_name}]: Pense que podia arreglarlo antes de que supieras.
+[{target_name}]: Eso no era arreglarlo. Era decorar la trampa.
+---
+
+[TEMPLATE:DLG_CONF_BETRAYAL_011]
+tags: dialogue, confession, betrayal, bad, intimacy
+weight: 8
+---
+[{target_name}]: Me tocaste despues de eso?
+[{self_name}]: Si.
+[{target_name}]: Entonces no fue una traicion. Fueron dos.
+---
+
+[TEMPLATE:DLG_CONF_BETRAYAL_012]
+tags: dialogue, confession, betrayal, public
+weight: 7
+---
+[{self_name}]: No queria que te enteraras asi.
+[{target_name}]: Claro. Querias escoger el escenario. Que considerado.
+---
+
+[TEMPLATE:DLG_CONF_BETRAYAL_013]
+tags: dialogue, confession, betrayal, bad, grief
+weight: 8
+---
+[{target_name}]: Estoy triste primero. La rabia viene caminando atras.
+[{self_name}]: Lo siento.
+[{target_name}]: No la apresures.
+---
+
+[TEMPLATE:DLG_CONF_BETRAYAL_014]
+tags: dialogue, confession, betrayal, very_bad, threat
+weight: 6
+---
+[{target_name}]: Si vuelves a llamarlo error, voy a contarlo con detalles.
+[{self_name}]: No tienes que hacer eso.
+[{target_name}]: Ya no decides que tengo que hacer.
+---
+
+[TEMPLATE:DLG_CONF_BETRAYAL_015]
+tags: dialogue, confession, betrayal, rare_good, broken
+weight: 3
+---
+[{target_name}]: No te perdono.
+[{self_name}]: Lo se.
+[{target_name}]: Pero no voy a fingir que no me importa. Odio esa parte.
+---
+
+[TEMPLATE:DLG_CONF_BETRAYAL_016]
+tags: dialogue, confession, betrayal, bad
+weight: 9
+---
+[{self_name}]: Me dio miedo perderte.
+[{target_name}]: Y elegiste la tecnica mas eficiente.
+---
+
+[TEMPLATE:DLG_CONF_BETRAYAL_017]
+tags: dialogue, confession, betrayal, very_bad, cold
+weight: 7
+---
+[{target_name}]: Quiero que salgas.
+[{self_name}]: Ahora?
+[{target_name}]: Antes de que mi cara aprenda otra vez a quererte.
+---
+
+[TEMPLATE:DLG_CONF_BETRAYAL_018]
+tags: dialogue, confession, betrayal, bad, no_resolution
+weight: 8
+---
+[{self_name}]: Que pasa ahora?
+[{target_name}]: Ahora nada. Eso es lo cruel. Todo sigue, pero ya no contigo igual.
+---
+
+[TEMPLATE:DLG_CONF_BETRAYAL_019]
+tags: dialogue, confession, betrayal, very_bad, exposed
+weight: 6
+---
+[{target_name}]: Cuantas personas lo sabian?
+[{self_name}]: Pocas.
+[{target_name}]: Perfecto. Pocas personas me vieron hacer el ridiculo.
+---
+
+[TEMPLATE:DLG_CONF_BETRAYAL_020]
+tags: dialogue, confession, betrayal, bad, final
+weight: 10
+---
+[{self_name}]: Te lo digo porque te respeto.
+[{target_name}]: No. Me lo dices porque la verdad te quedo pesada.
+---
+

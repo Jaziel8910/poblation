@@ -1,0 +1,28 @@
+[TEMPLATE:NARR_END_DYNASTY_001]
+tags: narrator, ending, dynasty
+weight: 10
+---
+La familia gano. No con una batalla final, sino con apellidos repetidos en cada puerta, cada ley, cada deuda. El mundo volvio a tener reyes y lo llamo estabilidad.
+---
+
+[TEMPLATE:NARR_END_DYNASTY_002]
+tags: narrator, ending, dynasty
+weight: 9
+---
+Diez generaciones despues, nadie recordaba cuando el poder no tenia sangre en comun. La dinastia no conquisto el pueblo. Lo heredo hasta que parecio natural.
+---
+
+[TEMPLATE:NARR_END_DYNASTY_003]
+tags: narrator, ending, dynasty
+weight: 8
+---
+Los hijos de los hijos de los hijos aprendieron pronto que nacer cerca del nombre correcto era una tecnologia mas antigua que cualquier maquina.
+---
+
+[TEMPLATE:NARR_END_DYNASTY_004]
+tags: narrator, ending, dynasty
+weight: 8
+---
+La civilizacion sobrevivio, si sobrevivir significa obedecer una mesa familiar donde cada silla venia con historia, privilegio y amenaza.
+---
+

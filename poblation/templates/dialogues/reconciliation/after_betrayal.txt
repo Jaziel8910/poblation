@@ -1,0 +1,218 @@
+[TEMPLATE:DLG_RECON_AFTER_BETRAYAL_001]
+tags: dialogue, reconciliation, after_betrayal, trust
+weight: 12
+---
+[{self_name}]: No vine a pedir que olvides.
+[{target_name}]: Menos mal, porque no soy tan talentoso.
+---
+
+[TEMPLATE:DLG_RECON_AFTER_BETRAYAL_002]
+tags: dialogue, reconciliation, after_betrayal, memory
+weight: 10
+---
+[{target_name}]: Cada vez que pienso en {memory_old}, me acuerdo de tu cara.
+[{self_name}]: Ya sé.
+[{target_name}]: No, no sabes. Tú tienes descanso de ti.
+---
+
+[TEMPLATE:DLG_RECON_AFTER_BETRAYAL_003]
+tags: dialogue, reconciliation, after_betrayal, apology
+weight: 9
+---
+[{self_name}]: Lo siento.
+[{target_name}]: Eso es un inicio, no una casa.
+---
+
+[TEMPLATE:DLG_RECON_AFTER_BETRAYAL_004]
+tags: dialogue, reconciliation, after_betrayal, anger
+weight: 8
+---
+[{target_name}]: ¿Por qué ahora?
+[{self_name}]: Porque ya no puedo vivir con esto.
+[{target_name}]: Qué noble. Tu comodidad llegó tarde.
+---
+
+[TEMPLATE:DLG_RECON_AFTER_BETRAYAL_005]
+tags: dialogue, reconciliation, after_betrayal, fragile
+weight: 10
+---
+[{self_name}]: Dime qué necesitas.
+[{target_name}]: Que no conviertas mi respuesta en lista de tareas para perdonarte.
+---
+
+[TEMPLATE:DLG_RECON_AFTER_BETRAYAL_006]
+tags: dialogue, reconciliation, after_betrayal, no_resolution
+weight: 7
+---
+[{target_name}]: No sé si quiero arreglarlo.
+[{self_name}]: ¿Pero viniste?
+[{target_name}]: Vine a mirar el daño de cerca.
+---
+
+[TEMPLATE:DLG_RECON_AFTER_BETRAYAL_007]
+tags: dialogue, reconciliation, after_betrayal, honest
+weight: 9
+---
+[{self_name}]: No tengo defensa.
+[{target_name}]: Qué raro escucharte sin escudo.
+[{self_name}]: Pesa.
+---
+
+[TEMPLATE:DLG_RECON_AFTER_BETRAYAL_008]
+tags: dialogue, reconciliation, after_betrayal, boundary
+weight: 8
+---
+[{target_name}]: Puedo hablar contigo. No puedo confiar todavía.
+[{self_name}]: Lo acepto.
+[{target_name}]: No lo digas como si eso te hiciera bueno.
+---
+
+[TEMPLATE:DLG_RECON_AFTER_BETRAYAL_009]
+tags: dialogue, reconciliation, after_betrayal, guilt
+weight: 7
+---
+[{self_name}]: Me odio por lo que hice.
+[{target_name}]: No me des tu odio como reparación.
+---
+
+[TEMPLATE:DLG_RECON_AFTER_BETRAYAL_010]
+tags: dialogue, reconciliation, after_betrayal, practical
+weight: 10
+---
+[{target_name}]: Si volvemos a hablar, hay reglas.
+[{self_name}]: Las que quieras.
+[{target_name}]: Primera: no prometas cosas grandes para evitar cosas pequeñas.
+---
+
+[TEMPLATE:DLG_RECON_AFTER_BETRAYAL_011]
+tags: dialogue, reconciliation, after_betrayal, memory
+weight: 9
+---
+[{self_name}]: {memory_old} no fue el final.
+[{target_name}]: Para ti no. Para una parte mía sí.
+---
+
+[TEMPLATE:DLG_RECON_AFTER_BETRAYAL_012]
+tags: dialogue, reconciliation, after_betrayal, distrust
+weight: 8
+---
+[{target_name}]: Te creo y no te creo.
+[{self_name}]: Entiendo.
+[{target_name}]: No, pero puedes quedarte callado y serviría parecido.
+---
+
+[TEMPLATE:DLG_RECON_AFTER_BETRAYAL_013]
+tags: dialogue, reconciliation, after_betrayal, harsh
+weight: 6
+---
+[{self_name}]: Haría cualquier cosa.
+[{target_name}]: Menos no hacerlo en primer lugar.
+---
+
+[TEMPLATE:DLG_RECON_AFTER_BETRAYAL_014]
+tags: dialogue, reconciliation, after_betrayal, careful
+weight: 9
+---
+[{target_name}]: No me toques.
+[{self_name}]: Perdón.
+[{target_name}]: No pidas perdón por obedecer. Solo obedece.
+---
+
+[TEMPLATE:DLG_RECON_AFTER_BETRAYAL_015]
+tags: dialogue, reconciliation, after_betrayal, hope
+weight: 8
+---
+[{self_name}]: ¿Hay algo que no esté roto?
+[{target_name}]: Sí.
+[{self_name}]: ¿Qué?
+[{target_name}]: Mi capacidad de irme si mientes otra vez.
+---
+
+[TEMPLATE:DLG_RECON_AFTER_BETRAYAL_016]
+tags: dialogue, reconciliation, after_betrayal, silence
+weight: 7
+---
+[{self_name}]: Puedo esperar.
+[{target_name}]: Eso dijiste la última vez que querías que yo corriera.
+---
+
+[TEMPLATE:DLG_RECON_AFTER_BETRAYAL_017]
+tags: dialogue, reconciliation, after_betrayal, raw
+weight: 8
+---
+[{target_name}]: Te extraño. Eso no te absuelve.
+[{self_name}]: No quiero que me absuelva.
+[{target_name}]: Mentira. Pero gracias por no decirla.
+---
+
+[TEMPLATE:DLG_RECON_AFTER_BETRAYAL_018]
+tags: dialogue, reconciliation, after_betrayal, fatigue
+weight: 9
+---
+[{self_name}]: Estoy cansado de pelear.
+[{target_name}]: Yo estoy cansado de sanar cosas que no rompí.
+---
+
+[TEMPLATE:DLG_RECON_AFTER_BETRAYAL_019]
+tags: dialogue, reconciliation, after_betrayal, trust
+weight: 10
+---
+[{target_name}]: No me pidas fe.
+[{self_name}]: ¿Qué puedo pedir?
+[{target_name}]: Tiempo. Y que no lo uses para actuar.
+---
+
+[TEMPLATE:DLG_RECON_AFTER_BETRAYAL_020]
+tags: dialogue, reconciliation, after_betrayal, partial
+weight: 8
+---
+[{self_name}]: ¿Podemos empezar con algo pequeño?
+[{target_name}]: Sí.
+[{self_name}]: ¿Como qué?
+[{target_name}]: No hablar del futuro como si ya lo merecieras.
+---
+
+[TEMPLATE:DLG_RECON_AFTER_BETRAYAL_021]
+tags: dialogue, reconciliation, after_betrayal, no_resolution
+weight: 7
+---
+[{target_name}]: Quiero perdonarte y quiero que duela.
+[{self_name}]: Las dos cosas pueden pasar.
+[{target_name}]: No me consueles con posibilidades feas.
+---
+
+[TEMPLATE:DLG_RECON_AFTER_BETRAYAL_022]
+tags: dialogue, reconciliation, after_betrayal, accountable
+weight: 9
+---
+[{self_name}]: No fue un error. Fue una decisión.
+[{target_name}]: Bien.
+[{self_name}]: ¿Bien?
+[{target_name}]: Por fin dejaste de esconderte detrás de una palabra pequeña.
+---
+
+[TEMPLATE:DLG_RECON_AFTER_BETRAYAL_023]
+tags: dialogue, reconciliation, after_betrayal, old_memory
+weight: 8
+---
+[{target_name}]: {memory_old} todavía entra al cuarto antes que tú.
+[{self_name}]: Entonces esperaré afuera.
+---
+
+[TEMPLATE:DLG_RECON_AFTER_BETRAYAL_024]
+tags: dialogue, reconciliation, after_betrayal, brutal
+weight: 6
+---
+[{self_name}]: Quiero recuperarte.
+[{target_name}]: No soy una cosa que perdiste. Soy alguien que soltaste.
+---
+
+[TEMPLATE:DLG_RECON_AFTER_BETRAYAL_025]
+tags: dialogue, reconciliation, after_betrayal, unresolved
+weight: 8
+---
+[{target_name}]: Hoy no te perdono.
+[{self_name}]: ¿Mañana?
+[{target_name}]: Hoy no te odio tanto. No arruines eso.
+---
+

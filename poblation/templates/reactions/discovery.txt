@@ -1,0 +1,58 @@
+[TEMPLATE:REACT_DISCOVERY_001]
+tags: reaction, discovery, wonder
+weight: 10
+---
+{self_name}: Nadie toque nada. Mentira, quiero tocarlo primero.
+---
+
+[TEMPLATE:REACT_DISCOVERY_002]
+tags: reaction, discovery, wary
+weight: 9
+---
+{event_description}
+{self_name} ya esta pensando que toda cosa nueva viene con factura.
+---
+
+[TEMPLATE:REACT_DISCOVERY_003]
+tags: reaction, discovery, hope
+weight: 8
+---
+{self_name}: Si esto funciona, manana podria ser menos miserable. Dije podria.
+---
+
+[TEMPLATE:REACT_DISCOVERY_004]
+tags: reaction, discovery, suspicion
+weight: 8
+---
+{self_name} mira a {target_name}: Esto no aparece porque si.
+---
+
+[TEMPLATE:REACT_DISCOVERY_005]
+tags: reaction, discovery, practical
+weight: 7
+---
+{self_name}: Bonito. Ahora dime si se come, cura o explota.
+---
+
+[TEMPLATE:REACT_DISCOVERY_006]
+tags: reaction, discovery, awe
+weight: 8
+---
+Por un segundo, {self_name} parece menor. Como si el mundo acabara de crecerle encima.
+---
+
+[TEMPLATE:REACT_DISCOVERY_007]
+tags: reaction, discovery, greedy
+weight: 7
+---
+{self_name}: Tenemos que quedarnos con esto antes de que alguien lo convierta en ley.
+---
+
+[TEMPLATE:REACT_DISCOVERY_008]
+tags: reaction, discovery, communal
+weight: 9
+---
+{event_description}
+{self_name} ya sabe que esta noticia va a cambiar peleas que todavia no empiezan.
+---
+

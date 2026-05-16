@@ -1,0 +1,140 @@
+﻿[TEMPLATE:ENC_DESPERATE_001]
+tags: dialogue, encounter, archetype:lover, content, desperate
+weight: 8
+---
+{self_name} se acerca a {target_name} buscando alivio antes que orgullo. Nadie llama bonito a esto. Igual siguen.
+---
+
+[TEMPLATE:ENC_DESPERATE_002]
+tags: dialogue, encounter, archetype:ruler, anxious, desperate
+weight: 9
+---
+En {location_name}, el cansancio tambien toca. {power_dynamic} pesa cuando el hambre emocional ya hablo. Ninguno promete manana.
+---
+
+[TEMPLATE:ENC_DESPERATE_003]
+tags: dialogue, encounter, archetype:rebel, angry, desperate
+weight: 10
+---
+[{self_name}]: Hoy no puedo quedarme solo en mi cabeza. Los dos saben que esto no arregla nada. La escena se parece mas a un salvavidas que a una fantasia.
+---
+
+[TEMPLATE:ENC_DESPERATE_004]
+tags: dialogue, encounter, archetype:caretaker, content, desperate
+weight: 11
+---
+{target_name} presta presencia como quien presta aire. {location_memory} vuelve y aprieta mas. Por ahora basta con no romperse hoy.
+---
+
+[TEMPLATE:ENC_DESPERATE_005]
+tags: dialogue, encounter, archetype:schemer, obsessive, desperate
+weight: 12
+---
+{location_atmosphere} apenas sostiene la escena. La soledad llega demasiado fuerte para negociar elegante. Igual siguen.
+---
+
+[TEMPLATE:ENC_DESPERATE_006]
+tags: dialogue, encounter, archetype:lover, content, desperate
+weight: 8
+---
+{self_name} se acerca a {target_name} buscando alivio antes que orgullo. Nadie llama bonito a esto. Ninguno promete manana.
+---
+
+[TEMPLATE:ENC_DESPERATE_007]
+tags: dialogue, encounter, archetype:ruler, anxious, desperate
+weight: 9
+---
+En {location_name}, el cansancio tambien toca. {power_dynamic} pesa cuando el hambre emocional ya hablo. La escena se parece mas a un salvavidas que a una fantasia.
+---
+
+[TEMPLATE:ENC_DESPERATE_008]
+tags: dialogue, encounter, archetype:rebel, angry, desperate
+weight: 10
+---
+[{self_name}]: Hoy no puedo quedarme solo en mi cabeza. Los dos saben que esto no arregla nada. Por ahora basta con no romperse hoy.
+---
+
+[TEMPLATE:ENC_DESPERATE_009]
+tags: dialogue, encounter, archetype:caretaker, content, desperate
+weight: 11
+---
+{target_name} presta presencia como quien presta aire. {location_memory} vuelve y aprieta mas. Igual siguen.
+---
+
+[TEMPLATE:ENC_DESPERATE_010]
+tags: dialogue, encounter, archetype:schemer, obsessive, desperate
+weight: 12
+---
+{location_atmosphere} apenas sostiene la escena. La soledad llega demasiado fuerte para negociar elegante. Ninguno promete manana.
+---
+
+[TEMPLATE:ENC_DESPERATE_011]
+tags: dialogue, encounter, archetype:lover, content, desperate
+weight: 8
+---
+{self_name} se acerca a {target_name} buscando alivio antes que orgullo. Nadie llama bonito a esto. La escena se parece mas a un salvavidas que a una fantasia.
+---
+
+[TEMPLATE:ENC_DESPERATE_012]
+tags: dialogue, encounter, archetype:ruler, anxious, desperate
+weight: 9
+---
+En {location_name}, el cansancio tambien toca. {power_dynamic} pesa cuando el hambre emocional ya hablo. Por ahora basta con no romperse hoy.
+---
+
+[TEMPLATE:ENC_DESPERATE_013]
+tags: dialogue, encounter, archetype:rebel, angry, desperate
+weight: 10
+---
+[{self_name}]: Hoy no puedo quedarme solo en mi cabeza. Los dos saben que esto no arregla nada. Igual siguen.
+---
+
+[TEMPLATE:ENC_DESPERATE_014]
+tags: dialogue, encounter, archetype:caretaker, content, desperate
+weight: 11
+---
+{target_name} presta presencia como quien presta aire. {location_memory} vuelve y aprieta mas. Ninguno promete manana.
+---
+
+[TEMPLATE:ENC_DESPERATE_015]
+tags: dialogue, encounter, archetype:schemer, obsessive, desperate
+weight: 12
+---
+{location_atmosphere} apenas sostiene la escena. La soledad llega demasiado fuerte para negociar elegante. La escena se parece mas a un salvavidas que a una fantasia.
+---
+
+[TEMPLATE:ENC_DESPERATE_016]
+tags: dialogue, encounter, archetype:lover, content, desperate
+weight: 8
+---
+{self_name} se acerca a {target_name} buscando alivio antes que orgullo. Nadie llama bonito a esto. Por ahora basta con no romperse hoy.
+---
+
+[TEMPLATE:ENC_DESPERATE_017]
+tags: dialogue, encounter, archetype:ruler, anxious, desperate
+weight: 9
+---
+En {location_name}, el cansancio tambien toca. {power_dynamic} pesa cuando el hambre emocional ya hablo. Igual siguen.
+---
+
+[TEMPLATE:ENC_DESPERATE_018]
+tags: dialogue, encounter, archetype:rebel, angry, desperate
+weight: 10
+---
+[{self_name}]: Hoy no puedo quedarme solo en mi cabeza. Los dos saben que esto no arregla nada. Ninguno promete manana.
+---
+
+[TEMPLATE:ENC_DESPERATE_019]
+tags: dialogue, encounter, archetype:caretaker, content, desperate
+weight: 11
+---
+{target_name} presta presencia como quien presta aire. {location_memory} vuelve y aprieta mas. La escena se parece mas a un salvavidas que a una fantasia.
+---
+
+[TEMPLATE:ENC_DESPERATE_020]
+tags: dialogue, encounter, archetype:schemer, obsessive, desperate
+weight: 12
+---
+{location_atmosphere} apenas sostiene la escena. La soledad llega demasiado fuerte para negociar elegante. Por ahora basta con no romperse hoy.
+---
+

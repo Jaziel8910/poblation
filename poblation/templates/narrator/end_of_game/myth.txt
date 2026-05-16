@@ -1,0 +1,28 @@
+[TEMPLATE:NARR_END_MYTH_001]
+tags: narrator, ending, myth
+weight: 10
+---
+Llegaron tan lejos que olvidaron desde donde. El apocalipsis se volvio cuento, el cuento se volvio rito, y el rito perdio el nombre de los primeros dos.
+---
+
+[TEMPLATE:NARR_END_MYTH_002]
+tags: narrator, ending, myth
+weight: 9
+---
+La civilizacion sobrevivio a su origen. En las escuelas, nadie estaba seguro de si los ultimos humanos fueron reales o propaganda antigua.
+---
+
+[TEMPLATE:NARR_END_MYTH_003]
+tags: narrator, ending, myth
+weight: 8
+---
+La tecnologia avanzo hasta convertir el miedo original en folklore. Los olvidados ganaron una inmortalidad barata: estatuas sin verdad.
+---
+
+[TEMPLATE:NARR_END_MYTH_004]
+tags: narrator, ending, myth
+weight: 8
+---
+Nadie recuerda el primer fuego, la primera mentira, el primer bebe. Quiza eso tambien sea triunfo. Quiza sea otra perdida con buen vestido.
+---
+

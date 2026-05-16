@@ -1,0 +1,209 @@
+[TEMPLATE:THOUGHT_NIGHT_001]
+tags: thought, night, honest, memory
+weight: 6
+---
+De noche soy más honesto porque no tengo energía para actuar normal.
+---
+
+[TEMPLATE:THOUGHT_NIGHT_002]
+tags: thought, night, honest, memory
+weight: 13
+---
+{target_name} dijo algo hoy y todavía lo estoy masticando como si fuera comida. No lo era. Ojalá lo fuera.
+---
+
+[TEMPLATE:THOUGHT_NIGHT_003]
+tags: thought, night, honest, memory
+weight: 11
+---
+{memory_recent} pasó {days_ago:memory}. Mi cuerpo lo cuenta como si hubiera sido hace cinco minutos.
+---
+
+[TEMPLATE:THOUGHT_NIGHT_004]
+tags: thought, night, honest, memory
+weight: 9
+---
+Antes de dormir siempre aparece la versión de mí que sabe exactamente qué debí decir. Cobarde puntual.
+---
+
+[TEMPLATE:THOUGHT_NIGHT_005]
+tags: thought, night, honest, memory
+weight: 7
+---
+La oscuridad no me asusta tanto como quedarme solo conmigo.
+---
+
+[TEMPLATE:THOUGHT_NIGHT_006]
+tags: thought, night, honest, memory
+weight: 14
+---
+Si mañana despierto mejor persona, excelente. Si no, al menos despierto con continuidad narrativa.
+---
+
+[TEMPLATE:THOUGHT_NIGHT_007]
+tags: thought, night, honest, memory
+weight: 12
+---
+Pienso en {target_name} y luego finjo que estaba pensando en planes. Mis planes tienen nombre propio, parece.
+---
+
+[TEMPLATE:THOUGHT_NIGHT_008]
+tags: thought, night, honest, memory
+weight: 10
+---
+Hoy no lloré. No porque esté bien. Porque mi cuerpo también administra recursos.
+---
+
+[TEMPLATE:THOUGHT_NIGHT_009]
+tags: thought, night, honest, memory
+weight: 8
+---
+{self_name}, mañana no arregles todo. Arregla una cosa y no la rompas en público.
+---
+
+[TEMPLATE:THOUGHT_NIGHT_010]
+tags: thought, night, honest, memory
+weight: 6
+---
+Dormir es practicar estar muerto sin comprometerse. Humor negro, sí. Pero funciona.
+---
+
+[TEMPLATE:THOUGHT_NIGHT_011]
+tags: thought, night, honest, memory
+weight: 13
+---
+{memory_recent}. Lo repito en la cabeza hasta que pierde forma y gana veneno.
+---
+
+[TEMPLATE:THOUGHT_NIGHT_012]
+tags: thought, night, honest, memory
+weight: 11
+---
+Extraño ruido humano que no venga de nosotros. Una puerta ajena. Un vecino insoportable. Algo.
+---
+
+[TEMPLATE:THOUGHT_NIGHT_013]
+tags: thought, night, honest, memory
+weight: 9
+---
+La noche pregunta cosas que el día tapa con tareas.
+---
+
+[TEMPLATE:THOUGHT_NIGHT_014]
+tags: thought, night, honest, memory
+weight: 7
+---
+No sé si quiero que {target_name} me entienda o que no tenga suficiente información para odiarme.
+---
+
+[TEMPLATE:THOUGHT_NIGHT_015]
+tags: thought, night, honest, memory
+weight: 14
+---
+{days_ago:memory} de {memory_recent}, y todavía estoy actuando como si fuera una sorpresa nueva.
+---
+
+[TEMPLATE:THOUGHT_NIGHT_016]
+tags: thought, night, honest, memory
+weight: 12
+---
+Hoy hice lo correcto por motivos feos. No sé dónde se anota eso.
+---
+
+[TEMPLATE:THOUGHT_NIGHT_017]
+tags: thought, night, honest, memory
+weight: 10
+---
+Si sueño con paz, seguro voy a despertar ofendido.
+---
+
+[TEMPLATE:THOUGHT_NIGHT_018]
+tags: thought, night, honest, memory
+weight: 8
+---
+Hay una parte de mí que quiere confesarlo todo. Hay otra que sabe hacer silencio con mucha experiencia.
+---
+
+[TEMPLATE:THOUGHT_NIGHT_019]
+tags: thought, night, honest, memory
+weight: 6
+---
+La cama no perdona. Apenas me acuesto, me devuelve todo lo que evité parado.
+---
+
+[TEMPLATE:THOUGHT_NIGHT_020]
+tags: thought, night, honest, memory
+weight: 13
+---
+{target_name} probablemente duerme sin pensar en mí. Qué falta de educación.
+---
+
+[TEMPLATE:THOUGHT_NIGHT_021]
+tags: thought, night, honest, memory
+weight: 11
+---
+Mañana voy a ser amable. Lo digo todas las noches como quien reza a un dios que cobra tarde.
+---
+
+[TEMPLATE:THOUGHT_NIGHT_022]
+tags: thought, night, honest, memory
+weight: 9
+---
+El día terminó y no destruí nada importante. O todavía no me enteré.
+---
+
+[TEMPLATE:THOUGHT_NIGHT_023]
+tags: thought, night, honest, memory
+weight: 7
+---
+Cuando cierro los ojos, {memory_recent} se sienta al borde de la cama como si pagara renta.
+---
+
+[TEMPLATE:THOUGHT_NIGHT_024]
+tags: thought, night, honest, memory
+weight: 14
+---
+No quiero morir. Tampoco quiero seguir cargando esta versión exacta de mí. Qué contrato tan mal escrito.
+---
+
+[TEMPLATE:THOUGHT_NIGHT_025]
+tags: thought, night, honest, memory
+weight: 12
+---
+{self_name} suena como nombre de alguien que debería saber qué hace. Pobrecito.
+---
+
+[TEMPLATE:THOUGHT_NIGHT_026]
+tags: thought, night, honest, memory
+weight: 10
+---
+Hoy pensé una cosa horrible y no la dije. Eso cuenta como moral o como cobardía, depende de la hora.
+---
+
+[TEMPLATE:THOUGHT_NIGHT_027]
+tags: thought, night, honest, memory
+weight: 8
+---
+El sueño viene lento, como si también tuviera dudas sobre mí.
+---
+
+[TEMPLATE:THOUGHT_NIGHT_028]
+tags: thought, night, honest, memory
+weight: 6
+---
+Si {target_name} supiera cuánto espacio ocupa en mi cabeza, pediría impuestos.
+---
+
+[TEMPLATE:THOUGHT_NIGHT_029]
+tags: thought, night, honest, memory
+weight: 13
+---
+De noche el mundo parece terminado de verdad. De día al menos finge estar en reparación.
+---
+
+[TEMPLATE:THOUGHT_NIGHT_030]
+tags: thought, night, honest, memory
+weight: 11
+---
+Mañana voy a despertar con la misma piel. Qué insistente es el cuerpo.
+---

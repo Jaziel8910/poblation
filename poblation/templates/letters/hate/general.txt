@@ -1,0 +1,90 @@
+[TEMPLATE:LETTER_HATE_001]
+tags: letter, hate, unsent
+weight: 10
+---
+{target_name},
+Todavia me debes una version honesta de {specific_grievance}. No la quiero para perdonarte. La quiero para dejar de discutir con fantasmas.
+{self_name}
+---
+
+[TEMPLATE:LETTER_HATE_002]
+tags: letter, hate, cold
+weight: 9
+---
+{target_name},
+Lo peor de {specific_grievance} no fue que doliera. Fue verte caminar despues como si el suelo siguiera aceptandote igual.
+{self_name}
+---
+
+[TEMPLATE:LETTER_HATE_003]
+tags: letter, hate, rage
+weight: 8
+---
+{target_name},
+He ensayado insultos mejores, pero todos se quedan cortos. {specific_grievance} hizo algo mas feo que hacerme dano: me obligo a entenderte.
+{self_name}
+---
+
+[TEMPLATE:LETTER_HATE_004]
+tags: letter, hate, bitter
+weight: 8
+---
+{target_name},
+Ojala pudiera odiarte limpio. Pero {specific_grievance} dejo partes tuyas mezcladas con partes mias, y ahora hasta mi rabia tiene trabajo extra.
+{self_name}
+---
+
+[TEMPLATE:LETTER_HATE_005]
+tags: letter, hate, precise
+weight: 8
+---
+{target_name},
+No escribo para que vuelvas. Escribo para poner {specific_grievance} en una pagina y verlo sin tu cara justificandose encima.
+{self_name}
+---
+
+[TEMPLATE:LETTER_HATE_006]
+tags: letter, hate, wounded
+weight: 7
+---
+{target_name},
+Me quitaste algo con {specific_grievance}: no confianza, algo mas basico. La tranquilidad de no revisar cada gesto buscando filo.
+{self_name}
+---
+
+[TEMPLATE:LETTER_HATE_007]
+tags: letter, hate, almost_sent
+weight: 8
+---
+{target_name},
+Iba a romper esta carta. Despues recorde que ya rompiste suficiente con {specific_grievance}. Dejame al menos conservar mi evidencia.
+{self_name}
+---
+
+[TEMPLATE:LETTER_HATE_008]
+tags: letter, hate, exhausted
+weight: 7
+---
+{target_name},
+Estoy cansado de odiarte por {specific_grievance}. No porque no lo merezcas. Porque hasta mi cansancio merece una vida donde no seas tema.
+{self_name}
+---
+
+[TEMPLATE:LETTER_HATE_009]
+tags: letter, hate, public
+weight: 7
+---
+{target_name},
+Si algun dia cuento {specific_grievance}, no va a ser venganza. Va a ser mantenimiento. Algunas verdades se pudren si se guardan.
+{self_name}
+---
+
+[TEMPLATE:LETTER_HATE_010]
+tags: letter, hate, final
+weight: 10
+---
+{target_name},
+No necesito que sufras igual. Necesito que dejes de caminar por el mundo como si {specific_grievance} fuera una nota al pie.
+{self_name}
+---
+

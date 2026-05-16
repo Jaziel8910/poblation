@@ -1,0 +1,219 @@
+[TEMPLATE:DLG_ARG_ESCALATING_001]
+tags: dialogue, argument, escalating, line_crossed
+weight: 12
+---
+[{self_name}]: No era una acusación.
+[{target_name}]: Sonó como una.
+[{self_name}]: Porque ya me cansé de decirlo bonito.
+---
+
+[TEMPLATE:DLG_ARG_ESCALATING_002]
+tags: dialogue, argument, escalating, betrayal
+weight: 10
+---
+[{target_name}]: Revisaste mis cosas.
+[{self_name}]: Las cosas que escondes también viven aquí.
+[{target_name}]: No te atrevas a llamarlo cuidar.
+---
+
+[TEMPLATE:DLG_ARG_ESCALATING_003]
+tags: dialogue, argument, escalating, cruel
+weight: 8
+---
+[{self_name}]: Siempre haces esto.
+[{target_name}]: ¿Sobrevivir a ti?
+[{self_name}]: Cuidado.
+---
+
+[TEMPLATE:DLG_ARG_ESCALATING_004]
+tags: dialogue, argument, escalating, old_wound
+weight: 9
+---
+[{target_name}]: No metas eso.
+[{self_name}]: ¿Por qué? ¿Porque ahí sí te acuerdas de sentir culpa?
+[{target_name}]: Cállate.
+---
+
+[TEMPLATE:DLG_ARG_ESCALATING_005]
+tags: dialogue, argument, escalating, no_resolution
+weight: 11
+---
+[{self_name}]: Te pregunté una cosa simple.
+[{target_name}]: No quieres una respuesta. Quieres una confesión.
+[{self_name}]: Tal vez porque huele a mentira desde aquí.
+---
+
+[TEMPLATE:DLG_ARG_ESCALATING_006]
+tags: dialogue, argument, escalating, fear
+weight: 7
+---
+[{target_name}]: Baja la voz.
+[{self_name}]: No me mandes.
+[{target_name}]: Entonces no me hagas tenerte miedo.
+---
+
+[TEMPLATE:DLG_ARG_ESCALATING_007]
+tags: dialogue, argument, escalating, contempt
+weight: 9
+---
+[{self_name}]: Eso fue bajo.
+[{target_name}]: Sí. Y todavía no llego al fondo.
+---
+
+[TEMPLATE:DLG_ARG_ESCALATING_008]
+tags: dialogue, argument, escalating, interruption
+weight: 10
+---
+[{target_name}]: Déjame terminar.
+[{self_name}]: No, porque cuando terminas suena razonable.
+[{target_name}]: Qué conveniente odiar la parte donde explico.
+---
+
+[TEMPLATE:DLG_ARG_ESCALATING_009]
+tags: dialogue, argument, escalating, jealousy
+weight: 8
+---
+[{self_name}]: Lo miraste como antes me mirabas.
+[{target_name}]: Ahí está tu veneno.
+[{self_name}]: No, ahí está tu hambre.
+---
+
+[TEMPLATE:DLG_ARG_ESCALATING_010]
+tags: dialogue, argument, escalating, control
+weight: 10
+---
+[{target_name}]: No soy tu proyecto.
+[{self_name}]: No, porque un proyecto mejora con tiempo.
+[{target_name}]: Repite eso.
+---
+
+[TEMPLATE:DLG_ARG_ESCALATING_011]
+tags: dialogue, argument, escalating, regret
+weight: 7
+---
+[{self_name}]: No quise decirlo así.
+[{target_name}]: Pero lo pensaste así.
+[{self_name}]: ...
+---
+
+[TEMPLATE:DLG_ARG_ESCALATING_012]
+tags: dialogue, argument, escalating, past
+weight: 9
+---
+[{target_name}]: Siempre vuelves al mismo golpe.
+[{self_name}]: Porque nunca sanó.
+[{target_name}]: O porque te gusta tener dónde apretar.
+---
+
+[TEMPLATE:DLG_ARG_ESCALATING_013]
+tags: dialogue, argument, escalating, brutal
+weight: 6
+---
+[{self_name}]: A veces pienso que habría sido más fácil estar solo.
+[{target_name}]: Entonces practica.
+---
+
+[TEMPLATE:DLG_ARG_ESCALATING_014]
+tags: dialogue, argument, escalating, shame
+weight: 8
+---
+[{target_name}]: ¿Eso es lo que crees de mí?
+[{self_name}]: En mis peores días, sí.
+[{target_name}]: Gracias por mostrarme dónde vivo.
+---
+
+[TEMPLATE:DLG_ARG_ESCALATING_015]
+tags: dialogue, argument, escalating, line_crossed
+weight: 9
+---
+[{self_name}]: No eres víctima por llorar primero.
+[{target_name}]: Y tú no eres fuerte por hacerme llorar.
+---
+
+[TEMPLATE:DLG_ARG_ESCALATING_016]
+tags: dialogue, argument, escalating, no_resolution
+weight: 10
+---
+[{target_name}]: Para.
+[{self_name}]: No he terminado.
+[{target_name}]: Yo sí.
+---
+
+[TEMPLATE:DLG_ARG_ESCALATING_017]
+tags: dialogue, argument, escalating, distrust
+weight: 8
+---
+[{self_name}]: ¿Por qué no me lo dijiste?
+[{target_name}]: Porque conviertes cada verdad en arma.
+[{self_name}]: Solo las que ya venían afiladas.
+---
+
+[TEMPLATE:DLG_ARG_ESCALATING_018]
+tags: dialogue, argument, escalating, cold
+weight: 7
+---
+[{target_name}]: Te desconozco cuando hablas así.
+[{self_name}]: Qué suerte. Yo me reconozco demasiado.
+---
+
+[TEMPLATE:DLG_ARG_ESCALATING_019]
+tags: dialogue, argument, escalating, threat
+weight: 6
+---
+[{self_name}]: Si sales por esa puerta...
+[{target_name}]: Termina la frase y la cruzo corriendo.
+---
+
+[TEMPLATE:DLG_ARG_ESCALATING_020]
+tags: dialogue, argument, escalating, exposed
+weight: 9
+---
+[{target_name}]: Te dolió porque era cierto.
+[{self_name}]: No. Me dolió porque lo dijiste feliz.
+---
+
+[TEMPLATE:DLG_ARG_ESCALATING_021]
+tags: dialogue, argument, escalating, collapse
+weight: 7
+---
+[{self_name}]: Estoy tratando.
+[{target_name}]: No. Estás tratando de parecer alguien que trata.
+---
+
+[TEMPLATE:DLG_ARG_ESCALATING_022]
+tags: dialogue, argument, escalating, interruption
+weight: 8
+---
+[{target_name}]: No me culpes de tu miedo.
+[{self_name}]: No me culpes de tu mentira.
+[{target_name}]: No era mentira.
+[{self_name}]: Era una verdad con la puerta cerrada.
+---
+
+[TEMPLATE:DLG_ARG_ESCALATING_023]
+tags: dialogue, argument, escalating, cruel_truth
+weight: 6
+---
+[{self_name}]: Te quedas porque no hay nadie más.
+[{target_name}]: Y tú mandas porque tienes miedo de que eso sea cierto.
+---
+
+[TEMPLATE:DLG_ARG_ESCALATING_024]
+tags: dialogue, argument, escalating, cut_short
+weight: 8
+---
+[{target_name}]: No vuelvas a usar eso contra mí.
+[{self_name}]: Entonces no me des munición.
+[{target_name}]: Ya.
+---
+
+[TEMPLATE:DLG_ARG_ESCALATING_025]
+tags: dialogue, argument, escalating, unresolved
+weight: 10
+---
+[{self_name}]: Me estás mirando como si ya me hubieras perdido.
+[{target_name}]: No.
+[{self_name}]: Entonces cómo.
+[{target_name}]: Como si estuviera calculando el precio.
+---
+

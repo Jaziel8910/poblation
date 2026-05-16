@@ -1,0 +1,209 @@
+[TEMPLATE:ATTR_PULL_001]
+tags: thought, about_other, attraction, desire
+weight: 6
+---
+{target_name} hizo algo mínimo y mi cabeza decidió archivarlo como evento histórico.
+---
+
+[TEMPLATE:ATTR_PULL_002]
+tags: thought, about_other, attraction, desire
+weight: 13
+---
+No es solo atracción. Ojalá fuera solo eso. Sería más fácil culpar al cuerpo y ya.
+---
+
+[TEMPLATE:ATTR_PULL_003]
+tags: thought, about_other, attraction, desire
+weight: 11
+---
+Cuando {target_name} me mira, se me olvida la mitad de mis principios y la otra mitad empieza a negociar.
+---
+
+[TEMPLATE:ATTR_PULL_004]
+tags: thought, about_other, attraction, desire
+weight: 9
+---
+{relationship_status}. Qué nombre tan educado para este desorden.
+---
+
+[TEMPLATE:ATTR_PULL_005]
+tags: thought, about_other, attraction, desire
+weight: 7
+---
+Pienso en {target_name} y me enojo conmigo por sonreír. Encima sonrío mal, como culpable barato.
+---
+
+[TEMPLATE:ATTR_PULL_006]
+tags: thought, about_other, attraction, desire
+weight: 14
+---
+{target_pronoun} no tiene idea de lo fácil que me mueve el piso. Mejor. Peor. No sé.
+---
+
+[TEMPLATE:ATTR_PULL_007]
+tags: thought, about_other, attraction, desire
+weight: 12
+---
+{memory_recent} debería ser un recuerdo normal. Mi cuerpo lo convirtió en prueba criminal.
+---
+
+[TEMPLATE:ATTR_PULL_008]
+tags: thought, about_other, attraction, desire
+weight: 10
+---
+Me gusta {target_name}. Qué frase tan simple para algo que podría arruinarme el día completo.
+---
+
+[TEMPLATE:ATTR_PULL_009]
+tags: thought, about_other, attraction, desire
+weight: 8
+---
+Hay gente que inspira calma. {target_name} inspira estupideces con buena iluminación.
+---
+
+[TEMPLATE:ATTR_PULL_010]
+tags: thought, about_other, attraction, desire
+weight: 6
+---
+Si me acerco demasiado, se nota. Si me alejo demasiado, también. Excelente trampa, gracias cerebro.
+---
+
+[TEMPLATE:ATTR_PULL_011]
+tags: thought, about_other, attraction, desire
+weight: 13
+---
+{target_pronoun} dijo mi nombre una vez y ahora mi orgullo está tirado en el suelo haciendo sonidos raros.
+---
+
+[TEMPLATE:ATTR_PULL_012]
+tags: thought, about_other, attraction, desire
+weight: 11
+---
+No quiero necesitar la atención de {target_name}. Quiero que aparezca sola, como milagro doméstico.
+---
+
+[TEMPLATE:ATTR_PULL_013]
+tags: thought, about_other, attraction, desire
+weight: 9
+---
+Esto de {relationship_status} tiene demasiadas partes blandas. Yo no soy bueno cuidando partes blandas.
+---
+
+[TEMPLATE:ATTR_PULL_014]
+tags: thought, about_other, attraction, desire
+weight: 7
+---
+Si {target_name} se ríe cerca, mi día mejora. Qué humillante tener interruptores tan visibles.
+---
+
+[TEMPLATE:ATTR_PULL_015]
+tags: thought, about_other, attraction, desire
+weight: 14
+---
+Me atrae y me irrita. A veces en ese orden. A veces al mismo tiempo, como gente adulta y dañada.
+---
+
+[TEMPLATE:ATTR_PULL_016]
+tags: thought, about_other, attraction, desire
+weight: 12
+---
+{memory_recent}. Sí, claro, completamente normal pensar en eso mientras cargo agua.
+---
+
+[TEMPLATE:ATTR_PULL_017]
+tags: thought, about_other, attraction, desire
+weight: 10
+---
+No es que quiera tocar a {target_name}. Es que mi mano se pone filosófica cuando {target_pronoun} está cerca.
+---
+
+[TEMPLATE:ATTR_PULL_018]
+tags: thought, about_other, attraction, desire
+weight: 8
+---
+Ojalá {target_name} fuera menos exacto para lo que me falta.
+---
+
+[TEMPLATE:ATTR_PULL_019]
+tags: thought, about_other, attraction, desire
+weight: 6
+---
+Me prometí no mirar. Después negocié mirar una vez. Después abrí una investigación visual completa.
+---
+
+[TEMPLATE:ATTR_PULL_020]
+tags: thought, about_other, attraction, desire
+weight: 13
+---
+La atracción es una enfermedad ridícula: no te mata rápido, solo te vuelve torpe frente a testigos.
+---
+
+[TEMPLATE:ATTR_PULL_021]
+tags: thought, about_other, attraction, desire
+weight: 11
+---
+{target_pronoun} no debería ocupar tanto espacio en una habitación tan pobre.
+---
+
+[TEMPLATE:ATTR_PULL_022]
+tags: thought, about_other, attraction, desire
+weight: 9
+---
+Me gusta la voz de {target_name}. Eso es peligroso. Las voces entran sin permiso y se quedan.
+---
+
+[TEMPLATE:ATTR_PULL_023]
+tags: thought, about_other, attraction, desire
+weight: 7
+---
+Si esto fuera solo deseo, dormiría mejor. Si fuera solo cariño, mentiría mejor.
+---
+
+[TEMPLATE:ATTR_PULL_024]
+tags: thought, about_other, attraction, desire
+weight: 14
+---
+{relationship_status}. Lo leo por dentro y suena a excusa para seguir acercándome.
+---
+
+[TEMPLATE:ATTR_PULL_025]
+tags: thought, about_other, attraction, desire
+weight: 12
+---
+Cuando {target_name} no está, lo noto. Cuando está, también. Qué sistema tan inútil.
+---
+
+[TEMPLATE:ATTR_PULL_026]
+tags: thought, about_other, attraction, desire
+weight: 10
+---
+Me cae bien hasta cuando no quiero. Eso sí me parece una falta de respeto.
+---
+
+[TEMPLATE:ATTR_PULL_027]
+tags: thought, about_other, attraction, desire
+weight: 8
+---
+{memory_recent} cambió algo. No sé qué. Odio cuando mi cuerpo se entera antes que yo.
+---
+
+[TEMPLATE:ATTR_PULL_028]
+tags: thought, about_other, attraction, desire
+weight: 6
+---
+Si {target_pronoun} me pidiera algo ahora, probablemente diría que sí y luego inventaría una teoría política para justificarlo.
+---
+
+[TEMPLATE:ATTR_PULL_029]
+tags: thought, about_other, attraction, desire
+weight: 13
+---
+No quiero que esto mande. Ya está mandando un poquito. Mentira, bastante.
+---
+
+[TEMPLATE:ATTR_PULL_030]
+tags: thought, about_other, attraction, desire
+weight: 11
+---
+{target_name} tiene la mala costumbre de existir exactamente donde miro.
+---

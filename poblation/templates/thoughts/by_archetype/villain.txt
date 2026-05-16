@@ -1,0 +1,239 @@
+[TEMPLATE:ARCH_VILLAIN_001]
+tags: thought, by_archetype, archetype:villain, cruelty
+weight: 6
+archetypes: VILLAIN
+---
+La culpa es una herramienta útil para otros. Yo prefiero herramientas que corten mejor.
+---
+
+[TEMPLATE:ARCH_VILLAIN_002]
+tags: thought, by_archetype, archetype:villain, cruelty
+weight: 13
+archetypes: VILLAIN
+---
+Me conocen lo suficiente para temerme y no lo suficiente para detenerme. Punto dulce.
+---
+
+[TEMPLATE:ARCH_VILLAIN_003]
+tags: thought, by_archetype, archetype:villain, cruelty
+weight: 11
+archetypes: VILLAIN
+---
+No disfruto el sufrimiento ajeno siempre. Solo cuando tiene estructura.
+---
+
+[TEMPLATE:ARCH_VILLAIN_004]
+tags: thought, by_archetype, archetype:villain, cruelty
+weight: 9
+archetypes: VILLAIN
+---
+La gente buena suele avisar antes de atacar. Qué hábito tan adorable.
+---
+
+[TEMPLATE:ARCH_VILLAIN_005]
+tags: thought, by_archetype, archetype:villain, cruelty
+weight: 7
+archetypes: VILLAIN
+---
+Si todos quieren sobrevivir, alguien va a tener que aceptar decisiones feas. Yo no tengo problema con el espejo.
+---
+
+[TEMPLATE:ARCH_VILLAIN_006]
+tags: thought, by_archetype, archetype:villain, cruelty
+weight: 14
+archetypes: VILLAIN
+---
+La misericordia mal puesta es una inversión pésima.
+---
+
+[TEMPLATE:ARCH_VILLAIN_007]
+tags: thought, by_archetype, archetype:villain, cruelty
+weight: 12
+archetypes: VILLAIN
+---
+Me acusan de crueldad como si fuera falta de control. Al contrario.
+---
+
+[TEMPLATE:ARCH_VILLAIN_008]
+tags: thought, by_archetype, archetype:villain, cruelty
+weight: 10
+archetypes: VILLAIN
+---
+No necesito que me quieran. Quererme vuelve a la gente torpe y exigente.
+---
+
+[TEMPLATE:ARCH_VILLAIN_009]
+tags: thought, by_archetype, archetype:villain, cruelty
+weight: 8
+archetypes: VILLAIN
+---
+El miedo abre puertas que la confianza tarda meses en tocar.
+---
+
+[TEMPLATE:ARCH_VILLAIN_010]
+tags: thought, by_archetype, archetype:villain, cruelty
+weight: 6
+archetypes: VILLAIN
+---
+Sé exactamente dónde presionar. Eso no es magia, es escuchar sin fingir bondad.
+---
+
+[TEMPLATE:ARCH_VILLAIN_011]
+tags: thought, by_archetype, archetype:villain, cruelty
+weight: 13
+archetypes: VILLAIN
+---
+Hay quienes ven límites. Yo veo líneas con mala seguridad.
+---
+
+[TEMPLATE:ARCH_VILLAIN_012]
+tags: thought, by_archetype, archetype:villain, cruelty
+weight: 11
+archetypes: VILLAIN
+---
+Si hago algo terrible y funciona, todos fingirán que nunca me juzgaron. Son así de limpios.
+---
+
+[TEMPLATE:ARCH_VILLAIN_013]
+tags: thought, by_archetype, archetype:villain, cruelty
+weight: 9
+archetypes: VILLAIN
+---
+Me encanta cuando alguien amenaza con principios. Siempre terminan cotizando el precio.
+---
+
+[TEMPLATE:ARCH_VILLAIN_014]
+tags: thought, by_archetype, archetype:villain, cruelty
+weight: 7
+archetypes: VILLAIN
+---
+No soy el monstruo de nadie. Soy una persona práctica con menos decoración moral.
+---
+
+[TEMPLATE:ARCH_VILLAIN_015]
+tags: thought, by_archetype, archetype:villain, cruelty
+weight: 14
+archetypes: VILLAIN
+---
+La confianza es deliciosa porque cruje cuando se rompe.
+---
+
+[TEMPLATE:ARCH_VILLAIN_016]
+tags: thought, by_archetype, archetype:villain, cruelty
+weight: 12
+archetypes: VILLAIN
+---
+Hay belleza en un plan cruel bien ejecutado. No voy a rebajarme negándolo.
+---
+
+[TEMPLATE:ARCH_VILLAIN_017]
+tags: thought, by_archetype, archetype:villain, cruelty
+weight: 10
+archetypes: VILLAIN
+---
+La debilidad ajena no me ofende. Me ofrece opciones.
+---
+
+[TEMPLATE:ARCH_VILLAIN_018]
+tags: thought, by_archetype, archetype:villain, cruelty
+weight: 8
+archetypes: VILLAIN
+---
+Si esperan que me arrepienta, van a tener una relación larga con la espera.
+---
+
+[TEMPLATE:ARCH_VILLAIN_019]
+tags: thought, by_archetype, archetype:villain, cruelty
+weight: 6
+archetypes: VILLAIN
+---
+Me gusta la honestidad de la fuerza. Nadie sale confundido.
+---
+
+[TEMPLATE:ARCH_VILLAIN_020]
+tags: thought, by_archetype, archetype:villain, cruelty
+weight: 13
+archetypes: VILLAIN
+---
+Hice daño antes de necesitar hacerlo. Eso me ahorró mucha teoría.
+---
+
+[TEMPLATE:ARCH_VILLAIN_021]
+tags: thought, by_archetype, archetype:villain, cruelty
+weight: 11
+archetypes: VILLAIN
+---
+La bondad de otros es útil mientras no recuerden poner condiciones.
+---
+
+[TEMPLATE:ARCH_VILLAIN_022]
+tags: thought, by_archetype, archetype:villain, cruelty
+weight: 9
+archetypes: VILLAIN
+---
+No todos merecen una segunda oportunidad. Algunos ni administraron bien la primera.
+---
+
+[TEMPLATE:ARCH_VILLAIN_023]
+tags: thought, by_archetype, archetype:villain, cruelty
+weight: 7
+archetypes: VILLAIN
+---
+Podría ser mejor persona. También podría usar ese tiempo para ganar.
+---
+
+[TEMPLATE:ARCH_VILLAIN_024]
+tags: thought, by_archetype, archetype:villain, cruelty
+weight: 14
+archetypes: VILLAIN
+---
+Hay una paz rara en no pelear con mi peor impulso. Lo entrené, no lo escondí.
+---
+
+[TEMPLATE:ARCH_VILLAIN_025]
+tags: thought, by_archetype, archetype:villain, cruelty
+weight: 12
+archetypes: VILLAIN
+---
+El mundo se acabó y algunos siguen actuando como si hubiera comité de ética.
+---
+
+[TEMPLATE:ARCH_VILLAIN_026]
+tags: thought, by_archetype, archetype:villain, cruelty
+weight: 10
+archetypes: VILLAIN
+---
+No miento por deporte. Miento cuando la verdad sería una falta de imaginación.
+---
+
+[TEMPLATE:ARCH_VILLAIN_027]
+tags: thought, by_archetype, archetype:villain, cruelty
+weight: 8
+archetypes: VILLAIN
+---
+Me han llamado peligroso. Qué alivio cuando alguien entiende algo.
+---
+
+[TEMPLATE:ARCH_VILLAIN_028]
+tags: thought, by_archetype, archetype:villain, cruelty
+weight: 6
+archetypes: VILLAIN
+---
+La compasión me visita a veces. La atiendo con cortesía y no le doy llaves.
+---
+
+[TEMPLATE:ARCH_VILLAIN_029]
+tags: thought, by_archetype, archetype:villain, cruelty
+weight: 13
+archetypes: VILLAIN
+---
+Si alguien tiene que cargar el pecado común, prefiero cargarlo yo y cobrar intereses.
+---
+
+[TEMPLATE:ARCH_VILLAIN_030]
+tags: thought, by_archetype, archetype:villain, cruelty
+weight: 11
+archetypes: VILLAIN
+---
+No necesito justificarme. Pero si lo hago, suena tan razonable que eso también me divierte.
+---

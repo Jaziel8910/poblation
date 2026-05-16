@@ -1,0 +1,195 @@
+[TEMPLATE:SEX_AFTER_001]
+tags: dialogue, sex, aftermath, tender, first
+weight: 10
+---
+Despues, {self_name} no pregunta si estuvo bien. Pregunta si {target_name} sigue aqui. Es una pregunta mas honesta.
+---
+
+[TEMPLATE:SEX_AFTER_002]
+tags: dialogue, sex, aftermath, awkward, first
+weight: 9
+---
+[{target_name}]: No se que se dice ahora.
+[{self_name}]: Algo brillante seguro.
+[{target_name}]: Que pena que estemos nosotros.
+---
+
+[TEMPLATE:SEX_AFTER_003]
+tags: dialogue, sex, aftermath, stable
+weight: 9
+---
+No hablan enseguida. Primero verifican que el otro siga siendo conocido. Luego {target_name} encuentra la mano de {self_name}.
+---
+
+[TEMPLATE:SEX_AFTER_004]
+tags: dialogue, sex, aftermath, post_fight
+weight: 8
+---
+Si esto arreglo la pelea, nadie lo confirma. Si la empeoro, tampoco. Por ahora solo respiran en el mismo desastre.
+---
+
+[TEMPLATE:SEX_AFTER_005]
+tags: dialogue, sex, aftermath, long_absence
+weight: 8
+---
+[{self_name}]: Habia olvidado esto.
+[{target_name}]: No. Lo guardaste donde dolia menos.
+---
+
+[TEMPLATE:SEX_AFTER_006]
+tags: dialogue, sex, aftermath, mistake
+weight: 7
+---
+{target_name} se viste demasiado rapido. {self_name} no pregunta por que. Ambos saben que la respuesta llego antes que la ropa.
+---
+
+[TEMPLATE:SEX_AFTER_007]
+tags: dialogue, sex, aftermath, stable, humor
+weight: 8
+---
+[{target_name}]: Sigues insoportable.
+[{self_name}]: Pero?
+[{target_name}]: No dije pero. No abuses.
+---
+
+[TEMPLATE:SEX_AFTER_008]
+tags: dialogue, sex, aftermath, vulnerable
+weight: 8
+---
+La cara de {self_name} queda sin personaje por un minuto. {target_name} la mira con cuidado, como si pudiera romperla.
+---
+
+[TEMPLATE:SEX_AFTER_009]
+tags: dialogue, sex, aftermath, post_fight, recurrent
+weight: 7
+---
+[{self_name}]: No podemos seguir resolviendo peleas asi.
+[{target_name}]: No las resolvemos. Las aplazamos con talento.
+---
+
+[TEMPLATE:SEX_AFTER_010]
+tags: dialogue, sex, aftermath, first, fear
+weight: 8
+---
+[{target_name}]: No me mires como si ahora me debieras algo.
+[{self_name}]: No se mirar esto todavia.
+---
+
+[TEMPLATE:SEX_AFTER_011]
+tags: dialogue, sex, aftermath, stable, domestic
+weight: 8
+---
+Despues, hablan de agua, comida, tareas. La ternura se disfraza de inventario porque asi no asusta tanto.
+---
+
+[TEMPLATE:SEX_AFTER_012]
+tags: dialogue, sex, aftermath, error
+weight: 7
+---
+{self_name} sonrie. {target_name} no. La diferencia se queda en la habitacion, sentada entre los dos.
+---
+
+[TEMPLATE:SEX_AFTER_013]
+tags: dialogue, sex, aftermath, long_absence, ache
+weight: 8
+---
+Hace mucho no se tocaban asi. Ahora el cuerpo de {self_name} recuerda y la cabeza de {target_name} exige explicaciones.
+---
+
+[TEMPLATE:SEX_AFTER_014]
+tags: dialogue, sex, aftermath, secret
+weight: 7
+---
+[{target_name}]: Nadie puede saber.
+[{self_name}]: Esa frase siempre llega tarde.
+---
+
+[TEMPLATE:SEX_AFTER_015]
+tags: dialogue, sex, aftermath, post_fight, bitter
+weight: 7
+---
+[{self_name}]: Todavia estoy enojado.
+[{target_name}]: Yo tambien.
+[{self_name}]: Bien. Odiaria que esto fuera simple.
+---
+
+[TEMPLATE:SEX_AFTER_016]
+tags: dialogue, sex, aftermath, stable, soft
+weight: 9
+---
+{target_name} acomoda el pelo de {self_name} sin hacerlo ceremonia. Eso casi lo vuelve peor.
+---
+
+[TEMPLATE:SEX_AFTER_017]
+tags: dialogue, sex, aftermath, first, honest
+weight: 8
+---
+[{self_name}]: Estoy contento y asustado.
+[{target_name}]: Si, esa parece la proporcion correcta.
+---
+
+[TEMPLATE:SEX_AFTER_018]
+tags: dialogue, sex, aftermath, mistake, guilt
+weight: 7
+---
+{self_name} dice el nombre equivocado de algo: carino, costumbre, hambre. {target_name} escucha el error sin ayudar.
+---
+
+[TEMPLATE:SEX_AFTER_019]
+tags: dialogue, sex, aftermath, long_absence
+weight: 8
+---
+[{target_name}]: Pense que esta parte de nosotros estaba muerta.
+[{self_name}]: Tal vez solo estaba castigandonos.
+---
+
+[TEMPLATE:SEX_AFTER_020]
+tags: dialogue, sex, aftermath, stable, no_resolution
+weight: 8
+---
+No se prometen nada nuevo. Eso, entre {self_name} y {target_name}, ya es una promesa rara.
+---
+
+[TEMPLATE:SEX_AFTER_021]
+tags: dialogue, sex, aftermath, post_fight, cycle
+weight: 7
+---
+[{target_name}]: Vamos a volver a discutir esto.
+[{self_name}]: Seguro.
+[{target_name}]: Que idiotas.
+[{self_name}]: Si.
+---
+
+[TEMPLATE:SEX_AFTER_022]
+tags: dialogue, sex, aftermath, error, one_sided
+weight: 7
+---
+{target_name} parece aliviado. {self_name} parece informado de una mala noticia. Ninguno sabe como salir primero.
+---
+
+[TEMPLATE:SEX_AFTER_023]
+tags: dialogue, sex, aftermath, first, warmth
+weight: 9
+---
+[{self_name}]: No quiero hacer chistes.
+[{target_name}]: Entonces no hagas.
+[{self_name}]: No se que queda de mi sin eso.
+---
+
+[TEMPLATE:SEX_AFTER_024]
+tags: dialogue, sex, aftermath, stable, memory
+weight: 8
+---
+{memory_old}. Nadie menciona eso en voz alta, pero el recuerdo entra igual y se sienta con ellos.
+---
+
+[TEMPLATE:SEX_AFTER_025]
+tags: dialogue, sex, aftermath, final
+weight: 10
+---
+[{target_name}]: Esto cambia algo?
+[{self_name}]: Si.
+[{target_name}]: Que?
+[{self_name}]: Todavia no se. Pero si.
+---
+

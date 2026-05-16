@@ -1,0 +1,221 @@
+[TEMPLATE:DLG_GREET_POST_FIGHT_001]
+tags: dialogue, greeting, post_fight, resentment, awkward
+weight: 12
+---
+[{self_name}]: No sabía si ibas a venir.
+[{target_name}]: Yo tampoco.
+---
+
+[TEMPLATE:DLG_GREET_POST_FIGHT_002]
+tags: dialogue, greeting, post_fight, cold
+weight: 10
+---
+[{self_name}]: Hola.
+[{target_name}]: Eso es todo.
+[{self_name}]: Por ahora sí.
+---
+
+[TEMPLATE:DLG_GREET_POST_FIGHT_003]
+tags: dialogue, greeting, post_fight, memory
+weight: 9
+---
+[{target_name}]: ¿Vamos a fingir que {memory_recent} no pasó?
+[{self_name}]: Estaba probando. Me sale horrible.
+---
+
+[TEMPLATE:DLG_GREET_POST_FIGHT_004]
+tags: dialogue, greeting, post_fight, defensive
+weight: 11
+---
+[{self_name}]: Vine por agua, no por ti.
+[{target_name}]: Qué casualidad tan trabajada.
+---
+
+[TEMPLATE:DLG_GREET_POST_FIGHT_005]
+tags: dialogue, greeting, post_fight, unresolved
+weight: 8
+---
+[{target_name}]: Te ves cansado.
+[{self_name}]: Tú también.
+[{target_name}]: Qué bonito. Empatía con cuchillo.
+---
+
+[TEMPLATE:DLG_GREET_POST_FIGHT_006]
+tags: dialogue, greeting, post_fight, apology
+weight: 7
+---
+[{self_name}]: Lo de ayer...
+[{target_name}]: No.
+[{self_name}]: Ni siquiera sabes qué iba a decir.
+[{target_name}]: Sí sé. Y no.
+---
+
+[TEMPLATE:DLG_GREET_POST_FIGHT_007]
+tags: dialogue, greeting, post_fight, brittle
+weight: 10
+---
+[{target_name}]: ¿Dormiste?
+[{self_name}]: No te ganes créditos por preocuparte.
+[{target_name}]: Perfecto, ya empezamos.
+---
+
+[TEMPLATE:DLG_GREET_POST_FIGHT_008]
+tags: dialogue, greeting, post_fight, shame
+weight: 8
+---
+[{self_name}]: Dije cosas feas.
+[{target_name}]: Dijiste cosas precisas. Eso fue peor.
+---
+
+[TEMPLATE:DLG_GREET_POST_FIGHT_009]
+tags: dialogue, greeting, post_fight, stubborn
+weight: 12
+---
+[{target_name}]: No voy a pedir perdón primero.
+[{self_name}]: Yo tampoco.
+[{target_name}]: Entonces qué reunión tan productiva.
+---
+
+[TEMPLATE:DLG_GREET_POST_FIGHT_010]
+tags: dialogue, greeting, post_fight, soft
+weight: 7
+---
+[{self_name}]: Te dejé comida.
+[{target_name}]: No arregla nada.
+[{self_name}]: Ya sé.
+[{target_name}]: Igual gracias.
+---
+
+[TEMPLATE:DLG_GREET_POST_FIGHT_011]
+tags: dialogue, greeting, post_fight, avoidance
+weight: 9
+---
+[{target_name}]: ¿Me vas a mirar o el piso ganó?
+[{self_name}]: El piso no me gritó.
+[{target_name}]: Todavía.
+---
+
+[TEMPLATE:DLG_GREET_POST_FIGHT_012]
+tags: dialogue, greeting, post_fight, bitter
+weight: 10
+---
+[{self_name}]: Buenos días.
+[{target_name}]: Ambicioso llamar bueno a esto.
+---
+
+[TEMPLATE:DLG_GREET_POST_FIGHT_013]
+tags: dialogue, greeting, post_fight, memory
+weight: 11
+---
+[{self_name}]: Cada vez que pienso en {memory_recent}, me dan ganas de defenderme otra vez.
+[{target_name}]: Y a mí de irme otra vez.
+---
+
+[TEMPLATE:DLG_GREET_POST_FIGHT_014]
+tags: dialogue, greeting, post_fight, fragile
+weight: 8
+---
+[{target_name}]: No vine a pelear.
+[{self_name}]: Yo tampoco.
+[{target_name}]: Qué peligroso. Cuando no venimos a pelear es cuando peor sale.
+---
+
+[TEMPLATE:DLG_GREET_POST_FIGHT_015]
+tags: dialogue, greeting, post_fight, petty
+weight: 9
+---
+[{self_name}]: Moviste mis cosas.
+[{target_name}]: Salvé tus cosas de la lluvia.
+[{self_name}]: Ah, perdón por no aplaudir la invasión.
+---
+
+[TEMPLATE:DLG_GREET_POST_FIGHT_016]
+tags: dialogue, greeting, post_fight, cut_short
+weight: 7
+---
+[{target_name}]: Necesitamos hablar.
+[{self_name}]: Necesito no hacerlo parado.
+[{target_name}]: Entonces siéntate.
+[{self_name}]: No así.
+---
+
+[TEMPLATE:DLG_GREET_POST_FIGHT_017]
+tags: dialogue, greeting, post_fight, regret
+weight: 10
+---
+[{self_name}]: Me arrepentí apenas te fuiste.
+[{target_name}]: Qué rápido. Lástima que la boca fue más rápida.
+---
+
+[TEMPLATE:DLG_GREET_POST_FIGHT_018]
+tags: dialogue, greeting, post_fight, humor
+weight: 8
+---
+[{target_name}]: ¿Seguimos vivos?
+[{self_name}]: Contra todo pronóstico emocional.
+[{target_name}]: Qué fastidio.
+---
+
+[TEMPLATE:DLG_GREET_POST_FIGHT_019]
+tags: dialogue, greeting, post_fight, quiet
+weight: 9
+---
+[{self_name}]: No sé cómo entrar de nuevo.
+[{target_name}]: Por la puerta sirve.
+[{self_name}]: Ya sabes qué quise decir.
+[{target_name}]: Sí.
+---
+
+[TEMPLATE:DLG_GREET_POST_FIGHT_020]
+tags: dialogue, greeting, post_fight, tense
+weight: 11
+---
+[{target_name}]: Te escuché caminar afuera como diez minutos.
+[{self_name}]: Estaba practicando no sonar culpable.
+---
+
+[TEMPLATE:DLG_GREET_POST_FIGHT_021]
+tags: dialogue, greeting, post_fight, unresolved
+weight: 8
+---
+[{self_name}]: No quiero que esto sea normal.
+[{target_name}]: Pues deja de hacerlo normal.
+[{self_name}]: ...
+---
+
+[TEMPLATE:DLG_GREET_POST_FIGHT_022]
+tags: dialogue, greeting, post_fight, guarded
+weight: 9
+---
+[{target_name}]: ¿Trajiste eso para mí?
+[{self_name}]: Lo dejé aquí. Si lo tomas o no, problema tuyo.
+[{target_name}]: Muy tierno. Casi necesito un médico.
+---
+
+[TEMPLATE:DLG_GREET_POST_FIGHT_023]
+tags: dialogue, greeting, post_fight, memory
+weight: 10
+---
+[{self_name}]: No puedo borrar {memory_recent}.
+[{target_name}]: Nadie te pidió borrar. Te pedí entender.
+---
+
+[TEMPLATE:DLG_GREET_POST_FIGHT_024]
+tags: dialogue, greeting, post_fight, almost_apology
+weight: 7
+---
+[{target_name}]: ¿Eso fue una disculpa?
+[{self_name}]: Fue el borrador de una.
+[{target_name}]: Pues revísalo.
+---
+
+[TEMPLATE:DLG_GREET_POST_FIGHT_025]
+tags: dialogue, greeting, post_fight, no_resolution
+weight: 9
+---
+[{self_name}]: Si hablamos ahora, voy a decirlo mal.
+[{target_name}]: Si no hablamos ahora, voy a imaginarlo peor.
+[{self_name}]: Entonces estamos perdidos.
+[{target_name}]: Por fin coincidimos.
+---
+

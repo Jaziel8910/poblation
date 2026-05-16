@@ -1,0 +1,175 @@
+[TEMPLATE:DIARY_HEARTBREAK_001]
+tags: diary, heartbreak, day_one
+weight: 12
+---
+No sé cómo escribir esto sin sentirme idiota. Me dejó hecho pedazos y ni siquiera se escucha el ruido desde afuera.
+---
+
+[TEMPLATE:DIARY_HEARTBREAK_002]
+tags: diary, heartbreak, denial
+weight: 10
+---
+Sigo esperando que mañana se vea menos final. Qué mala costumbre tiene el cuerpo de pedir milagros baratos.
+---
+
+[TEMPLATE:DIARY_HEARTBREAK_003]
+tags: diary, heartbreak, anger
+weight: 9
+---
+Hoy me desperté enojado y me duró hasta que intenté comer. Después seguí enojado, pero con menos glamour.
+---
+
+[TEMPLATE:DIARY_HEARTBREAK_004]
+tags: diary, heartbreak, longing
+weight: 8
+---
+Extraño hasta las cosas que me molestaban. Ese es el lado más humillante del apego.
+---
+
+[TEMPLATE:DIARY_HEARTBREAK_005]
+tags: diary, heartbreak, bargaining
+weight: 9
+---
+Pasé una hora imaginando conversaciones donde todo se arregla. Mi imaginación es una estafadora profesional.
+---
+
+[TEMPLATE:DIARY_HEARTBREAK_006]
+tags: diary, heartbreak, day_one
+weight: 8
+---
+Todavía quiero contarle cosas. Eso es lo más cruel: el reflejo tarda más que el amor en morirse.
+---
+
+[TEMPLATE:DIARY_HEARTBREAK_007]
+tags: diary, heartbreak, self_blame
+weight: 7
+---
+Hoy revisé cada palabra como si en alguna estuviera escondida la bala exacta. Encontré varias, por supuesto. Qué útil llegar tarde a entender.
+---
+
+[TEMPLATE:DIARY_HEARTBREAK_008]
+tags: diary, heartbreak, numb
+weight: 8
+---
+Me preocupaba no sentir nada. Ahora siento lo suficiente para extrañar incluso el entumecimiento.
+---
+
+[TEMPLATE:DIARY_HEARTBREAK_009]
+tags: diary, heartbreak, months_later
+weight: 7
+---
+Han pasado suficientes días para que ya no sea drama visible y, sin embargo, aquí sigo, recogiendo vidrio con las manos.
+---
+
+[TEMPLATE:DIARY_HEARTBREAK_010]
+tags: diary, heartbreak, resentment
+weight: 8
+---
+Quiero recordarle como alguien que me hizo bien. Mi carácter insiste en archivarlo bajo "desastre elegante".
+---
+
+[TEMPLATE:DIARY_HEARTBREAK_011]
+tags: diary, heartbreak, obsession
+weight: 7
+---
+Escucho pasos parecidos y levanto la cabeza como un animal mal entrenado. El ridículo tiene memoria muscular.
+---
+
+[TEMPLATE:DIARY_HEARTBREAK_012]
+tags: diary, heartbreak, acceptance
+weight: 6
+---
+Hoy lo pensé menos. No fue paz, pero sí una tregua. A esta altura acepto cualquier cosa que no muerda.
+---
+
+[TEMPLATE:DIARY_HEARTBREAK_013]
+tags: diary, heartbreak, humiliation
+weight: 8
+---
+No sé qué me da más vergüenza: seguir queriendo o seguir fingiendo que ya no.
+---
+
+[TEMPLATE:DIARY_HEARTBREAK_014]
+tags: diary, heartbreak, rage
+weight: 7
+---
+Me molesta que el mundo siga funcionando con esa indiferencia de siempre. Al menos un árbol podría haberse partido por solidaridad.
+---
+
+[TEMPLATE:DIARY_HEARTBREAK_015]
+tags: diary, heartbreak, tenderness
+weight: 6
+---
+Todavía no logro odiar del todo. Qué forma tan lenta de perder.
+---
+
+[TEMPLATE:DIARY_HEARTBREAK_016]
+tags: diary, heartbreak, memory
+weight: 8
+---
+Cada recuerdo bueno viene con una navaja pegada atrás. Uno sonríe y sangra casi al mismo tiempo.
+---
+
+[TEMPLATE:DIARY_HEARTBREAK_017]
+tags: diary, heartbreak, pride
+weight: 7
+---
+No voy a rogar. Lo escribo aquí porque afuera todavía no me creo capaz.
+---
+
+[TEMPLATE:DIARY_HEARTBREAK_018]
+tags: diary, heartbreak, months_later
+weight: 6
+---
+Pensé que con tiempo se volvería una historia. Sigue siendo una herida con horario variable.
+---
+
+[TEMPLATE:DIARY_HEARTBREAK_019]
+tags: diary, heartbreak, relapse
+weight: 8
+---
+Hoy estaba bien hasta que no. Es increíble la eficiencia con la que una sola imagen puede arruinar una tarde completa.
+---
+
+[TEMPLATE:DIARY_HEARTBREAK_020]
+tags: diary, heartbreak, bitter_humor
+weight: 7
+---
+Estoy avanzando, creo. Ahora lloro con mejor postura.
+---
+
+[TEMPLATE:DIARY_HEARTBREAK_021]
+tags: diary, heartbreak, day_one
+weight: 8
+---
+Lo peor no es que se fuera. Lo peor es que una parte mía sigue poniéndole un plato mental por si vuelve.
+---
+
+[TEMPLATE:DIARY_HEARTBREAK_022]
+tags: diary, heartbreak, exhaustion
+weight: 7
+---
+Me cansé de narrarme como víctima y también de narrarme como monstruo. Hoy me conformo con ser alguien golpeado.
+---
+
+[TEMPLATE:DIARY_HEARTBREAK_023]
+tags: diary, heartbreak, acceptance
+weight: 6
+---
+No quiero recuperarlo. Quiero recuperar la versión de mí que no andaba partiéndose por dentro todo el día.
+---
+
+[TEMPLATE:DIARY_HEARTBREAK_024]
+tags: diary, heartbreak, tenderness
+weight: 7
+---
+Hay amor que no se convierte en futuro, solo en costumbre de doler. Qué estafa tan refinada.
+---
+
+[TEMPLATE:DIARY_HEARTBREAK_025]
+tags: diary, heartbreak, aftermath
+weight: 8
+---
+Hoy pude imaginar una vida donde esto no manda. Me dio alivio. Después me dio culpa por el alivio. Excelente sistema nervioso, de verdad.
+---
+

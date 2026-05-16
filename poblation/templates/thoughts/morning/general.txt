@@ -1,0 +1,209 @@
+[TEMPLATE:THOUGHT_MORN_001]
+tags: thought, morning, general, wakeup
+weight: 6
+---
+Me desperté antes que el miedo. Buen trabajo, {self_name}. Ahora falta sobrevivir el resto del día.
+---
+
+[TEMPLATE:THOUGHT_MORN_002]
+tags: thought, morning, general, wakeup
+weight: 13
+---
+{weather} otra vez. El mundo se acabó y todavía insiste en tener clima, como si alguien hubiera dejado la rutina prendida.
+---
+
+[TEMPLATE:THOUGHT_MORN_003]
+tags: thought, morning, general, wakeup
+weight: 11
+---
+Si hoy no miro demasiado a {target_name}, tal vez pueda fingir que {memory_recent} no me dejó pensando toda la noche.
+---
+
+[TEMPLATE:THOUGHT_MORN_004]
+tags: thought, morning, general, wakeup
+weight: 9
+---
+{population} personas. Lo cuento al despertar como quien revisa si todavía tiene todos los dientes.
+---
+
+[TEMPLATE:THOUGHT_MORN_005]
+tags: thought, morning, general, wakeup
+weight: 7
+---
+La luz en {location} parece amable. Eso me da desconfianza. Las cosas amables aquí suelen estar calentando el golpe.
+---
+
+[TEMPLATE:THOUGHT_MORN_006]
+tags: thought, morning, general, wakeup
+weight: 14
+---
+Hoy puedo hacer algo útil o puedo convertirme en decoración triste. La barra está baja, pero sigue siendo una barra.
+---
+
+[TEMPLATE:THOUGHT_MORN_007]
+tags: thought, morning, general, wakeup
+weight: 12
+---
+Me llamo {self_name}, sigo vivo, y por alguna razón eso cuenta como una responsabilidad.
+---
+
+[TEMPLATE:THOUGHT_MORN_008]
+tags: thought, morning, general, wakeup
+weight: 10
+---
+No quiero levantarme. También sé que si no me levanto alguien va a decidir por mí. Odio que esa sea la motivación que funciona.
+---
+
+[TEMPLATE:THOUGHT_MORN_009]
+tags: thought, morning, general, wakeup
+weight: 8
+---
+Soñé con una casa que no olía a humo ni a miedo. Qué sueño más grosero.
+---
+
+[TEMPLATE:THOUGHT_MORN_010]
+tags: thought, morning, general, wakeup
+weight: 6
+---
+{target_name} probablemente ya está despierto. Ojalá no. Ojalá sí. Qué cansancio tener deseos con contradicciones.
+---
+
+[TEMPLATE:THOUGHT_MORN_011]
+tags: thought, morning, general, wakeup
+weight: 13
+---
+La mañana hace que todo parezca posible. Esa es su forma de mentir.
+---
+
+[TEMPLATE:THOUGHT_MORN_012]
+tags: thought, morning, general, wakeup
+weight: 11
+---
+Tengo hambre, tengo sueño y tengo opiniones. Dos de esas cosas podrían matarme hoy.
+---
+
+[TEMPLATE:THOUGHT_MORN_013]
+tags: thought, morning, general, wakeup
+weight: 9
+---
+{memory_recent} vuelve apenas abro los ojos. Mi cerebro tiene pésimo gusto para escoger buenos días.
+---
+
+[TEMPLATE:THOUGHT_MORN_014]
+tags: thought, morning, general, wakeup
+weight: 7
+---
+Si {population} es el número completo de la humanidad, entonces mi mal humor ya es un problema estadístico serio.
+---
+
+[TEMPLATE:THOUGHT_MORN_015]
+tags: thought, morning, general, wakeup
+weight: 14
+---
+Me desperté con ganas de perdonar. Voy a esperar a que se me pase.
+---
+
+[TEMPLATE:THOUGHT_MORN_016]
+tags: thought, morning, general, wakeup
+weight: 12
+---
+En {location} todo suena más grande por la mañana: los pasos, el viento, mis errores.
+---
+
+[TEMPLATE:THOUGHT_MORN_017]
+tags: thought, morning, general, wakeup
+weight: 10
+---
+Hoy podría ser un buen día. Dije podría, no prometí nada. No soy el sol.
+---
+
+[TEMPLATE:THOUGHT_MORN_018]
+tags: thought, morning, general, wakeup
+weight: 8
+---
+{self_name}, respira. Nadie te pidió ser símbolo de la especie antes del desayuno.
+---
+
+[TEMPLATE:THOUGHT_MORN_019]
+tags: thought, morning, general, wakeup
+weight: 6
+---
+Hay días en que extraño el mundo anterior. Hay días en que recuerdo que también era una basura con electricidad.
+---
+
+[TEMPLATE:THOUGHT_MORN_020]
+tags: thought, morning, general, wakeup
+weight: 13
+---
+El cuerpo quiere levantarse. La cabeza quiere quedarse tirada negociando con el techo.
+---
+
+[TEMPLATE:THOUGHT_MORN_021]
+tags: thought, morning, general, wakeup
+weight: 11
+---
+{weather} sobre {location}. Perfecto. Hasta el cielo sabe hacer drama sin ensayar.
+---
+
+[TEMPLATE:THOUGHT_MORN_022]
+tags: thought, morning, general, wakeup
+weight: 9
+---
+Me preocupa que un día despierte tranquilo. Eso significaría que ya me acostumbré.
+---
+
+[TEMPLATE:THOUGHT_MORN_023]
+tags: thought, morning, general, wakeup
+weight: 7
+---
+La primera idea del día fue {target_name}. La segunda fue culpar al hambre. La tercera fue no creerme.
+---
+
+[TEMPLATE:THOUGHT_MORN_024]
+tags: thought, morning, general, wakeup
+weight: 14
+---
+Si sobrevivo hoy sin decir algo cruel, voy a considerarlo progreso civilizatorio.
+---
+
+[TEMPLATE:THOUGHT_MORN_025]
+tags: thought, morning, general, wakeup
+weight: 12
+---
+Me duelen cosas que no sabía que podían doler. La espalda, la paciencia, la fe en planes sencillos.
+---
+
+[TEMPLATE:THOUGHT_MORN_026]
+tags: thought, morning, general, wakeup
+weight: 10
+---
+{memory_recent} no debería sentirse tan fresco. Pero mi memoria trabaja más que mis manos, desgraciadamente.
+---
+
+[TEMPLATE:THOUGHT_MORN_027]
+tags: thought, morning, general, wakeup
+weight: 8
+---
+Qué raro despertar y no escuchar autos, perros, gente. Qué raro que parte de mí lo agradezca.
+---
+
+[TEMPLATE:THOUGHT_MORN_028]
+tags: thought, morning, general, wakeup
+weight: 6
+---
+Hoy tengo que mirar a {target_name} como si no me importara. Voy a fallar con toda la cara.
+---
+
+[TEMPLATE:THOUGHT_MORN_029]
+tags: thought, morning, general, wakeup
+weight: 13
+---
+La mañana me encontró vivo. No sé si felicitarla o denunciarla.
+---
+
+[TEMPLATE:THOUGHT_MORN_030]
+tags: thought, morning, general, wakeup
+weight: 11
+---
+{population} personas respirando. Eso es esperanza o inventario, depende de quién lo mire.
+---

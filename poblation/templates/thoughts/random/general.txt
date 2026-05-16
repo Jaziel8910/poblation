@@ -1,0 +1,209 @@
+[TEMPLATE:RANDOM_HUMAN_001]
+tags: thought, random, absurd, general
+weight: 6
+---
+Si una cabra me mirara fijo ahora, probablemente le contaría demasiado.
+---
+
+[TEMPLATE:RANDOM_HUMAN_002]
+tags: thought, random, absurd, general
+weight: 13
+---
+Extraño los ascensores. No usarlos, solo saber que existían y podían quedarse atorados con otros idiotas.
+---
+
+[TEMPLATE:RANDOM_HUMAN_003]
+tags: thought, random, absurd, general
+weight: 11
+---
+La palabra cuchara es más rara mientras más la pienso. Excelente uso de mi cerebro sobreviviente.
+---
+
+[TEMPLATE:RANDOM_HUMAN_004]
+tags: thought, random, absurd, general
+weight: 9
+---
+¿Y si las hormigas creen que somos clima con piernas?
+---
+
+[TEMPLATE:RANDOM_HUMAN_005]
+tags: thought, random, absurd, general
+weight: 7
+---
+Hoy podría inventar una religión basada en no lavar platos. Tendría seguidores, enemigos y razón.
+---
+
+[TEMPLATE:RANDOM_HUMAN_006]
+tags: thought, random, absurd, general
+weight: 14
+---
+Me pica la rodilla izquierda. Eso antes no era información histórica.
+---
+
+[TEMPLATE:RANDOM_HUMAN_007]
+tags: thought, random, absurd, general
+weight: 12
+---
+Si alguien me ofrece sopa con confianza, yo perdono casi cualquier ideología.
+---
+
+[TEMPLATE:RANDOM_HUMAN_008]
+tags: thought, random, absurd, general
+weight: 10
+---
+Hay un sonido específico de olla vacía que humilla más que un insulto.
+---
+
+[TEMPLATE:RANDOM_HUMAN_009]
+tags: thought, random, absurd, general
+weight: 8
+---
+¿El último payaso del mundo sabrá que está trabajando horas extra?
+---
+
+[TEMPLATE:RANDOM_HUMAN_010]
+tags: thought, random, absurd, general
+weight: 6
+---
+Una vez dije que necesitaba silencio. Qué joven, qué estúpido, qué bien dormido.
+---
+
+[TEMPLATE:RANDOM_HUMAN_011]
+tags: thought, random, absurd, general
+weight: 13
+---
+Si encuentro un espejo limpio, quizá le pida disculpas.
+---
+
+[TEMPLATE:RANDOM_HUMAN_012]
+tags: thought, random, absurd, general
+weight: 11
+---
+Hay piedras que parecen tener más plan que yo.
+---
+
+[TEMPLATE:RANDOM_HUMAN_013]
+tags: thought, random, absurd, general
+weight: 9
+---
+Me gustaría tener una discusión absurda sobre una película mala. Eso sí era civilización.
+---
+
+[TEMPLATE:RANDOM_HUMAN_014]
+tags: thought, random, absurd, general
+weight: 7
+---
+La esperanza debería venir en porciones más pequeñas. Se echa a perder rápido.
+---
+
+[TEMPLATE:RANDOM_HUMAN_015]
+tags: thought, random, absurd, general
+weight: 14
+---
+No confío en la gente que no habla sola. ¿Dónde ponen el veneno?
+---
+
+[TEMPLATE:RANDOM_HUMAN_016]
+tags: thought, random, absurd, general
+weight: 12
+---
+Hoy olí algo rico y por tres segundos creí en el perdón universal.
+---
+
+[TEMPLATE:RANDOM_HUMAN_017]
+tags: thought, random, absurd, general
+weight: 10
+---
+Si sobrevivo suficiente, voy a convertirme en anciano que repite la misma historia. Ya estoy practicando.
+---
+
+[TEMPLATE:RANDOM_HUMAN_018]
+tags: thought, random, absurd, general
+weight: 8
+---
+Los pájaros siguen cantando. O no se enteraron o son unos cínicos profesionales.
+---
+
+[TEMPLATE:RANDOM_HUMAN_019]
+tags: thought, random, absurd, general
+weight: 6
+---
+Me pregunto quién fue la última persona en usar perfume solo para salir a comprar pan.
+---
+
+[TEMPLATE:RANDOM_HUMAN_020]
+tags: thought, random, absurd, general
+weight: 13
+---
+A veces siento nostalgia por cosas que odiaba. El cerebro es un pésimo archivista.
+---
+
+[TEMPLATE:RANDOM_HUMAN_021]
+tags: thought, random, absurd, general
+weight: 11
+---
+Si me muero por una estupidez, espero que al menos sea una estupidez difícil de explicar.
+---
+
+[TEMPLATE:RANDOM_HUMAN_022]
+tags: thought, random, absurd, general
+weight: 9
+---
+La dignidad humana depende demasiado de calcetines secos.
+---
+
+[TEMPLATE:RANDOM_HUMAN_023]
+tags: thought, random, absurd, general
+weight: 7
+---
+Podría estar pensando en comida. Estoy pensando en una canción pegajosa que ni me gustaba. Traición interna.
+---
+
+[TEMPLATE:RANDOM_HUMAN_024]
+tags: thought, random, absurd, general
+weight: 14
+---
+Hay insectos que heredaron el mundo y aun así se meten en mi vaso. Ambiciosos.
+---
+
+[TEMPLATE:RANDOM_HUMAN_025]
+tags: thought, random, absurd, general
+weight: 12
+---
+Si alguien inventa otra vez el papeleo, me vuelvo enemigo del progreso.
+---
+
+[TEMPLATE:RANDOM_HUMAN_026]
+tags: thought, random, absurd, general
+weight: 10
+---
+Estoy casi seguro de que fui más inteligente antes de tener que cargar agua.
+---
+
+[TEMPLATE:RANDOM_HUMAN_027]
+tags: thought, random, absurd, general
+weight: 8
+---
+La vergüenza no se extinguió. Gran falla del apocalipsis.
+---
+
+[TEMPLATE:RANDOM_HUMAN_028]
+tags: thought, random, absurd, general
+weight: 6
+---
+Ojalá quede chocolate en alguna parte. No esperanza, chocolate. Prioridades sanas.
+---
+
+[TEMPLATE:RANDOM_HUMAN_029]
+tags: thought, random, absurd, general
+weight: 13
+---
+Me cae bien una nube. Esto no puede ser señal de estabilidad.
+---
+
+[TEMPLATE:RANDOM_HUMAN_030]
+tags: thought, random, absurd, general
+weight: 11
+---
+A veces una idea profunda llega y se va porque alguien quemó el desayuno.
+---

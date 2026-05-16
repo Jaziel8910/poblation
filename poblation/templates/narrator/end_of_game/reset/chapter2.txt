@@ -1,0 +1,7 @@
+[TEMPLATE:END_RESET_CHAPTER_2]
+tags: ending, reset, chapter2
+weight: 10
+---
+El colapso dejo una biblioteca de errores. {ending_dramatic_event} fue una pagina marcada con rabia. Nadie podia fingir que no habia pasado, pero quedaban justo suficientes bocas para intentarlo otra vez.
+---
+

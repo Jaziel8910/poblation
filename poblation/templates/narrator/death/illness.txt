@@ -1,0 +1,105 @@
+[TEMPLATE:NARR_DEATH_ILLNESS_001]
+tags: narrator, death, illness, slow
+weight: 10
+---
+{self_name} estuvo enfermo {days_ill}. Hubo tiempo para prometer, mentir, ordenar cosas pequenas. {last_words_hint}
+---
+
+[TEMPLATE:NARR_DEATH_ILLNESS_002]
+tags: narrator, death, illness, pending
+weight: 9
+---
+La enfermedad no se llevo a {self_name} de una vez. Cobro por cuotas durante {days_ill}, y aun asi dejo asuntos vivos. {last_words_hint}
+---
+
+[TEMPLATE:NARR_DEATH_ILLNESS_003]
+tags: narrator, death, illness, quiet
+weight: 8
+---
+Durante {days_ill}, todos aprendieron el sonido de esperar. Cuando {self_name} murio, el silencio ya tenia practica.
+---
+
+[TEMPLATE:NARR_DEATH_ILLNESS_004]
+tags: narrator, death, illness, tender
+weight: 9
+---
+{self_name} tuvo {days_ill} para mirar caras y elegir que no decir. {last_words_hint}. Eso fue misericordia y castigo.
+---
+
+[TEMPLATE:NARR_DEATH_ILLNESS_005]
+tags: narrator, death, illness, blunt
+weight: 8
+---
+La enfermedad gano despacio. {self_name} perdio dia por dia durante {days_ill}. Nadie pudo acusarla de apuro.
+---
+
+[TEMPLATE:NARR_DEATH_ILLNESS_006]
+tags: narrator, death, illness, social
+weight: 8
+---
+Cada visita a {self_name} durante {days_ill} trajo comida, miedo, consejos inutiles. {last_words_hint}
+---
+
+[TEMPLATE:NARR_DEATH_ILLNESS_007]
+tags: narrator, death, illness, regret
+weight: 9
+---
+{days_ill} parecian suficientes para cerrar pendientes. No lo fueron. {self_name} murio dejando frases empezadas en otros cuerpos.
+---
+
+[TEMPLATE:NARR_DEATH_ILLNESS_008]
+tags: narrator, death, illness, body
+weight: 7
+---
+El cuerpo de {self_name} negocio mal durante {days_ill}. Cedieron fuerza, hambre, orgullo. Al final no quedaba nada que negociar.
+---
+
+[TEMPLATE:NARR_DEATH_ILLNESS_009]
+tags: narrator, death, illness, ordinary
+weight: 7
+---
+La cama de {self_name} se volvio centro del mundo por {days_ill}. Despues volvio a ser cama, que fue casi peor.
+---
+
+[TEMPLATE:NARR_DEATH_ILLNESS_010]
+tags: narrator, death, illness, last_words
+weight: 8
+---
+{self_name} murio despues de {days_ill}. {last_words_hint}. Nadie supo si era mensaje, delirio o despedida.
+---
+
+[TEMPLATE:NARR_DEATH_ILLNESS_011]
+tags: narrator, death, illness, community
+weight: 8
+---
+Durante {days_ill}, el pueblo midio la esperanza por cucharadas, panos mojados y mentiras amables. {self_name} igual murio.
+---
+
+[TEMPLATE:NARR_DEATH_ILLNESS_012]
+tags: narrator, death, illness, unfinished
+weight: 9
+---
+{self_name} dejo cuentas sin cerrar porque la enfermedad no respeta agendas. {days_ill} no alcanzaron. Casi nada alcanza.
+---
+
+[TEMPLATE:NARR_DEATH_ILLNESS_013]
+tags: narrator, death, illness, plain
+weight: 7
+---
+No hubo sorpresa cuando {self_name} murio. Hubo cansancio. La sorpresa habia terminado varios dias antes.
+---
+
+[TEMPLATE:NARR_DEATH_ILLNESS_014]
+tags: narrator, death, illness, witness
+weight: 8
+---
+Los que cuidaron a {self_name} durante {days_ill} envejecieron un poco tambien. {last_words_hint}
+---
+
+[TEMPLATE:NARR_DEATH_ILLNESS_015]
+tags: narrator, death, illness, final
+weight: 10
+---
+La lenta gano. {self_name} aguanto {days_ill}, dejo pendiente lo que no pudo cargar, y se fue cuando el cuerpo apago la ultima luz.
+---
+

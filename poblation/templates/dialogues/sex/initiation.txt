@@ -1,0 +1,34 @@
+[TEMPLATE:SEX_INIT_001]
+tags: dialogue, sex, initiation, tender
+weight: 10
+---
+El primer gesto no es grande. Por eso mismo importa: {self_name} toca a {target_name} como si todavia hubiera tiempo de arrepentirse.
+---
+
+[TEMPLATE:SEX_INIT_002]
+tags: dialogue, sex, initiation, nervous
+weight: 8
+---
+{target_name} se rie una vez, bajito, casi por reflejo. {self_name} responde con la misma torpeza y eso ayuda.
+---
+
+[TEMPLATE:SEX_INIT_003]
+tags: dialogue, sex, initiation, intense
+weight: 9
+---
+Cuando por fin se acercan, no se siente como impulso ciego. Se siente como dos personas cansadas de mentirse al mismo ritmo.
+---
+
+[TEMPLATE:SEX_INIT_004]
+tags: dialogue, sex, initiation, complicated
+weight: 7
+---
+{relationship_status}. Aun asi, nadie retrocede. La contradiccion se vuelve parte del permiso.
+---
+
+[TEMPLATE:SEX_INIT_005]
+tags: dialogue, sex, initiation, soft
+weight: 9
+---
+{self_name}: "Si esto cambia algo, prefiero que lo cambie de frente." {target_name} no dice que no.
+---

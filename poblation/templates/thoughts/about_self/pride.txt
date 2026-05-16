@@ -1,0 +1,209 @@
+[TEMPLATE:SELF_PRIDE_001]
+tags: thought, about_self, pride, positive_valence
+weight: 6
+---
+Hice algo bien y no pienso achicarlo para que los demás estén cómodos.
+---
+
+[TEMPLATE:SELF_PRIDE_002]
+tags: thought, about_self, pride, positive_valence
+weight: 13
+---
+Hoy fui útil. No heroico, no santo. Útil. A veces eso alcanza más que una estatua.
+---
+
+[TEMPLATE:SELF_PRIDE_003]
+tags: thought, about_self, pride, positive_valence
+weight: 11
+---
+Me salió bien porque pensé antes de moverme. Qué concepto revolucionario, deberían probarlo.
+---
+
+[TEMPLATE:SELF_PRIDE_004]
+tags: thought, about_self, pride, positive_valence
+weight: 9
+---
+No voy a pedir perdón por saber resolver cosas. Ya pido perdón por demasiadas tonterías.
+---
+
+[TEMPLATE:SELF_PRIDE_005]
+tags: thought, about_self, pride, positive_valence
+weight: 7
+---
+Hay gente que sobrevive por suerte. Yo también, pero con mejor administración.
+---
+
+[TEMPLATE:SELF_PRIDE_006]
+tags: thought, about_self, pride, positive_valence
+weight: 14
+---
+Me miraron como si yo tuviera respuesta. Lo peor es que por un segundo la tuve.
+---
+
+[TEMPLATE:SELF_PRIDE_007]
+tags: thought, about_self, pride, positive_valence
+weight: 12
+---
+No soy imprescindible. Pero hoy el día habría sido más estúpido sin mí.
+---
+
+[TEMPLATE:SELF_PRIDE_008]
+tags: thought, about_self, pride, positive_valence
+weight: 10
+---
+Me gusta cuando mis manos hacen exactamente lo que les ordeno. Pequeña dictadura saludable.
+---
+
+[TEMPLATE:SELF_PRIDE_009]
+tags: thought, about_self, pride, positive_valence
+weight: 8
+---
+Ganarme respeto se siente bien. Fingir que no me importa se siente agotador.
+---
+
+[TEMPLATE:SELF_PRIDE_010]
+tags: thought, about_self, pride, positive_valence
+weight: 6
+---
+Hoy no solo aguanté. Empujé el mundo un centímetro hacia donde quería.
+---
+
+[TEMPLATE:SELF_PRIDE_011]
+tags: thought, about_self, pride, positive_valence
+weight: 13
+---
+Podría decir que fue suerte, pero no. Esta vez no le voy a regalar mi mérito al aire.
+---
+
+[TEMPLATE:SELF_PRIDE_012]
+tags: thought, about_self, pride, positive_valence
+weight: 11
+---
+Me salió una frase inteligente y nadie murió. Excelente día para mi reputación.
+---
+
+[TEMPLATE:SELF_PRIDE_013]
+tags: thought, about_self, pride, positive_valence
+weight: 9
+---
+Hay orgullo tranquilo y hay orgullo con hambre. Hoy tengo de los dos.
+---
+
+[TEMPLATE:SELF_PRIDE_014]
+tags: thought, about_self, pride, positive_valence
+weight: 7
+---
+No necesito aplausos. Pero si van a existir, tampoco voy a huir dramáticamente.
+---
+
+[TEMPLATE:SELF_PRIDE_015]
+tags: thought, about_self, pride, positive_valence
+weight: 14
+---
+Hice lo difícil sin convertirlo en espectáculo. Eso vale más que gritar victoria.
+---
+
+[TEMPLATE:SELF_PRIDE_016]
+tags: thought, about_self, pride, positive_valence
+weight: 12
+---
+Me gusta esta sensación de estar ocupando mi propio tamaño.
+---
+
+[TEMPLATE:SELF_PRIDE_017]
+tags: thought, about_self, pride, positive_valence
+weight: 10
+---
+A veces soy mejor de lo que mi miedo permite admitir.
+---
+
+[TEMPLATE:SELF_PRIDE_018]
+tags: thought, about_self, pride, positive_valence
+weight: 8
+---
+No todo lo que hago nace de trauma. Algunas cosas nacen de talento, carajo.
+---
+
+[TEMPLATE:SELF_PRIDE_019]
+tags: thought, about_self, pride, positive_valence
+weight: 6
+---
+Hoy me respeté antes de pedir que otros lo hicieran. Novedad peligrosa.
+---
+
+[TEMPLATE:SELF_PRIDE_020]
+tags: thought, about_self, pride, positive_valence
+weight: 13
+---
+Si esto fuera el viejo mundo, quizás nadie lo notaría. Aquí cada acierto tiene eco.
+---
+
+[TEMPLATE:SELF_PRIDE_021]
+tags: thought, about_self, pride, positive_valence
+weight: 11
+---
+Me da gusto haber tenido razón. Me daría más gusto ser humilde al respecto, pero no pidamos milagros.
+---
+
+[TEMPLATE:SELF_PRIDE_022]
+tags: thought, about_self, pride, positive_valence
+weight: 9
+---
+El desastre no me ganó hoy. Tomo victorias pequeñas porque las grandes están carísimas.
+---
+
+[TEMPLATE:SELF_PRIDE_023]
+tags: thought, about_self, pride, positive_valence
+weight: 7
+---
+No soy solo mis errores. También soy esta cosa bien hecha que nadie puede deshacer.
+---
+
+[TEMPLATE:SELF_PRIDE_024]
+tags: thought, about_self, pride, positive_valence
+weight: 14
+---
+Hay una arrogancia limpia: saber que puedes y hacerlo sin pisar a nadie. Me gusta.
+---
+
+[TEMPLATE:SELF_PRIDE_025]
+tags: thought, about_self, pride, positive_valence
+weight: 12
+---
+Hoy el miedo vino y se sentó, pero no manejó.
+---
+
+[TEMPLATE:SELF_PRIDE_026]
+tags: thought, about_self, pride, positive_valence
+weight: 10
+---
+Me sostuve. Sostuve a otros. Y todavía tengo fuerza para pensar mal de alguien. Completo.
+---
+
+[TEMPLATE:SELF_PRIDE_027]
+tags: thought, about_self, pride, positive_valence
+weight: 8
+---
+No quiero volverme insoportable, pero entiendo el atractivo.
+---
+
+[TEMPLATE:SELF_PRIDE_028]
+tags: thought, about_self, pride, positive_valence
+weight: 6
+---
+Si sobrevivo así unos días más, capaz hasta empiezo a creerme.
+---
+
+[TEMPLATE:SELF_PRIDE_029]
+tags: thought, about_self, pride, positive_valence
+weight: 13
+---
+Hice algo que el mundo anterior habría llamado mínimo. El mundo anterior se murió, así que no opina.
+---
+
+[TEMPLATE:SELF_PRIDE_030]
+tags: thought, about_self, pride, positive_valence
+weight: 11
+---
+Hoy fui la persona que necesitaba tener cerca. Eso sí me da miedo, pero del bueno.
+---

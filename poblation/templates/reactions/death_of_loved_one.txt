@@ -1,0 +1,57 @@
+[TEMPLATE:REACT_DEATH_LOVED_001]
+tags: reaction, death, loved_one, grief
+weight: 10
+---
+{self_name}: No. No con {target_name}. No hoy.
+---
+
+[TEMPLATE:REACT_DEATH_LOVED_002]
+tags: reaction, death, loved_one, denial
+weight: 9
+---
+{self_name} mira el lugar donde deberia estar {target_name}. La cabeza tarda en aceptar lo que los ojos ya hicieron.
+---
+
+[TEMPLATE:REACT_DEATH_LOVED_003]
+tags: reaction, death, loved_one, anger
+weight: 8
+---
+{self_name}: Alguien tiene que pagar por esto, aunque sea el mundo entero.
+---
+
+[TEMPLATE:REACT_DEATH_LOVED_004]
+tags: reaction, death, loved_one, numb
+weight: 8
+---
+{self_name} no llora. Eso preocupa mas.
+---
+
+[TEMPLATE:REACT_DEATH_LOVED_005]
+tags: reaction, death, loved_one, memory
+weight: 9
+---
+{self_name}: {event_description}
+Y yo pensando que todavia habia tiempo.
+---
+
+[TEMPLATE:REACT_DEATH_LOVED_006]
+tags: reaction, death, loved_one, guilt
+weight: 8
+---
+{self_name} empieza a contar la ultima conversacion con {target_name}. Pierde siempre en la misma parte.
+---
+
+[TEMPLATE:REACT_DEATH_LOVED_007]
+tags: reaction, death, loved_one, quiet
+weight: 7
+---
+{self_name}: Guarden sus palabras. Si hablan bonito de {target_name} ahora, lleguen temprano.
+---
+
+[TEMPLATE:REACT_DEATH_LOVED_008]
+tags: reaction, death, loved_one, bitter
+weight: 7
+---
+{self_name} odia que el sol siga saliendo. Parece una falta de respeto.
+---
+

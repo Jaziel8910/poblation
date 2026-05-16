@@ -1,0 +1,28 @@
+[TEMPLATE:NARR_END_ALONE_001]
+tags: narrator, ending, alone
+weight: 10
+---
+El ultimo poble vivio lo suficiente para que la palabra pueblo se volviera cruel. Cada casa era una respuesta sin pregunta.
+---
+
+[TEMPLATE:NARR_END_ALONE_002]
+tags: narrator, ending, alone
+weight: 9
+---
+Quedar solo no fue silencio inmediato. Primero hubo tareas, costumbres, platos para una persona. Despues si: el silencio aprendio su nombre.
+---
+
+[TEMPLATE:NARR_END_ALONE_003]
+tags: narrator, ending, alone
+weight: 8
+---
+La humanidad termino con alguien revisando puertas que ya no necesitaban cerrarse. La soledad tambien tiene mantenimiento.
+---
+
+[TEMPLATE:NARR_END_ALONE_004]
+tags: narrator, ending, alone
+weight: 8
+---
+No hubo testigo final. Solo una vida rodeada de pruebas de otras vidas, y ninguna voz para discutir la version.
+---
+

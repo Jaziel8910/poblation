@@ -1,0 +1,210 @@
+[TEMPLATE:DREAM_NONSENSE_001]
+tags: dream, nonsense, absurd
+weight: 12
+---
+Estoy en una reunión solemne con tres gallinas vestidas como contadores y todas desaprueban mi forma de pelar una naranja.
+---
+
+[TEMPLATE:DREAM_NONSENSE_002]
+tags: dream, nonsense, comedy
+weight: 11
+---
+Una escalera mecánica sube hacia un mar de sopa y nadie parece sorprendido excepto una silla.
+---
+
+[TEMPLATE:DREAM_NONSENSE_003]
+tags: dream, nonsense, random
+weight: 10
+---
+Abro la boca para hablar y sale una cuchara con opiniones políticas muy firmes.
+---
+
+[TEMPLATE:DREAM_NONSENSE_004]
+tags: dream, nonsense, recurring_joke
+weight: 9
+---
+{target_name} es alcalde de una ciudad hecha de pan tostado y su único decreto es prohibir los calcetines tristes.
+---
+
+[TEMPLATE:DREAM_NONSENSE_005]
+tags: dream, nonsense, absurd
+weight: 10
+---
+Persigo una sandía por un pasillo infinito mientras un coro de tazas me llama cobarde en perfecto tono mayor.
+---
+
+[TEMPLATE:DREAM_NONSENSE_006]
+tags: dream, nonsense, comedy
+weight: 8
+---
+Tengo entrevista de trabajo con un pez enorme. Le miento en el currículum y el pez lo agradece.
+---
+
+[TEMPLATE:DREAM_NONSENSE_007]
+tags: dream, nonsense, random
+weight: 9
+---
+El cielo es una sábana mal tendida. Cada nube intenta acomodarla peor.
+---
+
+[TEMPLATE:DREAM_NONSENSE_008]
+tags: dream, nonsense, food
+weight: 8
+---
+Una papa me adopta. La familia celebra con música de ascensor tocada por lobos marinos muy tensos.
+---
+
+[TEMPLATE:DREAM_NONSENSE_009]
+tags: dream, nonsense, weird
+weight: 7
+---
+Todos caminamos hacia atrás porque el piso se ofende si lo pisamos de frente.
+---
+
+[TEMPLATE:DREAM_NONSENSE_010]
+tags: dream, nonsense, comedy
+weight: 9
+---
+Descubro que mi mano izquierda tiene una mano izquierda más pequeña y ninguna de las dos paga renta.
+---
+
+[TEMPLATE:DREAM_NONSENSE_011]
+tags: dream, nonsense, animal
+weight: 8
+---
+Un burro muy elegante me vende mapas de lugares que solo existen cuando estornudo.
+---
+
+[TEMPLATE:DREAM_NONSENSE_012]
+tags: dream, nonsense, recurring_joke
+weight: 10
+---
+Estoy a punto de abrir una puerta importante y resulta ser otra puerta más pequeña que también quiere drama.
+---
+
+[TEMPLATE:DREAM_NONSENSE_013]
+tags: dream, nonsense, absurd
+weight: 8
+---
+El suelo está hecho de cartas de amor mal redactadas y cruje cada vez que piso una coma.
+---
+
+[TEMPLATE:DREAM_NONSENSE_014]
+tags: dream, nonsense, random
+weight: 7
+---
+Una cebolla me explica con paciencia cómo funciona el teatro y yo lloro por respeto académico.
+---
+
+[TEMPLATE:DREAM_NONSENSE_015]
+tags: dream, nonsense, weird
+weight: 9
+---
+Lavo platos en una catarata vertical mientras los platos me califican con numeritos.
+---
+
+[TEMPLATE:DREAM_NONSENSE_016]
+tags: dream, nonsense, comedy
+weight: 8
+---
+Me convierto en puente por quince segundos y lo peor no es eso, lo peor es el tránsito.
+---
+
+[TEMPLATE:DREAM_NONSENSE_017]
+tags: dream, nonsense, bizarre
+weight: 7
+---
+Hay una fila larguísima para oler una piedra que promete saber a lunes.
+---
+
+[TEMPLATE:DREAM_NONSENSE_018]
+tags: dream, nonsense, absurd
+weight: 9
+---
+{target_name} vende lluvia por rebanadas y todo el mundo pregunta si hay descuento por nostalgia.
+---
+
+[TEMPLATE:DREAM_NONSENSE_019]
+tags: dream, nonsense, random
+weight: 8
+---
+Mi sombra llega tarde y exige que empecemos de nuevo el día.
+---
+
+[TEMPLATE:DREAM_NONSENSE_020]
+tags: dream, nonsense, objects
+weight: 7
+---
+Un martillo toca violín con muchísimo sentimiento y nadie se atreve a decirle que es pésimo.
+---
+
+[TEMPLATE:DREAM_NONSENSE_021]
+tags: dream, nonsense, recurring_joke
+weight: 8
+---
+Estoy en juicio por robarle personalidad a una alfombra. La alfombra trae pruebas.
+---
+
+[TEMPLATE:DREAM_NONSENSE_022]
+tags: dream, nonsense, weird
+weight: 7
+---
+Nado por un túnel de campanas blandas. Suenan cada vez que pienso en mayonesa.
+---
+
+[TEMPLATE:DREAM_NONSENSE_023]
+tags: dream, nonsense, comedy
+weight: 9
+---
+El desayuno se niega a comenzar hasta que alguien aplauda a una pera sospechosa.
+---
+
+[TEMPLATE:DREAM_NONSENSE_024]
+tags: dream, nonsense, absurd
+weight: 8
+---
+Un tren diminuto atraviesa la mesa y todos actuamos como si fuera una discusión familiar más.
+---
+
+[TEMPLATE:DREAM_NONSENSE_025]
+tags: dream, nonsense, random
+weight: 7
+---
+Abro un armario y encuentro otro armario adentro, y adentro otro, y en el fondo una nota que dice "casi".
+---
+
+[TEMPLATE:DREAM_NONSENSE_026]
+tags: dream, nonsense, bizarre
+weight: 8
+---
+Un coro de cucharas canta mi nombre como si fuera una marca de jabón fracasada.
+---
+
+[TEMPLATE:DREAM_NONSENSE_027]
+tags: dream, nonsense, comedy
+weight: 9
+---
+Intento sentarme en una nube y la nube me cobra alquiler atrasado.
+---
+
+[TEMPLATE:DREAM_NONSENSE_028]
+tags: dream, nonsense, animal
+weight: 7
+---
+Un caballo con voz de tía decepcionada me recomienda estudiar contabilidad emocional.
+---
+
+[TEMPLATE:DREAM_NONSENSE_029]
+tags: dream, nonsense, random
+weight: 8
+---
+Camino por una feria donde todos los premios son versiones peores de mis propios zapatos.
+---
+
+[TEMPLATE:DREAM_NONSENSE_030]
+tags: dream, nonsense, absurd
+weight: 9
+---
+El sol baja a pedirme consejo sobre un romance con una escalera plegable y me ofendo porque no toma notas.
+---
+

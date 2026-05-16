@@ -1,0 +1,28 @@
+[TEMPLATE:NARR_END_UTOPIA_001]
+tags: narrator, ending, utopia
+weight: 10
+---
+El experimento funciono, que es una frase sospechosa y aun asi cierta. Quinientas vidas aprendieron a no convertir cada herida en gobierno.
+---
+
+[TEMPLATE:NARR_END_UTOPIA_002]
+tags: narrator, ending, utopia
+weight: 9
+---
+La utopia no fue perfecta. Solo fue suficientemente terca: pan, cuidado, leyes corregidas, disculpas incompletas, y cincuenta anos sin guerra.
+---
+
+[TEMPLATE:NARR_END_UTOPIA_003]
+tags: narrator, ending, utopia
+weight: 8
+---
+Nadie construyo el paraiso. Construyeron algo mas dificil: un lugar donde el dolor no mandaba siempre.
+---
+
+[TEMPLATE:NARR_END_UTOPIA_004]
+tags: narrator, ending, utopia
+weight: 8
+---
+La humanidad regreso sin trompetas. Regreso como calendario escolar, clinicas abiertas, vecinos molestos y una paz tan diaria que casi parecia aburrida.
+---
+

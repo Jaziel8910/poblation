@@ -1,0 +1,7 @@
+[TEMPLATE:END_MYTH_CHAPTER_3]
+tags: ending, myth, chapter3
+weight: 10
+---
+El evento mas dramatico sobrevivio como dato: {ending_dramatic_event}. La maquina lo podia ordenar, resumir, conectar. Lo que no podia hacer era devolverle la temperatura a quienes estuvieron ahi.
+---
+

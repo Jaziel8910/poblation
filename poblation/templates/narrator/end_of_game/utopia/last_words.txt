@@ -1,0 +1,7 @@
+[TEMPLATE:END_UTOPIA_LAST_WORDS]
+tags: ending, utopia, last_words
+weight: 10
+---
+Esta vez, vivir no fue solo aguantar.
+---
+

@@ -1,0 +1,57 @@
+[TEMPLATE:REACT_BIRTH_001]
+tags: reaction, birth, hope
+weight: 10
+---
+{self_name}: Es tan pequeno. Que falta de respeto ponerle todo el futuro encima.
+---
+
+[TEMPLATE:REACT_BIRTH_002]
+tags: reaction, birth, tender
+weight: 9
+---
+{self_name} mira a {target_name} como si el mundo acabara de pedir perdon con una boca sin dientes.
+---
+
+[TEMPLATE:REACT_BIRTH_003]
+tags: reaction, birth, scared
+weight: 8
+---
+{self_name}: Nacio. Bien. Ahora empieza la parte peligrosa.
+---
+
+[TEMPLATE:REACT_BIRTH_004]
+tags: reaction, birth, funny
+weight: 7
+---
+{self_name}: Llora fuerte. Tiene futuro como lider o como problema.
+---
+
+[TEMPLATE:REACT_BIRTH_005]
+tags: reaction, birth, drama
+weight: 8
+---
+{event_description}
+{self_name} sonrie, pero cuenta mentalmente todo lo que puede salir mal.
+---
+
+[TEMPLATE:REACT_BIRTH_006]
+tags: reaction, birth, grief
+weight: 7
+---
+{self_name}: Ojala {target_name} hubiera visto esto.
+---
+
+[TEMPLATE:REACT_BIRTH_007]
+tags: reaction, birth, pragmatic
+weight: 8
+---
+{self_name}: Necesitamos mas mantas. Y menos gente opinando.
+---
+
+[TEMPLATE:REACT_BIRTH_008]
+tags: reaction, birth, awe
+weight: 9
+---
+{self_name} no dice nada. A veces la esperanza entra y te deja sin defensa.
+---
+

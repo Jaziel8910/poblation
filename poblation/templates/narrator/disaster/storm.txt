@@ -1,0 +1,70 @@
+[TEMPLATE:NARR_DISASTER_STORM_001]
+tags: narrator, disaster, storm
+weight: 10
+---
+La tormenta llego sin negociar. Arranco techos flojos, apago fogones y le recordo al pueblo que sobrevivir no es contrato.
+---
+
+[TEMPLATE:NARR_DISASTER_STORM_002]
+tags: narrator, disaster, storm
+weight: 9
+---
+El viento paso por el asentamiento como alguien buscando pelea. Cada pared crujio con una opinion distinta.
+---
+
+[TEMPLATE:NARR_DISASTER_STORM_003]
+tags: narrator, disaster, storm
+weight: 8
+---
+La lluvia encontro todas las grietas. Las de las casas primero. Las de la gente despues.
+---
+
+[TEMPLATE:NARR_DISASTER_STORM_004]
+tags: narrator, disaster, storm
+weight: 8
+---
+Durante horas, el cielo tiro agua como si quisiera borrar el mapa. No lo logro. Pero dejo manchas nuevas.
+---
+
+[TEMPLATE:NARR_DISASTER_STORM_005]
+tags: narrator, disaster, storm
+weight: 7
+---
+La tormenta no mato a nadie hoy. Igual robo comida, sueno y la mentira de que todo estaba bajo control.
+---
+
+[TEMPLATE:NARR_DISASTER_STORM_006]
+tags: narrator, disaster, storm
+weight: 8
+---
+Los pobles contaron relampagos hasta que dejaron de parecer numeros y empezaron a parecer advertencias.
+---
+
+[TEMPLATE:NARR_DISASTER_STORM_007]
+tags: narrator, disaster, storm
+weight: 7
+---
+El refugio aguanto. Mas o menos. Esa frase se convirtio en politica oficial.
+---
+
+[TEMPLATE:NARR_DISASTER_STORM_008]
+tags: narrator, disaster, storm
+weight: 8
+---
+Cuando el viento bajo, nadie celebro mucho. Todos estaban ocupados revisando que parte de su vida seguia seca.
+---
+
+[TEMPLATE:NARR_DISASTER_STORM_009]
+tags: narrator, disaster, storm
+weight: 7
+---
+La tormenta se fue dejando barro en los pies y miedo en la lengua. El barro sera mas facil de quitar.
+---
+
+[TEMPLATE:NARR_DISASTER_STORM_010]
+tags: narrator, disaster, storm
+weight: 10
+---
+El cielo grito toda la noche. Al amanecer, el pueblo seguia alli, mas humedo, menos arrogante.
+---
+

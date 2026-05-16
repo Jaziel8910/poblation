@@ -1,0 +1,217 @@
+[TEMPLATE:DLG_FLIRT_REJECTED_001]
+tags: dialogue, flirt, rejected, gentle
+weight: 12
+---
+[{self_name}]: Creo que me gustas.
+[{target_name}]: Ojalá pudiera hacer algo bueno con eso.
+---
+
+[TEMPLATE:DLG_FLIRT_REJECTED_002]
+tags: dialogue, flirt, rejected, awkward
+weight: 10
+---
+[{target_name}]: No.
+[{self_name}]: Ni dije todo.
+[{target_name}]: Te ahorré la parte triste.
+---
+
+[TEMPLATE:DLG_FLIRT_REJECTED_003]
+tags: dialogue, flirt, rejected, kind
+weight: 9
+---
+[{self_name}]: ¿Hay alguna posibilidad?
+[{target_name}]: No de la que no salgamos peor.
+---
+
+[TEMPLATE:DLG_FLIRT_REJECTED_004]
+tags: dialogue, flirt, rejected, brutal
+weight: 6
+---
+[{target_name}]: No me mires así.
+[{self_name}]: ¿Así cómo?
+[{target_name}]: Como si tu deseo fuera mi responsabilidad.
+---
+
+[TEMPLATE:DLG_FLIRT_REJECTED_005]
+tags: dialogue, flirt, rejected, denial
+weight: 8
+---
+[{self_name}]: Era una broma.
+[{target_name}]: No era buena.
+[{self_name}]: No.
+---
+
+[TEMPLATE:DLG_FLIRT_REJECTED_006]
+tags: dialogue, flirt, rejected, soft
+weight: 11
+---
+[{target_name}]: Me importas.
+[{self_name}]: Qué frase tan peligrosa cuando viene sin deseo.
+---
+
+[TEMPLATE:DLG_FLIRT_REJECTED_007]
+tags: dialogue, flirt, rejected, humiliating
+weight: 7
+---
+[{self_name}]: Olvídalo.
+[{target_name}]: No puedo prometer eso.
+[{self_name}]: Entonces finge mejor que yo.
+---
+
+[TEMPLATE:DLG_FLIRT_REJECTED_008]
+tags: dialogue, flirt, rejected, boundaries
+weight: 10
+---
+[{target_name}]: No quiero que cambies conmigo por esto.
+[{self_name}]: Ya cambió.
+[{target_name}]: Entonces no me castigues por decir la verdad.
+---
+
+[TEMPLATE:DLG_FLIRT_REJECTED_009]
+tags: dialogue, flirt, rejected, cruel
+weight: 6
+---
+[{self_name}]: Podrías haberlo dicho menos frío.
+[{target_name}]: Podrías haberlo sentido por alguien disponible.
+---
+
+[TEMPLATE:DLG_FLIRT_REJECTED_010]
+tags: dialogue, flirt, rejected, quiet
+weight: 9
+---
+[{target_name}]: No quiero eso contigo.
+[{self_name}]: Ya.
+[{target_name}]: No digas "ya" como si no estuvieras sangrando.
+---
+
+[TEMPLATE:DLG_FLIRT_REJECTED_011]
+tags: dialogue, flirt, rejected, awkward
+weight: 8
+---
+[{self_name}]: Podemos hacer como que no dije nada.
+[{target_name}]: ¿Puedes tú?
+[{self_name}]: Hoy no.
+---
+
+[TEMPLATE:DLG_FLIRT_REJECTED_012]
+tags: dialogue, flirt, rejected, compassion
+weight: 10
+---
+[{target_name}]: No eres difícil de querer.
+[{self_name}]: Solo fácil de no elegir.
+---
+
+[TEMPLATE:DLG_FLIRT_REJECTED_013]
+tags: dialogue, flirt, rejected, pride
+weight: 7
+---
+[{self_name}]: No pasa nada.
+[{target_name}]: Sí pasa.
+[{self_name}]: Déjame mi mentira chiquita.
+---
+
+[TEMPLATE:DLG_FLIRT_REJECTED_014]
+tags: dialogue, flirt, rejected, blunt
+weight: 8
+---
+[{target_name}]: No siento eso.
+[{self_name}]: ¿Nada?
+[{target_name}]: No te hagas esto más largo.
+---
+
+[TEMPLATE:DLG_FLIRT_REJECTED_015]
+tags: dialogue, flirt, rejected, resentment
+weight: 6
+---
+[{self_name}]: Entonces todo esto era mi imaginación.
+[{target_name}]: No. Era tu esperanza usando pruebas malas.
+---
+
+[TEMPLATE:DLG_FLIRT_REJECTED_016]
+tags: dialogue, flirt, rejected, cut_short
+weight: 9
+---
+[{target_name}]: Para.
+[{self_name}]: Solo quería decirte...
+[{target_name}]: Ya lo hiciste.
+---
+
+[TEMPLATE:DLG_FLIRT_REJECTED_017]
+tags: dialogue, flirt, rejected, conflicted
+weight: 8
+---
+[{self_name}]: Te gusto un poco.
+[{target_name}]: Sí.
+[{self_name}]: Entonces.
+[{target_name}]: Un poco no alcanza para rompernos enteros.
+---
+
+[TEMPLATE:DLG_FLIRT_REJECTED_018]
+tags: dialogue, flirt, rejected, friendship
+weight: 10
+---
+[{target_name}]: Quiero que sigas aquí.
+[{self_name}]: No soy una silla.
+[{target_name}]: Ya sé. Por eso te lo estoy pidiendo.
+---
+
+[TEMPLATE:DLG_FLIRT_REJECTED_019]
+tags: dialogue, flirt, rejected, shame
+weight: 7
+---
+[{self_name}]: Me siento estúpido.
+[{target_name}]: Sentir no es estúpido.
+[{self_name}]: Qué bonito. Igual quiero morirme debajo de algo.
+---
+
+[TEMPLATE:DLG_FLIRT_REJECTED_020]
+tags: dialogue, flirt, rejected, harsh
+weight: 6
+---
+[{target_name}]: No confundas mi amabilidad con invitación.
+[{self_name}]: No era confusión. Era hambre.
+---
+
+[TEMPLATE:DLG_FLIRT_REJECTED_021]
+tags: dialogue, flirt, rejected, unresolved
+weight: 8
+---
+[{self_name}]: ¿Y ahora qué?
+[{target_name}]: Ahora no lo usamos como arma.
+[{self_name}]: Ojalá sepa hacer eso.
+---
+
+[TEMPLATE:DLG_FLIRT_REJECTED_022]
+tags: dialogue, flirt, rejected, tender
+weight: 9
+---
+[{target_name}]: Si fuera otra vida...
+[{self_name}]: No me des vidas imaginarias. Esta ya cuesta.
+---
+
+[TEMPLATE:DLG_FLIRT_REJECTED_023]
+tags: dialogue, flirt, rejected, bad_timing
+weight: 8
+---
+[{self_name}]: Tal vez no era el momento.
+[{target_name}]: Tal vez no era yo.
+---
+
+[TEMPLATE:DLG_FLIRT_REJECTED_024]
+tags: dialogue, flirt, rejected, defensive
+weight: 7
+---
+[{target_name}]: No me debes odiar por no quererte así.
+[{self_name}]: Dame cinco minutos antes de ser adulto.
+---
+
+[TEMPLATE:DLG_FLIRT_REJECTED_025]
+tags: dialogue, flirt, rejected, no_resolution
+weight: 8
+---
+[{self_name}]: Voy a irme.
+[{target_name}]: ¿Quieres que te siga?
+[{self_name}]: Quiero que quieras.
+[{target_name}]: ...
+---
+

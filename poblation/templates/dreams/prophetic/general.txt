@@ -1,0 +1,105 @@
+[TEMPLATE:DREAM_PROPHETIC_001]
+tags: dream, prophetic, omen
+weight: 2
+---
+Camino por una casa intacta y cada puerta se abre sola un segundo antes del golpe. Al fondo espera {future_event_hint} con los zapatos limpios.
+---
+
+[TEMPLATE:DREAM_PROPHETIC_002]
+tags: dream, prophetic, foreshadow
+weight: 2
+---
+Una campana suena debajo del agua. Nadie la escucha menos yo. Cuando por fin emerge, trae la cara vaga de {future_event_hint}.
+---
+
+[TEMPLATE:DREAM_PROPHETIC_003]
+tags: dream, prophetic, omen
+weight: 2
+---
+Un hilo rojo atraviesa todas las habitaciones y termina atado a algo cubierto por una sábana. Sé sin entender que debajo respira {future_event_hint}.
+---
+
+[TEMPLATE:DREAM_PROPHETIC_004]
+tags: dream, prophetic, foreshadow
+weight: 2
+---
+El viento practica una sola frase toda la noche. No logro oírla completa, solo el borde: {future_event_hint}.
+---
+
+[TEMPLATE:DREAM_PROPHETIC_005]
+tags: dream, prophetic, omen
+weight: 2
+---
+Levanto una piedra tibia y abajo hay un reloj latiendo. Cada pulso se parece demasiado a {future_event_hint}.
+---
+
+[TEMPLATE:DREAM_PROPHETIC_006]
+tags: dream, prophetic, symbolic
+weight: 2
+---
+Todos comen tranquilos mientras una silla vacía se balancea sola. Nadie mira la silla. Yo no puedo dejar de pensar en {future_event_hint}.
+---
+
+[TEMPLATE:DREAM_PROPHETIC_007]
+tags: dream, prophetic, threat
+weight: 2
+---
+Una sombra educada me ofrece su brazo para cruzar un puente roto. Del otro lado no hay paisaje, solo {future_event_hint} esperando turno.
+---
+
+[TEMPLATE:DREAM_PROPHETIC_008]
+tags: dream, prophetic, weather
+weight: 2
+---
+Llueve hacia arriba. Cada gota sube cargando un nombre, un objeto, una decisión. La última gota se queda quieta y sabe a {future_event_hint}.
+---
+
+[TEMPLATE:DREAM_PROPHETIC_009]
+tags: dream, prophetic, omen
+weight: 2
+---
+Entro a un cuarto lleno de espejos, pero solo uno devuelve mi reflejo. Los demás muestran versiones incompletas de {future_event_hint}.
+---
+
+[TEMPLATE:DREAM_PROPHETIC_010]
+tags: dream, prophetic, foreshadow
+weight: 2
+---
+Una voz cuenta hasta tres desde dentro de la pared. En el dos ya entiendo que el tres se llama {future_event_hint}.
+---
+
+[TEMPLATE:DREAM_PROPHETIC_011]
+tags: dream, prophetic, symbolic
+weight: 2
+---
+Un animal sin cara me guía hasta una mesa donde hay un plato para cada miedo. El mío está servido como {future_event_hint}.
+---
+
+[TEMPLATE:DREAM_PROPHETIC_012]
+tags: dream, prophetic, omen
+weight: 2
+---
+Abro la ventana y el paisaje ha sido reemplazado por un pasillo de hospital, de iglesia y de tribunal al mismo tiempo. Al final late {future_event_hint}.
+---
+
+[TEMPLATE:DREAM_PROPHETIC_013]
+tags: dream, prophetic, warning
+weight: 2
+---
+Mis manos están limpias hasta que toco el picaporte. Entonces aparecen líneas nuevas, como si el metal ya supiera la forma de {future_event_hint}.
+---
+
+[TEMPLATE:DREAM_PROPHETIC_014]
+tags: dream, prophetic, foreshadow
+weight: 2
+---
+Un niño me entrega una carta en blanco. La abro y aun así leo con total certeza: {future_event_hint}.
+---
+
+[TEMPLATE:DREAM_PROPHETIC_015]
+tags: dream, prophetic, omen
+weight: 2
+---
+La casa contiene otra casa dentro, y otra dentro de esa. En la última no hay muebles, solo espacio reservado para {future_event_hint}.
+---
+

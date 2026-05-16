@@ -1,0 +1,7 @@
+[TEMPLATE:END_UTOPIA_CHAPTER_2]
+tags: ending, utopia, chapter2
+weight: 10
+---
+No fue pureza. Hubo {ending_total_affairs} affairs, {ending_total_secrets} secretos revelados y {ending_total_rumours} rumores. La diferencia fue que el mundo aprendio a no convertir cada herida en sistema politico.
+---
+

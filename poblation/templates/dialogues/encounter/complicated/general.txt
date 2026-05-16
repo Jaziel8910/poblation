@@ -1,0 +1,140 @@
+﻿[TEMPLATE:ENC_COMPLICATED_001]
+tags: dialogue, encounter, archetype:lover, content, complicated
+weight: 8
+---
+{self_name} y {target_name} llegan a {location_name} con demasiado pasado. {power_dynamic} no se acomoda. Quererse un poco no vuelve nada simple.
+---
+
+[TEMPLATE:ENC_COMPLICATED_002]
+tags: dialogue, encounter, archetype:ruler, anxious, complicated
+weight: 9
+---
+[{target_name}]: No se si quiero esto o probar que todavia puedo decirte que no. El deseo trae archivo y facturas viejas. El pasado sigue sentado entre ambos.
+---
+
+[TEMPLATE:ENC_COMPLICATED_003]
+tags: dialogue, encounter, archetype:rebel, angry, complicated
+weight: 10
+---
+{location_atmosphere} hace que todo parezca posible y mala idea a la vez. Los dos quieren versiones distintas del control. La escena avanza con sinceridad torcida.
+---
+
+[TEMPLATE:ENC_COMPLICATED_004]
+tags: dialogue, encounter, archetype:caretaker, content, complicated
+weight: 11
+---
+{self_name} se acerca como quien quiere consuelo y revancha. Nadie logra simplificar lo que hay aqui. Nadie aqui sabe obedecer a la idea de parar.
+---
+
+[TEMPLATE:ENC_COMPLICATED_005]
+tags: dialogue, encounter, archetype:schemer, obsessive, complicated
+weight: 12
+---
+{location_memory} entra a la escena sin pedir permiso. Hasta la ternura sale con puntas. Quererse un poco no vuelve nada simple.
+---
+
+[TEMPLATE:ENC_COMPLICATED_006]
+tags: dialogue, encounter, archetype:lover, content, complicated
+weight: 8
+---
+{self_name} y {target_name} llegan a {location_name} con demasiado pasado. {power_dynamic} no se acomoda. El pasado sigue sentado entre ambos.
+---
+
+[TEMPLATE:ENC_COMPLICATED_007]
+tags: dialogue, encounter, archetype:ruler, anxious, complicated
+weight: 9
+---
+[{target_name}]: No se si quiero esto o probar que todavia puedo decirte que no. El deseo trae archivo y facturas viejas. La escena avanza con sinceridad torcida.
+---
+
+[TEMPLATE:ENC_COMPLICATED_008]
+tags: dialogue, encounter, archetype:rebel, angry, complicated
+weight: 10
+---
+{location_atmosphere} hace que todo parezca posible y mala idea a la vez. Los dos quieren versiones distintas del control. Nadie aqui sabe obedecer a la idea de parar.
+---
+
+[TEMPLATE:ENC_COMPLICATED_009]
+tags: dialogue, encounter, archetype:caretaker, content, complicated
+weight: 11
+---
+{self_name} se acerca como quien quiere consuelo y revancha. Nadie logra simplificar lo que hay aqui. Quererse un poco no vuelve nada simple.
+---
+
+[TEMPLATE:ENC_COMPLICATED_010]
+tags: dialogue, encounter, archetype:schemer, obsessive, complicated
+weight: 12
+---
+{location_memory} entra a la escena sin pedir permiso. Hasta la ternura sale con puntas. El pasado sigue sentado entre ambos.
+---
+
+[TEMPLATE:ENC_COMPLICATED_011]
+tags: dialogue, encounter, archetype:lover, content, complicated
+weight: 8
+---
+{self_name} y {target_name} llegan a {location_name} con demasiado pasado. {power_dynamic} no se acomoda. La escena avanza con sinceridad torcida.
+---
+
+[TEMPLATE:ENC_COMPLICATED_012]
+tags: dialogue, encounter, archetype:ruler, anxious, complicated
+weight: 9
+---
+[{target_name}]: No se si quiero esto o probar que todavia puedo decirte que no. El deseo trae archivo y facturas viejas. Nadie aqui sabe obedecer a la idea de parar.
+---
+
+[TEMPLATE:ENC_COMPLICATED_013]
+tags: dialogue, encounter, archetype:rebel, angry, complicated
+weight: 10
+---
+{location_atmosphere} hace que todo parezca posible y mala idea a la vez. Los dos quieren versiones distintas del control. Quererse un poco no vuelve nada simple.
+---
+
+[TEMPLATE:ENC_COMPLICATED_014]
+tags: dialogue, encounter, archetype:caretaker, content, complicated
+weight: 11
+---
+{self_name} se acerca como quien quiere consuelo y revancha. Nadie logra simplificar lo que hay aqui. El pasado sigue sentado entre ambos.
+---
+
+[TEMPLATE:ENC_COMPLICATED_015]
+tags: dialogue, encounter, archetype:schemer, obsessive, complicated
+weight: 12
+---
+{location_memory} entra a la escena sin pedir permiso. Hasta la ternura sale con puntas. La escena avanza con sinceridad torcida.
+---
+
+[TEMPLATE:ENC_COMPLICATED_016]
+tags: dialogue, encounter, archetype:lover, content, complicated
+weight: 8
+---
+{self_name} y {target_name} llegan a {location_name} con demasiado pasado. {power_dynamic} no se acomoda. Nadie aqui sabe obedecer a la idea de parar.
+---
+
+[TEMPLATE:ENC_COMPLICATED_017]
+tags: dialogue, encounter, archetype:ruler, anxious, complicated
+weight: 9
+---
+[{target_name}]: No se si quiero esto o probar que todavia puedo decirte que no. El deseo trae archivo y facturas viejas. Quererse un poco no vuelve nada simple.
+---
+
+[TEMPLATE:ENC_COMPLICATED_018]
+tags: dialogue, encounter, archetype:rebel, angry, complicated
+weight: 10
+---
+{location_atmosphere} hace que todo parezca posible y mala idea a la vez. Los dos quieren versiones distintas del control. El pasado sigue sentado entre ambos.
+---
+
+[TEMPLATE:ENC_COMPLICATED_019]
+tags: dialogue, encounter, archetype:caretaker, content, complicated
+weight: 11
+---
+{self_name} se acerca como quien quiere consuelo y revancha. Nadie logra simplificar lo que hay aqui. La escena avanza con sinceridad torcida.
+---
+
+[TEMPLATE:ENC_COMPLICATED_020]
+tags: dialogue, encounter, archetype:schemer, obsessive, complicated
+weight: 12
+---
+{location_memory} entra a la escena sin pedir permiso. Hasta la ternura sale con puntas. Nadie aqui sabe obedecer a la idea de parar.
+---
+

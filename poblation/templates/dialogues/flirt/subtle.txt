@@ -1,0 +1,221 @@
+[TEMPLATE:DLG_FLIRT_SUBTLE_001]
+tags: dialogue, flirt, subtle, attraction
+weight: 12
+---
+[{self_name}]: Te quedó bien eso.
+[{target_name}]: ¿Eso qué?
+[{self_name}]: Hacer como que no te importa.
+---
+
+[TEMPLATE:DLG_FLIRT_SUBTLE_002]
+tags: dialogue, flirt, subtle, shy
+weight: 10
+---
+[{target_name}]: Estás sonriendo raro.
+[{self_name}]: Mi cara hace lo que puede.
+---
+
+[TEMPLATE:DLG_FLIRT_SUBTLE_003]
+tags: dialogue, flirt, subtle, teasing
+weight: 11
+---
+[{self_name}]: No sabía que sabías arreglar eso.
+[{target_name}]: Hay muchas cosas que no sabes de mí.
+[{self_name}]: Sí, me estoy dando cuenta con molestia.
+---
+
+[TEMPLATE:DLG_FLIRT_SUBTLE_004]
+tags: dialogue, flirt, subtle, awkward
+weight: 8
+---
+[{target_name}]: ¿Necesitas algo?
+[{self_name}]: Técnicamente no.
+[{target_name}]: Eso suena sospechoso.
+---
+
+[TEMPLATE:DLG_FLIRT_SUBTLE_005]
+tags: dialogue, flirt, subtle, warmth
+weight: 9
+---
+[{self_name}]: Guardé esto para ti.
+[{target_name}]: ¿Por qué?
+[{self_name}]: Porque cuando pensé en tirarlo, pensé en ti primero.
+---
+
+[TEMPLATE:DLG_FLIRT_SUBTLE_006]
+tags: dialogue, flirt, subtle, deniable
+weight: 10
+---
+[{target_name}]: Me estás siguiendo.
+[{self_name}]: Caminamos hacia el mismo sitio.
+[{target_name}]: No dije que me quejara.
+---
+
+[TEMPLATE:DLG_FLIRT_SUBTLE_007]
+tags: dialogue, flirt, subtle, humor
+weight: 8
+---
+[{self_name}]: Si sigues haciendo eso, voy a pensar bien de ti.
+[{target_name}]: Qué amenaza tan específica.
+---
+
+[TEMPLATE:DLG_FLIRT_SUBTLE_008]
+tags: dialogue, flirt, subtle, careful
+weight: 7
+---
+[{target_name}]: ¿Me estás mirando?
+[{self_name}]: Estoy verificando que no te hayas muerto.
+[{target_name}]: Muy profesional.
+---
+
+[TEMPLATE:DLG_FLIRT_SUBTLE_009]
+tags: dialogue, flirt, subtle, longing
+weight: 9
+---
+[{self_name}]: Cuando estás cerca, el día se pone menos idiota.
+[{target_name}]: Eso casi fue bonito.
+[{self_name}]: No abuses.
+---
+
+[TEMPLATE:DLG_FLIRT_SUBTLE_010]
+tags: dialogue, flirt, subtle, missed
+weight: 8
+---
+[{target_name}]: ¿Eso fue un cumplido?
+[{self_name}]: Si tienes que preguntar, fallé con elegancia.
+---
+
+[TEMPLATE:DLG_FLIRT_SUBTLE_011]
+tags: dialogue, flirt, subtle, attraction
+weight: 10
+---
+[{self_name}]: Me gusta escucharte pensar.
+[{target_name}]: Eso no tiene sentido.
+[{self_name}]: Algunas cosas buenas tampoco.
+---
+
+[TEMPLATE:DLG_FLIRT_SUBTLE_012]
+tags: dialogue, flirt, subtle, private
+weight: 7
+---
+[{target_name}]: ¿Por qué me cuentas esto a mí?
+[{self_name}]: Porque contigo no suena tan tonto.
+---
+
+[TEMPLATE:DLG_FLIRT_SUBTLE_013]
+tags: dialogue, flirt, subtle, tease
+weight: 9
+---
+[{self_name}]: Te extrañé en la reunión.
+[{target_name}]: Estuve ahí.
+[{self_name}]: Exacto. Y aun así.
+---
+
+[TEMPLATE:DLG_FLIRT_SUBTLE_014]
+tags: dialogue, flirt, subtle, denial
+weight: 8
+---
+[{target_name}]: Estás siendo amable conmigo.
+[{self_name}]: No hagas acusaciones graves sin pruebas.
+---
+
+[TEMPLATE:DLG_FLIRT_SUBTLE_015]
+tags: dialogue, flirt, subtle, quiet
+weight: 6
+---
+[{self_name}]: Puedes quedarte.
+[{target_name}]: No pregunté.
+[{self_name}]: Ya sé.
+---
+
+[TEMPLATE:DLG_FLIRT_SUBTLE_016]
+tags: dialogue, flirt, subtle, awkward
+weight: 9
+---
+[{target_name}]: ¿Quieres que te ayude?
+[{self_name}]: Quiero decir que no.
+[{target_name}]: ¿Y la respuesta real?
+[{self_name}]: Quédate.
+---
+
+[TEMPLATE:DLG_FLIRT_SUBTLE_017]
+tags: dialogue, flirt, subtle, fond
+weight: 10
+---
+[{self_name}]: Eres insoportable cuando tienes razón.
+[{target_name}]: Entonces te molesto mucho.
+[{self_name}]: Más de lo saludable.
+---
+
+[TEMPLATE:DLG_FLIRT_SUBTLE_018]
+tags: dialogue, flirt, subtle, tension
+weight: 8
+---
+[{target_name}]: ¿Por qué bajaste la voz?
+[{self_name}]: Porque algunas cosas se rompen si entran todos.
+---
+
+[TEMPLATE:DLG_FLIRT_SUBTLE_019]
+tags: dialogue, flirt, subtle, plausible_deniability
+weight: 9
+---
+[{self_name}]: Te traje esto porque sobraba.
+[{target_name}]: Solo sobró uno.
+[{self_name}]: Qué coincidencia tan útil.
+---
+
+[TEMPLATE:DLG_FLIRT_SUBTLE_020]
+tags: dialogue, flirt, subtle, vulnerable
+weight: 7
+---
+[{target_name}]: Conmigo no tienes que hacerte el duro.
+[{self_name}]: No sé hacer otra versión en público.
+---
+
+[TEMPLATE:DLG_FLIRT_SUBTLE_021]
+tags: dialogue, flirt, subtle, humor
+weight: 10
+---
+[{self_name}]: Si fueras menos competente, sería más fácil ignorarte.
+[{target_name}]: Haré un esfuerzo por arruinar algo.
+---
+
+[TEMPLATE:DLG_FLIRT_SUBTLE_022]
+tags: dialogue, flirt, subtle, soft
+weight: 8
+---
+[{target_name}]: Estás callado.
+[{self_name}]: Estoy bien.
+[{target_name}]: No dije que estuvieras mal.
+[{self_name}]: Por eso me gustó.
+---
+
+[TEMPLATE:DLG_FLIRT_SUBTLE_023]
+tags: dialogue, flirt, subtle, curiosity
+weight: 9
+---
+[{self_name}]: ¿Siempre miras así cuando estás pensando?
+[{target_name}]: ¿Así cómo?
+[{self_name}]: Como si el mundo todavía pudiera convencerte.
+---
+
+[TEMPLATE:DLG_FLIRT_SUBTLE_024]
+tags: dialogue, flirt, subtle, missed_signal
+weight: 7
+---
+[{target_name}]: ¿Estás molesto conmigo?
+[{self_name}]: No.
+[{target_name}]: Entonces por qué estás raro.
+[{self_name}]: Pregunta difícil, siguiente.
+---
+
+[TEMPLATE:DLG_FLIRT_SUBTLE_025]
+tags: dialogue, flirt, subtle, lingering
+weight: 8
+---
+[{self_name}]: No tienes que irte todavía.
+[{target_name}]: Tampoco tengo que quedarme.
+[{self_name}]: Eso fue cruelmente cierto.
+[{target_name}]: Me quedo un rato.
+---
+

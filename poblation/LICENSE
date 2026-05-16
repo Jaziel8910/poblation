@@ -1,0 +1,204 @@
+POBLATION GAME-SOURCE LICENSE (PGSL)
+Version 1.0
+Last Updated: May 2026
+
+Copyright (c) POBLATION Project
+
+IMPORTANT:
+By viewing, downloading, modifying, compiling, running, or interacting with this source code or any related material, you agree to the terms of this license.
+
+This license applies to:
+- source code
+- scripts
+- launcher code
+- templates
+- assets unless otherwise specified
+- internal tools
+- release infrastructure
+- documentation
+- branding-related files
+
+The POBLATION Project is source-available software.
+It is NOT open source under the Open Source Definition.
+
+---
+
+# 1. DEFINITIONS
+
+"Project"
+Refers to the POBLATION game, launcher, repository, releases, codebase, templates, tools, and associated materials.
+
+"Official Build"
+Refers to a build published directly by the POBLATION Project through official GitHub releases or official distribution channels.
+
+"Modified Build"
+Refers to any build containing modified, patched, extended, altered, forked, or transformed project code.
+
+"Fan Build"
+Refers to a noncommercial modified build clearly identified as unofficial and transformative.
+
+"Commercial Use"
+Refers to any activity involving:
+- direct sales
+- subscriptions
+- paid access
+- ad revenue
+- sponsorship revenue
+- paywalls
+- crypto/NFT integration
+- paid launcher distribution
+- selling modified builds
+- monetized mirrors
+- commercial redistribution
+- competing storefronts
+- monetized services using the project
+
+"Official Branding"
+Includes:
+- the name "POBLATION"
+- official logos
+- official launcher visuals
+- official icons
+- official splash screens
+- official UI identity
+- official slogans/taglines
+
+---
+
+# 2. RIGHTS GRANTED
+
+You MAY:
+
+- view the source code
+- study the source code
+- modify the source code privately
+- compile personal builds
+- create personal mods
+- create tools compatible with the project
+- create educational analysis
+- contribute code through pull requests
+- create fan patches
+- create fan extensions
+- share limited code snippets for educational purposes
+- publish noncommercial transformative fan builds under the conditions below
+
+---
+
+# 3. FAN BUILDS
+
+You MAY publish Modified Builds ONLY if ALL conditions below are met:
+
+1. The build must be clearly labeled as: "UNOFFICIAL FAN BUILD"
+2. The build must not use official branding in a misleading way.
+3. The build must visibly credit the original project.
+4. The build must link to the official repository.
+5. The build must not attempt to replace, imitate, or compete with the official launcher ecosystem.
+6. The build must not claim to be endorsed by the POBLATION Project.
+7. The build must be noncommercial.
+8. The build must be transformative or meaningfully modified.
+9. The build must not contain malware, spyware, crypto miners, malicious payloads, or hidden telemetry.
+10. The build must comply with applicable law.
+
+---
+
+# 4. RESTRICTIONS
+
+You MAY NOT:
+
+- sell the project or modified builds
+- monetize modified builds
+- redistribute official releases commercially
+- create competing launchers presented as replacements
+- mirror official releases for profit
+- impersonate the official project
+- falsely claim ownership of the project
+- remove license notices
+- sublicense the project commercially
+- use the project for illegal activity
+- use official branding deceptively
+- distribute malware using the project identity
+- create fake official repositories
+- mass redistribute the full source code outside approved repository mirrors
+
+---
+
+# 5. CONTRIBUTIONS
+
+By submitting pull requests, patches, or contributions, you grant the POBLATION Project a perpetual, worldwide, royalty-free right to use, modify, distribute, sublicense, and incorporate your contribution into the project.
+
+You retain copyright to your original contribution.
+
+---
+
+# 6. OFFICIAL DISTRIBUTION
+
+Official releases are distributed exclusively through:
+- official GitHub repositories
+- official GitHub Releases
+- official launcher infrastructure
+- official links published by the project
+
+The project reserves the right to revoke trust from unofficial distributions.
+
+---
+
+# 7. NO WARRANTY
+
+THE PROJECT IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
+
+The authors are not liable for:
+- data loss
+- hardware damage
+- emotional damage
+- corrupted saves
+- fictional population collapse
+- launcher instability caused by modified builds
+
+Use at your own risk.
+
+---
+
+# 8. TERMINATION
+
+Any violation of this license immediately terminates the rights granted under it.
+
+Upon termination, you must:
+- stop distribution
+- remove infringing builds
+- cease commercial activity involving the project
+- remove misleading branding
+
+The POBLATION Project reserves all rights not explicitly granted.
+
+---
+
+# 9. ENFORCEMENT
+
+Unauthorized commercial exploitation, deceptive redistribution, impersonation of official infrastructure, or malicious misuse of the project may result in:
+- DMCA takedowns
+- repository reports
+- hosting complaints
+- legal claims where applicable
+- financial damages claims where permitted by law
+
+---
+
+# 10. TRADEMARKS
+
+This license does not grant rights to:
+- trademarks
+- logos
+- branding
+- visual identity
+- launcher identity
+
+All branding rights remain reserved unless explicitly authorized.
+
+---
+
+# 11. FINAL NOTES
+
+This project was created for creative, experimental, artistic, and entertainment purposes.
+
+The apocalypse is free.
+The branding is not.

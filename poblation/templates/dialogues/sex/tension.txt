@@ -1,0 +1,190 @@
+[TEMPLATE:SEX_TENSION_001]
+tags: dialogue, sex, tension, restrained
+weight: 10
+---
+{self_name} no se aparta cuando {target_name} se acerca. Nadie esta actuando distraido ya.
+---
+
+[TEMPLATE:SEX_TENSION_002]
+tags: dialogue, sex, tension, humor
+weight: 8
+---
+{target_name} sonrie como si fuera a decir un chiste, pero lo deja morir. {self_name} entiende igual.
+---
+
+[TEMPLATE:SEX_TENSION_003]
+tags: dialogue, sex, tension, trust
+weight: 9
+---
+Entre {self_name} y {target_name} hay un silencio raro: no pesa, pero exige que alguien lo tome en serio.
+---
+
+[TEMPLATE:SEX_TENSION_004]
+tags: dialogue, sex, tension, memory
+weight: 7
+---
+{self_name} recuerda {memory_recent}. Eso no enfria nada. Solo vuelve el momento mas dificil de fingir.
+---
+
+[TEMPLATE:SEX_TENSION_005]
+tags: dialogue, sex, tension, private
+weight: 9
+---
+Todo en {location} parece seguir igual. Solo que {self_name} y {target_name} ya no estan hablando como antes.
+---
+
+[TEMPLATE:SEX_TENSION_006]
+tags: dialogue, sex, tension, conversation
+weight: 8
+---
+[{target_name}]: Entonces el techo necesita reparacion.
+[{self_name}]: Si.
+[{target_name}]: No estas pensando en el techo.
+[{self_name}]: No.
+---
+
+[TEMPLATE:SEX_TENSION_007]
+tags: dialogue, sex, tension, argument
+weight: 7
+---
+La discusion entre {self_name} y {target_name} pierde el hilo. El enojo sigue ahi, pero ahora esta demasiado cerca de otra cosa.
+---
+
+[TEMPLATE:SEX_TENSION_008]
+tags: dialogue, sex, tension, established
+weight: 8
+---
+{target_name} toca la mesa una vez. {self_name} mira la mano. Es una conversacion completa sin palabras nuevas.
+---
+
+[TEMPLATE:SEX_TENSION_009]
+tags: dialogue, sex, tension, first
+weight: 8
+---
+[{self_name}]: Esto es una mala idea?
+[{target_name}]: No preguntes si quieres una respuesta util.
+---
+
+[TEMPLATE:SEX_TENSION_010]
+tags: dialogue, sex, tension, secret
+weight: 7
+---
+Los dos hablan mas bajo aunque nadie se acerco. A veces el cuerpo sabe antes que la estrategia.
+---
+
+[TEMPLATE:SEX_TENSION_011]
+tags: dialogue, sex, tension, mundane
+weight: 8
+---
+[{target_name}]: Pasame eso.
+[{self_name}]: Que cosa?
+[{target_name}]: Cualquier cosa. Necesitaba una excusa para no mirarte asi.
+---
+
+[TEMPLATE:SEX_TENSION_012]
+tags: dialogue, sex, tension, after_grief
+weight: 6
+---
+No es alegria. No exactamente. Es que {self_name} y {target_name} estan vivos, cerca, y eso se vuelve informacion peligrosa.
+---
+
+[TEMPLATE:SEX_TENSION_013]
+tags: dialogue, sex, tension, rivalry
+weight: 7
+---
+[{self_name}]: Siempre tienes que ganar?
+[{target_name}]: Solo cuando me miras como si perder fuera opcion.
+---
+
+[TEMPLATE:SEX_TENSION_014]
+tags: dialogue, sex, tension, avoidance
+weight: 9
+---
+{self_name} cambia de tema tres veces. {target_name} deja que lo haga. Ninguno se cree la actuacion.
+---
+
+[TEMPLATE:SEX_TENSION_015]
+tags: dialogue, sex, tension, touch
+weight: 8
+---
+Una mano roza otra por accidente. Despues vuelve a pasar con demasiada precision para seguir llamandolo accidente.
+---
+
+[TEMPLATE:SEX_TENSION_016]
+tags: dialogue, sex, tension, long_absence
+weight: 7
+---
+[{target_name}]: Hace mucho que no estamos solos.
+[{self_name}]: Eso sono como dato.
+[{target_name}]: Era advertencia.
+---
+
+[TEMPLATE:SEX_TENSION_017]
+tags: dialogue, sex, tension, power
+weight: 6
+---
+{self_name} espera que {target_name} retroceda. {target_name} no retrocede. De pronto la autoridad se queda sin silla.
+---
+
+[TEMPLATE:SEX_TENSION_018]
+tags: dialogue, sex, tension, kindness
+weight: 8
+---
+[{self_name}]: No tienes que cuidarme.
+[{target_name}]: No estaba haciendo eso.
+[{self_name}]: Peor.
+---
+
+[TEMPLATE:SEX_TENSION_019]
+tags: dialogue, sex, tension, dangerous
+weight: 7
+---
+El problema no es que {self_name} quiera acercarse. El problema es que {target_name} ya dejo espacio.
+---
+
+[TEMPLATE:SEX_TENSION_020]
+tags: dialogue, sex, tension, denial
+weight: 8
+---
+[{target_name}]: Di que no esta pasando.
+[{self_name}]: No esta pasando.
+[{target_name}]: Mentiroso.
+---
+
+[TEMPLATE:SEX_TENSION_021]
+tags: dialogue, sex, tension, domestic
+weight: 8
+---
+Estan hablando de comida. De verdad. Pero {self_name} dice el nombre de {target_name} como si acabara de tocar una puerta cerrada.
+---
+
+[TEMPLATE:SEX_TENSION_022]
+tags: dialogue, sex, tension, post_fight
+weight: 7
+---
+[{self_name}]: Todavia estoy molesto.
+[{target_name}]: Si. Se nota en como no te vas.
+---
+
+[TEMPLATE:SEX_TENSION_023]
+tags: dialogue, sex, tension, vulnerable
+weight: 8
+---
+{target_name} ve a {self_name} cansado, sin defensa preparada. Lo raro es que no usa eso para ganar.
+---
+
+[TEMPLATE:SEX_TENSION_024]
+tags: dialogue, sex, tension, mistake
+weight: 6
+---
+Los dos saben que manana esto tendra otro nombre. Hoy ninguno quiere decirlo primero.
+---
+
+[TEMPLATE:SEX_TENSION_025]
+tags: dialogue, sex, tension, threshold
+weight: 10
+---
+[{self_name}]: Si doy un paso mas, cambia.
+[{target_name}]: Ya cambio. Solo estas pidiendo permiso para notarlo.
+---
+

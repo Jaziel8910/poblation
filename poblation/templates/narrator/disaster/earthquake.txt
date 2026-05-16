@@ -1,0 +1,70 @@
+[TEMPLATE:NARR_DISASTER_EARTHQUAKE_001]
+tags: narrator, disaster, earthquake
+weight: 10
+---
+La tierra se movio bajo todos como si recordara que nunca prometio quedarse quieta.
+---
+
+[TEMPLATE:NARR_DISASTER_EARTHQUAKE_002]
+tags: narrator, disaster, earthquake
+weight: 9
+---
+Primero fue un vaso cayendo. Despues el suelo entero contradijo la idea de hogar.
+---
+
+[TEMPLATE:NARR_DISASTER_EARTHQUAKE_003]
+tags: narrator, disaster, earthquake
+weight: 8
+---
+El terremoto duro poco. Lo suficiente para que cada persona entendiera que sus planes estaban escritos sobre algo vivo.
+---
+
+[TEMPLATE:NARR_DISASTER_EARTHQUAKE_004]
+tags: narrator, disaster, earthquake
+weight: 8
+---
+Las paredes hablaron en golpes secos. Nadie quiso traducirlas.
+---
+
+[TEMPLATE:NARR_DISASTER_EARTHQUAKE_005]
+tags: narrator, disaster, earthquake
+weight: 7
+---
+El asentamiento no cayo completo. Solo perdio la confianza en sus propias esquinas.
+---
+
+[TEMPLATE:NARR_DISASTER_EARTHQUAKE_006]
+tags: narrator, disaster, earthquake
+weight: 8
+---
+Cuando la tierra paro, los cuerpos siguieron temblando un rato. El miedo tiene mala sincronizacion.
+---
+
+[TEMPLATE:NARR_DISASTER_EARTHQUAKE_007]
+tags: narrator, disaster, earthquake
+weight: 7
+---
+El suelo hizo una pregunta brutal. Nadie tenia respuesta, pero todos salieron contando nombres.
+---
+
+[TEMPLATE:NARR_DISASTER_EARTHQUAKE_008]
+tags: narrator, disaster, earthquake
+weight: 8
+---
+Hubo polvo, gritos, manos buscando manos. Despues vino la aritmetica: quien falta, que se rompio, cuanto aguanta.
+---
+
+[TEMPLATE:NARR_DISASTER_EARTHQUAKE_009]
+tags: narrator, disaster, earthquake
+weight: 7
+---
+La isla se sacudio como un animal enfermo. El pueblo aprendio a caminar mas despacio sobre ella.
+---
+
+[TEMPLATE:NARR_DISASTER_EARTHQUAKE_010]
+tags: narrator, disaster, earthquake
+weight: 10
+---
+El terremoto termino. La sensacion no. Algunas cosas siguen cayendo por dentro despues de quedarse de pie.
+---
+

@@ -1,0 +1,7 @@
+[TEMPLATE:END_ALONE_LAST_WORDS]
+tags: ending, alone, last_words
+weight: 10
+---
+El ultimo no apago la luz. La luz se quedo sin publico.
+---
+

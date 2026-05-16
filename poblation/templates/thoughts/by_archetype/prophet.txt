@@ -1,0 +1,200 @@
+[TEMPLATE:ARCH_PROPHET_001]
+tags: thought, by_archetype, archetype:prophet, omen
+weight: 10
+archetypes: PROPHET
+---
+Tres gotas cayeron antes que el viento. Eso no es clima, es orden.
+---
+
+[TEMPLATE:ARCH_PROPHET_002]
+tags: thought, by_archetype, archetype:prophet, pattern
+weight: 9
+archetypes: PROPHET
+---
+Alguien dejo una silla mirando al este. Nadie hace eso sin que el mundo responda.
+---
+
+[TEMPLATE:ARCH_PROPHET_003]
+tags: thought, by_archetype, archetype:prophet, omen
+weight: 8
+archetypes: PROPHET
+---
+La ceniza hizo una linea perfecta. Una linea perfecta siempre acusa a alguien.
+---
+
+[TEMPLATE:ARCH_PROPHET_004]
+tags: thought, by_archetype, archetype:prophet, pattern
+weight: 10
+archetypes: PROPHET
+---
+Me desperte antes del ruido. Eso significa que el ruido llego tarde, no que yo tuve suerte.
+---
+
+[TEMPLATE:ARCH_PROPHET_005]
+tags: thought, by_archetype, archetype:prophet, omen
+weight: 9
+archetypes: PROPHET
+---
+La comida se quemo por un lado exacto. Hay nombres que tambien se queman asi.
+---
+
+[TEMPLATE:ARCH_PROPHET_006]
+tags: thought, by_archetype, archetype:prophet, pattern
+weight: 8
+archetypes: PROPHET
+---
+Si cuento las pausas entre las voces, aparece una advertencia. Nadie quiere escuchar numeros.
+---
+
+[TEMPLATE:ARCH_PROPHET_007]
+tags: thought, by_archetype, archetype:prophet, omen
+weight: 10
+archetypes: PROPHET
+---
+El suelo estaba tibio donde no habia sol. Pequeño detalle. Gran boca.
+---
+
+[TEMPLATE:ARCH_PROPHET_008]
+tags: thought, by_archetype, archetype:prophet, pattern
+weight: 9
+archetypes: PROPHET
+---
+Hoy todos dijeron "bien" demasiado rapido. Esa palabra se usa para tapar grietas.
+---
+
+[TEMPLATE:ARCH_PROPHET_009]
+tags: thought, by_archetype, archetype:prophet, omen
+weight: 8
+archetypes: PROPHET
+---
+La cuerda se rompio sin peso. Lo que no carga nada no se rompe. Lo cortan desde manana.
+---
+
+[TEMPLATE:ARCH_PROPHET_010]
+tags: thought, by_archetype, archetype:prophet, pattern
+weight: 10
+archetypes: PROPHET
+---
+Dos personas evitaron la misma esquina. El miedo, cuando coincide, deja huella.
+---
+
+[TEMPLATE:ARCH_PROPHET_011]
+tags: thought, by_archetype, archetype:prophet, omen
+weight: 9
+archetypes: PROPHET
+---
+El humo subio recto. No habia viento o habia una orden.
+---
+
+[TEMPLATE:ARCH_PROPHET_012]
+tags: thought, by_archetype, archetype:prophet, pattern
+weight: 8
+archetypes: PROPHET
+---
+Alguien cambio de mano el cuchillo antes de hablar. El cuerpo confiesa primero.
+---
+
+[TEMPLATE:ARCH_PROPHET_013]
+tags: thought, by_archetype, archetype:prophet, omen
+weight: 10
+archetypes: PROPHET
+---
+La sombra del poste parecia una flecha. No digo hacia donde porque todavia no quiero tener razon.
+---
+
+[TEMPLATE:ARCH_PROPHET_014]
+tags: thought, by_archetype, archetype:prophet, pattern
+weight: 9
+archetypes: PROPHET
+---
+Hay dias que empiezan con inventario y terminan con nombres tachados. Este huele a lista.
+---
+
+[TEMPLATE:ARCH_PROPHET_015]
+tags: thought, by_archetype, archetype:prophet, omen
+weight: 8
+archetypes: PROPHET
+---
+El agua hizo espuma sin motivo. Nada sin motivo sabe quedarse pequeno.
+---
+
+[TEMPLATE:ARCH_PROPHET_016]
+tags: thought, by_archetype, archetype:prophet, pattern
+weight: 10
+archetypes: PROPHET
+---
+La primera mentira del dia siempre escoge una voz suave.
+---
+
+[TEMPLATE:ARCH_PROPHET_017]
+tags: thought, by_archetype, archetype:prophet, omen
+weight: 9
+archetypes: PROPHET
+---
+Me crujio el dedo cuando pense en irme. El cuerpo no predice; recuerda antes.
+---
+
+[TEMPLATE:ARCH_PROPHET_018]
+tags: thought, by_archetype, archetype:prophet, pattern
+weight: 8
+archetypes: PROPHET
+---
+Los objetos mal puestos son mensajes de alguien que aun no sabe que escribio.
+---
+
+[TEMPLATE:ARCH_PROPHET_019]
+tags: thought, by_archetype, archetype:prophet, omen
+weight: 10
+archetypes: PROPHET
+---
+La puerta se abrio dos dedos. Suficiente para que entre una decision.
+---
+
+[TEMPLATE:ARCH_PROPHET_020]
+tags: thought, by_archetype, archetype:prophet, pattern
+weight: 9
+archetypes: PROPHET
+---
+Hoy nadie menciono a los muertos. Cuando los muertos no son llamados, suelen venir solos.
+---
+
+[TEMPLATE:ARCH_PROPHET_021]
+tags: thought, by_archetype, archetype:prophet, omen
+weight: 8
+archetypes: PROPHET
+---
+Una mancha repetida no es una mancha. Es alguien practicando simbolos.
+---
+
+[TEMPLATE:ARCH_PROPHET_022]
+tags: thought, by_archetype, archetype:prophet, pattern
+weight: 10
+archetypes: PROPHET
+---
+La gente cree que exagero porque mira eventos. Yo miro repeticiones.
+---
+
+[TEMPLATE:ARCH_PROPHET_023]
+tags: thought, by_archetype, archetype:prophet, omen
+weight: 9
+archetypes: PROPHET
+---
+El silencio de hoy no es descanso. Es una boca cerrada con algo adentro.
+---
+
+[TEMPLATE:ARCH_PROPHET_024]
+tags: thought, by_archetype, archetype:prophet, pattern
+weight: 8
+archetypes: PROPHET
+---
+Si digo lo que vi, lo convierto en futuro. Si callo, quizas solo era polvo.
+---
+
+[TEMPLATE:ARCH_PROPHET_025]
+tags: thought, by_archetype, archetype:prophet, omen
+weight: 10
+archetypes: PROPHET
+---
+El mundo no habla claro porque sabe que si entendemos, intentamos negociar.
+---
+

@@ -1,0 +1,239 @@
+[TEMPLATE:ARCH_INNOCENT_001]
+tags: thought, by_archetype, archetype:innocent, hope
+weight: 6
+archetypes: INNOCENT
+---
+Quiero creer que la gente puede mejorar. Lo difícil es creerlo sin cerrar los ojos.
+---
+
+[TEMPLATE:ARCH_INNOCENT_002]
+tags: thought, by_archetype, archetype:innocent, hope
+weight: 13
+archetypes: INNOCENT
+---
+Hoy alguien fue cruel y todavía encontré una excusa para entenderlo. Eso me asusta más que la crueldad.
+---
+
+[TEMPLATE:ARCH_INNOCENT_003]
+tags: thought, by_archetype, archetype:innocent, hope
+weight: 11
+archetypes: INNOCENT
+---
+No quiero volverme duro solo porque el mundo se volvió piedra.
+---
+
+[TEMPLATE:ARCH_INNOCENT_004]
+tags: thought, by_archetype, archetype:innocent, hope
+weight: 9
+archetypes: INNOCENT
+---
+Ser bueno aquí se siente como dejar comida afuera: algo siempre viene a probarte.
+---
+
+[TEMPLATE:ARCH_INNOCENT_005]
+tags: thought, by_archetype, archetype:innocent, hope
+weight: 7
+archetypes: INNOCENT
+---
+A veces pienso que confiar es una forma lenta de sangrar. Y aun así lo hago.
+---
+
+[TEMPLATE:ARCH_INNOCENT_006]
+tags: thought, by_archetype, archetype:innocent, hope
+weight: 14
+archetypes: INNOCENT
+---
+No soy ingenuo. Bueno, tal vez sí. Pero prefiero eso a estar orgulloso de no sentir nada.
+---
+
+[TEMPLATE:ARCH_INNOCENT_007]
+tags: thought, by_archetype, archetype:innocent, hope
+weight: 12
+archetypes: INNOCENT
+---
+Si todos esperan lo peor, alguien tiene que guardar una silla para lo decente.
+---
+
+[TEMPLATE:ARCH_INNOCENT_008]
+tags: thought, by_archetype, archetype:innocent, hope
+weight: 10
+archetypes: INNOCENT
+---
+Me duele ver a alguien romperse y pensar primero en cómo no estorbar.
+---
+
+[TEMPLATE:ARCH_INNOCENT_009]
+tags: thought, by_archetype, archetype:innocent, hope
+weight: 8
+archetypes: INNOCENT
+---
+La esperanza no me hace tonto. Me hace cansado de otra manera.
+---
+
+[TEMPLATE:ARCH_INNOCENT_010]
+tags: thought, by_archetype, archetype:innocent, hope
+weight: 6
+archetypes: INNOCENT
+---
+Quiero ayudar sin que eso signifique entregarme entero como leña.
+---
+
+[TEMPLATE:ARCH_INNOCENT_011]
+tags: thought, by_archetype, archetype:innocent, hope
+weight: 13
+archetypes: INNOCENT
+---
+Hay gente que confunde mi paciencia con permiso. Estoy aprendiendo. Tarde, pero aprendiendo.
+---
+
+[TEMPLATE:ARCH_INNOCENT_012]
+tags: thought, by_archetype, archetype:innocent, hope
+weight: 11
+archetypes: INNOCENT
+---
+Si pierdo la ternura, ¿qué exactamente estoy salvando?
+---
+
+[TEMPLATE:ARCH_INNOCENT_013]
+tags: thought, by_archetype, archetype:innocent, hope
+weight: 9
+archetypes: INNOCENT
+---
+A veces odio a alguien y luego me siento mal por haber sido tan humano.
+---
+
+[TEMPLATE:ARCH_INNOCENT_014]
+tags: thought, by_archetype, archetype:innocent, hope
+weight: 7
+archetypes: INNOCENT
+---
+No quiero lastimar. Tampoco quiero seguir ofreciendo el cuello por educación.
+---
+
+[TEMPLATE:ARCH_INNOCENT_015]
+tags: thought, by_archetype, archetype:innocent, hope
+weight: 14
+archetypes: INNOCENT
+---
+Me cuesta creer que alguien pueda hacer daño a propósito. Después lo veo. Después me cuesta dormir.
+---
+
+[TEMPLATE:ARCH_INNOCENT_016]
+tags: thought, by_archetype, archetype:innocent, hope
+weight: 12
+archetypes: INNOCENT
+---
+La bondad no debería necesitar defensa armada, pero aquí estamos.
+---
+
+[TEMPLATE:ARCH_INNOCENT_017]
+tags: thought, by_archetype, archetype:innocent, hope
+weight: 10
+archetypes: INNOCENT
+---
+Todavía me alegra cuando alguien comparte algo pequeño. Un pedazo de fruta. Una verdad. Un silencio limpio.
+---
+
+[TEMPLATE:ARCH_INNOCENT_018]
+tags: thought, by_archetype, archetype:innocent, hope
+weight: 8
+archetypes: INNOCENT
+---
+Me dicen que soy demasiado bueno como si fuera enfermedad. Quizá lo sea, pero no quiero curarme así.
+---
+
+[TEMPLATE:ARCH_INNOCENT_019]
+tags: thought, by_archetype, archetype:innocent, hope
+weight: 6
+archetypes: INNOCENT
+---
+Hoy pensé mal de alguien y me sentí libre por un segundo. Qué vergüenza tan interesante.
+---
+
+[TEMPLATE:ARCH_INNOCENT_020]
+tags: thought, by_archetype, archetype:innocent, hope
+weight: 13
+archetypes: INNOCENT
+---
+Si perdono, no quiero olvidar. Olvidar sería dejar solo al yo que sufrió.
+---
+
+[TEMPLATE:ARCH_INNOCENT_021]
+tags: thought, by_archetype, archetype:innocent, hope
+weight: 11
+archetypes: INNOCENT
+---
+Me aferro a lo bonito con uñas ridículas. Igual se me escapa. Igual vuelvo a intentar.
+---
+
+[TEMPLATE:ARCH_INNOCENT_022]
+tags: thought, by_archetype, archetype:innocent, hope
+weight: 9
+archetypes: INNOCENT
+---
+No sé sobrevivir sin creer en alguien. Eso es peligroso. También es lo único que me mantiene parecido a mí.
+---
+
+[TEMPLATE:ARCH_INNOCENT_023]
+tags: thought, by_archetype, archetype:innocent, hope
+weight: 7
+archetypes: INNOCENT
+---
+La gente rota también corta. No deja de doler porque entiendas de dónde viene el filo.
+---
+
+[TEMPLATE:ARCH_INNOCENT_024]
+tags: thought, by_archetype, archetype:innocent, hope
+weight: 14
+archetypes: INNOCENT
+---
+Quiero ser amable sin ser fácil de usar. Esa línea se mueve cuando tengo miedo.
+---
+
+[TEMPLATE:ARCH_INNOCENT_025]
+tags: thought, by_archetype, archetype:innocent, hope
+weight: 12
+archetypes: INNOCENT
+---
+A veces el mundo me aplasta y yo pido perdón por hacer ruido abajo.
+---
+
+[TEMPLATE:ARCH_INNOCENT_026]
+tags: thought, by_archetype, archetype:innocent, hope
+weight: 10
+archetypes: INNOCENT
+---
+No todo merece luz. Pero yo sigo llevando una, por si acaso.
+---
+
+[TEMPLATE:ARCH_INNOCENT_027]
+tags: thought, by_archetype, archetype:innocent, hope
+weight: 8
+archetypes: INNOCENT
+---
+El cinismo parece descanso. Yo sé que también cansa, solo que con mejor postura.
+---
+
+[TEMPLATE:ARCH_INNOCENT_028]
+tags: thought, by_archetype, archetype:innocent, hope
+weight: 6
+archetypes: INNOCENT
+---
+Me gustaría que hacer lo correcto se sintiera menos como caminar descalzo sobre vidrio.
+---
+
+[TEMPLATE:ARCH_INNOCENT_029]
+tags: thought, by_archetype, archetype:innocent, hope
+weight: 13
+archetypes: INNOCENT
+---
+Todavía creo en pequeñas reparaciones. No porque basten, sino porque son lo que tengo en las manos.
+---
+
+[TEMPLATE:ARCH_INNOCENT_030]
+tags: thought, by_archetype, archetype:innocent, hope
+weight: 11
+archetypes: INNOCENT
+---
+Si esto me rompe, ojalá al menos no me vuelva cruel. Me daría rabia darle ese triunfo al mundo.
+---

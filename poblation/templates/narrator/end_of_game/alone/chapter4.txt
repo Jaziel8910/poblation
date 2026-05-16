@@ -1,0 +1,7 @@
+[TEMPLATE:END_ALONE_CHAPTER_4]
+tags: ending, alone, chapter4
+weight: 10
+---
+El ultimo evento fue: {ending_last_event}. Despues, cada sonido parecio demasiado grande. El mundo siguio existiendo, que fue lo cruel. Solo dejo de tener a quien contarle.
+---
+

@@ -1,0 +1,80 @@
+[TEMPLATE:NARR_DEATH_SUICIDE_001]
+tags: narrator, death, suicide, dignity
+weight: 10
+---
+{self_name} murio despues de cargar {trigger_hint} mas tiempo del que cualquiera vio. El pueblo no recibio una explicacion facil, solo una ausencia y preguntas que no debieron quedar para despues.
+[Si estás pasando por algo difícil fuera del juego, no tienes que estar solo.]
+---
+
+[TEMPLATE:NARR_DEATH_SUICIDE_002]
+tags: narrator, death, suicide, context
+weight: 9
+---
+La muerte de {self_name} no fue una idea bonita ni una salida limpia. Fue el final de una presion que habia dejado marcas antes de ser nombrada: {trigger_hint}.
+[Si estás pasando por algo difícil fuera del juego, no tienes que estar solo.]
+---
+
+[TEMPLATE:NARR_DEATH_SUICIDE_003]
+tags: narrator, death, suicide, village
+weight: 9
+---
+El pueblo encontro tarde el tamano real del dolor de {self_name}. {trigger_hint} quedo en la boca de todos, no como respuesta, sino como deuda.
+[Si estás pasando por algo difícil fuera del juego, no tienes que estar solo.]
+---
+
+[TEMPLATE:NARR_DEATH_SUICIDE_004]
+tags: narrator, death, suicide, restrained
+weight: 8
+---
+{self_name} murio. No hay gloria ahi. Hay gente revisando conversaciones viejas, buscando una puerta que ya no existe. {trigger_hint} no explica todo, pero apunta.
+[Si estás pasando por algo difícil fuera del juego, no tienes que estar solo.]
+---
+
+[TEMPLATE:NARR_DEATH_SUICIDE_005]
+tags: narrator, death, suicide, aftermath
+weight: 8
+---
+Despues de {self_name}, nadie supo donde poner la culpa. Algunos la pusieron en {trigger_hint}. Otros se la quedaron. Ninguno descanso.
+[Si estás pasando por algo difícil fuera del juego, no tienes que estar solo.]
+---
+
+[TEMPLATE:NARR_DEATH_SUICIDE_006]
+tags: narrator, death, suicide, quiet
+weight: 7
+---
+{self_name} habia estado hablando menos. Eso ahora parece enorme, aunque entonces parecia cansancio. {trigger_hint} hizo sombra mucho antes de este dia.
+[Si estás pasando por algo difícil fuera del juego, no tienes que estar solo.]
+---
+
+[TEMPLATE:NARR_DEATH_SUICIDE_007]
+tags: narrator, death, suicide, social
+weight: 8
+---
+La reaccion del pueblo no fue una sola cosa. Hubo rabia, miedo, verguenza, ternura tarde. {self_name} ya no estaba para recibir ninguna.
+[Si estás pasando por algo difícil fuera del juego, no tienes que estar solo.]
+---
+
+[TEMPLATE:NARR_DEATH_SUICIDE_008]
+tags: narrator, death, suicide, direct
+weight: 9
+---
+{self_name} murio por mano propia. La frase pesa porque debe pesar. {trigger_hint} estaba ahi, pero ninguna causa vuelve simple a una persona.
+[Si estás pasando por algo difícil fuera del juego, no tienes que estar solo.]
+---
+
+[TEMPLATE:NARR_DEATH_SUICIDE_009]
+tags: narrator, death, suicide, care
+weight: 8
+---
+Quienes amaban a {self_name} intentaron reconstruir el camino: una palabra, un gesto, {trigger_hint}. Llegaron a fragmentos. Los fragmentos no abrazan.
+[Si estás pasando por algo difícil fuera del juego, no tienes que estar solo.]
+---
+
+[TEMPLATE:NARR_DEATH_SUICIDE_010]
+tags: narrator, death, suicide, final
+weight: 10
+---
+{self_name} no se convirtio en leccion. Fue una persona. Murio con {trigger_hint} demasiado cerca y con ayuda demasiado lejos.
+[Si estás pasando por algo difícil fuera del juego, no tienes que estar solo.]
+---
+

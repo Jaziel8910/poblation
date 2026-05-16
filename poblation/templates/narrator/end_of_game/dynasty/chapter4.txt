@@ -1,0 +1,7 @@
+[TEMPLATE:END_DYNASTY_CHAPTER_4]
+tags: ending, dynasty, chapter4
+weight: 10
+---
+Los primeros fueron {ending_first_couple}. Los ultimos que importaron en los archivos fueron los de {ending_family}. Entre ambos puntos hubo {ending_total_births} nacimientos, {ending_total_wars} guerras y una verdad simple: sobrevivir no repartio el poder. Lo concentro.
+---
+

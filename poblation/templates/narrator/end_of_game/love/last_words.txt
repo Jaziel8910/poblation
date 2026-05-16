@@ -1,0 +1,7 @@
+[TEMPLATE:END_LOVE_LAST_WORDS]
+tags: ending, love, last_words
+weight: 10
+---
+Vivieron, se eligieron, y despues no le debieron nada a nadie.
+---
+

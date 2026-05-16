@@ -1,0 +1,175 @@
+[TEMPLATE:DREAM_WISH_001]
+tags: dream, wish_fulfillment, comfort
+weight: 12
+---
+Abro una llave y sale agua limpia, fría, infinita. No tengo que racionarla. No tengo que pensar.
+---
+
+[TEMPLATE:DREAM_WISH_002]
+tags: dream, wish_fulfillment, intimacy
+weight: 10
+---
+{target_name} me mira sin cálculo. No hay pasado en la cara de nadie. Me acerco y no tengo que defenderme.
+---
+
+[TEMPLATE:DREAM_WISH_003]
+tags: dream, wish_fulfillment, home
+weight: 9
+---
+Entro a una casa que no cruje de hambre. Las paredes sostienen cuadros, no secretos.
+---
+
+[TEMPLATE:DREAM_WISH_004]
+tags: dream, wish_fulfillment, abundance
+weight: 11
+---
+La mesa se llena sola. Pan tibio. Fruta intacta. Algo dulce. Nadie cuenta porciones.
+---
+
+[TEMPLATE:DREAM_WISH_005]
+tags: dream, wish_fulfillment, ordinary
+weight: 8
+---
+Me siento y no pasa nada. Nadie necesita algo. Nadie grita mi nombre. La paz dura lo suficiente para aburrirme.
+---
+
+[TEMPLATE:DREAM_WISH_006]
+tags: dream, wish_fulfillment, dignity
+weight: 9
+---
+Digo que no y el mundo acepta la respuesta. No insiste. No castiga. Solo sigue.
+---
+
+[TEMPLATE:DREAM_WISH_007]
+tags: dream, wish_fulfillment, childhood
+weight: 7
+---
+Corro sin mirar atrás. Las rodillas no duelen. La vergüenza tampoco.
+---
+
+[TEMPLATE:DREAM_WISH_008]
+tags: dream, wish_fulfillment, desire
+weight: 10
+---
+{target_name} entra en la habitación y por fin no hay malentendido entre los cuerpos. Todo encaja sin pedir perdón.
+---
+
+[TEMPLATE:DREAM_WISH_009]
+tags: dream, wish_fulfillment, control
+weight: 8
+---
+Abro la boca y sale exactamente lo que quería decir. Ninguna palabra se rompe al caer.
+---
+
+[TEMPLATE:DREAM_WISH_010]
+tags: dream, wish_fulfillment, status
+weight: 7
+---
+Todos esperan a que yo hable. Y por una vez no me miran con hambre, sino con confianza.
+---
+
+[TEMPLATE:DREAM_WISH_011]
+tags: dream, wish_fulfillment, repair
+weight: 9
+---
+Toco algo roto y vuelve a funcionar. Una lámpara. Una puerta. Una relación. Da igual, todo obedece.
+---
+
+[TEMPLATE:DREAM_WISH_012]
+tags: dream, wish_fulfillment, sleep
+weight: 8
+---
+Me acuesto dentro del sueño y duermo todavía más hondo. Hay otra capa de descanso debajo de esta vida y por fin caigo.
+---
+
+[TEMPLATE:DREAM_WISH_013]
+tags: dream, wish_fulfillment, freedom
+weight: 7
+---
+Nadie me conoce. Camino entre gente amable y no tengo historia. Qué descanso no tener biografía.
+---
+
+[TEMPLATE:DREAM_WISH_014]
+tags: dream, wish_fulfillment, body
+weight: 8
+---
+Mi cuerpo no pide nada. No duele, no tiembla, no me traiciona. Solo existe y me deja usarlo.
+---
+
+[TEMPLATE:DREAM_WISH_015]
+tags: dream, wish_fulfillment, reunion
+weight: 9
+---
+Abro una puerta y la persona que extraño está del otro lado, exactamente donde la dejé, exactamente como no merezco.
+---
+
+[TEMPLATE:DREAM_WISH_016]
+tags: dream, wish_fulfillment, forgiveness
+weight: 7
+---
+Confieso todo y la otra cara no se rompe. Me escucha completa. Me deja seguir siendo alguien.
+---
+
+[TEMPLATE:DREAM_WISH_017]
+tags: dream, wish_fulfillment, plenty
+weight: 8
+---
+Hay ropa seca, sábanas limpias y una sensación indecente de sobra. Hasta el aire parece guardado en frascos nuevos.
+---
+
+[TEMPLATE:DREAM_WISH_018]
+tags: dream, wish_fulfillment, recognition
+weight: 7
+---
+Entro a un cuarto y alguien dice mi nombre como si significara alivio.
+---
+
+[TEMPLATE:DREAM_WISH_019]
+tags: dream, wish_fulfillment, escape
+weight: 8
+---
+Subo a una barca y el agua decide llevarme a un lugar donde nadie me ha fallado todavía.
+---
+
+[TEMPLATE:DREAM_WISH_020]
+tags: dream, wish_fulfillment, simplicity
+weight: 9
+---
+Tengo una tarea pequeña y clara. Barrer un piso. Regar una planta. Vivir cabe en una instrucción sencilla.
+---
+
+[TEMPLATE:DREAM_WISH_021]
+tags: dream, wish_fulfillment, intimacy
+weight: 7
+---
+{target_name} se queda. No lo dice, no lo promete. Simplemente amanece todavía aquí.
+---
+
+[TEMPLATE:DREAM_WISH_022]
+tags: dream, wish_fulfillment, appetite
+weight: 8
+---
+Muerdo algo caliente que sabe a infancia y no necesito llorar después. Qué lujo tan absurdo.
+---
+
+[TEMPLATE:DREAM_WISH_023]
+tags: dream, wish_fulfillment, truth
+weight: 7
+---
+Todos dicen la verdad y no pasa nada terrible. El día sigue entero. Yo también.
+---
+
+[TEMPLATE:DREAM_WISH_024]
+tags: dream, wish_fulfillment, weather
+weight: 6
+---
+Llueve solo por afuera. Por dentro todo se queda seco, intacto, casi ridículamente a salvo.
+---
+
+[TEMPLATE:DREAM_WISH_025]
+tags: dream, wish_fulfillment, belonging
+weight: 9
+---
+Llego tarde a una mesa enorme y todavía guardan un lugar para mí. Nadie me lo cobra.
+---
+

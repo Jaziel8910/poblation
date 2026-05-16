@@ -1,0 +1,175 @@
+[TEMPLATE:DREAM_NIGHTMARE_001]
+tags: dream, nightmare, control_loss
+weight: 12
+---
+Intento cerrar una puerta y la manija se derrite en la mano. Del otro lado siguen tocando con paciencia.
+---
+
+[TEMPLATE:DREAM_NIGHTMARE_002]
+tags: dream, nightmare, mundane
+weight: 10
+---
+Se me cae un vaso. Después otro. Después otro. El piso ya no es piso, es culpa con forma de cocina.
+---
+
+[TEMPLATE:DREAM_NIGHTMARE_003]
+tags: dream, nightmare, abandonment
+weight: 9
+---
+Camino detrás de {target_name}. Cada vez que acelero, el pasillo crece un poco más.
+---
+
+[TEMPLATE:DREAM_NIGHTMARE_004]
+tags: dream, nightmare, body
+weight: 8
+---
+Quiero gritar y la boca se llena de arena húmeda. Mastico silencio hasta que me duele la mandíbula.
+---
+
+[TEMPLATE:DREAM_NIGHTMARE_005]
+tags: dream, nightmare, repetition
+weight: 9
+---
+Vuelvo al mismo cuarto, a la misma silla, a la misma frase que no salvé a tiempo. Todo espera que la arruine igual.
+---
+
+[TEMPLATE:DREAM_NIGHTMARE_006]
+tags: dream, nightmare, shame
+weight: 7
+---
+Estoy desnudo entre gente conocida y nadie se ríe. Eso lo vuelve peor: solo miran con lástima profesional.
+---
+
+[TEMPLATE:DREAM_NIGHTMARE_007]
+tags: dream, nightmare, hunger
+weight: 8
+---
+Abro recipientes, cajas, bolsillos, cajones. Todo tiene comida hasta que la toco. Entonces se vuelve piedra.
+---
+
+[TEMPLATE:DREAM_NIGHTMARE_008]
+tags: dream, nightmare, witness
+weight: 7
+---
+Todo el mundo sabe algo de mí menos yo. Cuando pregunto, sonríen como médicos cansados.
+---
+
+[TEMPLATE:DREAM_NIGHTMARE_009]
+tags: dream, nightmare, domestic
+weight: 10
+---
+Olvido apagar el fuego. No pasa nada al principio. Ese es el detalle que me despierta sudando.
+---
+
+[TEMPLATE:DREAM_NIGHTMARE_010]
+tags: dream, nightmare, betrayal
+weight: 8
+---
+Le cuento un secreto a {target_name} y enseguida lo escucho saliendo por todas las ventanas de la casa.
+---
+
+[TEMPLATE:DREAM_NIGHTMARE_011]
+tags: dream, nightmare, paralysis
+weight: 9
+---
+Algo cruza la habitación despacio. Yo lo sigo con los ojos, inmóvil, como si mi cuerpo ya hubiera firmado la rendición.
+---
+
+[TEMPLATE:DREAM_NIGHTMARE_012]
+tags: dream, nightmare, grief
+weight: 7
+---
+Encuentro a alguien que ya perdí. Me sonríe con esa tranquilidad horrible de quien sabe que voy a perderlo otra vez.
+---
+
+[TEMPLATE:DREAM_NIGHTMARE_013]
+tags: dream, nightmare, exposure
+weight: 8
+---
+Todos leen mi diario en voz alta, pero la voz suena como la mía, y eso sí que no tiene perdón.
+---
+
+[TEMPLATE:DREAM_NIGHTMARE_014]
+tags: dream, nightmare, water
+weight: 7
+---
+El agua sube dentro de la casa como si recordara el camino. Los muebles flotan mejor que yo.
+---
+
+[TEMPLATE:DREAM_NIGHTMARE_015]
+tags: dream, nightmare, choice
+weight: 8
+---
+Hay dos puertas y en ambas escucho a alguien llamándome. Sé con una certeza animal que elijo mal en cualquier dirección.
+---
+
+[TEMPLATE:DREAM_NIGHTMARE_016]
+tags: dream, nightmare, guilt
+weight: 9
+---
+Me ofrecen una mano. Cuando la tomo, noto que soy yo quien la está hundiendo.
+---
+
+[TEMPLATE:DREAM_NIGHTMARE_017]
+tags: dream, nightmare, mundane
+weight: 8
+---
+No encuentro mis zapatos. Eso es todo. Sin zapatos, sin salida, sin lógica. El pánico igual funciona.
+---
+
+[TEMPLATE:DREAM_NIGHTMARE_018]
+tags: dream, nightmare, rot
+weight: 7
+---
+La comida sonríe antes de pudrirse. Esa cortesía me ofende más que el olor.
+---
+
+[TEMPLATE:DREAM_NIGHTMARE_019]
+tags: dream, nightmare, voice
+weight: 8
+---
+Una voz me explica cada error que cometí con la amabilidad exacta de alguien que disfruta tener razón.
+---
+
+[TEMPLATE:DREAM_NIGHTMARE_020]
+tags: dream, nightmare, childhood
+weight: 6
+---
+Soy pequeño otra vez y ya entiendo demasiado. Nadie viene a arreglar nada. Ese conocimiento me queda enorme.
+---
+
+[TEMPLATE:DREAM_NIGHTMARE_021]
+tags: dream, nightmare, intimacy
+weight: 7
+---
+{target_name} me abraza hasta que no puedo respirar, y cuando intento apartarlo me doy cuenta de que soy yo quien aprieta.
+---
+
+[TEMPLATE:DREAM_NIGHTMARE_022]
+tags: dream, nightmare, fire
+weight: 8
+---
+Todo huele a humo antes de que exista el fuego. El olor llega siempre con ventaja.
+---
+
+[TEMPLATE:DREAM_NIGHTMARE_023]
+tags: dream, nightmare, replacement
+weight: 7
+---
+Entro a la casa y ya no hago falta. Mi silla tiene a alguien mejor sentado.
+---
+
+[TEMPLATE:DREAM_NIGHTMARE_024]
+tags: dream, nightmare, failure
+weight: 8
+---
+Tengo una lista simple de cosas que debo hacer. Olvido la primera y por eso colapsan todas las demás. El sueño me trata como si fuera justicia.
+---
+
+[TEMPLATE:DREAM_NIGHTMARE_025]
+tags: dream, nightmare, helplessness
+weight: 9
+---
+Alguien me llama desde un cuarto cerrado. Encuentro la llave, la cerradura, la fuerza. Lo único que falta, con precisión quirúrgica, es tiempo.
+---
+

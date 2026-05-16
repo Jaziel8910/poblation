@@ -1,0 +1,7 @@
+[TEMPLATE:END_DYNASTY_CHAPTER_1]
+tags: ending, dynasty, chapter1
+weight: 10
+---
+La familia de {ending_family} aprendio temprano que el poder tambien se hereda cuando nadie lo llama herencia. Para el dia {ending_day}, {ending_leader} no mandaba solo por talento: mandaba porque diez generaciones habian puesto su apellido sobre cada puerta importante.
+---
+

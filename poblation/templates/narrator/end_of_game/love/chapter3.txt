@@ -1,0 +1,7 @@
+[TEMPLATE:END_LOVE_CHAPTER_3]
+tags: ending, love, chapter3
+weight: 10
+---
+El registro mas duro dice: {ending_dramatic_event}. El registro mas pequeño dice que hubo {ending_total_rumours} rumores y {ending_total_secrets} secretos revelados, como si dos personas pudieran producir una civilizacion entera solo con silencio mal administrado.
+---
+

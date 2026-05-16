@@ -1,0 +1,7 @@
+[TEMPLATE:END_DYNASTY_CHAPTER_3]
+tags: ending, dynasty, chapter3
+weight: 10
+---
+El evento que mas peso dejo fue este: {ending_dramatic_event}. Cada crisis parecia una amenaza para la casa dominante. Cada crisis termino siendo otra prueba de que los demas ya habian aprendido a obedecer.
+---
+

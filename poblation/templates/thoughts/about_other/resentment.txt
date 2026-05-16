@@ -1,0 +1,209 @@
+[TEMPLATE:RESENT_COLD_001]
+tags: thought, about_other, resentment, negative_valence
+weight: 6
+---
+{target_name} hizo eso y ahora tengo que vivir con la versión de mí que no lo olvida.
+---
+
+[TEMPLATE:RESENT_COLD_002]
+tags: thought, about_other, resentment, negative_valence
+weight: 13
+---
+Puedo sonreírle a {target_name}. Mis dientes también saben mentir.
+---
+
+[TEMPLATE:RESENT_COLD_003]
+tags: thought, about_other, resentment, negative_valence
+weight: 11
+---
+{memory_recent} todavía me raspa por dentro. No fuerte, pero constante. Como piedra en zapato ajeno.
+---
+
+[TEMPLATE:RESENT_COLD_004]
+tags: thought, about_other, resentment, negative_valence
+weight: 9
+---
+Lo peor no fue lo que pasó. Fue que {target_pronoun} pensó que yo iba a tragarlo completo.
+---
+
+[TEMPLATE:RESENT_COLD_005]
+tags: thought, about_other, resentment, negative_valence
+weight: 7
+---
+{memory_old} debería estar viejo. Sigue fresco, porque el rencor conserva mejor que la sal.
+---
+
+[TEMPLATE:RESENT_COLD_006]
+tags: thought, about_other, resentment, negative_valence
+weight: 14
+---
+No odio a {target_name}. Todavía. Me molesta que la palabra esté esperando tan cerca.
+---
+
+[TEMPLATE:RESENT_COLD_007]
+tags: thought, about_other, resentment, negative_valence
+weight: 12
+---
+Cada vez que {target_pronoun} habla de confianza, mi estómago hace un gesto obsceno.
+---
+
+[TEMPLATE:RESENT_COLD_008]
+tags: thought, about_other, resentment, negative_valence
+weight: 10
+---
+Podría perdonar. También podría aprender a hacer nudos mejores. Hoy cualquiera de las dos sirve.
+---
+
+[TEMPLATE:RESENT_COLD_009]
+tags: thought, about_other, resentment, negative_valence
+weight: 8
+---
+{target_name} cree que ya pasó. Qué ternura. Qué peligro.
+---
+
+[TEMPLATE:RESENT_COLD_010]
+tags: thought, about_other, resentment, negative_valence
+weight: 6
+---
+{memory_recent} no fue un accidente emocional. Fue una decisión con zapatos.
+---
+
+[TEMPLATE:RESENT_COLD_011]
+tags: thought, about_other, resentment, negative_valence
+weight: 13
+---
+Me da rabia recordar detalles pequeños. La cara, el tono, la pausa. Mi memoria es una rata meticulosa.
+---
+
+[TEMPLATE:RESENT_COLD_012]
+tags: thought, about_other, resentment, negative_valence
+weight: 11
+---
+Si {target_pronoun} supiera lo que pienso cuando se acerca, caminaría más lento. O más lejos.
+---
+
+[TEMPLATE:RESENT_COLD_013]
+tags: thought, about_other, resentment, negative_valence
+weight: 9
+---
+No quiero venganza. Quiero equilibrio. Qué cómodo suena eso cuando uno está furioso.
+---
+
+[TEMPLATE:RESENT_COLD_014]
+tags: thought, about_other, resentment, negative_valence
+weight: 7
+---
+{memory_old} me enseñó algo: la gente no cambia cuando entiende, cambia cuando le conviene.
+---
+
+[TEMPLATE:RESENT_COLD_015]
+tags: thought, about_other, resentment, negative_valence
+weight: 14
+---
+Me molesta que {target_name} siga siendo humano. Sería más fácil odiar una cosa simple.
+---
+
+[TEMPLATE:RESENT_COLD_016]
+tags: thought, about_other, resentment, negative_valence
+weight: 12
+---
+A veces imagino decirle todo. Después recuerdo que no estoy obligado a regalarle mi claridad.
+---
+
+[TEMPLATE:RESENT_COLD_017]
+tags: thought, about_other, resentment, negative_valence
+weight: 10
+---
+{target_pronoun} me debe una disculpa que ya llega tarde con intereses.
+---
+
+[TEMPLATE:RESENT_COLD_018]
+tags: thought, about_other, resentment, negative_valence
+weight: 8
+---
+No me gusta esta versión fría de mí. Pero funciona. Eso es lo que más me preocupa.
+---
+
+[TEMPLATE:RESENT_COLD_019]
+tags: thought, about_other, resentment, negative_valence
+weight: 6
+---
+{memory_recent}. Lo pongo en la mesa mental cada vez que siento culpa por alejarme.
+---
+
+[TEMPLATE:RESENT_COLD_020]
+tags: thought, about_other, resentment, negative_valence
+weight: 13
+---
+Si perdono demasiado rápido, me convierto en cómplice de mi propia falta de cuidado.
+---
+
+[TEMPLATE:RESENT_COLD_021]
+tags: thought, about_other, resentment, negative_valence
+weight: 11
+---
+{target_name} no rompió todo. Solo rompió la parte que hacía fácil mirarlo.
+---
+
+[TEMPLATE:RESENT_COLD_022]
+tags: thought, about_other, resentment, negative_valence
+weight: 9
+---
+Me cansé de explicar dolores a quien trae martillo en la mano y cara de confundido.
+---
+
+[TEMPLATE:RESENT_COLD_023]
+tags: thought, about_other, resentment, negative_valence
+weight: 7
+---
+{memory_old} fue el aviso. Yo lo llamé exageración porque quería paz. Qué tonto tan trabajador.
+---
+
+[TEMPLATE:RESENT_COLD_024]
+tags: thought, about_other, resentment, negative_valence
+weight: 14
+---
+No pienso hacer escena. La escena la voy a guardar hasta que sirva.
+---
+
+[TEMPLATE:RESENT_COLD_025]
+tags: thought, about_other, resentment, negative_valence
+weight: 12
+---
+{target_pronoun} sonríe como si no hubiera dejado marcas. Supongo que es más fácil cuando no las cargas.
+---
+
+[TEMPLATE:RESENT_COLD_026]
+tags: thought, about_other, resentment, negative_valence
+weight: 10
+---
+El rencor no es bonito, pero al menos no finge ser abrazo.
+---
+
+[TEMPLATE:RESENT_COLD_027]
+tags: thought, about_other, resentment, negative_valence
+weight: 8
+---
+Quiero que {target_name} entienda. También quiero que no pueda dormir después de entender.
+---
+
+[TEMPLATE:RESENT_COLD_028]
+tags: thought, about_other, resentment, negative_valence
+weight: 6
+---
+{memory_recent} me quitó una ingenuidad que yo ni sabía que todavía tenía.
+---
+
+[TEMPLATE:RESENT_COLD_029]
+tags: thought, about_other, resentment, negative_valence
+weight: 13
+---
+Hay una distancia exacta desde donde puedo tratar a {target_name} como persona sin olvidar lo que hizo.
+---
+
+[TEMPLATE:RESENT_COLD_030]
+tags: thought, about_other, resentment, negative_valence
+weight: 11
+---
+No sé si quiero justicia o solo verlo incómodo. Hoy no voy a fingir que la diferencia me importa mucho.
+---

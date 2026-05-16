@@ -1,0 +1,215 @@
+[TEMPLATE:DLG_GOSSIP_GENERAL_001]
+tags: dialogue, gossip, general, rumor
+weight: 12
+---
+[{self_name}]: No estoy diciendo que sea verdad.
+[{target_name}]: Siempre dices eso justo antes de arruinar a alguien.
+---
+
+[TEMPLATE:DLG_GOSSIP_GENERAL_002]
+tags: dialogue, gossip, general, awkward
+weight: 10
+---
+[{target_name}]: ¿De quién hablas?
+[{self_name}]: De nadie importante.
+[{target_name}]: Es mi hermano.
+[{self_name}]: Ah.
+---
+
+[TEMPLATE:DLG_GOSSIP_GENERAL_003]
+tags: dialogue, gossip, general, secret
+weight: 9
+---
+[{self_name}]: Promete que no lo repites.
+[{target_name}]: Esa promesa ya viene rota de fábrica.
+---
+
+[TEMPLATE:DLG_GOSSIP_GENERAL_004]
+tags: dialogue, gossip, general, scandal
+weight: 11
+---
+[{target_name}]: ¿Lo viste tú?
+[{self_name}]: No, pero lo vi en la cara de quien sí lo vio.
+---
+
+[TEMPLATE:DLG_GOSSIP_GENERAL_005]
+tags: dialogue, gossip, general, denial
+weight: 8
+---
+[{self_name}]: A mí no me importa.
+[{target_name}]: Por eso viniste corriendo a contármelo.
+---
+
+[TEMPLATE:DLG_GOSSIP_GENERAL_006]
+tags: dialogue, gossip, general, cruel_fun
+weight: 7
+---
+[{target_name}]: Eso es privado.
+[{self_name}]: También era privado el apocalipsis y míranos, compartiendo ruinas.
+---
+
+[TEMPLATE:DLG_GOSSIP_GENERAL_007]
+tags: dialogue, gossip, general, warning
+weight: 9
+---
+[{self_name}]: Te lo digo para que tengas cuidado.
+[{target_name}]: Mentira. Me lo dices porque te pesa y quieres pasarlo.
+---
+
+[TEMPLATE:DLG_GOSSIP_GENERAL_008]
+tags: dialogue, gossip, general, misunderstanding
+weight: 8
+---
+[{target_name}]: ¿Seguro que era eso?
+[{self_name}]: No.
+[{target_name}]: Esa seguridad tuya me conmueve.
+---
+
+[TEMPLATE:DLG_GOSSIP_GENERAL_009]
+tags: dialogue, gossip, general, subject_known
+weight: 7
+---
+[{self_name}]: Esa persona es un desastre.
+[{target_name}]: Esa persona me salvó la vida.
+[{self_name}]: Puede hacer dos cosas.
+---
+
+[TEMPLATE:DLG_GOSSIP_GENERAL_010]
+tags: dialogue, gossip, general, temptation
+weight: 10
+---
+[{target_name}]: No quiero saber.
+[{self_name}]: Sí quieres.
+[{target_name}]: Sí, pero quería sonar mejor cinco segundos.
+---
+
+[TEMPLATE:DLG_GOSSIP_GENERAL_011]
+tags: dialogue, gossip, general, political
+weight: 8
+---
+[{self_name}]: Está juntando gente.
+[{target_name}]: ¿Para ayudar o para mandar?
+[{self_name}]: Qué bonito que todavía haces diferencia.
+---
+
+[TEMPLATE:DLG_GOSSIP_GENERAL_012]
+tags: dialogue, gossip, general, intimate
+weight: 9
+---
+[{target_name}]: No uses ese tono.
+[{self_name}]: ¿Cuál?
+[{target_name}]: El de "sé algo que te va a doler".
+---
+
+[TEMPLATE:DLG_GOSSIP_GENERAL_013]
+tags: dialogue, gossip, general, comedy
+weight: 10
+---
+[{self_name}]: No juzgo.
+[{target_name}]: Estás juzgando con postura.
+---
+
+[TEMPLATE:DLG_GOSSIP_GENERAL_014]
+tags: dialogue, gossip, general, danger
+weight: 7
+---
+[{target_name}]: Si eso sale, alguien va a sangrar.
+[{self_name}]: Entonces tal vez no salga de mí.
+[{target_name}]: Esa no es una promesa.
+---
+
+[TEMPLATE:DLG_GOSSIP_GENERAL_015]
+tags: dialogue, gossip, general, rumor_chain
+weight: 8
+---
+[{self_name}]: Me lo contó alguien que lo escuchó de alguien.
+[{target_name}]: Qué sólido. Ya podemos fundar un tribunal.
+---
+
+[TEMPLATE:DLG_GOSSIP_GENERAL_016]
+tags: dialogue, gossip, general, sympathy
+weight: 9
+---
+[{target_name}]: Pobre.
+[{self_name}]: ¿Pobre? Yo iba por "qué descaro".
+[{target_name}]: Por eso vine yo a humanizar este basurero.
+---
+
+[TEMPLATE:DLG_GOSSIP_GENERAL_017]
+tags: dialogue, gossip, general, hidden_agenda
+weight: 7
+---
+[{self_name}]: Solo digo que conviene saberlo.
+[{target_name}]: Conviene a quién.
+[{self_name}]: Qué pregunta tan poco divertida.
+---
+
+[TEMPLATE:DLG_GOSSIP_GENERAL_018]
+tags: dialogue, gossip, general, subject_related
+weight: 8
+---
+[{target_name}]: Estás hablando de mi gente.
+[{self_name}]: Entonces corrígeme con cariño.
+[{target_name}]: No traje cariño.
+---
+
+[TEMPLATE:DLG_GOSSIP_GENERAL_019]
+tags: dialogue, gossip, general, moral
+weight: 9
+---
+[{self_name}]: No deberíamos hablar de esto.
+[{target_name}]: Ya vamos tres detalles tarde para ser nobles.
+---
+
+[TEMPLATE:DLG_GOSSIP_GENERAL_020]
+tags: dialogue, gossip, general, casual_cruel
+weight: 8
+---
+[{target_name}]: ¿Y tú cómo sabes tanto?
+[{self_name}]: Escucho. La gente confunde silencio con mueble.
+---
+
+[TEMPLATE:DLG_GOSSIP_GENERAL_021]
+tags: dialogue, gossip, general, black_humor
+weight: 7
+---
+[{self_name}]: La humanidad se redujo y aun así el chisme no perdió biodiversidad.
+[{target_name}]: Es lo único que evolucionó.
+---
+
+[TEMPLATE:DLG_GOSSIP_GENERAL_022]
+tags: dialogue, gossip, general, protection
+weight: 10
+---
+[{target_name}]: ¿Me lo cuentas para protegerme?
+[{self_name}]: Sí.
+[{target_name}]: Mientes peor cuando quieres parecer bueno.
+---
+
+[TEMPLATE:DLG_GOSSIP_GENERAL_023]
+tags: dialogue, gossip, general, accidental
+weight: 8
+---
+[{self_name}]: No debí decir eso.
+[{target_name}]: Pero lo dijiste entero.
+[{self_name}]: Mi boca tiene ambición.
+---
+
+[TEMPLATE:DLG_GOSSIP_GENERAL_024]
+tags: dialogue, gossip, general, heavy
+weight: 7
+---
+[{target_name}]: Eso no es chisme. Eso es una herida caminando.
+[{self_name}]: A veces se ven igual desde lejos.
+---
+
+[TEMPLATE:DLG_GOSSIP_GENERAL_025]
+tags: dialogue, gossip, general, no_resolution
+weight: 9
+---
+[{self_name}]: No se lo digas a nadie.
+[{target_name}]: Depende de cuánto daño haga callarlo.
+[{self_name}]: Esa respuesta me cae mal.
+[{target_name}]: Bien.
+---
+

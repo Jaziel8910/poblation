@@ -1,0 +1,140 @@
+[TEMPLATE:DIARY_SECRET_001]
+tags: diary, secret_keeping, burden
+weight: 12
+---
+Estoy cansado de acomodar la cara cada vez que pienso en {secret_hint}. Guardar algo así es actuar a tiempo completo.
+---
+
+[TEMPLATE:DIARY_SECRET_002]
+tags: diary, secret_keeping, paranoia
+weight: 10
+---
+{target_name} me miró raro hoy y de inmediato pensé que ya sabía todo. Qué lindo vivir con el corazón haciendo guardia inútil.
+---
+
+[TEMPLATE:DIARY_SECRET_003]
+tags: diary, secret_keeping, guilt
+weight: 9
+---
+La parte más pesada no es {secret_hint}. Es tener que seguir sonando normal alrededor de la gente que saldría herida si esto respira.
+---
+
+[TEMPLATE:DIARY_SECRET_004]
+tags: diary, secret_keeping, strategy
+weight: 8
+---
+Estoy ensayando respuestas para preguntas que nadie hizo todavía. Así de poco confío en mi propia boca.
+---
+
+[TEMPLATE:DIARY_SECRET_005]
+tags: diary, secret_keeping, target
+weight: 9
+---
+{target_name} estuvo demasiado cerca de la verdad sin darse cuenta. Yo también estuve demasiado cerca de decirla.
+---
+
+[TEMPLATE:DIARY_SECRET_006]
+tags: diary, secret_keeping, relief
+weight: 7
+---
+Hoy casi lo conté. Después recordé el precio y me volvió la disciplina. O la cobardía. A estas alturas se visten parecido.
+---
+
+[TEMPLATE:DIARY_SECRET_007]
+tags: diary, secret_keeping, anxiety
+weight: 8
+---
+Cada vez que alguien se queda callado un segundo más de lo normal, asumo que el silencio viene con evidencia.
+---
+
+[TEMPLATE:DIARY_SECRET_008]
+tags: diary, secret_keeping, intimacy
+weight: 7
+---
+Odié mentirle a {target_name} en la cara. Odié más notar lo fácil que me salió.
+---
+
+[TEMPLATE:DIARY_SECRET_009]
+tags: diary, secret_keeping, burden
+weight: 9
+---
+{secret_hint} ocupa demasiado espacio para ser invisible. Lo cargo en los hombros aunque nadie vea el bulto.
+---
+
+[TEMPLATE:DIARY_SECRET_010]
+tags: diary, secret_keeping, paranoia
+weight: 8
+---
+Revisé tres veces dónde escondí la prueba. Qué palabra tan fea: prueba. Hace que todo suene más culpable de lo que ya es.
+---
+
+[TEMPLATE:DIARY_SECRET_011]
+tags: diary, secret_keeping, self_loathing
+weight: 7
+---
+No me gusta quién soy cuando protejo esto. Me vuelvo preciso, frío y muy convincente. Malas señales todas.
+---
+
+[TEMPLATE:DIARY_SECRET_012]
+tags: diary, secret_keeping, target
+weight: 8
+---
+Si {target_name} supiera, cambiaría la manera de mirarme para siempre. Qué delicado y qué frágil es un rostro ajeno.
+---
+
+[TEMPLATE:DIARY_SECRET_013]
+tags: diary, secret_keeping, confession
+weight: 7
+---
+Fantaseo con decirlo y terminar con este teatro. Luego recuerdo que el final del teatro no siempre trae paz, a veces solo trae testigos.
+---
+
+[TEMPLATE:DIARY_SECRET_014]
+tags: diary, secret_keeping, burden
+weight: 8
+---
+Hoy {secret_hint} pesó más que mi cuerpo. Lo impresionante es que nadie notó la cojera del alma.
+---
+
+[TEMPLATE:DIARY_SECRET_015]
+tags: diary, secret_keeping, dry_humor
+weight: 6
+---
+Si sigo escondiendo esto con tanta dedicación, merezco al menos un diploma en mala vida.
+---
+
+[TEMPLATE:DIARY_SECRET_016]
+tags: diary, secret_keeping, fear
+weight: 8
+---
+No tengo tanto miedo de que descubran la verdad como de ver mi reflejo cuando la descubran.
+---
+
+[TEMPLATE:DIARY_SECRET_017]
+tags: diary, secret_keeping, target
+weight: 7
+---
+{target_name} habló de confianza hoy. Yo asentí con una cara que debería estar presa.
+---
+
+[TEMPLATE:DIARY_SECRET_018]
+tags: diary, secret_keeping, decay
+weight: 8
+---
+Los secretos no se quedan quietos. Se pudren. Gotean. Encuentran grietas. {secret_hint} ya empezó a oler raro por dentro.
+---
+
+[TEMPLATE:DIARY_SECRET_019]
+tags: diary, secret_keeping, guilt
+weight: 7
+---
+No sé si sigo guardándolo por protección o por puro instinto de supervivencia. Tal vez ya ni importa la diferencia.
+---
+
+[TEMPLATE:DIARY_SECRET_020]
+tags: diary, secret_keeping, no_resolution
+weight: 8
+---
+Mañana quizá lo diga. Escribo "quizá" porque todavía no quiero admitir que lo más probable es volver a callar.
+---
+

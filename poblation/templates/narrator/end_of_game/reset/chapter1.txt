@@ -1,0 +1,7 @@
+[TEMPLATE:END_RESET_CHAPTER_1]
+tags: ending, reset, chapter1
+weight: 10
+---
+La civilizacion no termino en cero. Eso habria sido mas limpio. Termino con dos: {ending_subject} y {ending_second_subject}, parados sobre los restos de {ending_total_pobles} vidas que prometieron hacerlo mejor.
+---
+

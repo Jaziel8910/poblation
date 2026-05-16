@@ -1,0 +1,105 @@
+[TEMPLATE:NARR_DEATH_MURDER_001]
+tags: narrator, death, murder, blunt
+weight: 10
+---
+{killer_name} mato a {victim_name} en {location}. {method_hint}. Lo peor fue lo rapido que el mundo siguio teniendo clima.
+---
+
+[TEMPLATE:NARR_DEATH_MURDER_002]
+tags: narrator, death, murder, direct
+weight: 9
+---
+{victim_name} no murio en una guerra ni en una leyenda. Murio porque {killer_name} estuvo alli, en {location}, con {method_hint}.
+---
+
+[TEMPLATE:NARR_DEATH_MURDER_003]
+tags: narrator, death, murder, cold
+weight: 8
+---
+El cuerpo de {victim_name} quedo en {location}. La explicacion mas corta tiene un nombre: {killer_name}. La mas larga no arregla nada.
+---
+
+[TEMPLATE:NARR_DEATH_MURDER_004]
+tags: narrator, death, murder, impact
+weight: 10
+---
+{method_hint}. Asi termino {victim_name}. Asi empezo otra cosa para {killer_name}, aunque todavia no sepa llamarla culpa.
+---
+
+[TEMPLATE:NARR_DEATH_MURDER_005]
+tags: narrator, death, murder, restrained
+weight: 8
+---
+En {location}, {killer_name} hizo una decision que no se puede deshacer con palabras. {victim_name} pago el precio completo.
+---
+
+[TEMPLATE:NARR_DEATH_MURDER_006]
+tags: narrator, death, murder, public
+weight: 8
+---
+La muerte de {victim_name} no necesito misterio. Habia sangre, habia {location}, habia {killer_name}. El resto fue gente mirando al piso.
+---
+
+[TEMPLATE:NARR_DEATH_MURDER_007]
+tags: narrator, death, murder, quiet
+weight: 7
+---
+{killer_name} mato a {victim_name}. La frase es fea porque no deja espacio para decorarla. {method_hint}. {location} recordara.
+---
+
+[TEMPLATE:NARR_DEATH_MURDER_008]
+tags: narrator, death, murder, consequence
+weight: 9
+---
+Despues de {method_hint}, nadie pudo fingir que {killer_name} era solo dificil. {victim_name} quedo muerto. El pueblo quedo avisado.
+---
+
+[TEMPLATE:NARR_DEATH_MURDER_009]
+tags: narrator, death, murder, dry
+weight: 7
+---
+Informe simple: {victim_name} murio. {killer_name} estaba presente. {location} no limpio nada por si solo.
+---
+
+[TEMPLATE:NARR_DEATH_MURDER_010]
+tags: narrator, death, murder, violent
+weight: 8
+---
+{method_hint} no tuvo grandeza. Tuvo peso, ruido, y a {victim_name} dejando de moverse en {location}.
+---
+
+[TEMPLATE:NARR_DEATH_MURDER_011]
+tags: narrator, death, murder, intimate
+weight: 8
+---
+Lo mas terrible fue la distancia corta. {killer_name}, {victim_name}, {location}. El mundo reducido a tres datos y una muerte.
+---
+
+[TEMPLATE:NARR_DEATH_MURDER_012]
+tags: narrator, death, murder, social
+weight: 9
+---
+Nadie conto la historia igual dos veces, pero todos mantuvieron el centro: {killer_name} mato a {victim_name}. {method_hint}.
+---
+
+[TEMPLATE:NARR_DEATH_MURDER_013]
+tags: narrator, death, murder, aftermath
+weight: 8
+---
+En {location}, {victim_name} dejo de respirar y {killer_name} tuvo que aprender lo larga que puede ser una consecuencia.
+---
+
+[TEMPLATE:NARR_DEATH_MURDER_014]
+tags: narrator, death, murder, sharp
+weight: 7
+---
+{victim_name} no alcanzo a convertirse en simbolo. Primero fue cuerpo. Despues rumor. Despues prueba contra {killer_name}.
+---
+
+[TEMPLATE:NARR_DEATH_MURDER_015]
+tags: narrator, death, murder, final
+weight: 10
+---
+{method_hint}. {victim_name} murio en {location}. {killer_name} siguio vivo, que no siempre es una ventaja.
+---
+

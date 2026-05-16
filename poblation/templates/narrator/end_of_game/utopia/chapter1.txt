@@ -1,0 +1,7 @@
+[TEMPLATE:END_UTOPIA_CHAPTER_1]
+tags: ending, utopia, chapter1
+weight: 10
+---
+En el dia {ending_day}, {ending_settlement} dejo de parecer un accidente afortunado. Con {ending_population} pobles vivos, tecnologia nivel {ending_tech}, y una calma que duro mas que el miedo, el experimento por fin tuvo forma.
+---
+

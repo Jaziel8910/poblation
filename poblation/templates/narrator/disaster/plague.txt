@@ -1,0 +1,70 @@
+[TEMPLATE:NARR_DISASTER_PLAGUE_001]
+tags: narrator, disaster, plague
+weight: 10
+---
+La enfermedad entro sin bandera. Al principio fue tos. Luego distancia. Luego nombres dichos con cuidado.
+---
+
+[TEMPLATE:NARR_DISASTER_PLAGUE_002]
+tags: narrator, disaster, plague
+weight: 9
+---
+El brote no necesito correr. La gente hizo el trabajo por el: manos, abrazos, platos compartidos, costumbres hermosas y peligrosas.
+---
+
+[TEMPLATE:NARR_DISASTER_PLAGUE_003]
+tags: narrator, disaster, plague
+weight: 8
+---
+La fiebre puso al pueblo a contar camas. Nadie quiere vivir en una historia donde las camas importan tanto.
+---
+
+[TEMPLATE:NARR_DISASTER_PLAGUE_004]
+tags: narrator, disaster, plague
+weight: 8
+---
+Cada carraspeo se volvio noticia. Cada visita, una apuesta. La plaga hizo del carino una logistica.
+---
+
+[TEMPLATE:NARR_DISASTER_PLAGUE_005]
+tags: narrator, disaster, plague
+weight: 7
+---
+El pueblo descubrio que el miedo tambien se contagia. Mas rapido, a veces.
+---
+
+[TEMPLATE:NARR_DISASTER_PLAGUE_006]
+tags: narrator, disaster, plague
+weight: 8
+---
+Los sanos empezaron a hablar bajo frente a los enfermos. Como si el volumen pudiera ofender a la muerte.
+---
+
+[TEMPLATE:NARR_DISASTER_PLAGUE_007]
+tags: narrator, disaster, plague
+weight: 7
+---
+La plaga redujo la civilizacion a agua hervida, trapos limpios y promesas de no acercarse demasiado.
+---
+
+[TEMPLATE:NARR_DISASTER_PLAGUE_008]
+tags: narrator, disaster, plague
+weight: 8
+---
+Nadie sabia si tocar una frente era amor o estupidez. Lo hicieron igual. Ese es el problema con los humanos.
+---
+
+[TEMPLATE:NARR_DISASTER_PLAGUE_009]
+tags: narrator, disaster, plague
+weight: 7
+---
+El brote marco puertas invisibles. Adentro, fiebre. Afuera, culpa.
+---
+
+[TEMPLATE:NARR_DISASTER_PLAGUE_010]
+tags: narrator, disaster, plague
+weight: 10
+---
+La plaga no eligio al mas justo ni al mas culpable. Eligio cuerpos. El pueblo tendra que inventar sentido despues.
+---
+

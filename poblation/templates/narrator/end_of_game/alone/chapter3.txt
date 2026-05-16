@@ -1,0 +1,7 @@
+[TEMPLATE:END_ALONE_CHAPTER_3]
+tags: ending, alone, chapter3
+weight: 10
+---
+De {ending_total_pobles} pobles historicos quedaron memorias rotas: {ending_total_deaths} muertes, {ending_total_births} nacimientos, {ending_total_rumours} rumores. El mas deformado decia: {ending_mutated_rumour}.
+---
+

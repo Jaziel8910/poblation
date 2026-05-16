@@ -1,0 +1,7 @@
+[TEMPLATE:END_ALONE_CHAPTER_1]
+tags: ending, alone, chapter1
+weight: 10
+---
+Al final quedo {ending_survivor}. Una sola persona contra una isla que ya conocia demasiados nombres muertos. El dia {ending_day}, la poblacion era una cifra honesta: 1.
+---
+

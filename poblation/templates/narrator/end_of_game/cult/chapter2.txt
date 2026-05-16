@@ -1,0 +1,7 @@
+[TEMPLATE:END_CULT_CHAPTER_2]
+tags: ending, cult, chapter2
+weight: 10
+---
+{ending_prophet} gano sin necesitar que todos entendieran. Bastaba con que obedecieran. El gobierno encontro una forma limpia de llamar sagrado a lo que antes habria parecido control.
+---
+

@@ -1,0 +1,140 @@
+﻿[TEMPLATE:ENC_PASSIONATE_001]
+tags: dialogue, encounter, archetype:lover, content, passionate
+weight: 8
+---
+En {location_name}, todo parece demasiado cerca. La quimica gana terreno rapido. La escena rechaza la media intensidad.
+---
+
+[TEMPLATE:ENC_PASSIONATE_002]
+tags: dialogue, encounter, archetype:ruler, anxious, passionate
+weight: 9
+---
+{self_name} entra al momento sin calma util. {power_dynamic} se vuelve combustible. La distancia dura poco y la excusa menos.
+---
+
+[TEMPLATE:ENC_PASSIONATE_003]
+tags: dialogue, encounter, archetype:rebel, angry, passionate
+weight: 10
+---
+[{target_name}]: No me mires asi. El cuerpo decide antes que la prudencia. Lo que arranca aqui no quiere parecer discreto.
+---
+
+[TEMPLATE:ENC_PASSIONATE_004]
+tags: dialogue, encounter, archetype:caretaker, content, passionate
+weight: 11
+---
+{self_name} y {target_name} se encuentran como incendio mal escondido. {location_memory} hace ruido pero no manda. Cada segundo parece mas caro que el anterior.
+---
+
+[TEMPLATE:ENC_PASSIONATE_005]
+tags: dialogue, encounter, archetype:schemer, obsessive, passionate
+weight: 12
+---
+Hasta {location_atmosphere} aprieta el aire. Nadie presume inocencia aqui. La escena rechaza la media intensidad.
+---
+
+[TEMPLATE:ENC_PASSIONATE_006]
+tags: dialogue, encounter, archetype:lover, content, passionate
+weight: 8
+---
+En {location_name}, todo parece demasiado cerca. La quimica gana terreno rapido. La distancia dura poco y la excusa menos.
+---
+
+[TEMPLATE:ENC_PASSIONATE_007]
+tags: dialogue, encounter, archetype:ruler, anxious, passionate
+weight: 9
+---
+{self_name} entra al momento sin calma util. {power_dynamic} se vuelve combustible. Lo que arranca aqui no quiere parecer discreto.
+---
+
+[TEMPLATE:ENC_PASSIONATE_008]
+tags: dialogue, encounter, archetype:rebel, angry, passionate
+weight: 10
+---
+[{target_name}]: No me mires asi. El cuerpo decide antes que la prudencia. Cada segundo parece mas caro que el anterior.
+---
+
+[TEMPLATE:ENC_PASSIONATE_009]
+tags: dialogue, encounter, archetype:caretaker, content, passionate
+weight: 11
+---
+{self_name} y {target_name} se encuentran como incendio mal escondido. {location_memory} hace ruido pero no manda. La escena rechaza la media intensidad.
+---
+
+[TEMPLATE:ENC_PASSIONATE_010]
+tags: dialogue, encounter, archetype:schemer, obsessive, passionate
+weight: 12
+---
+Hasta {location_atmosphere} aprieta el aire. Nadie presume inocencia aqui. La distancia dura poco y la excusa menos.
+---
+
+[TEMPLATE:ENC_PASSIONATE_011]
+tags: dialogue, encounter, archetype:lover, content, passionate
+weight: 8
+---
+En {location_name}, todo parece demasiado cerca. La quimica gana terreno rapido. Lo que arranca aqui no quiere parecer discreto.
+---
+
+[TEMPLATE:ENC_PASSIONATE_012]
+tags: dialogue, encounter, archetype:ruler, anxious, passionate
+weight: 9
+---
+{self_name} entra al momento sin calma util. {power_dynamic} se vuelve combustible. Cada segundo parece mas caro que el anterior.
+---
+
+[TEMPLATE:ENC_PASSIONATE_013]
+tags: dialogue, encounter, archetype:rebel, angry, passionate
+weight: 10
+---
+[{target_name}]: No me mires asi. El cuerpo decide antes que la prudencia. La escena rechaza la media intensidad.
+---
+
+[TEMPLATE:ENC_PASSIONATE_014]
+tags: dialogue, encounter, archetype:caretaker, content, passionate
+weight: 11
+---
+{self_name} y {target_name} se encuentran como incendio mal escondido. {location_memory} hace ruido pero no manda. La distancia dura poco y la excusa menos.
+---
+
+[TEMPLATE:ENC_PASSIONATE_015]
+tags: dialogue, encounter, archetype:schemer, obsessive, passionate
+weight: 12
+---
+Hasta {location_atmosphere} aprieta el aire. Nadie presume inocencia aqui. Lo que arranca aqui no quiere parecer discreto.
+---
+
+[TEMPLATE:ENC_PASSIONATE_016]
+tags: dialogue, encounter, archetype:lover, content, passionate
+weight: 8
+---
+En {location_name}, todo parece demasiado cerca. La quimica gana terreno rapido. Cada segundo parece mas caro que el anterior.
+---
+
+[TEMPLATE:ENC_PASSIONATE_017]
+tags: dialogue, encounter, archetype:ruler, anxious, passionate
+weight: 9
+---
+{self_name} entra al momento sin calma util. {power_dynamic} se vuelve combustible. La escena rechaza la media intensidad.
+---
+
+[TEMPLATE:ENC_PASSIONATE_018]
+tags: dialogue, encounter, archetype:rebel, angry, passionate
+weight: 10
+---
+[{target_name}]: No me mires asi. El cuerpo decide antes que la prudencia. La distancia dura poco y la excusa menos.
+---
+
+[TEMPLATE:ENC_PASSIONATE_019]
+tags: dialogue, encounter, archetype:caretaker, content, passionate
+weight: 11
+---
+{self_name} y {target_name} se encuentran como incendio mal escondido. {location_memory} hace ruido pero no manda. Lo que arranca aqui no quiere parecer discreto.
+---
+
+[TEMPLATE:ENC_PASSIONATE_020]
+tags: dialogue, encounter, archetype:schemer, obsessive, passionate
+weight: 12
+---
+Hasta {location_atmosphere} aprieta el aire. Nadie presume inocencia aqui. Cada segundo parece mas caro que el anterior.
+---
+

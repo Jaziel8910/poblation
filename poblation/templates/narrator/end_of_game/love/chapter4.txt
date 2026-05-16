@@ -1,0 +1,7 @@
+[TEMPLATE:END_LOVE_CHAPTER_4]
+tags: ending, love, chapter4
+weight: 10
+---
+No hubo heredero. No hubo dinastia. Solo {ending_survivor}, el nombre de {ending_deceased}, y una casa donde el futuro dejo de pedir permiso. POBLATION no fue salvada. Fue amada hasta donde alcanzo.
+---
+

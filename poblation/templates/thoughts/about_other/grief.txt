@@ -1,0 +1,175 @@
+[TEMPLATE:THOUGHT_GRIEF_001]
+tags: thought, grief, first_days, negative_valence
+weight: 10
+---
+Busco a {target_name} antes de acordarme. Ese segundo antes de recordar es el unico lugar donde todavia vive.
+---
+
+[TEMPLATE:THOUGHT_GRIEF_002]
+tags: thought, grief, first_days, anger
+weight: 9
+---
+Estoy furioso con {target_name} por morirse. Que estupidez. Que verdad.
+---
+
+[TEMPLATE:THOUGHT_GRIEF_003]
+tags: thought, grief, months, mundane
+weight: 8
+---
+Hoy vi algo que {target_name} habria odiado. Me rei. Despues me senti culpable por haber tenido que hacer las dos cosas solo.
+---
+
+[TEMPLATE:THOUGHT_GRIEF_004]
+tags: thought, grief, years, quiet
+weight: 8
+---
+Ya puedo decir el nombre de {target_name} sin romperme. Eso no significa que sane. Significa que aprendi una tecnica.
+---
+
+[TEMPLATE:THOUGHT_GRIEF_005]
+tags: thought, grief, first_days, body
+weight: 9
+---
+Mi cuerpo todavia espera escuchar a {target_name}. La cabeza entiende la muerte. El cuerpo es mas lento.
+---
+
+[TEMPLATE:THOUGHT_GRIEF_006]
+tags: thought, grief, memory
+weight: 8
+---
+{memory_recent}. No se por que ese recuerdo vuelve hoy. El duelo tiene pesima administracion.
+---
+
+[TEMPLATE:THOUGHT_GRIEF_007]
+tags: thought, grief, guilt
+weight: 8
+---
+Si hubiera dicho una frase distinta, {target_name} igual estaria muerto. Lo se. Mi culpa no esta interesada en pruebas.
+---
+
+[TEMPLATE:THOUGHT_GRIEF_008]
+tags: thought, grief, anger, target
+weight: 7
+---
+Quiero pedirle perdon a {target_name} y tambien reclamarle. Los muertos siempre ganan porque no contestan.
+---
+
+[TEMPLATE:THOUGHT_GRIEF_009]
+tags: thought, grief, months, practical
+weight: 8
+---
+Guarde una cosa de {target_name} para no perderlo. Ahora no puedo moverla sin sentir que lo mato otra vez.
+---
+
+[TEMPLATE:THOUGHT_GRIEF_010]
+tags: thought, grief, years, surprise
+weight: 8
+---
+Pasan dias sin pensar en {target_name}. Luego una palabra abre una puerta y ahi esta todo, intacto como una trampa limpia.
+---
+
+[TEMPLATE:THOUGHT_GRIEF_011]
+tags: thought, grief, first_days, denial
+weight: 9
+---
+Parte de mi sigue preparando una noticia para {target_name}. Parte de mi sabe que nadie viene a recibirla.
+---
+
+[TEMPLATE:THOUGHT_GRIEF_012]
+tags: thought, grief, envy
+weight: 7
+---
+Odio a la gente que no perdio a {target_name}. Caminan livianos y ni siquiera saben que estan presumiendo.
+---
+
+[TEMPLATE:THOUGHT_GRIEF_013]
+tags: thought, grief, tender
+weight: 8
+---
+Recorde como {target_name} decia mi nombre cuando queria molestarme. Daria demasiado por irritarme otra vez.
+---
+
+[TEMPLATE:THOUGHT_GRIEF_014]
+tags: thought, grief, numb
+weight: 7
+---
+Hoy no senti nada por {target_name}. Eso tambien dolio, pero mas tarde.
+---
+
+[TEMPLATE:THOUGHT_GRIEF_015]
+tags: thought, grief, social
+weight: 8
+---
+La gente habla de {target_name} como si lo conociera entero. Nadie conoce entero a nadie. Ni muerto.
+---
+
+[TEMPLATE:THOUGHT_GRIEF_016]
+tags: thought, grief, years, legacy
+weight: 8
+---
+Hice algo como lo hacia {target_name}. No se si eso es homenaje, contagio o falta de imaginacion.
+---
+
+[TEMPLATE:THOUGHT_GRIEF_017]
+tags: thought, grief, first_days, bargaining
+weight: 7
+---
+Pienso cosas ridiculas: si ordeno esto, si no duermo, si camino hasta alla. Como si la muerte aceptara trueques mal hechos.
+---
+
+[TEMPLATE:THOUGHT_GRIEF_018]
+tags: thought, grief, desire
+weight: 8
+---
+Quiero contarle a {target_name} que lo extrano. Esa es la parte estupida: el mensaje existe solo para quien no puede recibirlo.
+---
+
+[TEMPLATE:THOUGHT_GRIEF_019]
+tags: thought, grief, months, resentment
+weight: 7
+---
+Todos esperan que mi dolor sea mas ordenado. Lamento que {target_name} no muriera con instrucciones de mantenimiento.
+---
+
+[TEMPLATE:THOUGHT_GRIEF_020]
+tags: thought, grief, quiet
+weight: 8
+---
+No extrano una version perfecta de {target_name}. Extrano sus defectos especificos. Eso es lo injusto.
+---
+
+[TEMPLATE:THOUGHT_GRIEF_021]
+tags: thought, grief, years, fear
+weight: 7
+---
+Tengo miedo de recordar mal a {target_name}. La memoria tambien traiciona, solo que mas lento.
+---
+
+[TEMPLATE:THOUGHT_GRIEF_022]
+tags: thought, grief, first_days, domestic
+weight: 8
+---
+Su lugar sigue ahi. No se si moverlo es aceptar o borrar. Ambas cosas parecen crimen.
+---
+
+[TEMPLATE:THOUGHT_GRIEF_023]
+tags: thought, grief, old_memory
+weight: 8
+---
+{memory_old}. Antes era solo pasado. Ahora parece una habitacion cerrada con {target_name} adentro.
+---
+
+[TEMPLATE:THOUGHT_GRIEF_024]
+tags: thought, grief, nonlinear
+weight: 8
+---
+Ayer estuve bien. Hoy no. Manana quien sabe. El duelo no camina: aparece en esquinas.
+---
+
+[TEMPLATE:THOUGHT_GRIEF_025]
+tags: thought, grief, final
+weight: 10
+---
+Voy a seguir viviendo. No por superar a {target_name}. Por cargarlo de una forma que no me mate todos los dias.
+---
+

@@ -1,0 +1,209 @@
+[TEMPLATE:SELF_INSEC_001]
+tags: thought, about_self, insecurity, negative_valence
+weight: 6
+---
+Si camino raro en {location}, todos van a notarlo. Somos pocos, la vergüenza tiene buena cobertura.
+---
+
+[TEMPLATE:SELF_INSEC_002]
+tags: thought, about_self, insecurity, negative_valence
+weight: 13
+---
+Me llamo {self_name} y a veces siento que mi nombre le queda grande a lo que hago.
+---
+
+[TEMPLATE:SELF_INSEC_003]
+tags: thought, about_self, insecurity, negative_valence
+weight: 11
+---
+Hoy me miré las manos y pensé: estas son las herramientas de la humanidad. Pobres manos. Pobre humanidad.
+---
+
+[TEMPLATE:SELF_INSEC_004]
+tags: thought, about_self, insecurity, negative_valence
+weight: 9
+---
+En {location} finjo saber a dónde voy. La mitad del liderazgo humano es caminar con cara de mapa.
+---
+
+[TEMPLATE:SELF_INSEC_005]
+tags: thought, about_self, insecurity, negative_valence
+weight: 7
+---
+No sé si soy fuerte o si simplemente no he tenido permiso de caerme.
+---
+
+[TEMPLATE:SELF_INSEC_006]
+tags: thought, about_self, insecurity, negative_valence
+weight: 14
+---
+A veces hablo y escucho mi voz desde afuera. Suena como alguien pidiendo que no lo descubran.
+---
+
+[TEMPLATE:SELF_INSEC_007]
+tags: thought, about_self, insecurity, negative_valence
+weight: 12
+---
+Tengo miedo de ser el tipo de persona que solo parece buena cuando no tiene opciones.
+---
+
+[TEMPLATE:SELF_INSEC_008]
+tags: thought, about_self, insecurity, negative_valence
+weight: 10
+---
+Si {self_name} fuera otra persona, yo sospecharía de él. Mucho contacto visual, demasiadas pausas.
+---
+
+[TEMPLATE:SELF_INSEC_009]
+tags: thought, about_self, insecurity, negative_valence
+weight: 8
+---
+No soy inútil. Solo tengo momentos largos, frecuentes y documentables de inutilidad.
+---
+
+[TEMPLATE:SELF_INSEC_010]
+tags: thought, about_self, insecurity, negative_valence
+weight: 6
+---
+Me preocupa que mi mejor versión haya muerto con el mundo anterior y esta sea la copia barata.
+---
+
+[TEMPLATE:SELF_INSEC_011]
+tags: thought, about_self, insecurity, negative_valence
+weight: 13
+---
+En {location} todos los errores rebotan. No hay suficiente ruido para esconderlos.
+---
+
+[TEMPLATE:SELF_INSEC_012]
+tags: thought, about_self, insecurity, negative_valence
+weight: 11
+---
+A veces creo que doy lástima. Luego me molesta que nadie lo note. Elegante, mi desastre.
+---
+
+[TEMPLATE:SELF_INSEC_013]
+tags: thought, about_self, insecurity, negative_valence
+weight: 9
+---
+No tengo miedo de fallar. Tengo miedo de que todos digan: claro, era obvio.
+---
+
+[TEMPLATE:SELF_INSEC_014]
+tags: thought, about_self, insecurity, negative_valence
+weight: 7
+---
+Me arreglo la ropa como si la dignidad tuviera costuras.
+---
+
+[TEMPLATE:SELF_INSEC_015]
+tags: thought, about_self, insecurity, negative_valence
+weight: 14
+---
+{self_name}, por favor no digas algo raro hoy. O dilo con seguridad, que a veces eso confunde.
+---
+
+[TEMPLATE:SELF_INSEC_016]
+tags: thought, about_self, insecurity, negative_valence
+weight: 12
+---
+Mi cuerpo hace sonidos de casa vieja. Muy inspirador para el futuro de la especie.
+---
+
+[TEMPLATE:SELF_INSEC_017]
+tags: thought, about_self, insecurity, negative_valence
+weight: 10
+---
+Me comparo con fantasmas. Gente que ya no está y aun así logra ganarme.
+---
+
+[TEMPLATE:SELF_INSEC_018]
+tags: thought, about_self, insecurity, negative_valence
+weight: 8
+---
+Si alguien me pregunta qué siento, puedo responder con tareas. Es mi talento más triste.
+---
+
+[TEMPLATE:SELF_INSEC_019]
+tags: thought, about_self, insecurity, negative_valence
+weight: 6
+---
+Hay días en que mi cara no ayuda. Ninguna de mis caras ayuda, para ser justo.
+---
+
+[TEMPLATE:SELF_INSEC_020]
+tags: thought, about_self, insecurity, negative_valence
+weight: 13
+---
+Me da miedo que la gente descubra que mi calma es solo cansancio con buena postura.
+---
+
+[TEMPLATE:SELF_INSEC_021]
+tags: thought, about_self, insecurity, negative_valence
+weight: 11
+---
+En {location} hasta mi sombra parece tener dudas sobre seguirme.
+---
+
+[TEMPLATE:SELF_INSEC_022]
+tags: thought, about_self, insecurity, negative_valence
+weight: 9
+---
+Quiero que me necesiten, pero no demasiado. Quiero importar sin que eso tenga consecuencias. Normalísimo.
+---
+
+[TEMPLATE:SELF_INSEC_023]
+tags: thought, about_self, insecurity, negative_valence
+weight: 7
+---
+Me preocupa oler a miedo. También a humo. Pero el miedo sería más personal.
+---
+
+[TEMPLATE:SELF_INSEC_024]
+tags: thought, about_self, insecurity, negative_valence
+weight: 14
+---
+Cada vez que doy una opinión, una parte de mí prepara una disculpa preventiva.
+---
+
+[TEMPLATE:SELF_INSEC_025]
+tags: thought, about_self, insecurity, negative_valence
+weight: 12
+---
+No soy cobarde. Soy estratégico con el pánico.
+---
+
+[TEMPLATE:SELF_INSEC_026]
+tags: thought, about_self, insecurity, negative_valence
+weight: 10
+---
+{self_name} suena decente en voz alta. Por dentro hace ruido de cajón lleno.
+---
+
+[TEMPLATE:SELF_INSEC_027]
+tags: thought, about_self, insecurity, negative_valence
+weight: 8
+---
+Ojalá mi cara no cuente tantos secretos antes que yo.
+---
+
+[TEMPLATE:SELF_INSEC_028]
+tags: thought, about_self, insecurity, negative_valence
+weight: 6
+---
+Me siento reemplazable en un mundo donde casi no queda gente. Eso sí es talento.
+---
+
+[TEMPLATE:SELF_INSEC_029]
+tags: thought, about_self, insecurity, negative_valence
+weight: 13
+---
+Si todos estamos improvisando, ¿por qué siento que soy el único sin libreto?
+---
+
+[TEMPLATE:SELF_INSEC_030]
+tags: thought, about_self, insecurity, negative_valence
+weight: 11
+---
+A veces creo que soy una carga. Luego cargo algo pesado para callarme la boca.
+---

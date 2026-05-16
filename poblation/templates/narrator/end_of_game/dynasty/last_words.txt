@@ -1,0 +1,7 @@
+[TEMPLATE:END_DYNASTY_LAST_WORDS]
+tags: ending, dynasty, last_words
+weight: 10
+---
+La corona no cayo. Solo aprendio otros nombres.
+---
+

@@ -1,0 +1,239 @@
+[TEMPLATE:ARCH_RULER_001]
+tags: thought, by_archetype, archetype:ruler, control
+weight: 6
+archetypes: RULER
+---
+Si no organizo esto, alguien con menos miedo va a organizarlo peor.
+---
+
+[TEMPLATE:ARCH_RULER_002]
+tags: thought, by_archetype, archetype:ruler, control
+weight: 13
+archetypes: RULER
+---
+La gente dice que quiere libertad hasta que la libertad les pide decidir algo difícil.
+---
+
+[TEMPLATE:ARCH_RULER_003]
+tags: thought, by_archetype, archetype:ruler, control
+weight: 11
+archetypes: RULER
+---
+No necesito mandar. Necesito que las cosas no se caigan porque todos están improvisando con cara noble.
+---
+
+[TEMPLATE:ARCH_RULER_004]
+tags: thought, by_archetype, archetype:ruler, control
+weight: 9
+archetypes: RULER
+---
+Hay que poner reglas antes de que el hambre invente las suyas.
+---
+
+[TEMPLATE:ARCH_RULER_005]
+tags: thought, by_archetype, archetype:ruler, control
+weight: 7
+archetypes: RULER
+---
+Me preocupa cuánto me calma ver a todos haciendo lo que dije.
+---
+
+[TEMPLATE:ARCH_RULER_006]
+tags: thought, by_archetype, archetype:ruler, control
+weight: 14
+archetypes: RULER
+---
+El control no es un vicio si evita cadáveres. Eso voy a repetir hasta creerlo completo.
+---
+
+[TEMPLATE:ARCH_RULER_007]
+tags: thought, by_archetype, archetype:ruler, control
+weight: 12
+archetypes: RULER
+---
+Alguien tiene que llevar la cuenta. Alguien tiene que decir no. Alguien siempre termina odiado por servir de pared.
+---
+
+[TEMPLATE:ARCH_RULER_008]
+tags: thought, by_archetype, archetype:ruler, control
+weight: 10
+archetypes: RULER
+---
+Si cedo demasiado, esto se vuelve reunión. Si aprieto demasiado, se vuelve jaula. Qué divertido gobernar ruinas.
+---
+
+[TEMPLATE:ARCH_RULER_009]
+tags: thought, by_archetype, archetype:ruler, control
+weight: 8
+archetypes: RULER
+---
+No quiero súbditos. Quiero adultos funcionales. Como no hay suficientes, improviso.
+---
+
+[TEMPLATE:ARCH_RULER_010]
+tags: thought, by_archetype, archetype:ruler, control
+weight: 6
+archetypes: RULER
+---
+La compasión sin estructura es solo una fogata bonita al lado de pólvora.
+---
+
+[TEMPLATE:ARCH_RULER_011]
+tags: thought, by_archetype, archetype:ruler, control
+weight: 13
+archetypes: RULER
+---
+Escucho opiniones y las separo en dos pilas: útiles y emocionalmente ruidosas.
+---
+
+[TEMPLATE:ARCH_RULER_012]
+tags: thought, by_archetype, archetype:ruler, control
+weight: 11
+archetypes: RULER
+---
+Si me equivoco, todos pagan. Si acierto, dirán que era obvio. Excelente contrato.
+---
+
+[TEMPLATE:ARCH_RULER_013]
+tags: thought, by_archetype, archetype:ruler, control
+weight: 9
+archetypes: RULER
+---
+Me gusta cuando un plan encaja. Me gusta demasiado. Ahí está el problema respirando.
+---
+
+[TEMPLATE:ARCH_RULER_014]
+tags: thought, by_archetype, archetype:ruler, control
+weight: 7
+archetypes: RULER
+---
+La autoridad debería pesar más. A veces pesa, a veces brilla. No me gusta admitir la segunda.
+---
+
+[TEMPLATE:ARCH_RULER_015]
+tags: thought, by_archetype, archetype:ruler, control
+weight: 14
+archetypes: RULER
+---
+Nadie agradece una decisión dura el día que la tomas. Tal vez la historia. Tal vez nadie. Igual toca.
+---
+
+[TEMPLATE:ARCH_RULER_016]
+tags: thought, by_archetype, archetype:ruler, control
+weight: 12
+archetypes: RULER
+---
+Puedo escuchar miedo en la voz de otros. También puedo usarlo. No siempre debería.
+---
+
+[TEMPLATE:ARCH_RULER_017]
+tags: thought, by_archetype, archetype:ruler, control
+weight: 10
+archetypes: RULER
+---
+El caos tiene buen corazón y manos sucias. No lo quiero cerca de los suministros.
+---
+
+[TEMPLATE:ARCH_RULER_018]
+tags: thought, by_archetype, archetype:ruler, control
+weight: 8
+archetypes: RULER
+---
+Un pueblo sin mando es una pelea esperando calendario.
+---
+
+[TEMPLATE:ARCH_RULER_019]
+tags: thought, by_archetype, archetype:ruler, control
+weight: 6
+archetypes: RULER
+---
+No estoy por encima de nadie. Estoy adelante, que es donde te pegan primero y te juzgan después.
+---
+
+[TEMPLATE:ARCH_RULER_020]
+tags: thought, by_archetype, archetype:ruler, control
+weight: 13
+archetypes: RULER
+---
+La gente confunde firmeza con crueldad porque no quiere mirar el costo de la ternura.
+---
+
+[TEMPLATE:ARCH_RULER_021]
+tags: thought, by_archetype, archetype:ruler, control
+weight: 11
+archetypes: RULER
+---
+Si todos me necesitan, estoy haciendo algo mal. Si nadie me necesita, quizá ya terminé. Ninguna opción me gusta.
+---
+
+[TEMPLATE:ARCH_RULER_022]
+tags: thought, by_archetype, archetype:ruler, control
+weight: 9
+archetypes: RULER
+---
+La obediencia por miedo sirve poco. La obediencia por confianza sirve más. La obediencia por costumbre me preocupa.
+---
+
+[TEMPLATE:ARCH_RULER_023]
+tags: thought, by_archetype, archetype:ruler, control
+weight: 7
+archetypes: RULER
+---
+Estoy cansado de explicar lo evidente. Lo evidente también se pudre si nadie lo defiende.
+---
+
+[TEMPLATE:ARCH_RULER_024]
+tags: thought, by_archetype, archetype:ruler, control
+weight: 14
+archetypes: RULER
+---
+Cada recurso tiene dueño temporal: la supervivencia. Yo solo soy su contador desagradable.
+---
+
+[TEMPLATE:ARCH_RULER_025]
+tags: thought, by_archetype, archetype:ruler, control
+weight: 12
+archetypes: RULER
+---
+A veces sueño con no decidir. Despierto y alguien ya está haciendo algo idiota.
+---
+
+[TEMPLATE:ARCH_RULER_026]
+tags: thought, by_archetype, archetype:ruler, control
+weight: 10
+archetypes: RULER
+---
+Quiero que me contradigan bien. No por orgullo, por mantenimiento del sistema.
+---
+
+[TEMPLATE:ARCH_RULER_027]
+tags: thought, by_archetype, archetype:ruler, control
+weight: 8
+archetypes: RULER
+---
+El poder no cambia a la gente. Le da micrófono a lo que ya venía murmurando.
+---
+
+[TEMPLATE:ARCH_RULER_028]
+tags: thought, by_archetype, archetype:ruler, control
+weight: 6
+archetypes: RULER
+---
+Si tengo que ser el malo para que mañana exista, al menos quiero ser un malo competente.
+---
+
+[TEMPLATE:ARCH_RULER_029]
+tags: thought, by_archetype, archetype:ruler, control
+weight: 13
+archetypes: RULER
+---
+Un gesto blando en el momento equivocado puede matar más que una orden fría.
+---
+
+[TEMPLATE:ARCH_RULER_030]
+tags: thought, by_archetype, archetype:ruler, control
+weight: 11
+archetypes: RULER
+---
+No quiero controlar personas. Quiero controlar consecuencias. Lástima que vienen pegadas.
+---

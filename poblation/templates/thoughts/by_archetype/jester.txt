@@ -1,0 +1,239 @@
+[TEMPLATE:ARCH_JESTER_001]
+tags: thought, by_archetype, archetype:jester, humor, mask
+weight: 6
+archetypes: JESTER
+---
+Si hago un chiste primero, nadie pregunta por la grieta.
+---
+
+[TEMPLATE:ARCH_JESTER_002]
+tags: thought, by_archetype, archetype:jester, humor, mask
+weight: 13
+archetypes: JESTER
+---
+La gente respira mejor cuando se ríe. Yo también, por tres segundos, y luego vuelve lo mío.
+---
+
+[TEMPLATE:ARCH_JESTER_003]
+tags: thought, by_archetype, archetype:jester, humor, mask
+weight: 11
+archetypes: JESTER
+---
+Hoy casi dije la verdad. Por suerte se me ocurrió algo estúpido a tiempo.
+---
+
+[TEMPLATE:ARCH_JESTER_004]
+tags: thought, by_archetype, archetype:jester, humor, mask
+weight: 9
+archetypes: JESTER
+---
+Ser gracioso en el fin del mundo es como tocar música en un incendio: inútil, necesario, sospechoso.
+---
+
+[TEMPLATE:ARCH_JESTER_005]
+tags: thought, by_archetype, archetype:jester, humor, mask
+weight: 7
+archetypes: JESTER
+---
+Tengo una broma lista por si alguien muere. Eso no me hace monstruo. Me hace preparado y horrible.
+---
+
+[TEMPLATE:ARCH_JESTER_006]
+tags: thought, by_archetype, archetype:jester, humor, mask
+weight: 14
+archetypes: JESTER
+---
+Si no exagero, lloro. La exageración tiene mejor timing.
+---
+
+[TEMPLATE:ARCH_JESTER_007]
+tags: thought, by_archetype, archetype:jester, humor, mask
+weight: 12
+archetypes: JESTER
+---
+Todos creen que no me tomo nada en serio. Qué alivio, qué insulto, qué buena cobertura.
+---
+
+[TEMPLATE:ARCH_JESTER_008]
+tags: thought, by_archetype, archetype:jester, humor, mask
+weight: 10
+archetypes: JESTER
+---
+Mi tristeza sabe esperar a que no haya público. Profesional la desgraciada.
+---
+
+[TEMPLATE:ARCH_JESTER_009]
+tags: thought, by_archetype, archetype:jester, humor, mask
+weight: 8
+archetypes: JESTER
+---
+Hacer reír a alguien se siente como robarle un minuto al miedo.
+---
+
+[TEMPLATE:ARCH_JESTER_010]
+tags: thought, by_archetype, archetype:jester, humor, mask
+weight: 6
+archetypes: JESTER
+---
+A veces quiero que alguien no se ría y me diga: ya, basta, te veo. Qué pensamiento tan peligroso.
+---
+
+[TEMPLATE:ARCH_JESTER_011]
+tags: thought, by_archetype, archetype:jester, humor, mask
+weight: 13
+archetypes: JESTER
+---
+La tragedia sin remate es solo mala administración emocional.
+---
+
+[TEMPLATE:ARCH_JESTER_012]
+tags: thought, by_archetype, archetype:jester, humor, mask
+weight: 11
+archetypes: JESTER
+---
+Si digo lo que siento, el cuarto se rompe. Si hago un chiste, solo se agrieta bonito.
+---
+
+[TEMPLATE:ARCH_JESTER_013]
+tags: thought, by_archetype, archetype:jester, humor, mask
+weight: 9
+archetypes: JESTER
+---
+Me gusta ser necesario cuando todo pesa. No me gusta que mi parte necesaria sea esconderme.
+---
+
+[TEMPLATE:ARCH_JESTER_014]
+tags: thought, by_archetype, archetype:jester, humor, mask
+weight: 7
+archetypes: JESTER
+---
+El mundo terminó y aun así alguien se ofende por sarcasmo. Milagro: la estupidez sobrevivió.
+---
+
+[TEMPLATE:ARCH_JESTER_015]
+tags: thought, by_archetype, archetype:jester, humor, mask
+weight: 14
+archetypes: JESTER
+---
+Tengo miedo de quedarme sin bromas y descubrir que abajo no hay personalidad, solo cansancio.
+---
+
+[TEMPLATE:ARCH_JESTER_016]
+tags: thought, by_archetype, archetype:jester, humor, mask
+weight: 12
+archetypes: JESTER
+---
+Cuando todos lloran, yo cuento algo absurdo. A veces funciona. A veces soy el absurdo.
+---
+
+[TEMPLATE:ARCH_JESTER_017]
+tags: thought, by_archetype, archetype:jester, humor, mask
+weight: 10
+archetypes: JESTER
+---
+La risa es una puerta. También puede ser pared. Depende de qué tan cobarde amanezca.
+---
+
+[TEMPLATE:ARCH_JESTER_018]
+tags: thought, by_archetype, archetype:jester, humor, mask
+weight: 8
+archetypes: JESTER
+---
+Me gustaría descansar de ser alivio público.
+---
+
+[TEMPLATE:ARCH_JESTER_019]
+tags: thought, by_archetype, archetype:jester, humor, mask
+weight: 6
+archetypes: JESTER
+---
+Nadie sospecha del payaso hasta que el payaso deja de moverse.
+---
+
+[TEMPLATE:ARCH_JESTER_020]
+tags: thought, by_archetype, archetype:jester, humor, mask
+weight: 13
+archetypes: JESTER
+---
+Si hago reír a la persona correcta, tal vez no se vaya. Qué negocio tan triste.
+---
+
+[TEMPLATE:ARCH_JESTER_021]
+tags: thought, by_archetype, archetype:jester, humor, mask
+weight: 11
+archetypes: JESTER
+---
+Tengo una colección privada de momentos donde quise pedir ayuda y dije una estupidez perfecta.
+---
+
+[TEMPLATE:ARCH_JESTER_022]
+tags: thought, by_archetype, archetype:jester, humor, mask
+weight: 9
+archetypes: JESTER
+---
+El humor negro es solo esperanza con ropa quemada.
+---
+
+[TEMPLATE:ARCH_JESTER_023]
+tags: thought, by_archetype, archetype:jester, humor, mask
+weight: 7
+archetypes: JESTER
+---
+Hoy vi algo hermoso y pensé un chiste para no tener que sentirlo entero.
+---
+
+[TEMPLATE:ARCH_JESTER_024]
+tags: thought, by_archetype, archetype:jester, humor, mask
+weight: 14
+archetypes: JESTER
+---
+Me aplauden por esquivar el dolor con estilo. Nadie pregunta si sé volver.
+---
+
+[TEMPLATE:ARCH_JESTER_025]
+tags: thought, by_archetype, archetype:jester, humor, mask
+weight: 12
+archetypes: JESTER
+---
+A veces soy el único riéndose. Eso puede ser valentía o síntoma. No voy a revisar.
+---
+
+[TEMPLATE:ARCH_JESTER_026]
+tags: thought, by_archetype, archetype:jester, humor, mask
+weight: 10
+archetypes: JESTER
+---
+El desastre necesita narrador, pero yo solo traje comentarios ofensivos.
+---
+
+[TEMPLATE:ARCH_JESTER_027]
+tags: thought, by_archetype, archetype:jester, humor, mask
+weight: 8
+archetypes: JESTER
+---
+Si algún día estoy callado, por favor preocúpense. O celebren, depende de cuánto me conozcan.
+---
+
+[TEMPLATE:ARCH_JESTER_028]
+tags: thought, by_archetype, archetype:jester, humor, mask
+weight: 6
+archetypes: JESTER
+---
+La máscara no pesa siempre. Ese es el truco: algunos días hasta abriga.
+---
+
+[TEMPLATE:ARCH_JESTER_029]
+tags: thought, by_archetype, archetype:jester, humor, mask
+weight: 13
+archetypes: JESTER
+---
+Puedo convertir una herida en historia graciosa. No puedo convertirla en piel nueva.
+---
+
+[TEMPLATE:ARCH_JESTER_030]
+tags: thought, by_archetype, archetype:jester, humor, mask
+weight: 11
+archetypes: JESTER
+---
+Me río porque todavía puedo. También porque si paro, quizá escucho todo.
+---

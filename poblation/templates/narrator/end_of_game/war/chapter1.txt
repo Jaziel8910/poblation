@@ -1,0 +1,7 @@
+[TEMPLATE:END_WAR_CHAPTER_1]
+tags: ending, war, chapter1
+weight: 10
+---
+La segunda extincion no tuvo meteorito. Tuvo manos. Para el dia {ending_day}, la poblacion de {ending_settlement} era {ending_population}, y esa cifra dijo mas que cualquier himno.
+---
+

@@ -1,0 +1,140 @@
+﻿[TEMPLATE:ENC_FIRST_EVER_001]
+tags: dialogue, encounter, archetype:lover, content, first_ever
+weight: 8
+---
+En {location_name}, {self_name} y {target_name} avanzan como si el suelo fuera nuevo. Nadie trae manual convincente. Lo nuevo aqui se siente merecido.
+---
+
+[TEMPLATE:ENC_FIRST_EVER_002]
+tags: dialogue, encounter, archetype:ruler, anxious, first_ever
+weight: 9
+---
+[{self_name}]: Si me ves raro, es que no se como se hace esto sin mentir. {power_dynamic} no tapa el nervio del comienzo. Cada gesto abre una habitacion nueva.
+---
+
+[TEMPLATE:ENC_FIRST_EVER_003]
+tags: dialogue, encounter, archetype:rebel, angry, first_ever
+weight: 10
+---
+{location_atmosphere} vuelve todo mas nitido de lo comodo. Los dos aprenden el ritmo a la vez. El comienzo suena humano, no perfecto.
+---
+
+[TEMPLATE:ENC_FIRST_EVER_004]
+tags: dialogue, encounter, archetype:caretaker, content, first_ever
+weight: 11
+---
+{self_name} toca a {target_name} con cuidado de inventor. {location_memory} no manda aqui. Nadie presume seguridad y por eso funciona.
+---
+
+[TEMPLATE:ENC_FIRST_EVER_005]
+tags: dialogue, encounter, archetype:schemer, obsessive, first_ever
+weight: 12
+---
+{target_name} tambien esta aprendiendo en voz baja. La torpeza tiene autoridad propia. Lo nuevo aqui se siente merecido.
+---
+
+[TEMPLATE:ENC_FIRST_EVER_006]
+tags: dialogue, encounter, archetype:lover, content, first_ever
+weight: 8
+---
+En {location_name}, {self_name} y {target_name} avanzan como si el suelo fuera nuevo. Nadie trae manual convincente. Cada gesto abre una habitacion nueva.
+---
+
+[TEMPLATE:ENC_FIRST_EVER_007]
+tags: dialogue, encounter, archetype:ruler, anxious, first_ever
+weight: 9
+---
+[{self_name}]: Si me ves raro, es que no se como se hace esto sin mentir. {power_dynamic} no tapa el nervio del comienzo. El comienzo suena humano, no perfecto.
+---
+
+[TEMPLATE:ENC_FIRST_EVER_008]
+tags: dialogue, encounter, archetype:rebel, angry, first_ever
+weight: 10
+---
+{location_atmosphere} vuelve todo mas nitido de lo comodo. Los dos aprenden el ritmo a la vez. Nadie presume seguridad y por eso funciona.
+---
+
+[TEMPLATE:ENC_FIRST_EVER_009]
+tags: dialogue, encounter, archetype:caretaker, content, first_ever
+weight: 11
+---
+{self_name} toca a {target_name} con cuidado de inventor. {location_memory} no manda aqui. Lo nuevo aqui se siente merecido.
+---
+
+[TEMPLATE:ENC_FIRST_EVER_010]
+tags: dialogue, encounter, archetype:schemer, obsessive, first_ever
+weight: 12
+---
+{target_name} tambien esta aprendiendo en voz baja. La torpeza tiene autoridad propia. Cada gesto abre una habitacion nueva.
+---
+
+[TEMPLATE:ENC_FIRST_EVER_011]
+tags: dialogue, encounter, archetype:lover, content, first_ever
+weight: 8
+---
+En {location_name}, {self_name} y {target_name} avanzan como si el suelo fuera nuevo. Nadie trae manual convincente. El comienzo suena humano, no perfecto.
+---
+
+[TEMPLATE:ENC_FIRST_EVER_012]
+tags: dialogue, encounter, archetype:ruler, anxious, first_ever
+weight: 9
+---
+[{self_name}]: Si me ves raro, es que no se como se hace esto sin mentir. {power_dynamic} no tapa el nervio del comienzo. Nadie presume seguridad y por eso funciona.
+---
+
+[TEMPLATE:ENC_FIRST_EVER_013]
+tags: dialogue, encounter, archetype:rebel, angry, first_ever
+weight: 10
+---
+{location_atmosphere} vuelve todo mas nitido de lo comodo. Los dos aprenden el ritmo a la vez. Lo nuevo aqui se siente merecido.
+---
+
+[TEMPLATE:ENC_FIRST_EVER_014]
+tags: dialogue, encounter, archetype:caretaker, content, first_ever
+weight: 11
+---
+{self_name} toca a {target_name} con cuidado de inventor. {location_memory} no manda aqui. Cada gesto abre una habitacion nueva.
+---
+
+[TEMPLATE:ENC_FIRST_EVER_015]
+tags: dialogue, encounter, archetype:schemer, obsessive, first_ever
+weight: 12
+---
+{target_name} tambien esta aprendiendo en voz baja. La torpeza tiene autoridad propia. El comienzo suena humano, no perfecto.
+---
+
+[TEMPLATE:ENC_FIRST_EVER_016]
+tags: dialogue, encounter, archetype:lover, content, first_ever
+weight: 8
+---
+En {location_name}, {self_name} y {target_name} avanzan como si el suelo fuera nuevo. Nadie trae manual convincente. Nadie presume seguridad y por eso funciona.
+---
+
+[TEMPLATE:ENC_FIRST_EVER_017]
+tags: dialogue, encounter, archetype:ruler, anxious, first_ever
+weight: 9
+---
+[{self_name}]: Si me ves raro, es que no se como se hace esto sin mentir. {power_dynamic} no tapa el nervio del comienzo. Lo nuevo aqui se siente merecido.
+---
+
+[TEMPLATE:ENC_FIRST_EVER_018]
+tags: dialogue, encounter, archetype:rebel, angry, first_ever
+weight: 10
+---
+{location_atmosphere} vuelve todo mas nitido de lo comodo. Los dos aprenden el ritmo a la vez. Cada gesto abre una habitacion nueva.
+---
+
+[TEMPLATE:ENC_FIRST_EVER_019]
+tags: dialogue, encounter, archetype:caretaker, content, first_ever
+weight: 11
+---
+{self_name} toca a {target_name} con cuidado de inventor. {location_memory} no manda aqui. El comienzo suena humano, no perfecto.
+---
+
+[TEMPLATE:ENC_FIRST_EVER_020]
+tags: dialogue, encounter, archetype:schemer, obsessive, first_ever
+weight: 12
+---
+{target_name} tambien esta aprendiendo en voz baja. La torpeza tiene autoridad propia. Nadie presume seguridad y por eso funciona.
+---
+

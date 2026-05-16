@@ -1,0 +1,140 @@
+[TEMPLATE:THOUGHT_DESIRE_001]
+tags: thought, desire, mundane
+weight: 10
+---
+Quiero {the_thing_wanted}. Nada heroico. Nada profundo. Solo eso, y el mundo actuando como si fuera demasiado pedir.
+---
+
+[TEMPLATE:THOUGHT_DESIRE_002]
+tags: thought, desire, forbidden
+weight: 9
+---
+{self_name}, no mires a {target_name} pensando en {the_thing_wanted}. Excelente consejo. Lastima que llegue tarde.
+---
+
+[TEMPLATE:THOUGHT_DESIRE_003]
+tags: thought, desire, obsessive
+weight: 8
+---
+Intento pensar en otra cosa y todo vuelve a {the_thing_wanted}. Mi cabeza tiene pocas puertas y una sola sabe abrirse.
+---
+
+[TEMPLATE:THOUGHT_DESIRE_004]
+tags: thought, desire, shame
+weight: 8
+---
+No me averguenza querer. Me averguenza lo facil que seria mentir para acercarme a {the_thing_wanted}.
+---
+
+[TEMPLATE:THOUGHT_DESIRE_005]
+tags: thought, desire, target
+weight: 8
+---
+{target_name} no es {the_thing_wanted}. O si. No. Que pensamiento tan inutil para alguien que necesita dormir.
+---
+
+[TEMPLATE:THOUGHT_DESIRE_006]
+tags: thought, desire, hunger
+weight: 7
+---
+Hay deseos que se comportan como hambre: no se vuelven mas nobles por ignorarlos. Solo mas ruidosos.
+---
+
+[TEMPLATE:THOUGHT_DESIRE_007]
+tags: thought, desire, control
+weight: 8
+---
+Si pudiera dejar de querer {the_thing_wanted}, ya lo habria hecho. Odio que mi voluntad tenga grietas tan previsibles.
+---
+
+[TEMPLATE:THOUGHT_DESIRE_008]
+tags: thought, desire, small
+weight: 7
+---
+Quiero algo pequeno. Eso lo vuelve peor. Las cosas pequenas deberian ser faciles de negar.
+---
+
+[TEMPLATE:THOUGHT_DESIRE_009]
+tags: thought, desire, ambition
+weight: 8
+---
+{the_thing_wanted} no es capricho. O si lo es. Da igual. A veces un capricho dice la verdad antes que una meta.
+---
+
+[TEMPLATE:THOUGHT_DESIRE_010]
+tags: thought, desire, relationship
+weight: 8
+---
+Si {target_name} supiera cuanto ocupa esto, cambiaria la forma de mirarme. Tal vez por eso no digo nada.
+---
+
+[TEMPLATE:THOUGHT_DESIRE_011]
+tags: thought, desire, denial
+weight: 7
+---
+No lo quiero. Solo pienso en eso al despertar, al comer, al callarme y cuando alguien dice algo parecido.
+---
+
+[TEMPLATE:THOUGHT_DESIRE_012]
+tags: thought, desire, bodily
+weight: 8
+---
+Mi cuerpo ya decidio sobre {the_thing_wanted}. Mi dignidad esta redactando una apelacion.
+---
+
+[TEMPLATE:THOUGHT_DESIRE_013]
+tags: thought, desire, grief
+weight: 7
+---
+Querer {the_thing_wanted} se siente insultante cuando hay tantas cosas rotas. Igual lo quiero.
+---
+
+[TEMPLATE:THOUGHT_DESIRE_014]
+tags: thought, desire, envy
+weight: 7
+---
+Veo a otros cerca de {the_thing_wanted} y me vuelvo una persona mas pequena. Al menos soy honesto en privado.
+---
+
+[TEMPLATE:THOUGHT_DESIRE_015]
+tags: thought, desire, fear
+weight: 8
+---
+Lo que quiero no me asusta por imposible. Me asusta porque una parte de mi ya empezo a planearlo.
+---
+
+[TEMPLATE:THOUGHT_DESIRE_016]
+tags: thought, desire, tender
+weight: 8
+---
+Quiero {the_thing_wanted} de una forma suave, casi decente. Esa es la mentira mas peligrosa.
+---
+
+[TEMPLATE:THOUGHT_DESIRE_017]
+tags: thought, desire, power
+weight: 7
+---
+Si tuviera {the_thing_wanted}, prometo que no cambiaria. Mentira. Precisamente por eso lo quiero.
+---
+
+[TEMPLATE:THOUGHT_DESIRE_018]
+tags: thought, desire, target, impossible
+weight: 8
+---
+{target_name} esta demasiado cerca de {the_thing_wanted}. O demasiado lejos. Ambas distancias me estan arruinando.
+---
+
+[TEMPLATE:THOUGHT_DESIRE_019]
+tags: thought, desire, mundane, funny
+weight: 7
+---
+Tal vez solo necesito comer, dormir y dejar de convertir {the_thing_wanted} en una religion privada.
+---
+
+[TEMPLATE:THOUGHT_DESIRE_020]
+tags: thought, desire, final
+weight: 10
+---
+Querer no obliga a actuar. Me repito eso porque una parte de mi esta buscando excepciones.
+---
+

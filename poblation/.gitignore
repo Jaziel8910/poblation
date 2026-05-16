@@ -1,0 +1,24 @@
+# Binaries
+bin/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test artifacts
+*.test
+*.out
+coverage.out
+
+# Dependency directories
+vendor/
+
+# Local Go caches from Codex/Windows runs
+.gocache/
+.codex-gocache/
+.codex-gomodcache/
+
+# Go workspace
+go.work
+go.work.sum

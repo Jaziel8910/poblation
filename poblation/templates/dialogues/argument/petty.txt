@@ -1,0 +1,218 @@
+[TEMPLATE:DLG_ARG_PETTY_001]
+tags: dialogue, argument, petty, subtext
+weight: 12
+---
+[{self_name}]: Dejaste la puerta abierta otra vez.
+[{target_name}]: Ese es el crimen del día.
+[{self_name}]: No, el crimen es que nunca escuchas.
+---
+
+[TEMPLATE:DLG_ARG_PETTY_002]
+tags: dialogue, argument, petty, domestic
+weight: 10
+---
+[{target_name}]: Usaste mi cuchillo.
+[{self_name}]: Era un cuchillo, no tu apellido.
+---
+
+[TEMPLATE:DLG_ARG_PETTY_003]
+tags: dialogue, argument, petty, resentment
+weight: 9
+---
+[{self_name}]: Siempre eliges el lugar donde yo estaba sentado.
+[{target_name}]: Siempre necesitas que el mundo te reserve una silla.
+---
+
+[TEMPLATE:DLG_ARG_PETTY_004]
+tags: dialogue, argument, petty, escalation
+weight: 11
+---
+[{target_name}]: No es por la taza.
+[{self_name}]: Claro que no. Nunca es por la taza cuando tú rompes algo.
+---
+
+[TEMPLATE:DLG_ARG_PETTY_005]
+tags: dialogue, argument, petty, food
+weight: 10
+---
+[{self_name}]: Te comiste la última fruta.
+[{target_name}]: La mitad.
+[{self_name}]: Qué generoso. La civilización renace.
+---
+
+[TEMPLATE:DLG_ARG_PETTY_006]
+tags: dialogue, argument, petty, quiet
+weight: 8
+---
+[{target_name}]: Estás haciendo ruido a propósito.
+[{self_name}]: Estoy respirando.
+[{target_name}]: Exacto.
+---
+
+[TEMPLATE:DLG_ARG_PETTY_007]
+tags: dialogue, argument, petty, jealousy
+weight: 7
+---
+[{self_name}]: Te reíste mucho con esa historia.
+[{target_name}]: Era graciosa.
+[{self_name}]: Sí, ya vi que te pareció toda una vida nueva.
+---
+
+[TEMPLATE:DLG_ARG_PETTY_008]
+tags: dialogue, argument, petty, chores
+weight: 10
+---
+[{target_name}]: Yo recogí leña ayer.
+[{self_name}]: Y lo has mencionado como si hubieras inventado el fuego.
+---
+
+[TEMPLATE:DLG_ARG_PETTY_009]
+tags: dialogue, argument, petty, pride
+weight: 9
+---
+[{self_name}]: No necesito ayuda.
+[{target_name}]: Nadie dijo ayuda. Dije que estabas haciéndolo mal.
+---
+
+[TEMPLATE:DLG_ARG_PETTY_010]
+tags: dialogue, argument, petty, no_resolution
+weight: 8
+---
+[{target_name}]: Cambiaste las cosas de lugar.
+[{self_name}]: Las ordené.
+[{target_name}]: Las escondiste con autoestima.
+---
+
+[TEMPLATE:DLG_ARG_PETTY_011]
+tags: dialogue, argument, petty, bitter
+weight: 11
+---
+[{self_name}]: No era para tanto.
+[{target_name}]: Qué frase tan pequeña para tapar una vida entera.
+---
+
+[TEMPLATE:DLG_ARG_PETTY_012]
+tags: dialogue, argument, petty, humor
+weight: 9
+---
+[{target_name}]: Dejaste ceniza en la mesa.
+[{self_name}]: Perdón, majestuosidad doméstica.
+[{target_name}]: Ves. Ese tonito.
+---
+
+[TEMPLATE:DLG_ARG_PETTY_013]
+tags: dialogue, argument, petty, control
+weight: 8
+---
+[{self_name}]: Solo pregunté dónde ibas.
+[{target_name}]: Lo preguntaste como si hubiera pedido permiso.
+---
+
+[TEMPLATE:DLG_ARG_PETTY_014]
+tags: dialogue, argument, petty, wounded
+weight: 7
+---
+[{target_name}]: ¿Por qué contestas así?
+[{self_name}]: Porque si contesto bonito, no me crees.
+[{target_name}]: Porque casi nunca es verdad.
+---
+
+[TEMPLATE:DLG_ARG_PETTY_015]
+tags: dialogue, argument, petty, interruptions
+weight: 10
+---
+[{self_name}]: Yo iba a hacerlo.
+[{target_name}]: ¿Cuándo?
+[{self_name}]: Cuando dejaras de medir mi respiración.
+---
+
+[TEMPLATE:DLG_ARG_PETTY_016]
+tags: dialogue, argument, petty, fatigue
+weight: 9
+---
+[{target_name}]: No quiero pelear.
+[{self_name}]: Entonces deja de entrar con esa cara de acta judicial.
+---
+
+[TEMPLATE:DLG_ARG_PETTY_017]
+tags: dialogue, argument, petty, blame
+weight: 8
+---
+[{self_name}]: Siempre soy yo el problema.
+[{target_name}]: No siempre. Descansa los martes.
+---
+
+[TEMPLATE:DLG_ARG_PETTY_018]
+tags: dialogue, argument, petty, unresolved
+weight: 10
+---
+[{target_name}]: ¿Te molesta que use tu manta?
+[{self_name}]: Me molesta que preguntes después.
+[{target_name}]: Entonces te molesta todo.
+[{self_name}]: Hoy sí.
+---
+
+[TEMPLATE:DLG_ARG_PETTY_019]
+tags: dialogue, argument, petty, old_wound
+weight: 7
+---
+[{self_name}]: No hables con esa calma.
+[{target_name}]: ¿Prefieres que grite?
+[{self_name}]: Prefiero que no suenes como si ya hubieras ganado.
+---
+
+[TEMPLATE:DLG_ARG_PETTY_020]
+tags: dialogue, argument, petty, domestic
+weight: 11
+---
+[{target_name}]: Pisaste lo que estaba secando.
+[{self_name}]: Lo pusiste en medio del paso.
+[{target_name}]: Lo puse donde cabía. Como hago con todo aquí.
+---
+
+[TEMPLATE:DLG_ARG_PETTY_021]
+tags: dialogue, argument, petty, subtext
+weight: 8
+---
+[{self_name}]: Cambiaste el plan.
+[{target_name}]: Ajusté el plan.
+[{self_name}]: Sin mí.
+[{target_name}]: Ahí está.
+---
+
+[TEMPLATE:DLG_ARG_PETTY_022]
+tags: dialogue, argument, petty, cut_short
+weight: 9
+---
+[{target_name}]: No lavaste eso.
+[{self_name}]: No empieces.
+[{target_name}]: Ya empecé.
+---
+
+[TEMPLATE:DLG_ARG_PETTY_023]
+tags: dialogue, argument, petty, petty_cruel
+weight: 6
+---
+[{self_name}]: Tu forma de ordenar da tristeza.
+[{target_name}]: Tu forma de querer también, y no hago inventario.
+---
+
+[TEMPLATE:DLG_ARG_PETTY_024]
+tags: dialogue, argument, petty, tired
+weight: 8
+---
+[{target_name}]: ¿Puedes no hacerlo hoy?
+[{self_name}]: ¿Qué cosa?
+[{target_name}]: Ser tú como defensa personal.
+---
+
+[TEMPLATE:DLG_ARG_PETTY_025]
+tags: dialogue, argument, petty, no_resolution
+weight: 10
+---
+[{self_name}]: Solo dije que estaba salado.
+[{target_name}]: Lo dijiste como si yo fuera salado.
+[{self_name}]: Ahora sí.
+[{target_name}]: Perfecto.
+---
+

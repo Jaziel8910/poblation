@@ -1,0 +1,7 @@
+[TEMPLATE:END_MYTH_CHAPTER_2]
+tags: ending, myth, chapter2
+weight: 10
+---
+La tecnologia nivel {ending_tech} hizo algo cruel: volvio pequeño el origen. {ending_first_couple} ya no eran dos personas con hambre. Eran una unidad escolar, una estatua, un capitulo que la gente citaba sin sentirlo.
+---
+

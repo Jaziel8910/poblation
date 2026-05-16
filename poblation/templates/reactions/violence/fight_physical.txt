@@ -1,0 +1,34 @@
+[TEMPLATE:REACT_FIGHT_PHYSICAL_001]
+tags: reaction, violence, fight, impact
+weight: 10
+---
+El primer golpe no cae limpio ni valiente. Solo convierte la discusion entre {self_name} y {target_name} en algo que ya no cabe en palabras.
+---
+
+[TEMPLATE:REACT_FIGHT_PHYSICAL_002]
+tags: reaction, violence, fight, public
+weight: 8
+---
+En {location}, {self_name} y {target_name} se empujan con esa torpeza horrible de la rabia cuando ya nadie quiere escuchar.
+---
+
+[TEMPLATE:REACT_FIGHT_PHYSICAL_003]
+tags: reaction, violence, fight, resentment
+weight: 9
+---
+La pelea fisica dura menos de lo que parecia prometer, pero alcanza para dejar claro que el rencor ya estaba esperando cuerpo.
+---
+
+[TEMPLATE:REACT_FIGHT_PHYSICAL_004]
+tags: reaction, violence, fight, cruel
+weight: 7
+---
+No hay tecnica ni gloria en lo que hacen. Solo dos personas dejando que la furia piense por ellas un momento de mas.
+---
+
+[TEMPLATE:REACT_FIGHT_PHYSICAL_005]
+tags: reaction, violence, fight, witness
+weight: 8
+---
+Quien lo ve entiende enseguida que esto no empezo con el empujon. El empujon solo fue donde la pelea se volvio visible.
+---

@@ -1,0 +1,7 @@
+[TEMPLATE:END_MYTH_CHAPTER_1]
+tags: ending, myth, chapter1
+weight: 10
+---
+Cuando AI_RESEARCH llego, nadie vivo recordaba el apocalipsis original. No como memoria propia. No como olor, ruido o perdida directa. Era un mito util, una historia que explicaba por que los archivos empezaban con dolor.
+---
+

@@ -1,0 +1,28 @@
+[TEMPLATE:NARR_END_RESET_001]
+tags: narrator, ending, reset
+weight: 10
+---
+La civilizacion cayo hasta quedar irreconocible. Entre restos, dos pobles encontraron fuego, miedo y una oportunidad usada. El mundo no aprendio. Tal vez ellos si.
+---
+
+[TEMPLATE:NARR_END_RESET_002]
+tags: narrator, ending, reset
+weight: 9
+---
+Todo lo construido se volvio ruina, y la ruina se volvio paisaje. Dos sobrevivientes empezaron otra vez con menos inocencia y las mismas manos.
+---
+
+[TEMPLATE:NARR_END_RESET_003]
+tags: narrator, ending, reset
+weight: 8
+---
+Lo hicieron de nuevo: crecer, romperse, olvidar lo urgente. Ahora quedan dos. La historia no es circular. Es terca.
+---
+
+[TEMPLATE:NARR_END_RESET_004]
+tags: narrator, ending, reset
+weight: 8
+---
+El reset no limpio la sangre. Solo bajo el volumen del mundo hasta que dos voces parecieron suficientes para empezar.
+---
+

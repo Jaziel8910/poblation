@@ -1,0 +1,20 @@
+# Build output
+dist/
+bin/
+*.exe
+*.app/
+*.AppImage
+*.deb
+
+# Go local caches
+.gocache/
+.codex-gocache/
+.codex-gomodcache/
+
+# Local launcher state
+.poblation/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+*.swp

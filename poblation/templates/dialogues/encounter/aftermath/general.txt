@@ -1,0 +1,140 @@
+﻿[TEMPLATE:ENC_AFTERMATH_001]
+tags: dialogue, encounter, archetype:lover, content, aftermath
+weight: 8
+---
+En {location_name}, el silencio de despues pesa distinto. {power_dynamic} ya no se siente igual. Nadie sale igual de {location_name}.
+---
+
+[TEMPLATE:ENC_AFTERMATH_002]
+tags: dialogue, encounter, archetype:ruler, anxious, aftermath
+weight: 9
+---
+[{self_name}]: No pongas esa cara. El alivio y el calculo llegan juntos. Los dos ya saben que algo cambio.
+---
+
+[TEMPLATE:ENC_AFTERMATH_003]
+tags: dialogue, encounter, archetype:rebel, angry, aftermath
+weight: 10
+---
+{self_name} se arregla poco y {target_name} lo nota demasiado. La mentira de manana ya esta haciendo cola. Quedarse un minuto mas no edita consecuencias.
+---
+
+[TEMPLATE:ENC_AFTERMATH_004]
+tags: dialogue, encounter, archetype:caretaker, content, aftermath
+weight: 11
+---
+{location_memory} acaba de crecer otra vez. Nadie sabe que nombre ponerle a lo que quedo. El despues es otra escena completa.
+---
+
+[TEMPLATE:ENC_AFTERMATH_005]
+tags: dialogue, encounter, archetype:schemer, obsessive, aftermath
+weight: 12
+---
+Hasta {location_atmosphere} parece haber tomado nota. Irse primero tambien se vuelve decision. Nadie sale igual de {location_name}.
+---
+
+[TEMPLATE:ENC_AFTERMATH_006]
+tags: dialogue, encounter, archetype:lover, content, aftermath
+weight: 8
+---
+En {location_name}, el silencio de despues pesa distinto. {power_dynamic} ya no se siente igual. Los dos ya saben que algo cambio.
+---
+
+[TEMPLATE:ENC_AFTERMATH_007]
+tags: dialogue, encounter, archetype:ruler, anxious, aftermath
+weight: 9
+---
+[{self_name}]: No pongas esa cara. El alivio y el calculo llegan juntos. Quedarse un minuto mas no edita consecuencias.
+---
+
+[TEMPLATE:ENC_AFTERMATH_008]
+tags: dialogue, encounter, archetype:rebel, angry, aftermath
+weight: 10
+---
+{self_name} se arregla poco y {target_name} lo nota demasiado. La mentira de manana ya esta haciendo cola. El despues es otra escena completa.
+---
+
+[TEMPLATE:ENC_AFTERMATH_009]
+tags: dialogue, encounter, archetype:caretaker, content, aftermath
+weight: 11
+---
+{location_memory} acaba de crecer otra vez. Nadie sabe que nombre ponerle a lo que quedo. Nadie sale igual de {location_name}.
+---
+
+[TEMPLATE:ENC_AFTERMATH_010]
+tags: dialogue, encounter, archetype:schemer, obsessive, aftermath
+weight: 12
+---
+Hasta {location_atmosphere} parece haber tomado nota. Irse primero tambien se vuelve decision. Los dos ya saben que algo cambio.
+---
+
+[TEMPLATE:ENC_AFTERMATH_011]
+tags: dialogue, encounter, archetype:lover, content, aftermath
+weight: 8
+---
+En {location_name}, el silencio de despues pesa distinto. {power_dynamic} ya no se siente igual. Quedarse un minuto mas no edita consecuencias.
+---
+
+[TEMPLATE:ENC_AFTERMATH_012]
+tags: dialogue, encounter, archetype:ruler, anxious, aftermath
+weight: 9
+---
+[{self_name}]: No pongas esa cara. El alivio y el calculo llegan juntos. El despues es otra escena completa.
+---
+
+[TEMPLATE:ENC_AFTERMATH_013]
+tags: dialogue, encounter, archetype:rebel, angry, aftermath
+weight: 10
+---
+{self_name} se arregla poco y {target_name} lo nota demasiado. La mentira de manana ya esta haciendo cola. Nadie sale igual de {location_name}.
+---
+
+[TEMPLATE:ENC_AFTERMATH_014]
+tags: dialogue, encounter, archetype:caretaker, content, aftermath
+weight: 11
+---
+{location_memory} acaba de crecer otra vez. Nadie sabe que nombre ponerle a lo que quedo. Los dos ya saben que algo cambio.
+---
+
+[TEMPLATE:ENC_AFTERMATH_015]
+tags: dialogue, encounter, archetype:schemer, obsessive, aftermath
+weight: 12
+---
+Hasta {location_atmosphere} parece haber tomado nota. Irse primero tambien se vuelve decision. Quedarse un minuto mas no edita consecuencias.
+---
+
+[TEMPLATE:ENC_AFTERMATH_016]
+tags: dialogue, encounter, archetype:lover, content, aftermath
+weight: 8
+---
+En {location_name}, el silencio de despues pesa distinto. {power_dynamic} ya no se siente igual. El despues es otra escena completa.
+---
+
+[TEMPLATE:ENC_AFTERMATH_017]
+tags: dialogue, encounter, archetype:ruler, anxious, aftermath
+weight: 9
+---
+[{self_name}]: No pongas esa cara. El alivio y el calculo llegan juntos. Nadie sale igual de {location_name}.
+---
+
+[TEMPLATE:ENC_AFTERMATH_018]
+tags: dialogue, encounter, archetype:rebel, angry, aftermath
+weight: 10
+---
+{self_name} se arregla poco y {target_name} lo nota demasiado. La mentira de manana ya esta haciendo cola. Los dos ya saben que algo cambio.
+---
+
+[TEMPLATE:ENC_AFTERMATH_019]
+tags: dialogue, encounter, archetype:caretaker, content, aftermath
+weight: 11
+---
+{location_memory} acaba de crecer otra vez. Nadie sabe que nombre ponerle a lo que quedo. Quedarse un minuto mas no edita consecuencias.
+---
+
+[TEMPLATE:ENC_AFTERMATH_020]
+tags: dialogue, encounter, archetype:schemer, obsessive, aftermath
+weight: 12
+---
+Hasta {location_atmosphere} parece haber tomado nota. Irse primero tambien se vuelve decision. El despues es otra escena completa.
+---
+

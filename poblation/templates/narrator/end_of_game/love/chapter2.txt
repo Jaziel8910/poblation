@@ -1,0 +1,7 @@
+[TEMPLATE:END_LOVE_CHAPTER_2]
+tags: ending, love, chapter2
+weight: 10
+---
+La isla todavia tenia caminos, camas, comida contada, y esa pregunta sucia de siempre: reproducirse o terminar. {ending_survivor} escucho la pregunta completa y eligio no. No por falta de miedo. Por no convertir a {ending_deceased} en una tarea pendiente.
+---
+

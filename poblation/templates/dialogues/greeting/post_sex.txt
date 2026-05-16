@@ -1,0 +1,221 @@
+[TEMPLATE:DLG_GREET_POST_SEX_001]
+tags: dialogue, greeting, post_sex, explicit_ok, tender
+weight: 12
+---
+[{self_name}]: ¿Estás bien?
+[{target_name}]: Sí. Solo estoy tratando de no decir algo tonto.
+---
+
+[TEMPLATE:DLG_GREET_POST_SEX_002]
+tags: dialogue, greeting, post_sex, explicit_ok, awkward
+weight: 11
+---
+[{target_name}]: Bueno.
+[{self_name}]: Bueno qué.
+[{target_name}]: No sé. Mi cerebro se fue a caminar.
+---
+
+[TEMPLATE:DLG_GREET_POST_SEX_003]
+tags: dialogue, greeting, post_sex, explicit_ok, regret
+weight: 8
+---
+[{self_name}]: No deberíamos haber hecho eso.
+[{target_name}]: Lo dijiste demasiado tarde y con muy poca convicción.
+---
+
+[TEMPLATE:DLG_GREET_POST_SEX_004]
+tags: dialogue, greeting, post_sex, explicit_ok, intimacy
+weight: 10
+---
+[{target_name}]: No me mires así.
+[{self_name}]: ¿Así cómo?
+[{target_name}]: Como si ahora supieras algo mío.
+---
+
+[TEMPLATE:DLG_GREET_POST_SEX_005]
+tags: dialogue, greeting, post_sex, explicit_ok, humor
+weight: 9
+---
+[{self_name}]: Creo que rompimos la manta.
+[{target_name}]: La humanidad cayó más bajo que eso.
+---
+
+[TEMPLATE:DLG_GREET_POST_SEX_006]
+tags: dialogue, greeting, post_sex, explicit_ok, vulnerable
+weight: 7
+---
+[{target_name}]: Quédate un minuto.
+[{self_name}]: Pensé que querías espacio.
+[{target_name}]: Quiero contradecirme con dignidad.
+---
+
+[TEMPLATE:DLG_GREET_POST_SEX_007]
+tags: dialogue, greeting, post_sex, explicit_ok, distance
+weight: 8
+---
+[{self_name}]: ¿Te arrepientes?
+[{target_name}]: Todavía no. Dame tiempo.
+---
+
+[TEMPLATE:DLG_GREET_POST_SEX_008]
+tags: dialogue, greeting, post_sex, explicit_ok, tenderness
+weight: 9
+---
+[{target_name}]: Estás temblando.
+[{self_name}]: No es frío.
+[{target_name}]: Ya sé.
+---
+
+[TEMPLATE:DLG_GREET_POST_SEX_009]
+tags: dialogue, greeting, post_sex, explicit_ok, disaster
+weight: 10
+---
+[{self_name}]: Esto cambia algo.
+[{target_name}]: Sí.
+[{self_name}]: ¿Qué?
+[{target_name}]: Todavía estoy decidiendo cuánto daño hace.
+---
+
+[TEMPLATE:DLG_GREET_POST_SEX_010]
+tags: dialogue, greeting, post_sex, explicit_ok, denial
+weight: 11
+---
+[{target_name}]: Esto fue solo...
+[{self_name}]: No termines esa frase si quieres dormir hoy.
+---
+
+[TEMPLATE:DLG_GREET_POST_SEX_011]
+tags: dialogue, greeting, post_sex, explicit_ok, soft
+weight: 7
+---
+[{self_name}]: Te ves diferente.
+[{target_name}]: Estoy igual.
+[{self_name}]: Mentira útil.
+---
+
+[TEMPLATE:DLG_GREET_POST_SEX_012]
+tags: dialogue, greeting, post_sex, explicit_ok, shame
+weight: 8
+---
+[{target_name}]: No sabía que iba a querer esto.
+[{self_name}]: Yo sí.
+[{target_name}]: Eso no ayuda.
+---
+
+[TEMPLATE:DLG_GREET_POST_SEX_013]
+tags: dialogue, greeting, post_sex, explicit_ok, boundaries
+weight: 9
+---
+[{self_name}]: ¿Hablamos de lo que significa?
+[{target_name}]: No todavía.
+[{self_name}]: ¿Mañana?
+[{target_name}]: No prometas calendarios después de tocarme.
+---
+
+[TEMPLATE:DLG_GREET_POST_SEX_014]
+tags: dialogue, greeting, post_sex, explicit_ok, humor
+weight: 10
+---
+[{target_name}]: Si alguien pregunta, estábamos organizando herramientas.
+[{self_name}]: Nadie organiza herramientas sudando así.
+---
+
+[TEMPLATE:DLG_GREET_POST_SEX_015]
+tags: dialogue, greeting, post_sex, explicit_ok, silence
+weight: 6
+---
+[{self_name}]: ...
+[{target_name}]: Sí.
+[{self_name}]: ¿Sí qué?
+[{target_name}]: Sí a no hablar.
+---
+
+[TEMPLATE:DLG_GREET_POST_SEX_016]
+tags: dialogue, greeting, post_sex, explicit_ok, conflict
+weight: 8
+---
+[{target_name}]: No uses esto contra mí después.
+[{self_name}]: ¿Eso crees de mí?
+[{target_name}]: Hoy no quiero descubrirlo.
+---
+
+[TEMPLATE:DLG_GREET_POST_SEX_017]
+tags: dialogue, greeting, post_sex, explicit_ok, tenderness
+weight: 9
+---
+[{self_name}]: Puedo irme si quieres.
+[{target_name}]: Puedes quedarte si no haces teatro con eso.
+---
+
+[TEMPLATE:DLG_GREET_POST_SEX_018]
+tags: dialogue, greeting, post_sex, explicit_ok, raw
+weight: 7
+---
+[{target_name}]: Me dio miedo gustarte tanto.
+[{self_name}]: A mí me dio miedo que se notara.
+---
+
+[TEMPLATE:DLG_GREET_POST_SEX_019]
+tags: dialogue, greeting, post_sex, explicit_ok, awkward
+weight: 10
+---
+[{self_name}]: ¿Quieres agua?
+[{target_name}]: Quiero volver a tener personalidad.
+[{self_name}]: Agua entonces.
+---
+
+[TEMPLATE:DLG_GREET_POST_SEX_020]
+tags: dialogue, greeting, post_sex, explicit_ok, regret
+weight: 8
+---
+[{target_name}]: Esto fue un error bonito.
+[{self_name}]: Qué forma tan cruel de no arrepentirte.
+---
+
+[TEMPLATE:DLG_GREET_POST_SEX_021]
+tags: dialogue, greeting, post_sex, explicit_ok, longing
+weight: 9
+---
+[{self_name}]: No quiero que seas amable solo porque pasó.
+[{target_name}]: No soy tan buena persona.
+[{self_name}]: Eso me tranquiliza demasiado.
+---
+
+[TEMPLATE:DLG_GREET_POST_SEX_022]
+tags: dialogue, greeting, post_sex, explicit_ok, tense
+weight: 8
+---
+[{target_name}]: ¿Vas a decirle a alguien?
+[{self_name}]: ¿A quién? ¿Al comité de dos personas rotas?
+[{target_name}]: No hagas chistes.
+---
+
+[TEMPLATE:DLG_GREET_POST_SEX_023]
+tags: dialogue, greeting, post_sex, explicit_ok, vulnerable
+weight: 7
+---
+[{self_name}]: Pensé que después iba a sentirme menos solo.
+[{target_name}]: ¿Y?
+[{self_name}]: No sé si esto cuenta como menos o como peor.
+---
+
+[TEMPLATE:DLG_GREET_POST_SEX_024]
+tags: dialogue, greeting, post_sex, explicit_ok, no_resolution
+weight: 8
+---
+[{target_name}]: No me pidas nombre para esto.
+[{self_name}]: No iba a pedirlo.
+[{target_name}]: Sí ibas.
+[{self_name}]: Sí.
+---
+
+[TEMPLATE:DLG_GREET_POST_SEX_025]
+tags: dialogue, greeting, post_sex, explicit_ok, disaster
+weight: 9
+---
+[{self_name}]: Te quiero cerca.
+[{target_name}]: Eso suena a problema.
+[{self_name}]: Lo sé.
+[{target_name}]: Entonces dilo más bajo.
+---
+

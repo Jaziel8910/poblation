@@ -1,0 +1,7 @@
+[TEMPLATE:END_UTOPIA_CHAPTER_3]
+tags: ending, utopia, chapter3
+weight: 10
+---
+El archivo conserva esto como la grieta mas visible: {ending_dramatic_event}. No la borraron. La pusieron donde todos pudieran verla, para que la siguiente generacion no confundiera paz con amnesia.
+---
+

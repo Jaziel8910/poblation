@@ -1,0 +1,209 @@
+[TEMPLATE:OBS_DARK_001]
+tags: thought, about_other, obsession, high_arousal
+weight: 6
+---
+Estoy pensando en {target_name} otra vez. Lo digo como si hubiera pausas entre una vez y otra.
+---
+
+[TEMPLATE:OBS_DARK_002]
+tags: thought, about_other, obsession, high_arousal
+weight: 13
+---
+{target_pronoun} ocupa mi cabeza con una paciencia de enfermedad crónica.
+---
+
+[TEMPLATE:OBS_DARK_003]
+tags: thought, about_other, obsession, high_arousal
+weight: 11
+---
+{memory_recent} se repite solo. Yo no lo llamo. Mentira, a veces sí lo llamo.
+---
+
+[TEMPLATE:OBS_DARK_004]
+tags: thought, about_other, obsession, high_arousal
+weight: 9
+---
+Me asusta lo rápido que invento razones para estar cerca de {target_name}.
+---
+
+[TEMPLATE:OBS_DARK_005]
+tags: thought, about_other, obsession, high_arousal
+weight: 7
+---
+No quiero saber dónde está. Solo quiero no sentir alivio cuando lo sé.
+---
+
+[TEMPLATE:OBS_DARK_006]
+tags: thought, about_other, obsession, high_arousal
+weight: 14
+---
+{target_name} hizo un gesto cualquiera y ahora tengo material para arruinarme tres horas.
+---
+
+[TEMPLATE:OBS_DARK_007]
+tags: thought, about_other, obsession, high_arousal
+weight: 12
+---
+Esto no es amor limpio. Es una silla arrastrándose sola por mi cabeza.
+---
+
+[TEMPLATE:OBS_DARK_008]
+tags: thought, about_other, obsession, high_arousal
+weight: 10
+---
+Si {target_pronoun} me ignora, me hundo. Si me mira, me hundo con decoración.
+---
+
+[TEMPLATE:OBS_DARK_009]
+tags: thought, about_other, obsession, high_arousal
+weight: 8
+---
+{memory_recent} debería haber terminado cuando terminó. Qué gracioso que mi cuerpo no firmó eso.
+---
+
+[TEMPLATE:OBS_DARK_010]
+tags: thought, about_other, obsession, high_arousal
+weight: 6
+---
+Tengo miedo de que {target_name} note la cantidad exacta de mí que ya perdió autoridad.
+---
+
+[TEMPLATE:OBS_DARK_011]
+tags: thought, about_other, obsession, high_arousal
+weight: 13
+---
+No es normal repasar una conversación tan pequeña. Lo sé. Eso no la detiene.
+---
+
+[TEMPLATE:OBS_DARK_012]
+tags: thought, about_other, obsession, high_arousal
+weight: 11
+---
+Quiero que {target_pronoun} esté bien. Quiero ser la razón. Qué feo se ve escrito dentro de mí.
+---
+
+[TEMPLATE:OBS_DARK_013]
+tags: thought, about_other, obsession, high_arousal
+weight: 9
+---
+Cada sonido parecido a sus pasos me vuelve perro entrenado. Me odio un poco por eso.
+---
+
+[TEMPLATE:OBS_DARK_014]
+tags: thought, about_other, obsession, high_arousal
+weight: 7
+---
+No puedo sacar a {target_name} de mi cabeza. Peor: una parte mía no está intentando.
+---
+
+[TEMPLATE:OBS_DARK_015]
+tags: thought, about_other, obsession, high_arousal
+weight: 14
+---
+{memory_recent}. Si lo miro desde otro ángulo, tal vez dice algo distinto. Qué mentira tan ocupada.
+---
+
+[TEMPLATE:OBS_DARK_016]
+tags: thought, about_other, obsession, high_arousal
+weight: 12
+---
+Me descubrí ensayando qué diría si {target_pronoun} aparece. Eso ya es una forma de rendirse.
+---
+
+[TEMPLATE:OBS_DARK_017]
+tags: thought, about_other, obsession, high_arousal
+weight: 10
+---
+Hay hambre, hay sed, hay sueño. Y luego está esto, que no aparece en ninguna lista seria y manda igual.
+---
+
+[TEMPLATE:OBS_DARK_018]
+tags: thought, about_other, obsession, high_arousal
+weight: 8
+---
+No quiero poseer a {target_name}. Quiero dejar de sentir que me falta aire cuando se va.
+---
+
+[TEMPLATE:OBS_DARK_019]
+tags: thought, about_other, obsession, high_arousal
+weight: 6
+---
+Si alguien viera mis pensamientos, me dejaría solo con objetos blandos.
+---
+
+[TEMPLATE:OBS_DARK_020]
+tags: thought, about_other, obsession, high_arousal
+weight: 13
+---
+{target_pronoun} no hizo nada hoy y aun así logró pasarme por encima.
+---
+
+[TEMPLATE:OBS_DARK_021]
+tags: thought, about_other, obsession, high_arousal
+weight: 11
+---
+Estoy convirtiendo señales pequeñas en pruebas. Un juez decente me sacaría del cuarto.
+---
+
+[TEMPLATE:OBS_DARK_022]
+tags: thought, about_other, obsession, high_arousal
+weight: 9
+---
+{target_name} no tiene la culpa de existir así. Yo tampoco tengo la culpa de notar. Bueno, quizá sí.
+---
+
+[TEMPLATE:OBS_DARK_023]
+tags: thought, about_other, obsession, high_arousal
+weight: 7
+---
+No me gusta en quién me convierto alrededor de {target_pronoun}. Me gusta demasiado que aparezca.
+---
+
+[TEMPLATE:OBS_DARK_024]
+tags: thought, about_other, obsession, high_arousal
+weight: 14
+---
+{memory_recent} fue una chispa. Yo puse el bosque seco, eso también hay que admitirlo.
+---
+
+[TEMPLATE:OBS_DARK_025]
+tags: thought, about_other, obsession, high_arousal
+weight: 12
+---
+Me da terror que esto se vuelva evidente. Me da más terror que no importe.
+---
+
+[TEMPLATE:OBS_DARK_026]
+tags: thought, about_other, obsession, high_arousal
+weight: 10
+---
+Pienso en alejarme de {target_name} y mi cuerpo responde como si le hubiera anunciado una amputación.
+---
+
+[TEMPLATE:OBS_DARK_027]
+tags: thought, about_other, obsession, high_arousal
+weight: 8
+---
+Esto tiene el olor de una mala decisión con buena letra.
+---
+
+[TEMPLATE:OBS_DARK_028]
+tags: thought, about_other, obsession, high_arousal
+weight: 6
+---
+No quiero que {target_pronoun} me salve. Quiero no necesitar inventar esa escena.
+---
+
+[TEMPLATE:OBS_DARK_029]
+tags: thought, about_other, obsession, high_arousal
+weight: 13
+---
+Qué horror descubrir que uno puede volverse jaula por dentro.
+---
+
+[TEMPLATE:OBS_DARK_030]
+tags: thought, about_other, obsession, high_arousal
+weight: 11
+---
+{target_name}, sal de mi cabeza. No de golpe. Bueno, sí. No. Maldita sea.
+---

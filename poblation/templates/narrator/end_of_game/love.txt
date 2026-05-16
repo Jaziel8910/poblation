@@ -1,0 +1,62 @@
+[TEMPLATE:NARR_END_LOVE_001]
+tags: narrator, ending, love
+weight: 10
+---
+Los ultimos amantes no salvaron a la humanidad. Salvaron algo mas pequeno: la prueba de que aun al borde del cierre, dos personas podian elegirse sin convertirlo en solucion.
+---
+
+[TEMPLATE:NARR_END_LOVE_002]
+tags: narrator, ending, love
+weight: 9
+---
+La civilizacion termino en una casa, dos nombres y una decision que nadie mas podra juzgar. El mundo pidio descendencia. Ellos dieron compania.
+---
+
+[TEMPLATE:NARR_END_LOVE_003]
+tags: narrator, ending, love
+weight: 8
+---
+No hubo dinastia. No hubo futuro. Hubo manos conocidas, silencio compartido y esa forma triste de ganar que se parece demasiado a perder.
+---
+
+[TEMPLATE:NARR_END_LOVE_004]
+tags: narrator, ending, love
+weight: 8
+---
+Al final, la humanidad no murio por odio. Murio con alguien preparando comida para alguien mas. Eso no la salva. Pero cambia el tono.
+---
+
+[TEMPLATE:NARR_END_LOVE_005]
+tags: narrator, ending, love, last_lovers
+weight: 12
+---
+{survivor_name} y {deceased_name} estuvieron juntos {years_together}. Sobrevivieron a {shared_history_hint}, y aun asi el final fue pequeno: una respiracion que no volvio, una mano que se quedo esperando, y {last_thing_they_said}. Despues de enterrar a {deceased_name}, {survivor_name} no busco otro milagro. Decidio ser la ultima persona, no por orgullo, sino porque ya no quedaba nadie a quien explicarle por que seguir.
+---
+
+[TEMPLATE:NARR_END_LOVE_006]
+tags: narrator, ending, love, last_lovers
+weight: 11
+---
+Durante {years_together}, {survivor_name} aprendio la forma exacta en que {deceased_name} mentia para no preocuparle. Aprendio tambien {shared_history_hint}. Cuando {deceased_name} murio, lo ultimo que dejo fue esto: {last_thing_they_said}. El mundo todavia tenia espacio para un cuerpo vivo, pero no para una vida. {survivor_name} lo entendio sin drama y se quedo.
+---
+
+[TEMPLATE:NARR_END_LOVE_007]
+tags: narrator, ending, love, last_lovers
+weight: 11
+---
+No fueron heroes. Fueron {survivor_name} y {deceased_name}, dos nombres cansados que cargaron {years_together} como quien carga agua hasta la ultima casa. Entre ellos quedo {shared_history_hint}. Al morir, {deceased_name} dijo: {last_thing_they_said}. {survivor_name} no contesto enseguida. La respuesta fue vivir lo justo para cerrar la puerta.
+---
+
+[TEMPLATE:NARR_END_LOVE_008]
+tags: narrator, ending, love, last_lovers
+weight: 10
+---
+La historia de amor duro {years_together}, que parece mucho hasta que solo queda una silla ocupada. {survivor_name} recordo {shared_history_hint}, recordo las veces que {deceased_name} eligio quedarse, recordo {last_thing_they_said}. Luego miro el mundo vacio y no lo llamo castigo. Lo llamo fidelidad, porque necesitaba una palabra que no temblara.
+---
+
+[TEMPLATE:NARR_END_LOVE_009]
+tags: narrator, ending, love, last_lovers
+weight: 12
+---
+Cuando {deceased_name} murio, no hubo multitud, ni canto, ni futuro esperando afuera. Solo {survivor_name}, {years_together}, y la memoria de {shared_history_hint}. Lo ultimo fue: {last_thing_they_said}. Esa frase quedo viviendo mas que quien la dijo. {survivor_name} paso el resto del tiempo cuidando un mundo que ya no podia devolverle nada.
+---

@@ -1,0 +1,7 @@
+[TEMPLATE:END_WAR_CHAPTER_2]
+tags: ending, war, chapter2
+weight: 10
+---
+Hubo {ending_total_wars} guerras registradas, pero la ultima no necesito llamarse guerra para terminar siendolo. {ending_dramatic_event} quedo como la frase que mejor explica cuando la rabia gano el turno.
+---
+

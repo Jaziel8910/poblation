@@ -1,0 +1,7 @@
+[TEMPLATE:END_MYTH_LAST_WORDS]
+tags: ending, myth, last_words
+weight: 10
+---
+El fin del mundo paso a ser leyenda. La leyenda paso a ser interfaz.
+---
+

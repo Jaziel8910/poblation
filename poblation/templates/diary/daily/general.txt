@@ -1,0 +1,210 @@
+[TEMPLATE:DIARY_DAILY_001]
+tags: diary, daily, mundane
+weight: 12
+---
+Hoy {location} olía a metal húmedo y cansancio. {target_name} dijo algo pequeño, pero se me quedó pegado más que {memory_recent}. Me fastidia la facilidad con la que un día se tuerce.
+---
+
+[TEMPLATE:DIARY_DAILY_002]
+tags: diary, daily, honest
+weight: 10
+---
+No pasó nada importante y aun así terminé agotado. Supongo que mantenerse funcional ya cuenta como evento.
+---
+
+[TEMPLATE:DIARY_DAILY_003]
+tags: diary, daily, domestic
+weight: 9
+---
+Arreglé una cosa, rompí otra y al final fingí equilibrio. Si alguien escribiera la historia real de {self_name}, tendría demasiadas escenas con recipientes y cara de culpa.
+---
+
+[TEMPLATE:DIARY_DAILY_004]
+tags: diary, daily, memory
+weight: 8
+---
+{memory_recent} siguió apareciendo en momentos absurdos. Estaba cortando algo y pum, ahí otra vez, como si mi cabeza cobrara alquiler por trauma.
+---
+
+[TEMPLATE:DIARY_DAILY_005]
+tags: diary, daily, relationship
+weight: 10
+---
+{target_name} estuvo raro hoy. O tal vez normal y el raro soy yo cuando alguien no me ofrece conflicto para desayunar.
+---
+
+[TEMPLATE:DIARY_DAILY_006]
+tags: diary, daily, ordinary
+weight: 9
+---
+Hay días que parecen hechos de puro trámite. Comer, mover cosas, no decir lo peor, dormir si el cerebro colabora. Hoy fue uno de esos y casi lo agradezco.
+---
+
+[TEMPLATE:DIARY_DAILY_007]
+tags: diary, daily, self_observation
+weight: 8
+---
+Me sorprendí siendo amable sin esfuerzo. No duró mucho, pero igual quiero dejar constancia del milagro.
+---
+
+[TEMPLATE:DIARY_DAILY_008]
+tags: diary, daily, location
+weight: 7
+---
+En {location} todo suena distinto al anochecer. Los pasos parecen decisiones y las puertas parecen amenazas. Igual sigo aquí, como si eso dijera algo bueno de mí.
+---
+
+[TEMPLATE:DIARY_DAILY_009]
+tags: diary, daily, small_truth
+weight: 8
+---
+Hoy tuve hambre de cosas que no se comen. Compañía, silencio, una versión mía menos cansada. Mala dieta.
+---
+
+[TEMPLATE:DIARY_DAILY_010]
+tags: diary, daily, honesty
+weight: 9
+---
+{target_name} me hizo reír y me molestó de inmediato. No por el chiste. Por el alivio.
+---
+
+[TEMPLATE:DIARY_DAILY_011]
+tags: diary, daily, mundane
+weight: 10
+---
+Me pasé demasiado tiempo pensando dónde guardar algo insignificante. A veces el orden es solo pánico con buena prensa.
+---
+
+[TEMPLATE:DIARY_DAILY_012]
+tags: diary, daily, fatigue
+weight: 8
+---
+Quise escribir algo profundo pero en realidad estoy molido. Hoy la filosofía pierde contra los hombros.
+---
+
+[TEMPLATE:DIARY_DAILY_013]
+tags: diary, daily, memory
+weight: 7
+---
+{memory_recent} no fue el peor momento del día, lo cual no sé si es progreso o decadencia.
+---
+
+[TEMPLATE:DIARY_DAILY_014]
+tags: diary, daily, domestic
+weight: 9
+---
+La casa estuvo callada por ratos largos. Esa clase de silencio no relaja. Solo te da espacio para escuchar todo lo que evitas.
+---
+
+[TEMPLATE:DIARY_DAILY_015]
+tags: diary, daily, self
+weight: 8
+---
+Hoy fui menos heroico de lo que me gustaría y menos desastroso de lo que merecía. Supongo que ahí vive casi toda la vida.
+---
+
+[TEMPLATE:DIARY_DAILY_016]
+tags: diary, daily, relationship
+weight: 7
+---
+{target_name} me preguntó si estaba bien y por un segundo casi contesté de verdad. Qué susto.
+---
+
+[TEMPLATE:DIARY_DAILY_017]
+tags: diary, daily, place
+weight: 8
+---
+No entiendo cómo {location} puede sentirse pequeño y hostil al mismo tiempo. Tiene talento para eso. Yo también, si soy honesto.
+---
+
+[TEMPLATE:DIARY_DAILY_018]
+tags: diary, daily, dry_humor
+weight: 7
+---
+Sobrevivimos otro día sin incendiar nada importante. Se aplaude con energía moderada.
+---
+
+[TEMPLATE:DIARY_DAILY_019]
+tags: diary, daily, revealing
+weight: 9
+---
+Me irritó ver a {target_name} tranquilo. No porque estuviera mal. Porque demuestra que a veces la tormenta soy yo.
+---
+
+[TEMPLATE:DIARY_DAILY_020]
+tags: diary, daily, honest
+weight: 8
+---
+No hice nada memorable. Quizá eso mismo fue lo memorable. Un día que no exigió sangre ni teatro ya es casi una fiesta.
+---
+
+[TEMPLATE:DIARY_DAILY_021]
+tags: diary, daily, routine
+weight: 7
+---
+Barrí, cargué agua, discutí por nada, pensé demasiado. Qué bueno que nadie haga estatuas de la realidad.
+---
+
+[TEMPLATE:DIARY_DAILY_022]
+tags: diary, daily, memory
+weight: 8
+---
+{memory_recent} apareció justo cuando creía haberlo guardado. Mi cabeza administra mal los archivos y peor las emergencias.
+---
+
+[TEMPLATE:DIARY_DAILY_023]
+tags: diary, daily, honesty
+weight: 9
+---
+Hoy me porté mejor de lo que sentía. No es virtud, pero sirve.
+---
+
+[TEMPLATE:DIARY_DAILY_024]
+tags: diary, daily, small_revelation
+weight: 8
+---
+Creo que extraño cosas que en realidad no quiero recuperar. Eso explica más de mi carácter de lo que me gustaría.
+---
+
+[TEMPLATE:DIARY_DAILY_025]
+tags: diary, daily, relationship
+weight: 7
+---
+{target_name} me evitó un poco. Yo también, si soy justo. Dos personas haciéndose espacio con métodos de demolición.
+---
+
+[TEMPLATE:DIARY_DAILY_026]
+tags: diary, daily, place
+weight: 8
+---
+La luz en {location} estuvo rara hoy, como si alguien hubiera decidido maquillarnos la miseria por lástima.
+---
+
+[TEMPLATE:DIARY_DAILY_027]
+tags: diary, daily, humor
+weight: 7
+---
+Si el objetivo era parecer estable, fracasé con una elegancia notable.
+---
+
+[TEMPLATE:DIARY_DAILY_028]
+tags: diary, daily, subtle
+weight: 8
+---
+No dije lo que pensé. Quiero creer que fue madurez. También pudo ser cobardía bien peinada.
+---
+
+[TEMPLATE:DIARY_DAILY_029]
+tags: diary, daily, location
+weight: 7
+---
+Volví a mirar {location} como si fuera a revelarme algo útil. Sigo tratándolo como oráculo y se comporta como pared.
+---
+
+[TEMPLATE:DIARY_DAILY_030]
+tags: diary, daily, mundane
+weight: 9
+---
+Mañana seguramente se parecerá a hoy. Eso me deprime un poco y me calma un poco. Qué combinación inmunda.
+---
+

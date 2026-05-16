@@ -1,0 +1,140 @@
+﻿[TEMPLATE:ENC_CURIOUS_001]
+tags: dialogue, encounter, archetype:lover, content, curious
+weight: 8
+---
+En {location_name}, {self_name} mira a {target_name} como pregunta nueva. Nadie finge pericia de sobra. Por ahora basta con seguir mirando.
+---
+
+[TEMPLATE:ENC_CURIOUS_002]
+tags: dialogue, encounter, archetype:ruler, anxious, curious
+weight: 9
+---
+[{self_name}]: No sabia que queria esto. {power_dynamic} se vuelve observacion mutua. La quimica suena a pregunta abierta.
+---
+
+[TEMPLATE:ENC_CURIOUS_003]
+tags: dialogue, encounter, archetype:rebel, angry, curious
+weight: 10
+---
+{location_atmosphere} vuelve el momento mas raro y mas claro. El ritmo se descubre en vivo. Nadie corre a ponerle nombre.
+---
+
+[TEMPLATE:ENC_CURIOUS_004]
+tags: dialogue, encounter, archetype:caretaker, content, curious
+weight: 11
+---
+{self_name} se acerca con curiosidad y nervio. {location_memory} apenas da contexto raro. Lo nuevo aqui se siente humano y no limpio.
+---
+
+[TEMPLATE:ENC_CURIOUS_005]
+tags: dialogue, encounter, archetype:schemer, obsessive, curious
+weight: 12
+---
+{target_name} observa la reaccion de {self_name} con atencion real. La escena avanza como experimento privado. Por ahora basta con seguir mirando.
+---
+
+[TEMPLATE:ENC_CURIOUS_006]
+tags: dialogue, encounter, archetype:lover, content, curious
+weight: 8
+---
+En {location_name}, {self_name} mira a {target_name} como pregunta nueva. Nadie finge pericia de sobra. La quimica suena a pregunta abierta.
+---
+
+[TEMPLATE:ENC_CURIOUS_007]
+tags: dialogue, encounter, archetype:ruler, anxious, curious
+weight: 9
+---
+[{self_name}]: No sabia que queria esto. {power_dynamic} se vuelve observacion mutua. Nadie corre a ponerle nombre.
+---
+
+[TEMPLATE:ENC_CURIOUS_008]
+tags: dialogue, encounter, archetype:rebel, angry, curious
+weight: 10
+---
+{location_atmosphere} vuelve el momento mas raro y mas claro. El ritmo se descubre en vivo. Lo nuevo aqui se siente humano y no limpio.
+---
+
+[TEMPLATE:ENC_CURIOUS_009]
+tags: dialogue, encounter, archetype:caretaker, content, curious
+weight: 11
+---
+{self_name} se acerca con curiosidad y nervio. {location_memory} apenas da contexto raro. Por ahora basta con seguir mirando.
+---
+
+[TEMPLATE:ENC_CURIOUS_010]
+tags: dialogue, encounter, archetype:schemer, obsessive, curious
+weight: 12
+---
+{target_name} observa la reaccion de {self_name} con atencion real. La escena avanza como experimento privado. La quimica suena a pregunta abierta.
+---
+
+[TEMPLATE:ENC_CURIOUS_011]
+tags: dialogue, encounter, archetype:lover, content, curious
+weight: 8
+---
+En {location_name}, {self_name} mira a {target_name} como pregunta nueva. Nadie finge pericia de sobra. Nadie corre a ponerle nombre.
+---
+
+[TEMPLATE:ENC_CURIOUS_012]
+tags: dialogue, encounter, archetype:ruler, anxious, curious
+weight: 9
+---
+[{self_name}]: No sabia que queria esto. {power_dynamic} se vuelve observacion mutua. Lo nuevo aqui se siente humano y no limpio.
+---
+
+[TEMPLATE:ENC_CURIOUS_013]
+tags: dialogue, encounter, archetype:rebel, angry, curious
+weight: 10
+---
+{location_atmosphere} vuelve el momento mas raro y mas claro. El ritmo se descubre en vivo. Por ahora basta con seguir mirando.
+---
+
+[TEMPLATE:ENC_CURIOUS_014]
+tags: dialogue, encounter, archetype:caretaker, content, curious
+weight: 11
+---
+{self_name} se acerca con curiosidad y nervio. {location_memory} apenas da contexto raro. La quimica suena a pregunta abierta.
+---
+
+[TEMPLATE:ENC_CURIOUS_015]
+tags: dialogue, encounter, archetype:schemer, obsessive, curious
+weight: 12
+---
+{target_name} observa la reaccion de {self_name} con atencion real. La escena avanza como experimento privado. Nadie corre a ponerle nombre.
+---
+
+[TEMPLATE:ENC_CURIOUS_016]
+tags: dialogue, encounter, archetype:lover, content, curious
+weight: 8
+---
+En {location_name}, {self_name} mira a {target_name} como pregunta nueva. Nadie finge pericia de sobra. Lo nuevo aqui se siente humano y no limpio.
+---
+
+[TEMPLATE:ENC_CURIOUS_017]
+tags: dialogue, encounter, archetype:ruler, anxious, curious
+weight: 9
+---
+[{self_name}]: No sabia que queria esto. {power_dynamic} se vuelve observacion mutua. Por ahora basta con seguir mirando.
+---
+
+[TEMPLATE:ENC_CURIOUS_018]
+tags: dialogue, encounter, archetype:rebel, angry, curious
+weight: 10
+---
+{location_atmosphere} vuelve el momento mas raro y mas claro. El ritmo se descubre en vivo. La quimica suena a pregunta abierta.
+---
+
+[TEMPLATE:ENC_CURIOUS_019]
+tags: dialogue, encounter, archetype:caretaker, content, curious
+weight: 11
+---
+{self_name} se acerca con curiosidad y nervio. {location_memory} apenas da contexto raro. Nadie corre a ponerle nombre.
+---
+
+[TEMPLATE:ENC_CURIOUS_020]
+tags: dialogue, encounter, archetype:schemer, obsessive, curious
+weight: 12
+---
+{target_name} observa la reaccion de {self_name} con atencion real. La escena avanza como experimento privado. Lo nuevo aqui se siente humano y no limpio.
+---
+

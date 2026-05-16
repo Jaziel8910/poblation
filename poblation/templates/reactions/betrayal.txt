@@ -1,0 +1,57 @@
+[TEMPLATE:REACT_BETRAYAL_001]
+tags: reaction, betrayal, sharp
+weight: 10
+---
+{self_name}: {target_name}, que bruto fui creyendote.
+---
+
+[TEMPLATE:REACT_BETRAYAL_002]
+tags: reaction, betrayal, cold
+weight: 9
+---
+{self_name} no grita. Solo cambia la forma de mirar a {target_name}. Peor.
+---
+
+[TEMPLATE:REACT_BETRAYAL_003]
+tags: reaction, betrayal, public
+weight: 8
+---
+{self_name}: Repitelo. Pero ahora dilo con toda la gente oyendo.
+---
+
+[TEMPLATE:REACT_BETRAYAL_004]
+tags: reaction, betrayal, hurt
+weight: 8
+---
+{event_description}
+{self_name} se queda quieto, como si moverse fuera admitirlo.
+---
+
+[TEMPLATE:REACT_BETRAYAL_005]
+tags: reaction, betrayal, revenge
+weight: 7
+---
+{self_name}: No voy a olvidar esto, {target_name}. Ni aunque me convenga.
+---
+
+[TEMPLATE:REACT_BETRAYAL_006]
+tags: reaction, betrayal, disbelief
+weight: 8
+---
+{self_name} vuelve a preguntar lo mismo. No porque no entendio. Porque quiere otra realidad.
+---
+
+[TEMPLATE:REACT_BETRAYAL_007]
+tags: reaction, betrayal, bitter
+weight: 7
+---
+{self_name}: Lo peor es que tiene sentido. Eso es lo que mas asco da.
+---
+
+[TEMPLATE:REACT_BETRAYAL_008]
+tags: reaction, betrayal, fracture
+weight: 9
+---
+Entre {self_name} y {target_name} acaba de abrirse una puerta que no estaba ayer.
+---
+

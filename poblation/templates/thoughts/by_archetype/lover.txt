@@ -1,0 +1,240 @@
+[TEMPLATE:ARCH_LOVER_001]
+tags: thought, by_archetype, archetype:lover, attachment
+weight: 10
+archetypes: LOVER
+---
+Tengo que arreglar esa puerta. Pero si {target_name} me mira como ayer, la puerta puede caerse tranquila.
+---
+
+[TEMPLATE:ARCH_LOVER_002]
+tags: thought, by_archetype, archetype:lover, attachment
+weight: 9
+archetypes: LOVER
+---
+La comida quedo decente. No importa. Quiero saber si {target_name} noto que guarde la mejor parte.
+---
+
+[TEMPLATE:ARCH_LOVER_003]
+tags: thought, by_archetype, archetype:lover, insecurity
+weight: 8
+archetypes: LOVER
+---
+Puedo sobrevivir al hambre, al miedo y al frio. Al tono raro de {target_name}, no prometo nada.
+---
+
+[TEMPLATE:ARCH_LOVER_004]
+tags: thought, by_archetype, archetype:lover, desire
+weight: 10
+archetypes: LOVER
+---
+Hoy iba a pensar en trabajo. Pense en la mano de {target_name}. Tecnically sigue siendo trabajo si me arruina la concentracion.
+---
+
+[TEMPLATE:ARCH_LOVER_005]
+tags: thought, by_archetype, archetype:lover, insecurity
+weight: 9
+archetypes: LOVER
+---
+Si {target_name} no me busca hoy, voy a actuar normal. Normal significa horrible, pero en silencio.
+---
+
+[TEMPLATE:ARCH_LOVER_006]
+tags: thought, by_archetype, archetype:lover, jealousy
+weight: 8
+archetypes: LOVER
+---
+No me molesta que {target_name} hable con otra persona. Me molesta que el mundo permita eso con tanta facilidad.
+---
+
+[TEMPLATE:ARCH_LOVER_007]
+tags: thought, by_archetype, archetype:lover, attachment
+weight: 10
+archetypes: LOVER
+---
+Esa nube parece una espalda. Ya empece mal.
+---
+
+[TEMPLATE:ARCH_LOVER_008]
+tags: thought, by_archetype, archetype:lover, desire
+weight: 9
+archetypes: LOVER
+---
+Podria aprender medicina, pesca, politica. Pero mi talento real es saber cuando {target_name} esta fingiendo no estar triste.
+---
+
+[TEMPLATE:ARCH_LOVER_009]
+tags: thought, by_archetype, archetype:lover, insecurity
+weight: 8
+archetypes: LOVER
+---
+Todo el mundo quiere algo grande: futuro, comida, poder. Yo quiero que {target_name} se siente cerca y no parezca accidente.
+---
+
+[TEMPLATE:ARCH_LOVER_010]
+tags: thought, by_archetype, archetype:lover, attachment
+weight: 10
+archetypes: LOVER
+---
+Si {target_name} me quiere, puedo ser paciente. Si no, la paciencia es solo una silla incomoda.
+---
+
+[TEMPLATE:ARCH_LOVER_011]
+tags: thought, by_archetype, archetype:lover, jealousy
+weight: 7
+archetypes: LOVER
+---
+No necesito saber con quien estaba {target_name}. Mentira. Necesito mapa, horario y explicacion.
+---
+
+[TEMPLATE:ARCH_LOVER_012]
+tags: thought, by_archetype, archetype:lover, devotion
+weight: 9
+archetypes: LOVER
+---
+Me gusta hacer cosas utiles para fingir que no estoy esperando que {target_name} diga mi nombre.
+---
+
+[TEMPLATE:ARCH_LOVER_013]
+tags: thought, by_archetype, archetype:lover, insecurity
+weight: 8
+archetypes: LOVER
+---
+Quizas {target_name} no esta distante. Quizas yo estoy escuchando demasiado fuerte.
+---
+
+[TEMPLATE:ARCH_LOVER_014]
+tags: thought, by_archetype, archetype:lover, attachment
+weight: 10
+archetypes: LOVER
+---
+El fin del mundo seria menos grosero si {target_name} contestara una pregunta simple.
+---
+
+[TEMPLATE:ARCH_LOVER_015]
+tags: thought, by_archetype, archetype:lover, desire
+weight: 8
+archetypes: LOVER
+---
+Ese olor me recordo a {target_name}. Que estupidez. Que precision.
+---
+
+[TEMPLATE:ARCH_LOVER_016]
+tags: thought, by_archetype, archetype:lover, devotion
+weight: 9
+archetypes: LOVER
+---
+Puedo cargar agua. Puedo cargar madera. Lo que no puedo cargar bien es que {target_name} este callado conmigo.
+---
+
+[TEMPLATE:ARCH_LOVER_017]
+tags: thought, by_archetype, archetype:lover, insecurity
+weight: 8
+archetypes: LOVER
+---
+Si pregunto "estas bien" otra vez, {target_name} va a saber que no pregunto por salud.
+---
+
+[TEMPLATE:ARCH_LOVER_018]
+tags: thought, by_archetype, archetype:lover, attachment
+weight: 10
+archetypes: LOVER
+---
+La gente dice que hay prioridades. Si {target_name} no esta en la lista, la lista nacio mal.
+---
+
+[TEMPLATE:ARCH_LOVER_019]
+tags: thought, by_archetype, archetype:lover, jealousy
+weight: 7
+archetypes: LOVER
+---
+Vi a {target_name} reirse y no fui la causa. Voy a ser adulto sobre esto durante seis minutos.
+---
+
+[TEMPLATE:ARCH_LOVER_020]
+tags: thought, by_archetype, archetype:lover, devotion
+weight: 9
+archetypes: LOVER
+---
+No quiero salvar a nadie en abstracto. Quiero salvar a {target_name}, y luego negociar con mi conciencia.
+---
+
+[TEMPLATE:ARCH_LOVER_021]
+tags: thought, by_archetype, archetype:lover, insecurity
+weight: 8
+archetypes: LOVER
+---
+Tal vez {target_name} me quiere en una forma pequena. Yo soy el problema por necesitar una forma con techo.
+---
+
+[TEMPLATE:ARCH_LOVER_022]
+tags: thought, by_archetype, archetype:lover, attachment
+weight: 10
+archetypes: LOVER
+---
+Tengo que pensar en semillas, agua, refugio... pero todo eso no importa si {target_name} no me quiere.
+---
+
+[TEMPLATE:ARCH_LOVER_023]
+tags: thought, by_archetype, archetype:lover, desire
+weight: 8
+archetypes: LOVER
+---
+Hay formas de mirar que no deberian ser legales sin prometer algo despues.
+---
+
+[TEMPLATE:ARCH_LOVER_024]
+tags: thought, by_archetype, archetype:lover, insecurity
+weight: 9
+archetypes: LOVER
+---
+Si {target_name} esta cansado de mi, que lo diga feo. La duda tiene demasiada imaginacion.
+---
+
+[TEMPLATE:ARCH_LOVER_025]
+tags: thought, by_archetype, archetype:lover, devotion
+weight: 8
+archetypes: LOVER
+---
+Yo digo que ayudo por la comunidad. A veces ayudo porque {target_name} puede verlo desde lejos.
+---
+
+[TEMPLATE:ARCH_LOVER_026]
+tags: thought, by_archetype, archetype:lover, attachment
+weight: 10
+archetypes: LOVER
+---
+No se si esto es amor o costumbre con buena iluminacion. Igual quiero sentarme al lado de {target_name}.
+---
+
+[TEMPLATE:ARCH_LOVER_027]
+tags: thought, by_archetype, archetype:lover, jealousy
+weight: 7
+archetypes: LOVER
+---
+Esa persona dijo el nombre de {target_name} demasiado suave. No es crimen, pero deberia quedar registrado.
+---
+
+[TEMPLATE:ARCH_LOVER_028]
+tags: thought, by_archetype, archetype:lover, insecurity
+weight: 8
+archetypes: LOVER
+---
+Si {target_name} me toca el hombro una vez mas, voy a construir una teoria completa y hacerme dano con ella.
+---
+
+[TEMPLATE:ARCH_LOVER_029]
+tags: thought, by_archetype, archetype:lover, devotion
+weight: 9
+archetypes: LOVER
+---
+No quiero que {target_name} me necesite por tragedia. Quiero que me elija un dia aburrido.
+---
+
+[TEMPLATE:ARCH_LOVER_030]
+tags: thought, by_archetype, archetype:lover, attachment
+weight: 10
+archetypes: LOVER
+---
+Puedo fingir independencia. Me sale bien hasta que {target_name} tarda en volver.
+---
+

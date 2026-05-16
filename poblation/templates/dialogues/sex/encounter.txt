@@ -1,0 +1,41 @@
+[TEMPLATE:SEX_ENCOUNTER_001]
+tags: dialogue, sex, encounter, direct
+weight: 10
+---
+No hay grandilocuencia. Solo respiraciones mas sinceras y palabras cortas que dicen mucho mas de lo que deberian.
+---
+
+[TEMPLATE:SEX_ENCOUNTER_002]
+tags: dialogue, sex, encounter, emotional
+weight: 9
+---
+{self_name} dice el nombre de {target_name} como si lo acabara de descubrir de verdad. Eso basta para que el momento cambie de forma.
+---
+
+[TEMPLATE:SEX_ENCOUNTER_003]
+tags: dialogue, sex, encounter, tender
+weight: 8
+---
+Se buscan sin apuro. La intensidad no viene de correr, viene de lo atentos que siguen estando uno al otro.
+---
+
+[TEMPLATE:SEX_ENCOUNTER_004]
+tags: dialogue, sex, encounter, passionate
+weight: 9
+---
+Por un rato, la habitacion deja de importar. Queda solo esa mezcla de hambre, alivio y peligro de sentirse visto.
+---
+
+[TEMPLATE:SEX_ENCOUNTER_005]
+tags: dialogue, sex, encounter, awkward
+weight: 7
+---
+Hay un momento de risa nerviosa, luego otro de calma, y despues algo mejor: la decision de quedarse presentes en lugar de posar.
+---
+
+[TEMPLATE:SEX_ENCOUNTER_006]
+tags: dialogue, sex, encounter, revealing
+weight: 8
+---
+{target_name}: "No me mires asi." {self_name}: "Entonces no me des razones." Nadie gana esa linea. Igual nadie quiere soltarla.
+---

@@ -1,0 +1,7 @@
+[TEMPLATE:END_ALONE_CHAPTER_2]
+tags: ending, alone, chapter2
+weight: 10
+---
+No habia ruta real para continuar. Ni cuerpo suficiente, ni tecnologia suficiente, ni milagro que no sonara a mentira. {ending_survivor} no fue el fundador de nada. Fue el ultimo lector de todo.
+---
+

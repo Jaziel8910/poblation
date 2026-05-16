@@ -1,0 +1,7 @@
+[TEMPLATE:END_WAR_CHAPTER_3]
+tags: ending, war, chapter3
+weight: 10
+---
+{ending_first_couple} empezaron con el problema de vivir. Sus descendientes encontraron un problema mas facil: destruir. Entre {ending_total_pobles} pobles, nadie logro inventar una paz suficientemente terca.
+---
+

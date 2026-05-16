@@ -1,0 +1,7 @@
+[TEMPLATE:END_CULT_CHAPTER_4]
+tags: ending, cult, chapter4
+weight: 10
+---
+Hubo {ending_total_births} nacimientos bajo esa mirada y {ending_total_deaths} muertes explicadas despues. La civilizacion sobrevivio, si. Pero aprendio a preguntar primero que queria el profeta.
+---
+

@@ -1,0 +1,7 @@
+[TEMPLATE:END_WAR_LAST_WORDS]
+tags: ending, war, last_words
+weight: 10
+---
+La humanidad no perdio contra el fin. Perdio contra si misma, otra vez.
+---
+

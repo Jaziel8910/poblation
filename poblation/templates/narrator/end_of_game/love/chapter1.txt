@@ -1,0 +1,7 @@
+[TEMPLATE:END_LOVE_CHAPTER_1]
+tags: ending, love, chapter1
+weight: 10
+---
+El final llego el dia {ending_day}, cuando {ending_deceased} salio de la historia y {ending_survivor} quedo con todo el mundo encima. Antes de eso fueron {ending_first_couple}: dos nombres intentando ganarle al vacio con manos torpes y promesas raras.
+---
+

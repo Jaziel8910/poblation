@@ -1,0 +1,7 @@
+[TEMPLATE:END_CULT_LAST_WORDS]
+tags: ending, cult, last_words
+weight: 10
+---
+El profeta no salvo el mundo. Lo convencio.
+---
+

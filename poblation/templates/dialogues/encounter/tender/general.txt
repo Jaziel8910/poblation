@@ -1,0 +1,140 @@
+﻿[TEMPLATE:ENC_TENDER_001]
+tags: dialogue, encounter, archetype:lover, content, tender
+weight: 8
+---
+En {location_name}, {self_name} baja la voz. Nadie entra a mandar. El deseo aqui no suena a urgencia.
+---
+
+[TEMPLATE:ENC_TENDER_002]
+tags: dialogue, encounter, archetype:ruler, anxious, tender
+weight: 9
+---
+{self_name} roza la mano de {target_name}. {power_dynamic} pierde filo por un rato. El lugar deja de parecer prestado.
+---
+
+[TEMPLATE:ENC_TENDER_003]
+tags: dialogue, encounter, archetype:rebel, angry, tender
+weight: 10
+---
+[{self_name}]: Quedate un poco mas. Nadie necesita fingir experiencia. La escena parece acuerdo y no conquista.
+---
+
+[TEMPLATE:ENC_TENDER_004]
+tags: dialogue, encounter, archetype:caretaker, content, tender
+weight: 11
+---
+{target_name} se permite apoyarse un poco. {location_memory} no alcanza a arruinarlo. Por fin nadie convierte el gesto en defensa.
+---
+
+[TEMPLATE:ENC_TENDER_005]
+tags: dialogue, encounter, archetype:schemer, obsessive, tender
+weight: 12
+---
+Hasta {location_atmosphere} parece volverse suave. Los dos avanzan con cuidado real. El deseo aqui no suena a urgencia.
+---
+
+[TEMPLATE:ENC_TENDER_006]
+tags: dialogue, encounter, archetype:lover, content, tender
+weight: 8
+---
+En {location_name}, {self_name} baja la voz. Nadie entra a mandar. El lugar deja de parecer prestado.
+---
+
+[TEMPLATE:ENC_TENDER_007]
+tags: dialogue, encounter, archetype:ruler, anxious, tender
+weight: 9
+---
+{self_name} roza la mano de {target_name}. {power_dynamic} pierde filo por un rato. La escena parece acuerdo y no conquista.
+---
+
+[TEMPLATE:ENC_TENDER_008]
+tags: dialogue, encounter, archetype:rebel, angry, tender
+weight: 10
+---
+[{self_name}]: Quedate un poco mas. Nadie necesita fingir experiencia. Por fin nadie convierte el gesto en defensa.
+---
+
+[TEMPLATE:ENC_TENDER_009]
+tags: dialogue, encounter, archetype:caretaker, content, tender
+weight: 11
+---
+{target_name} se permite apoyarse un poco. {location_memory} no alcanza a arruinarlo. El deseo aqui no suena a urgencia.
+---
+
+[TEMPLATE:ENC_TENDER_010]
+tags: dialogue, encounter, archetype:schemer, obsessive, tender
+weight: 12
+---
+Hasta {location_atmosphere} parece volverse suave. Los dos avanzan con cuidado real. El lugar deja de parecer prestado.
+---
+
+[TEMPLATE:ENC_TENDER_011]
+tags: dialogue, encounter, archetype:lover, content, tender
+weight: 8
+---
+En {location_name}, {self_name} baja la voz. Nadie entra a mandar. La escena parece acuerdo y no conquista.
+---
+
+[TEMPLATE:ENC_TENDER_012]
+tags: dialogue, encounter, archetype:ruler, anxious, tender
+weight: 9
+---
+{self_name} roza la mano de {target_name}. {power_dynamic} pierde filo por un rato. Por fin nadie convierte el gesto en defensa.
+---
+
+[TEMPLATE:ENC_TENDER_013]
+tags: dialogue, encounter, archetype:rebel, angry, tender
+weight: 10
+---
+[{self_name}]: Quedate un poco mas. Nadie necesita fingir experiencia. El deseo aqui no suena a urgencia.
+---
+
+[TEMPLATE:ENC_TENDER_014]
+tags: dialogue, encounter, archetype:caretaker, content, tender
+weight: 11
+---
+{target_name} se permite apoyarse un poco. {location_memory} no alcanza a arruinarlo. El lugar deja de parecer prestado.
+---
+
+[TEMPLATE:ENC_TENDER_015]
+tags: dialogue, encounter, archetype:schemer, obsessive, tender
+weight: 12
+---
+Hasta {location_atmosphere} parece volverse suave. Los dos avanzan con cuidado real. La escena parece acuerdo y no conquista.
+---
+
+[TEMPLATE:ENC_TENDER_016]
+tags: dialogue, encounter, archetype:lover, content, tender
+weight: 8
+---
+En {location_name}, {self_name} baja la voz. Nadie entra a mandar. Por fin nadie convierte el gesto en defensa.
+---
+
+[TEMPLATE:ENC_TENDER_017]
+tags: dialogue, encounter, archetype:ruler, anxious, tender
+weight: 9
+---
+{self_name} roza la mano de {target_name}. {power_dynamic} pierde filo por un rato. El deseo aqui no suena a urgencia.
+---
+
+[TEMPLATE:ENC_TENDER_018]
+tags: dialogue, encounter, archetype:rebel, angry, tender
+weight: 10
+---
+[{self_name}]: Quedate un poco mas. Nadie necesita fingir experiencia. El lugar deja de parecer prestado.
+---
+
+[TEMPLATE:ENC_TENDER_019]
+tags: dialogue, encounter, archetype:caretaker, content, tender
+weight: 11
+---
+{target_name} se permite apoyarse un poco. {location_memory} no alcanza a arruinarlo. La escena parece acuerdo y no conquista.
+---
+
+[TEMPLATE:ENC_TENDER_020]
+tags: dialogue, encounter, archetype:schemer, obsessive, tender
+weight: 12
+---
+Hasta {location_atmosphere} parece volverse suave. Los dos avanzan con cuidado real. Por fin nadie convierte el gesto en defensa.
+---
+

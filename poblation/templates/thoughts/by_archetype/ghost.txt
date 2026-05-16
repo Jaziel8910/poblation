@@ -1,0 +1,200 @@
+[TEMPLATE:ARCH_GHOST_001]
+tags: thought, by_archetype, archetype:ghost, dissociation
+weight: 10
+archetypes: GHOST
+---
+La gente habla y yo veo la boca moverse un poquito despues del sonido.
+---
+
+[TEMPLATE:ARCH_GHOST_002]
+tags: thought, by_archetype, archetype:ghost, absence
+weight: 9
+archetypes: GHOST
+---
+Puse la taza aqui. No recuerdo haberla traido. Buena taza, supongo.
+---
+
+[TEMPLATE:ARCH_GHOST_003]
+tags: thought, by_archetype, archetype:ghost, dissociation
+weight: 8
+archetypes: GHOST
+---
+Si alguien me pregunta que siento, puedo decir frio. Frio casi siempre funciona.
+---
+
+[TEMPLATE:ARCH_GHOST_004]
+tags: thought, by_archetype, archetype:ghost, absence
+weight: 10
+archetypes: GHOST
+---
+Hay una conversacion pasando cerca. Estoy en ella por ubicacion, no por presencia.
+---
+
+[TEMPLATE:ARCH_GHOST_005]
+tags: thought, by_archetype, archetype:ghost, memory
+weight: 8
+archetypes: GHOST
+---
+Hoy mi cara hizo una expresion antes que yo decidiera tener una.
+---
+
+[TEMPLATE:ARCH_GHOST_006]
+tags: thought, by_archetype, archetype:ghost, dissociation
+weight: 9
+archetypes: GHOST
+---
+El cuerpo camina mejor cuando no lo interrumpo pensando.
+---
+
+[TEMPLATE:ARCH_GHOST_007]
+tags: thought, by_archetype, archetype:ghost, absence
+weight: 8
+archetypes: GHOST
+---
+Me dijeron mi nombre y tarde demasiado en reconocer que era mio.
+---
+
+[TEMPLATE:ARCH_GHOST_008]
+tags: thought, by_archetype, archetype:ghost, memory
+weight: 10
+archetypes: GHOST
+---
+Hay dias que tienen borde. Hoy no. Hoy es una tela sin cortar.
+---
+
+[TEMPLATE:ARCH_GHOST_009]
+tags: thought, by_archetype, archetype:ghost, dissociation
+weight: 8
+archetypes: GHOST
+---
+Estoy mirando mi mano como si viniera con instrucciones y faltara una pagina.
+---
+
+[TEMPLATE:ARCH_GHOST_010]
+tags: thought, by_archetype, archetype:ghost, absence
+weight: 9
+archetypes: GHOST
+---
+Alguien se rio y yo copie el gesto tarde. Creo que paso.
+---
+
+[TEMPLATE:ARCH_GHOST_011]
+tags: thought, by_archetype, archetype:ghost, memory
+weight: 8
+archetypes: GHOST
+---
+No estoy triste. Triste tiene forma. Esto es mas plano.
+---
+
+[TEMPLATE:ARCH_GHOST_012]
+tags: thought, by_archetype, archetype:ghost, dissociation
+weight: 10
+archetypes: GHOST
+---
+El mundo esta demasiado cerca hoy. Voy a poner la mirada un poco mas lejos.
+---
+
+[TEMPLATE:ARCH_GHOST_013]
+tags: thought, by_archetype, archetype:ghost, absence
+weight: 8
+archetypes: GHOST
+---
+Se me olvido responder y ahora responder seria mas raro que callarme.
+---
+
+[TEMPLATE:ARCH_GHOST_014]
+tags: thought, by_archetype, archetype:ghost, memory
+weight: 9
+archetypes: GHOST
+---
+Hay una palabra en la punta de la lengua. No la necesito. Puede quedarse ahi.
+---
+
+[TEMPLATE:ARCH_GHOST_015]
+tags: thought, by_archetype, archetype:ghost, dissociation
+weight: 8
+archetypes: GHOST
+---
+Mi sombra parece mas decidida que yo. Bien por ella.
+---
+
+[TEMPLATE:ARCH_GHOST_016]
+tags: thought, by_archetype, archetype:ghost, absence
+weight: 10
+archetypes: GHOST
+---
+Me preguntaron si escuche. Escuche sonidos. Eso no siempre incluye significado.
+---
+
+[TEMPLATE:ARCH_GHOST_017]
+tags: thought, by_archetype, archetype:ghost, memory
+weight: 8
+archetypes: GHOST
+---
+Hay recuerdos que no vuelven como imagen. Vuelven como postura.
+---
+
+[TEMPLATE:ARCH_GHOST_018]
+tags: thought, by_archetype, archetype:ghost, dissociation
+weight: 9
+archetypes: GHOST
+---
+Puedo contar los pasos hasta parecer ocupado por dentro.
+---
+
+[TEMPLATE:ARCH_GHOST_019]
+tags: thought, by_archetype, archetype:ghost, absence
+weight: 8
+archetypes: GHOST
+---
+Si me quedo quieto, nadie nota que me fui hace rato.
+---
+
+[TEMPLATE:ARCH_GHOST_020]
+tags: thought, by_archetype, archetype:ghost, memory
+weight: 10
+archetypes: GHOST
+---
+La risa de alguien hizo una marca. No en mi. Cerca.
+---
+
+[TEMPLATE:ARCH_GHOST_021]
+tags: thought, by_archetype, archetype:ghost, dissociation
+weight: 8
+archetypes: GHOST
+---
+Estoy cansado de una cosa que no estoy mirando.
+---
+
+[TEMPLATE:ARCH_GHOST_022]
+tags: thought, by_archetype, archetype:ghost, absence
+weight: 9
+archetypes: GHOST
+---
+La voz me salio normal. Eso siempre sorprende un poco.
+---
+
+[TEMPLATE:ARCH_GHOST_023]
+tags: thought, by_archetype, archetype:ghost, memory
+weight: 8
+archetypes: GHOST
+---
+Alguien dijo "recuerdas" y mi pecho cerro la puerta antes que mi cabeza llegara.
+---
+
+[TEMPLATE:ARCH_GHOST_024]
+tags: thought, by_archetype, archetype:ghost, dissociation
+weight: 10
+archetypes: GHOST
+---
+Hoy todo tiene volumen bajo, incluso lo que grita.
+---
+
+[TEMPLATE:ARCH_GHOST_025]
+tags: thought, by_archetype, archetype:ghost, absence
+weight: 9
+archetypes: GHOST
+---
+Estoy aqui. La frase es verdadera de una forma tecnica.
+---
+

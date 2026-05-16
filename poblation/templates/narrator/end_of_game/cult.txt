@@ -1,0 +1,28 @@
+[TEMPLATE:NARR_END_CULT_001]
+tags: narrator, ending, cult
+weight: 10
+---
+El profeta gano cuando la duda se volvio mala educacion. La religion no conquisto todas las casas de golpe. Solo aprendio a dormir en cada cuarto.
+---
+
+[TEMPLATE:NARR_END_CULT_002]
+tags: narrator, ending, cult
+weight: 9
+---
+Al final, todos sabian las palabras correctas. Algunos las creian. Otros las decian para comer. La diferencia dejo de importar en publico.
+---
+
+[TEMPLATE:NARR_END_CULT_003]
+tags: narrator, ending, cult
+weight: 8
+---
+La fe sostuvo al pueblo y tambien lo amarro. Hay cuerdas que parecen abrazo hasta que alguien intenta irse.
+---
+
+[TEMPLATE:NARR_END_CULT_004]
+tags: narrator, ending, cult
+weight: 8
+---
+El culto no destruyo la civilizacion. La ordeno, la nombro, la vigilo, y le cobro gratitud por seguir viva.
+---
+

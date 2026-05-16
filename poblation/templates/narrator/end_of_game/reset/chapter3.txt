@@ -1,0 +1,7 @@
+[TEMPLATE:END_RESET_CHAPTER_3]
+tags: ending, reset, chapter3
+weight: 10
+---
+Hubo {ending_total_wars} guerras, {ending_total_affairs} affairs, {ending_total_secrets} secretos revelados y una cantidad absurda de orgullo mal puesto. Luego quedaron dos cuerpos respirando donde antes habia una sociedad.
+---
+

@@ -1,0 +1,209 @@
+[TEMPLATE:SELF_EXIST_001]
+tags: thought, about_self, existential, world
+weight: 6
+---
+{population}. Ese número debería venir con una silla cerca.
+---
+
+[TEMPLATE:SELF_EXIST_002]
+tags: thought, about_self, existential, world
+weight: 13
+---
+A veces pienso que somos el final. A veces pienso que somos el error que queda después del final.
+---
+
+[TEMPLATE:SELF_EXIST_003]
+tags: thought, about_self, existential, world
+weight: 11
+---
+{settlement_name} suena a comienzo si lo dices rápido. Si lo dices lento, suena a refugio con goteras.
+---
+
+[TEMPLATE:SELF_EXIST_004]
+tags: thought, about_self, existential, world
+weight: 9
+---
+La humanidad cabe en una conversación incómoda y una olla mal lavada. Qué humillante y qué tierno.
+---
+
+[TEMPLATE:SELF_EXIST_005]
+tags: thought, about_self, existential, world
+weight: 7
+---
+Si nadie escribe esto, ¿pasó? Si alguien lo escribe mal, ¿eso cuenta como historia?
+---
+
+[TEMPLATE:SELF_EXIST_006]
+tags: thought, about_self, existential, world
+weight: 14
+---
+Antes había millones. Ahora {population}. Igual seguimos encontrando maneras de no escucharnos.
+---
+
+[TEMPLATE:SELF_EXIST_007]
+tags: thought, about_self, existential, world
+weight: 12
+---
+No sé si quiero reconstruir el mundo o solo hacer uno donde dormir no parezca rendirse.
+---
+
+[TEMPLATE:SELF_EXIST_008]
+tags: thought, about_self, existential, world
+weight: 10
+---
+{settlement_name} podría ser cuna, tumba o chiste privado del universo. Depende del clima y de quién cocine.
+---
+
+[TEMPLATE:SELF_EXIST_009]
+tags: thought, about_self, existential, world
+weight: 8
+---
+Ser de los últimos humanos suena épico hasta que tienes que lavar algo con agua fría.
+---
+
+[TEMPLATE:SELF_EXIST_010]
+tags: thought, about_self, existential, world
+weight: 6
+---
+Quizás no hay gran significado. Quizás solo hay manos, hambre y alguien diciendo que mañana seguimos.
+---
+
+[TEMPLATE:SELF_EXIST_011]
+tags: thought, about_self, existential, world
+weight: 13
+---
+Me pesa la especie, pero también me pesa la ropa mojada. El cuerpo no respeta la filosofía.
+---
+
+[TEMPLATE:SELF_EXIST_012]
+tags: thought, about_self, existential, world
+weight: 11
+---
+{population} personas y todavía hay silencios que nadie se atreve a tocar.
+---
+
+[TEMPLATE:SELF_EXIST_013]
+tags: thought, about_self, existential, world
+weight: 9
+---
+Si este es el futuro, llegó con una cara bastante usada.
+---
+
+[TEMPLATE:SELF_EXIST_014]
+tags: thought, about_self, existential, world
+weight: 7
+---
+A veces me alivia que no quede casi nadie. Menos testigos para fracasar como civilización.
+---
+
+[TEMPLATE:SELF_EXIST_015]
+tags: thought, about_self, existential, world
+weight: 14
+---
+No quiero ser símbolo. Los símbolos no se rascan, no dudan, no tienen gases. Yo sí.
+---
+
+[TEMPLATE:SELF_EXIST_016]
+tags: thought, about_self, existential, world
+weight: 12
+---
+{settlement_name} es una palabra puesta encima del miedo para que parezca arquitectura.
+---
+
+[TEMPLATE:SELF_EXIST_017]
+tags: thought, about_self, existential, world
+weight: 10
+---
+Si volvemos a construir todo, ojalá alguien recuerde no repetir la parte donde fingíamos estar bien.
+---
+
+[TEMPLATE:SELF_EXIST_018]
+tags: thought, about_self, existential, world
+weight: 8
+---
+La extinción tiene mala prensa, pero algunas mañanas entiendo la tentación del silencio total.
+---
+
+[TEMPLATE:SELF_EXIST_019]
+tags: thought, about_self, existential, world
+weight: 6
+---
+Estamos vivos. Eso no siempre es esperanza; a veces es solo una tarea que no terminó.
+---
+
+[TEMPLATE:SELF_EXIST_020]
+tags: thought, about_self, existential, world
+weight: 13
+---
+{population} no es una población. Es una mesa chica con demasiados fantasmas sentados.
+---
+
+[TEMPLATE:SELF_EXIST_021]
+tags: thought, about_self, existential, world
+weight: 11
+---
+Me pregunto si el mundo extraña a la gente o si por fin puede escuchar sus propios insectos.
+---
+
+[TEMPLATE:SELF_EXIST_022]
+tags: thought, about_self, existential, world
+weight: 9
+---
+No sé qué le debemos a los muertos. Probablemente más que sobrevivir feo.
+---
+
+[TEMPLATE:SELF_EXIST_023]
+tags: thought, about_self, existential, world
+weight: 7
+---
+El futuro debería tener mejor olor que esto. Estoy dispuesto a negociar.
+---
+
+[TEMPLATE:SELF_EXIST_024]
+tags: thought, about_self, existential, world
+weight: 14
+---
+Somos el plan B de una especie que gastó todos los planes A en estupideces.
+---
+
+[TEMPLATE:SELF_EXIST_025]
+tags: thought, about_self, existential, world
+weight: 12
+---
+{settlement_name}. Lo digo y casi puedo creer que quedarse aquí fue una elección.
+---
+
+[TEMPLATE:SELF_EXIST_026]
+tags: thought, about_self, existential, world
+weight: 10
+---
+A veces ser último no pesa. A veces solo quiero pan. Eso también es humano, supongo.
+---
+
+[TEMPLATE:SELF_EXIST_027]
+tags: thought, about_self, existential, world
+weight: 8
+---
+Si alguien encuentra nuestros restos, ojalá no juzgue por el desorden. O sí. Tal vez merecemos crítica.
+---
+
+[TEMPLATE:SELF_EXIST_028]
+tags: thought, about_self, existential, world
+weight: 6
+---
+La humanidad no terminó con explosión. Sigue aquí, pensando cosas tontas con hambre.
+---
+
+[TEMPLATE:SELF_EXIST_029]
+tags: thought, about_self, existential, world
+weight: 13
+---
+Quiero creer que podemos ser mejores. También quiero evidencia, porque ya vi cómo trabaja la esperanza sin supervisión.
+---
+
+[TEMPLATE:SELF_EXIST_030]
+tags: thought, about_self, existential, world
+weight: 11
+---
+{population} corazones, más o menos. Suficiente para una pelea, quizá suficiente para un mundo.
+---

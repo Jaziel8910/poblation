@@ -1,0 +1,280 @@
+[TEMPLATE:RANDOM_HYPER_001]
+tags: thought, random, hyperspecific, mundane
+weight: 10
+---
+Me puse esta manga mal y ahora todo el dia tiene una pequena deuda conmigo.
+---
+
+[TEMPLATE:RANDOM_HYPER_002]
+tags: thought, random, hyperspecific, mundane
+weight: 9
+---
+Ese pedazo de cuerda estaba ayer mas a la izquierda. No tengo pruebas, pero tengo ojos.
+---
+
+[TEMPLATE:RANDOM_HYPER_003]
+tags: thought, random, hyperspecific, mundane
+weight: 8
+---
+Si digo "ya voy" una vez mas, deberia estar legalmente obligado a moverme.
+---
+
+[TEMPLATE:RANDOM_HYPER_004]
+tags: thought, random, hyperspecific, mundane
+weight: 10
+---
+La segunda mordida siempre sabe mas honesta que la primera. La primera es puro tramite.
+---
+
+[TEMPLATE:RANDOM_HYPER_005]
+tags: thought, random, hyperspecific, mundane
+weight: 7
+---
+Tengo una piedrita en el zapato o una opinion nueva sobre mi pie.
+---
+
+[TEMPLATE:RANDOM_HYPER_006]
+tags: thought, random, hyperspecific, mundane
+weight: 9
+---
+Alguien dejo esa tapa al reves. No me afecta. Me afecta muchisimo.
+---
+
+[TEMPLATE:RANDOM_HYPER_007]
+tags: thought, random, hyperspecific, mundane
+weight: 8
+---
+Hoy mi cara se siente como si hubiera dormido con una decision encima.
+---
+
+[TEMPLATE:RANDOM_HYPER_008]
+tags: thought, random, hyperspecific, mundane
+weight: 10
+---
+La esquina de esa mesa tiene energia de enemigo personal.
+---
+
+[TEMPLATE:RANDOM_HYPER_009]
+tags: thought, random, hyperspecific, mundane
+weight: 9
+---
+Si vuelvo a guardar algo "para despues", despues va a venir armado.
+---
+
+[TEMPLATE:RANDOM_HYPER_010]
+tags: thought, random, hyperspecific, mundane
+weight: 8
+---
+Hay una forma correcta de doblar esto y claramente no es la que estoy haciendo.
+---
+
+[TEMPLATE:RANDOM_HYPER_011]
+tags: thought, random, hyperspecific, mundane
+weight: 7
+---
+Esta cuchara tiene cara de haber visto mejores sopas.
+---
+
+[TEMPLATE:RANDOM_HYPER_012]
+tags: thought, random, hyperspecific, mundane
+weight: 9
+---
+Mi rodilla hizo un sonido con demasiado contexto.
+---
+
+[TEMPLATE:RANDOM_HYPER_013]
+tags: thought, random, hyperspecific, mundane
+weight: 8
+---
+Voy a recordar ese olor en tres dias y no voy a saber de donde salio. Perfecto, otra tarea para el cerebro.
+---
+
+[TEMPLATE:RANDOM_HYPER_014]
+tags: thought, random, hyperspecific, mundane
+weight: 10
+---
+El agua sabe distinta cuando la bebo rapido. Mas culpable.
+---
+
+[TEMPLATE:RANDOM_HYPER_015]
+tags: thought, random, hyperspecific, mundane
+weight: 8
+---
+Ese hilo suelto cree que manda en mi ropa. Y quizas si.
+---
+
+[TEMPLATE:RANDOM_HYPER_016]
+tags: thought, random, hyperspecific, mundane
+weight: 9
+---
+Me limpie la mano y ahora la otra se siente abandonada.
+---
+
+[TEMPLATE:RANDOM_HYPER_017]
+tags: thought, random, hyperspecific, mundane
+weight: 7
+---
+La palabra "tibia" no deberia sonar tan humeda.
+---
+
+[TEMPLATE:RANDOM_HYPER_018]
+tags: thought, random, hyperspecific, mundane
+weight: 8
+---
+Ese banco tiene el tamano exacto para sentarse mal.
+---
+
+[TEMPLATE:RANDOM_HYPER_019]
+tags: thought, random, hyperspecific, mundane
+weight: 9
+---
+Si miro mucho esa mancha va a empezar a cobrar importancia. Mejor no. Ya cobro.
+---
+
+[TEMPLATE:RANDOM_HYPER_020]
+tags: thought, random, hyperspecific, mundane
+weight: 10
+---
+Siempre digo "un segundo" como si alguna vez hubiera medido uno con respeto.
+---
+
+[TEMPLATE:RANDOM_HYPER_021]
+tags: thought, random, hyperspecific, mundane
+weight: 8
+---
+Esta piedra cabe perfecto en la mano. No sirve para nada. Buena piedra.
+---
+
+[TEMPLATE:RANDOM_HYPER_022]
+tags: thought, random, hyperspecific, mundane
+weight: 7
+---
+El borde de mi uña sabe algo que yo no.
+---
+
+[TEMPLATE:RANDOM_HYPER_023]
+tags: thought, random, hyperspecific, mundane
+weight: 9
+---
+Si camino alrededor de eso en vez de moverlo, oficialmente soy parte del problema.
+---
+
+[TEMPLATE:RANDOM_HYPER_024]
+tags: thought, random, hyperspecific, mundane
+weight: 8
+---
+Esa camisa tiene un lado optimista y hoy me puse el lado cansado.
+---
+
+[TEMPLATE:RANDOM_HYPER_025]
+tags: thought, random, hyperspecific, mundane
+weight: 10
+---
+No necesito rascarme ahi. Bueno, ahora si, porque pense en eso.
+---
+
+[TEMPLATE:RANDOM_HYPER_026]
+tags: thought, random, hyperspecific, mundane
+weight: 9
+---
+El ultimo poquito de comida siempre parece estar esperando una disculpa.
+---
+
+[TEMPLATE:RANDOM_HYPER_027]
+tags: thought, random, hyperspecific, mundane
+weight: 7
+---
+Esa sombra no estaba haciendo nada raro hasta que la mire con mala actitud.
+---
+
+[TEMPLATE:RANDOM_HYPER_028]
+tags: thought, random, hyperspecific, mundane
+weight: 8
+---
+Me acorde de una palabra y ahora no quiero usarla. Se puso intensa.
+---
+
+[TEMPLATE:RANDOM_HYPER_029]
+tags: thought, random, hyperspecific, mundane
+weight: 9
+---
+Voy a dejar esto aqui para acordarme. Futuro yo, suerte con esa mentira.
+---
+
+[TEMPLATE:RANDOM_HYPER_030]
+tags: thought, random, hyperspecific, mundane
+weight: 8
+---
+La tercera gota fue la que me molesto. Las dos primeras tenian permiso.
+---
+
+[TEMPLATE:RANDOM_HYPER_031]
+tags: thought, random, hyperspecific, mundane
+weight: 7
+---
+Si aprieto los labios asi, parezco alguien que sabe contar bien. No lo soy.
+---
+
+[TEMPLATE:RANDOM_HYPER_032]
+tags: thought, random, hyperspecific, mundane
+weight: 9
+---
+Ese olor es casi comida, pero con una mala decision adentro.
+---
+
+[TEMPLATE:RANDOM_HYPER_033]
+tags: thought, random, hyperspecific, mundane
+weight: 8
+---
+La tela mojada tiene personalidad de amenaza pequena.
+---
+
+[TEMPLATE:RANDOM_HYPER_034]
+tags: thought, random, hyperspecific, mundane
+weight: 10
+---
+Tengo que dejar de responder "normal" cuando no revise nada.
+---
+
+[TEMPLATE:RANDOM_HYPER_035]
+tags: thought, random, hyperspecific, mundane
+weight: 8
+---
+Ese recipiente hace ruido de cosa vacia aunque tenga algo. Drama innecesario.
+---
+
+[TEMPLATE:RANDOM_HYPER_036]
+tags: thought, random, hyperspecific, mundane
+weight: 7
+---
+Si doblo esto una vez mas, va a dejar de ser doblar y va a ser castigo.
+---
+
+[TEMPLATE:RANDOM_HYPER_037]
+tags: thought, random, hyperspecific, mundane
+weight: 9
+---
+Mi espalda acaba de proponer una reunion urgente.
+---
+
+[TEMPLATE:RANDOM_HYPER_038]
+tags: thought, random, hyperspecific, mundane
+weight: 8
+---
+No se si tengo hambre o si vi algo redondo y mi cuerpo hizo su propio plan.
+---
+
+[TEMPLATE:RANDOM_HYPER_039]
+tags: thought, random, hyperspecific, mundane
+weight: 9
+---
+Ese sonido fue normal. Lo voy a tratar como normal. Normalisimo. Me voy de aqui.
+---
+
+[TEMPLATE:RANDOM_HYPER_040]
+tags: thought, random, hyperspecific, mundane
+weight: 10
+---
+Si me preguntan que estaba haciendo, dire "ordenando". Esto claramente no es ordenar.
+---
+
