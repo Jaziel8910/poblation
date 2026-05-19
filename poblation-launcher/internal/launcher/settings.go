@@ -10,8 +10,8 @@ import (
 )
 
 const (
-	AppVersion        = "1.0.0-beta.1"
-	BuildName         = "BETA V1.0.0"
+	AppVersion        = "1.0.0.2"
+	BuildName         = "PLAYABLE RELEASE"
 	MaxVersionsToKeep = 3
 )
 

@@ -1,5 +1,5 @@
 APP_NAME := poblation-launcher
-VERSION := v1.0.0-beta.1
+VERSION := v1.0.0.2
 DIST := dist
 INSTALLER := poblation_$(VERSION)_launcher_installer.exe
 

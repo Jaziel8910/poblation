@@ -16,6 +16,12 @@ type NewsItem struct {
 func EmbeddedNews() []NewsItem {
 	return []NewsItem{
 		{
+			Version: "v1.0.0.2",
+			Title:   "PLAYABLE RELEASE",
+			Date:    time.Date(2026, 5, 19, 0, 0, 0, 0, time.UTC),
+			Summary: "Portable game exe, lightweight launcher, fixed Desktop shortcut, friendlier GitHub page, and verified local startup.",
+		},
+		{
 			Version: "v1.0.0-beta.1",
 			Title:   "BETA V1.0.0",
 			Date:    time.Date(2026, 5, 18, 0, 0, 0, 0, time.UTC),

@@ -10,7 +10,7 @@ import (
 
 const (
 	// GameVersion is the current desktop build string shown in UI surfaces.
-	GameVersion = "1.0.0-beta.1"
+	GameVersion = "1.0.0.2"
 )
 
 // GameMode controls which views and powers the player can access.

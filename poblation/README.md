@@ -2,7 +2,7 @@
 
 ![POBLATION](assets/branding/poblation-wordmark.png)
 
-**Beta v1.0.0** is the first public, playable beta of POBLATION: a terminal life sim about the last humans, their secrets, their bad choices, and the tiny civilization they may or may not ruin.
+**v1.0.0.2** is the first properly portable public build of POBLATION: a terminal life sim about the last humans, their secrets, their bad choices, and the tiny civilization they may or may not ruin.
 
 > Adult game for players 18+. Dark comedy, explicit systems, death, obsession, betrayal, grief, messy relationships, and procedural drama.
 
@@ -11,7 +11,7 @@
 The easiest Windows path is the launcher:
 
 1. Open the latest GitHub Release.
-2. Download `poblation_v1.0.0-beta.1_launcher_installer.exe`.
+2. Download `poblation_v1.0.0.2_launcher_installer.exe`.
 3. Run it.
 4. Open `POBLATION Launcher.cmd` from your Desktop or from `C:\Users\<you>\.poblation\launcher`.
 5. Choose `Install/update latest release`, then `Play`.
@@ -68,7 +68,7 @@ There is no official Homebrew formula yet. If one ships later, it will live in t
 Windows players should use:
 
 ```text
-poblation_v1.0.0-beta.1_launcher_installer.exe
+poblation_v1.0.0.2_launcher_installer.exe
 ```
 
 The installer places the launcher under `~/.poblation/launcher/bin/`, creates launcher settings, and the launcher downloads playable versions from GitHub Releases.

@@ -4,7 +4,7 @@
 
 **A terminal life sim about memory, secrets, desire, family, power, and the terrible little societies people build when they think nobody is watching.**
 
-[![Beta](https://img.shields.io/badge/status-beta_v1.0.0-ff6b6b)](https://github.com/Jaziel8910/poblation/releases/tag/v1.0.0-beta.1)
+[![Release](https://img.shields.io/badge/release-v1.0.0.2-ff6b6b)](https://github.com/Jaziel8910/poblation/releases/tag/v1.0.0.2)
 ![Go](https://img.shields.io/badge/Go-1.23-00ADD8)
 ![Platform](https://img.shields.io/badge/platform-Windows_terminal-2f3542)
 ![Age](https://img.shields.io/badge/18%2B-adult_themes-8e44ad)
@@ -15,8 +15,8 @@
 
 **Recommended on Windows:** download the launcher installer from the latest release.
 
-1. Go to [POBLATION Beta v1.0.0](https://github.com/Jaziel8910/poblation/releases/tag/v1.0.0-beta.1).
-2. Download `poblation_v1.0.0-beta.1_launcher_installer.exe`.
+1. Go to [POBLATION v1.0.0.2](https://github.com/Jaziel8910/poblation/releases/tag/v1.0.0.2).
+2. Download `poblation_v1.0.0.2_launcher_installer.exe`.
 3. Run it.
 4. Open `POBLATION Launcher.cmd` from your Desktop.
 5. Choose install/update, then play.
@@ -54,7 +54,7 @@ Pobles can:
 ## Launcher Commands
 
 ```bash
-poblation-launcher install v1.0.0-beta.1
+poblation-launcher install v1.0.0.2
 poblation-launcher play
 poblation-launcher list
 poblation-launcher saves

@@ -11,7 +11,7 @@ import (
 const (
 	distDir      = "dist"
 	launcherEXE  = "poblation-launcher.exe"
-	installerEXE = "poblation_v1.0.0-beta.1_launcher_installer.exe"
+	installerEXE = "poblation_v1.0.0.2_launcher_installer.exe"
 )
 
 func main() {

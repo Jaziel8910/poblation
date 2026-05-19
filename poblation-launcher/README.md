@@ -2,7 +2,7 @@
 
 ![POBLATION](assets/branding/poblation-wordmark.png)
 
-Version `v1.0.0-beta.1` - lightweight edition.
+Version `v1.0.0.2` - lightweight edition.
 
 Small, compatible Go launcher for POBLATION. No Fyne, no CGO, no OpenGL build pain. It downloads public GitHub releases, keeps local versions in `~/.poblation/versions`, shows save previews, and can launch offline using the last installed build.
 
@@ -19,7 +19,7 @@ Small, compatible Go launcher for POBLATION. No Fyne, no CGO, no OpenGL build pa
 ## Commands
 
 ```bash
-poblation-launcher install v1.0.0-beta.1
+poblation-launcher install v1.0.0.2
 poblation-launcher play
 poblation-launcher list
 poblation-launcher saves
@@ -43,5 +43,5 @@ make launcher-release
 The Windows installer is written to:
 
 ```text
-dist/poblation_v1.0.0-beta.1_launcher_installer.exe
+dist/poblation_v1.0.0.2_launcher_installer.exe
 ```

@@ -344,7 +344,7 @@ func openPath(path string) {
 func printBanner() {
 	fmt.Print("\033[H\033[2J")
 	fmt.Println("POBLATION Launcher")
-	fmt.Println("Beta v1.0.0 // lightweight edition")
+	fmt.Println("v1.0.0.2 // lightweight edition")
 	fmt.Println(strings.Repeat("-", 40))
 }
 

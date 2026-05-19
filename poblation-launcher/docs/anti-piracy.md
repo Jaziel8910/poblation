@@ -1,6 +1,6 @@
 # Anti-piracy launcher screen
 
-POBLATION v1.0.0-beta.1 keeps this screen aesthetic only. It never deletes saves, locks the player out, or changes the game binary.
+POBLATION v1.0.0.2 keeps this screen aesthetic only. It never deletes saves, locks the player out, or changes the game binary.
 
 Implemented triggers:
 

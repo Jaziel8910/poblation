@@ -18,7 +18,7 @@ import (
 )
 
 const (
-	currentSaveVersion = "1.0.0.1"
+	currentSaveVersion = "1.0.0.2"
 	maxPlayerSlots     = 5
 	autosaveInterval   = 10
 )

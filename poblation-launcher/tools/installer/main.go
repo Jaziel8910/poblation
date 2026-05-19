@@ -12,7 +12,7 @@ import (
 
 const (
 	launcherFile = "poblation-launcher.exe"
-	version      = "v1.0.0-beta.1"
+	version      = "v1.0.0.2"
 )
 
 //go:embed payload/poblation-launcher.exe
