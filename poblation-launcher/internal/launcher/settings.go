@@ -1,6 +1,7 @@
 package launcher
 
 import (
+	"bytes"
 	"encoding/json"
 	"fmt"
 	"os"
@@ -48,16 +49,15 @@ func DefaultSettings() Settings {
 func LoadSettings() (Settings, error) {
 	settings := DefaultSettings()
 	path := SettingsPath()
-	file, err := os.Open(path)
+	data, err := os.ReadFile(path)
 	if err != nil {
 		if os.IsNotExist(err) {
 			return settings, nil
 		}
 		return settings, fmt.Errorf("open launcher settings: %w", err)
 	}
-	defer file.Close()
-
-	if err := json.NewDecoder(file).Decode(&settings); err != nil {
+	data = bytes.TrimPrefix(data, []byte{0xEF, 0xBB, 0xBF})
+	if err := json.Unmarshal(data, &settings); err != nil {
 		return settings, fmt.Errorf("decode launcher settings: %w", err)
 	}
 	settings = normalizeSettings(settings)

@@ -2,19 +2,31 @@
 
 ![POBLATION](assets/branding/poblation-wordmark.png)
 
-Version `v1.0.0-beta.1` - BETA V1.0.0.
+Version `v1.0.0-beta.1` - lightweight edition.
 
-Native Go + Fyne launcher for POBLATION. It downloads public GitHub releases, keeps local versions in `~/.poblation/versions`, shows save previews, and can launch offline using the last installed build.
+Small, compatible Go launcher for POBLATION. No Fyne, no CGO, no OpenGL build pain. It downloads public GitHub releases, keeps local versions in `~/.poblation/versions`, shows save previews, and can launch offline using the last installed build.
 
 ## Features
 
-- Minecraft-style launcher layout with game art, save summary, news, version selector, and play button.
+- Terminal menu plus direct commands.
 - GitHub Releases API support without auth for public repos.
 - Download progress, SHA256 verification, and cleanup that keeps the latest 3 local versions.
 - Offline launch from the newest downloaded build.
 - Save preview from `~/.poblation/saves` without opening the game.
-- Clock anomaly handling and purely aesthetic anti-piracy sequence.
-- Settings for repo, install directory, default version, background mode, notifications, and cache cleanup.
+- Settings for repo, install directory, default version, notifications, and local folders.
+- Doctor command for checking the local install.
+
+## Commands
+
+```bash
+poblation-launcher install v1.0.0-beta.1
+poblation-launcher play
+poblation-launcher list
+poblation-launcher saves
+poblation-launcher news
+poblation-launcher doctor
+poblation-launcher folders
+```
 
 ## Local Run
 

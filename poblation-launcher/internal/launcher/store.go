@@ -1,6 +1,7 @@
 package launcher
 
 import (
+	"bytes"
 	"encoding/json"
 	"fmt"
 	"os"
@@ -18,12 +19,12 @@ type VersionManifest struct {
 }
 
 type VersionRecord struct {
-	Version     string    `json:"version"`
-	Name        string    `json:"name"`
-	Path        string    `json:"path"`
-	SHA256      string    `json:"sha256"`
-	SourceURL   string    `json:"source_url"`
-	InstalledAt time.Time `json:"installed_at"`
+	Version      string    `json:"version"`
+	Name         string    `json:"name"`
+	Path         string    `json:"path"`
+	SHA256       string    `json:"sha256"`
+	SourceURL    string    `json:"source_url"`
+	InstalledAt  time.Time `json:"installed_at"`
 	LastPlayedAt time.Time `json:"last_played_at"`
 }
 
@@ -131,16 +132,16 @@ func (s VersionStore) manifestPath() string {
 
 func (s VersionStore) loadManifest() (VersionManifest, error) {
 	path := s.manifestPath()
-	file, err := os.Open(path)
+	data, err := os.ReadFile(path)
 	if err != nil {
 		if os.IsNotExist(err) {
 			return VersionManifest{}, nil
 		}
 		return VersionManifest{}, fmt.Errorf("open version manifest: %w", err)
 	}
-	defer file.Close()
 	var manifest VersionManifest
-	if err := json.NewDecoder(file).Decode(&manifest); err != nil {
+	data = bytes.TrimPrefix(data, []byte{0xEF, 0xBB, 0xBF})
+	if err := json.Unmarshal(data, &manifest); err != nil {
 		return VersionManifest{}, fmt.Errorf("decode version manifest: %w", err)
 	}
 	return manifest, nil

@@ -2,9 +2,38 @@
 
 ![POBLATION](assets/branding/poblation-wordmark.png)
 
-Version `v1.0.0-beta.1` - BETA V1.0.0.
+**Beta v1.0.0** is the first public, playable beta of POBLATION: a terminal life sim about the last humans, their secrets, their bad choices, and the tiny civilization they may or may not ruin.
 
-Drama de terminal, pobles raros, secretos privados y una civilizacion que se arma con decisiones feas.
+> Adult game for players 18+. Dark comedy, explicit systems, death, obsession, betrayal, grief, messy relationships, and procedural drama.
+
+## Download
+
+The easiest Windows path is the launcher:
+
+1. Open the latest GitHub Release.
+2. Download `poblation_v1.0.0-beta.1_launcher_installer.exe`.
+3. Run it.
+4. Open `POBLATION Launcher.cmd` from your Desktop or from `C:\Users\<you>\.poblation\launcher`.
+5. Choose `Install/update latest release`, then `Play`.
+
+Manual players can download `poblation_windows_amd64.exe`. The beta exe is portable: it carries the text templates it needs and prepares its local runtime under `~/.poblation`.
+
+## Why It Exists
+
+POBLATION starts with almost nothing: a few Pobles, an island, private needs, public consequences, and a simulation that keeps asking one rude question: what does a society become when everyone remembers?
+
+Pobles have moods, needs, relationships, memories, secrets, letters, dreams, diary fragments, health, family pressure, power struggles, and grudges that can come back later. The game does not use runtime LLMs; everything is procedural code plus curated text templates.
+
+## What Is In This Beta
+
+- Procedural Pobles with correlated personality and archetype behavior.
+- Memory-weighted decisions: old events can affect jealousy, arguments, distance, reconciliation, and intent.
+- Settlement view with family, economy, institutions, technology, government pressure, and long consequences.
+- Event feed, mind view, dialogue, house view, newspaper/export surfaces, endings, and debug console.
+- Sex/fight/social systems with privacy rules and consequence hooks.
+- Save/load under `~/.poblation`.
+- Lightweight launcher with install, play, list, saves, news, folders, settings, and doctor commands.
+- `1,814` curated templates after deleting generated filler packs.
 
 ## UI Snapshot
 
@@ -16,7 +45,7 @@ Drama de terminal, pobles raros, secretos privados y una civilizacion que se arm
 +----------------------+  +------------------+  +----------------------+
 ```
 
-## Install
+## Install From Source
 
 ### Go
 
@@ -34,7 +63,7 @@ go install .
 
 There is no official Homebrew formula yet. If one ships later, it will live in the official release notes or repo docs.
 
-### Launcher installer
+## Launcher Installer
 
 Windows players should use:
 
@@ -44,7 +73,7 @@ poblation_v1.0.0-beta.1_launcher_installer.exe
 
 The installer places the launcher under `~/.poblation/launcher/bin/`, creates launcher settings, and the launcher downloads playable versions from GitHub Releases.
 
-### Binary releases
+## Binary Releases
 
 Download the latest release from GitHub Releases and run the binary directly.
 

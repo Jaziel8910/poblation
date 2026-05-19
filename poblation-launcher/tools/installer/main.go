@@ -55,11 +55,33 @@ func main() {
 	if err := writeDependencyManifest(root); err != nil {
 		fatal(err)
 	}
+	if err := writeLaunchScripts(root); err != nil {
+		fatal(err)
+	}
 	fmt.Println("POBLATION Launcher instalado.")
 	fmt.Println("Version:", version)
 	fmt.Println("Ruta:", target)
 	fmt.Println("Dependencias listas: runtime self-contained, carpetas, cache y GitHub releases API.")
 	fmt.Println("Puedes abrirlo ejecutando ese .exe.")
+}
+
+func writeLaunchScripts(root string) error {
+	launcherDir := filepath.Join(root, "launcher")
+	menuScript := filepath.Join(launcherDir, "POBLATION Launcher.cmd")
+	playScript := filepath.Join(launcherDir, "Play POBLATION Beta.cmd")
+	menuBody := "@echo off\r\n\"%~dp0bin\\poblation-launcher.exe\"\r\n"
+	playBody := "@echo off\r\n\"%~dp0bin\\poblation-launcher.exe\" play\r\npause\r\n"
+	if err := os.WriteFile(menuScript, []byte(menuBody), 0o755); err != nil {
+		return fmt.Errorf("crear acceso del launcher: %w", err)
+	}
+	if err := os.WriteFile(playScript, []byte(playBody), 0o755); err != nil {
+		return fmt.Errorf("crear acceso para jugar: %w", err)
+	}
+	if desktop, err := os.UserHomeDir(); err == nil {
+		desktopPath := filepath.Join(desktop, "Desktop", "POBLATION Launcher.cmd")
+		_ = os.WriteFile(desktopPath, []byte(menuBody), 0o755)
+	}
+	return nil
 }
 
 func poblationRoot() (string, error) {
@@ -72,15 +94,25 @@ func poblationRoot() (string, error) {
 
 func writeDefaultSettings(root string) error {
 	path := filepath.Join(root, "launcher", "settings.json")
-	if _, err := os.Stat(path); err == nil {
-		return nil
-	}
 	settings := installSettings{
 		Repository:        "Jaziel8910/poblation",
-		DefaultVersion:    "latest",
+		DefaultVersion:    version,
 		InstallDir:        filepath.Join(root, "versions"),
 		BackgroundProcess: false,
 		Notifications:     true,
+	}
+	if existing, err := os.ReadFile(path); err == nil {
+		var current installSettings
+		if json.Unmarshal(trimBOM(existing), &current) == nil {
+			settings = current
+			if settings.Repository == "" {
+				settings.Repository = "Jaziel8910/poblation"
+			}
+			if settings.InstallDir == "" {
+				settings.InstallDir = filepath.Join(root, "versions")
+			}
+			settings.DefaultVersion = version
+		}
 	}
 	if err := os.MkdirAll(filepath.Dir(path), 0o755); err != nil {
 		return fmt.Errorf("crear carpeta de ajustes: %w", err)
@@ -93,6 +125,13 @@ func writeDefaultSettings(root string) error {
 		return fmt.Errorf("guardar ajustes: %w", err)
 	}
 	return nil
+}
+
+func trimBOM(data []byte) []byte {
+	if len(data) >= 3 && data[0] == 0xEF && data[1] == 0xBB && data[2] == 0xBF {
+		return data[3:]
+	}
+	return data
 }
 
 func installRuntimeLayout(root string) error {

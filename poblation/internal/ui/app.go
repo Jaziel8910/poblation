@@ -1247,6 +1247,11 @@ func copyStringMap(input map[string]string) map[string]string {
 }
 
 func templateRoot() string {
+	if root := strings.TrimSpace(os.Getenv("POBLATION_TEMPLATES_DIR")); root != "" {
+		if _, err := os.Stat(root); err == nil {
+			return root
+		}
+	}
 	if _, err := os.Stat("templates"); err == nil {
 		return "templates"
 	}
