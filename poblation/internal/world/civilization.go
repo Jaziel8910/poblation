@@ -37,7 +37,11 @@ type GovernmentSystem struct {
 	Type          GovernmentType `json:"type"`
 	Leader        *string        `json:"leader"`
 	Laws          []Law          `json:"laws"`
+	Legitimacy    int            `json:"legitimacy"`
+	Stability     int            `json:"stability"`
 	EstablishedAt GameTime       `json:"established_at"`
+	LastElection  GameTime       `json:"last_election"`
+	LastCrisis    GameTime       `json:"last_crisis"`
 }
 
 // EraTransition describes a civilization era shift.
@@ -50,6 +54,62 @@ type EraTransition struct {
 
 // CivilizationManager owns era and government checks.
 type CivilizationManager struct{}
+
+// DailyUpdate advances the long-running civilization systems once per day.
+func (m CivilizationManager) DailyUpdate(world *World) []GameEvent {
+	if world == nil {
+		return nil
+	}
+	beforeHistory := len(world.EventHistory)
+	beforeActive := len(world.ActiveEvents)
+
+	DailyResourceUpdate(world)
+	_ = AttemptDiscovery(world)
+	_ = MaintainGovernment(world)
+	for _, event := range runInstitutionalPulse(world) {
+		world.ActiveEvents = append(world.ActiveEvents, event)
+	}
+	_ = runMarketPulse(world)
+
+	events := make([]GameEvent, 0, len(world.EventHistory)-beforeHistory+len(world.ActiveEvents)-beforeActive)
+	events = append(events, world.EventHistory[beforeHistory:]...)
+	events = append(events, world.ActiveEvents[beforeActive:]...)
+	return events
+}
+
+// MaintainGovernment keeps the emergent government aligned with population and history.
+func MaintainGovernment(world *World) *GameEvent {
+	if world == nil || world.GetPopulation() < 21 {
+		return nil
+	}
+	previous := governmentSignature(world.Government)
+	if world.Government == nil {
+		world.Government = buildGovernment(world)
+	} else {
+		world.Government.Type = DetermineGovernmentType(world)
+		world.Government.Leader = chooseGovernmentLeader(world, world.Government.Type)
+		world.Government.Laws = emergentLaws(world)
+	}
+	refreshGovernmentMetrics(world)
+	if world.Government == nil || governmentSignature(world.Government) == previous {
+		world.syncState()
+		return nil
+	}
+	event := GameEvent{
+		ID:           fmt.Sprintf("government_%s_%d", strings.ToLower(string(world.Government.Type)), world.Calendar.ToMinutes()),
+		Type:         ai.GameEventSocialPositive,
+		Time:         world.Calendar,
+		PrimaryActor: governmentLeaderID(world.Government),
+		Participants: livingPobleIDs(world),
+		Severity:     0.74,
+		Valence:      0.38,
+		Description:  governmentDescription(world.Government),
+		Tags:         []string{"government", "institution", strings.ToLower(string(world.Government.Type))},
+	}
+	world.ActiveEvents = append(world.ActiveEvents, event)
+	world.syncState()
+	return &event
+}
 
 // CheckEraTransition checks whether the world is ready to move into the next era.
 func (m CivilizationManager) CheckEraTransition(world *World) *EraTransition {
@@ -128,6 +188,236 @@ func locationTransitionTags(created []Location) []string {
 	return tags
 }
 
+func governmentSignature(government *GovernmentSystem) string {
+	if government == nil {
+		return ""
+	}
+	return fmt.Sprintf("%s|%s|%d", government.Type, governmentLeaderID(government), len(government.Laws))
+}
+
+func governmentLeaderID(government *GovernmentSystem) string {
+	if government == nil || government.Leader == nil {
+		return ""
+	}
+	return *government.Leader
+}
+
+func governmentDescription(government *GovernmentSystem) string {
+	if government == nil {
+		return "the settlement failed to turn power into a shape people could name"
+	}
+	leader := governmentLeaderID(government)
+	if leader == "" {
+		leader = "no single leader"
+	}
+	return fmt.Sprintf("%s became the settlement shape of power under %s with %d legitimacy and %d stability", government.Type, leader, government.Legitimacy, government.Stability)
+}
+
+func refreshGovernmentMetrics(world *World) {
+	if world == nil || world.Government == nil {
+		return
+	}
+	world.Government.Legitimacy = governmentLegitimacy(world, world.Government)
+	world.Government.Stability = governmentStability(world, world.Government)
+}
+
+func governmentLegitimacy(world *World, government *GovernmentSystem) int {
+	if world == nil || government == nil {
+		return 0
+	}
+	score := 48
+	if leader := world.GetPoble(governmentLeaderID(government)); leader != nil {
+		score += int(leader.Personality.Conscientiousness-50) / 4
+		score += int(leader.Personality.Agreeableness-50) / 5
+		score += int(leader.Personality.Loyalty-50) / 5
+		score -= int(leader.Personality.Cruelty) / 8
+		if leader.Archetype == entities.ArchetypeRuler || leader.Archetype == entities.ArchetypeCaretaker || leader.Archetype == entities.ArchetypeProphet {
+			score += 8
+		}
+	}
+	score -= int(violencePressure(world) * 34)
+	score -= resourcePressure(world)
+	score -= int(averageResentment(world) / 4)
+	if len(government.Laws) > 1 {
+		score += minInt(10, len(government.Laws)*3)
+	}
+	switch government.Type {
+	case GovernmentDictatorship, GovernmentOligarchy:
+		score -= 6
+	case GovernmentDemocracy, GovernmentMatriarchy:
+		score += 6
+	case GovernmentAnarchism:
+		score -= 2
+	}
+	return clampWorldInt(score, 0, 100)
+}
+
+func governmentStability(world *World, government *GovernmentSystem) int {
+	if world == nil || government == nil {
+		return 0
+	}
+	score := 44 + government.Legitimacy/3
+	score -= int(violencePressure(world) * 40)
+	score -= resourcePressure(world) / 2
+	score -= int(averageResentment(world) / 5)
+	if world.GetPopulation() >= 80 {
+		score += 8
+	}
+	if hasBuildingType(world, BuildingGovernment) {
+		score += 10
+	}
+	switch government.Type {
+	case GovernmentDictatorship, GovernmentMonarchy:
+		score += 5
+	case GovernmentAnarchism:
+		score -= 8
+	case GovernmentDemocracy:
+		score += 3
+	}
+	return clampWorldInt(score, 0, 100)
+}
+
+func runInstitutionalPulse(world *World) []GameEvent {
+	if world == nil || world.Government == nil || world.GetPopulation() < 21 {
+		return nil
+	}
+	refreshGovernmentMetrics(world)
+	events := []GameEvent{}
+	if event := runGovernmentCrisis(world); event != nil {
+		events = append(events, *event)
+		refreshGovernmentMetrics(world)
+	}
+	if event := runElection(world); event != nil {
+		events = append(events, *event)
+		refreshGovernmentMetrics(world)
+	}
+	if event := runLawEnforcement(world); event != nil {
+		events = append(events, *event)
+	}
+	return events
+}
+
+func runElection(world *World) *GameEvent {
+	government := world.Government
+	if government == nil || !governmentHasElections(government.Type) {
+		return nil
+	}
+	daysSince := world.Calendar.Day - government.LastElection.Day
+	if daysSince < 30 {
+		return nil
+	}
+	oldLeader := governmentLeaderID(government)
+	newLeader := chooseGovernmentLeader(world, government.Type)
+	if newLeader == nil {
+		return nil
+	}
+	government.Leader = newLeader
+	government.LastElection = world.Calendar
+	government.Legitimacy = clampWorldInt(government.Legitimacy+9, 0, 100)
+	if *newLeader == oldLeader {
+		government.Stability = clampWorldInt(government.Stability+5, 0, 100)
+	} else {
+		government.Stability = clampWorldInt(government.Stability-4, 0, 100)
+	}
+	return &GameEvent{
+		ID:           fmt.Sprintf("election_%d_%s", world.Calendar.Day, *newLeader),
+		Type:         ai.GameEventSocialPositive,
+		Time:         world.Calendar,
+		PrimaryActor: *newLeader,
+		Participants: livingPobleIDs(world),
+		Severity:     0.58,
+		Valence:      0.34,
+		Description:  electionDescription(oldLeader, *newLeader),
+		Tags:         []string{"government", "institution", "election"},
+	}
+}
+
+func runGovernmentCrisis(world *World) *GameEvent {
+	government := world.Government
+	if government == nil {
+		return nil
+	}
+	if world.Calendar.Day-government.LastCrisis.Day < 14 {
+		return nil
+	}
+	resentment := averageResentment(world)
+	if government.Stability >= 25 || (violencePressure(world) < 0.22 && resentment < 58 && government.Legitimacy >= 20) {
+		return nil
+	}
+	oldLeader := governmentLeaderID(government)
+	oldType := government.Type
+	crisisTag := "coup"
+	newType := GovernmentDictatorship
+	if resentment >= 58 || government.Legitimacy < 18 {
+		crisisTag = "revolution"
+		if violencePressure(world) > 0.38 {
+			newType = GovernmentAnarchism
+		} else {
+			newType = GovernmentDemocracy
+		}
+	}
+	government.Type = newType
+	government.Leader = chooseGovernmentLeader(world, newType)
+	government.Laws = emergentLaws(world)
+	government.LastCrisis = world.Calendar
+	government.Legitimacy = clampWorldInt(government.Legitimacy+16, 0, 100)
+	government.Stability = clampWorldInt(government.Stability+18, 0, 100)
+	newLeader := governmentLeaderID(government)
+	eventType := ai.GameEventConflict
+	valence := float32(-0.62)
+	if crisisTag == "revolution" && newType == GovernmentDemocracy {
+		eventType = ai.GameEventSocialPositive
+		valence = 0.18
+	}
+	return &GameEvent{
+		ID:           fmt.Sprintf("%s_%d_%s", crisisTag, world.Calendar.Day, newLeader),
+		Type:         eventType,
+		Time:         world.Calendar,
+		PrimaryActor: newLeader,
+		TargetID:     oldLeader,
+		Participants: livingPobleIDs(world),
+		Severity:     0.9,
+		Valence:      valence,
+		IsTraumatic:  eventType == ai.GameEventConflict,
+		Description:  crisisDescription(crisisTag, oldType, newType, oldLeader, newLeader),
+		Tags:         []string{"government", "institution", crisisTag, strings.ToLower(string(newType))},
+	}
+}
+
+func runLawEnforcement(world *World) *GameEvent {
+	if world == nil || world.Government == nil || len(world.Government.Laws) == 0 {
+		return nil
+	}
+	if world.Calendar.Day%7 != 0 {
+		return nil
+	}
+	recent := recentInstitutionalOffense(world)
+	if recent == nil {
+		return nil
+	}
+	law := matchingLaw(world.Government.Laws, *recent)
+	if law == nil {
+		return nil
+	}
+	world.Government.Legitimacy = clampWorldInt(world.Government.Legitimacy+4, 0, 100)
+	world.Government.Stability = clampWorldInt(world.Government.Stability+3, 0, 100)
+	actor := recent.PrimaryActor
+	if actor == "" && len(recent.Participants) > 0 {
+		actor = recent.Participants[0]
+	}
+	return &GameEvent{
+		ID:           fmt.Sprintf("law_enforcement_%d_%s", world.Calendar.Day, law.ID),
+		Type:         ai.GameEventSocialNegative,
+		Time:         world.Calendar,
+		PrimaryActor: actor,
+		Participants: livingPobleIDs(world),
+		Severity:     0.5,
+		Valence:      -0.22,
+		Description:  fmt.Sprintf("the settlement enforced %s after %s", law.ID, recent.Description),
+		Tags:         []string{"government", "institution", "law", "enforcement", law.ID},
+	}
+}
+
 // GetEraDescription returns the narrative framing for an era.
 func GetEraDescription(era Era) string {
 	switch era {
@@ -183,12 +473,24 @@ func buildGovernment(world *World) *GovernmentSystem {
 		return nil
 	}
 	leader := chooseGovernmentLeader(world, governmentType)
-	return &GovernmentSystem{
+	government := &GovernmentSystem{
 		Type:          governmentType,
 		Leader:        leader,
 		Laws:          emergentLaws(world),
 		EstablishedAt: world.Calendar,
+		LastElection:  world.Calendar,
+		LastCrisis:    world.Calendar,
 	}
+	refreshGovernmentMetricsFor(world, government)
+	return government
+}
+
+func refreshGovernmentMetricsFor(world *World, government *GovernmentSystem) {
+	if world == nil || government == nil {
+		return
+	}
+	government.Legitimacy = governmentLegitimacy(world, government)
+	government.Stability = governmentStability(world, government)
 }
 
 func governmentEstablished(world *World) bool {
@@ -346,7 +648,11 @@ func chooseGovernmentLeader(world *World, governmentType GovernmentType) *string
 		if poble == nil {
 			continue
 		}
-		score := poble.Personality.Ambition + poble.Personality.Loyalty + poble.Personality.Conscientiousness
+		score := candidateScoreForGovernment(poble, governmentType)
+		if world.Government != nil && world.Government.Leader != nil && *world.Government.Leader == poble.ID {
+			score += 6
+		}
+		score -= averageResentmentToward(world, poble.ID) / 3
 		switch governmentType {
 		case GovernmentTheocracy:
 			if poble.Archetype == entities.ArchetypeProphet {
@@ -370,6 +676,173 @@ func chooseGovernmentLeader(world *World, governmentType GovernmentType) *string
 		return nil
 	}
 	return &bestID
+}
+
+func candidateScoreForGovernment(poble *entities.Poble, governmentType GovernmentType) float32 {
+	if poble == nil {
+		return -1
+	}
+	score := poble.Personality.Ambition + poble.Personality.Loyalty + poble.Personality.Conscientiousness
+	score += poble.Personality.Extraversion / 2
+	score += poble.Personality.Openness / 4
+	switch governmentType {
+	case GovernmentDemocracy, GovernmentMatriarchy:
+		score += poble.Personality.Agreeableness / 2
+		score -= poble.Personality.Cruelty / 2
+	case GovernmentDictatorship, GovernmentOligarchy:
+		score += poble.Personality.Cruelty / 3
+	case GovernmentTheocracy:
+		score += poble.Personality.Openness / 3
+	case GovernmentAnarchism:
+		score += poble.Personality.Agreeableness / 3
+		score -= poble.Personality.Ambition / 4
+	}
+	return score
+}
+
+func governmentHasElections(governmentType GovernmentType) bool {
+	switch governmentType {
+	case GovernmentDemocracy, GovernmentMatriarchy, GovernmentTribal, GovernmentAnarchism:
+		return true
+	default:
+		return false
+	}
+}
+
+func electionDescription(oldLeader, newLeader string) string {
+	if newLeader == "" {
+		return "the settlement gathered for an election but nobody could hold the room"
+	}
+	if oldLeader == "" || oldLeader == newLeader {
+		return fmt.Sprintf("the settlement renewed its trust in %s through an open vote", newLeader)
+	}
+	return fmt.Sprintf("the settlement chose %s over %s and power moved without blood", newLeader, oldLeader)
+}
+
+func crisisDescription(kind string, oldType, newType GovernmentType, oldLeader, newLeader string) string {
+	if kind == "revolution" {
+		return fmt.Sprintf("a revolution broke the old %s under %s and forced a new %s around %s", oldType, emptyLeader(oldLeader), newType, emptyLeader(newLeader))
+	}
+	return fmt.Sprintf("a coup turned the old %s under %s into a %s led by %s", oldType, emptyLeader(oldLeader), newType, emptyLeader(newLeader))
+}
+
+func emptyLeader(id string) string {
+	if id == "" {
+		return "no one"
+	}
+	return id
+}
+
+func resourcePressure(world *World) int {
+	if world == nil || world.GetPopulation() == 0 {
+		return 0
+	}
+	resources := totalResources(world)
+	people := maxInt(1, world.GetPopulation())
+	pressure := 0
+	if resources[ResourceFood] < people*2 {
+		pressure += 14
+	}
+	if resources[ResourceWater] < people*2 {
+		pressure += 18
+	}
+	if resources[ResourceWood]+resources[ResourceStone] < people {
+		pressure += 8
+	}
+	return pressure
+}
+
+func averageResentment(world *World) float32 {
+	if world == nil {
+		return 0
+	}
+	total := float32(0)
+	count := 0
+	for _, poble := range world.GetAllPobles() {
+		if poble == nil {
+			continue
+		}
+		for _, rel := range poble.Relationships {
+			total += rel.Resentment
+			count++
+		}
+	}
+	if count == 0 {
+		return 0
+	}
+	return total / float32(count)
+}
+
+func averageResentmentToward(world *World, targetID string) float32 {
+	if world == nil || targetID == "" {
+		return 0
+	}
+	total := float32(0)
+	count := 0
+	for _, poble := range world.GetAllPobles() {
+		if poble == nil {
+			continue
+		}
+		if rel, ok := poble.Relationships[targetID]; ok {
+			total += rel.Resentment
+			count++
+		}
+	}
+	if count == 0 {
+		return 0
+	}
+	return total / float32(count)
+}
+
+func hasBuildingType(world *World, buildingType BuildingType) bool {
+	if world == nil {
+		return false
+	}
+	for _, island := range world.Islands {
+		if island == nil {
+			continue
+		}
+		if islandHasBuildingType(island, buildingType) {
+			return true
+		}
+	}
+	return false
+}
+
+func recentInstitutionalOffense(world *World) *GameEvent {
+	if world == nil {
+		return nil
+	}
+	thresholdMinutes := world.Calendar.ToMinutes() - 24*60
+	for i := len(world.EventHistory) - 1; i >= 0; i-- {
+		event := world.EventHistory[i]
+		if event.Time.ToMinutes() < thresholdMinutes {
+			break
+		}
+		if event.Type == ai.GameEventDeath || event.Type == ai.GameEventConflict || event.Type == ai.GameEventThreat || hasAnyTag(event.Tags, "theft", "steal", "murder", "violence") {
+			return &event
+		}
+	}
+	return nil
+}
+
+func matchingLaw(laws []Law, event GameEvent) *Law {
+	for i := range laws {
+		law := laws[i]
+		if !law.IsEnforced {
+			continue
+		}
+		if law.ID == "law_no_murder" && (event.Type == ai.GameEventDeath || hasAnyTag(event.Tags, "murder", "violence")) {
+			return &law
+		}
+		if law.ID == "law_property" && hasAnyTag(event.Tags, "theft", "steal") {
+			return &law
+		}
+		if law.ID == "law_public_order" && (event.Type == ai.GameEventConflict || event.Type == ai.GameEventThreat) {
+			return &law
+		}
+	}
+	return nil
 }
 
 func eraAnnouncement(from Era, to Era) string {

@@ -268,6 +268,9 @@ func (e *DecisionEngine) CheckRelationshipGoals() []Action {
 	targetIDs := e.sortedRelationshipIDs()
 	for _, targetID := range targetIDs {
 		relationship := e.poble.Relationships[targetID]
+		if action, ok := e.actionFromRelationshipMemory(targetID, relationship); ok {
+			actions = append(actions, action)
+		}
 		switch {
 		case e.isCrush(relationship):
 			if !e.canRomanceWith(targetID) {
@@ -308,6 +311,76 @@ func (e *DecisionEngine) CheckRelationshipGoals() []Action {
 
 	sortActions(actions)
 	return actions
+}
+
+func (e *DecisionEngine) actionFromRelationshipMemory(targetID string, relationship entities.Relationship) (Action, bool) {
+	if e == nil || e.poble == nil || targetID == "" {
+		return Action{}, false
+	}
+	memorySystem := NewMemorySystem(e.poble, e.rng)
+	strongest := memorySystem.GetStrongestMemoryAbout(targetID)
+	if strongest == nil {
+		return Action{}, false
+	}
+	if isPositiveMemoryType(strongest.Type) && strongest.EmotionIntensity >= 72 &&
+		(relationship.Trust >= 50 || relationship.Affection >= 50) &&
+		relationship.Resentment >= 35 && relationship.Resentment < 75 {
+		priority := memoryActionPriority(*strongest, relationship)
+		tags := []string{"memory", "past", "memory:" + strings.ToLower(strongest.Type.String()), "reconciliation", "old_warmth"}
+		return newAction(ActionTalkTo, targetID, priority, 1, 0.12, tags...), true
+	}
+	forced := strongest.EmotionIntensity >= 88 &&
+		(relationship.Resentment >= 70 || strongest.Type == entities.MemoryBetrayal || strongest.Type == entities.MemoryTraumatic || strongest.Type == entities.MemoryViolent)
+	if !forced && !memorySystem.ShouldBringUpPastWith(targetID) {
+		return Action{}, false
+	}
+
+	priority := memoryActionPriority(*strongest, relationship)
+	tags := []string{"memory", "past", "memory:" + strings.ToLower(strongest.Type.String())}
+	switch strongest.Type {
+	case entities.MemoryBetrayal, entities.MemoryTraumatic, entities.MemoryViolent, entities.MemoryNegative, entities.MemoryEmbarrassing:
+		if (relationship.Trust >= 55 || relationship.Affection >= 55) && relationship.Resentment >= 28 && relationship.Resentment < 68 {
+			return newAction(ActionTalkTo, targetID, priority+3, 1, 0.18, append(tags, "reconciliation", "old_wound")...), true
+		}
+		if relationship.Resentment >= 88 && e.roll(0.24) {
+			return newAction(ActionThreaten, targetID, priority+5, 1, 0.32, append(tags, "threat", "unresolved")...), true
+		}
+		if relationship.Resentment >= 55 || strongest.EmotionIntensity >= 70 {
+			return newAction(ActionArgueWith, targetID, priority, 1, 0.24, append(tags, "argument", "unresolved")...), true
+		}
+		return newAction(ActionTalkTo, targetID, priority-6, 1, 0.10, append(tags, "talk", "unresolved")...), true
+	case entities.MemoryRomantic, entities.MemoryErotic:
+		if e.canRomanceWith(targetID) && relationship.Attraction >= 55 && relationship.Resentment < 60 {
+			return newAction(ActionFlirtWith, targetID, priority, 1, 0.24, append(tags, "romance", "longing")...), true
+		}
+		return newAction(ActionTalkTo, targetID, priority-4, 1, 0.08, append(tags, "intimacy")...), true
+	case entities.MemoryPositive, entities.MemoryFunny, entities.MemoryAchievement:
+		if relationship.Trust >= 45 || relationship.Affection >= 45 {
+			if relationship.Resentment >= 35 {
+				return newAction(ActionTalkTo, targetID, priority, 1, 0.12, append(tags, "reconciliation", "old_warmth")...), true
+			}
+			return newAction(ActionTalkTo, targetID, priority-6, 1, 0.08, append(tags, "warmth")...), true
+		}
+	}
+
+	if e.hasBurningSecret() && relationship.Trust >= 50 {
+		return newAction(ActionConfessTo, targetID, priority, 1, 0.30, append(tags, "confession", "secret")...), true
+	}
+	return Action{}, false
+}
+
+func memoryActionPriority(memory entities.Memory, relationship entities.Relationship) int {
+	priority := 54 + int(memory.EmotionIntensity/6)
+	if memory.IsRepressed {
+		priority += 6
+	}
+	if relationship.Resentment >= 60 {
+		priority += int((relationship.Resentment - 60) / 8)
+	}
+	if relationship.Trust >= 70 && (memory.Type == entities.MemoryPositive || memory.Type == entities.MemoryRomantic || memory.Type == entities.MemoryErotic) {
+		priority += 4
+	}
+	return clampInt(priority, 45, 88)
 }
 
 // CheckArchetypeGoal adds recurrent archetype-specific motives.
@@ -611,6 +684,34 @@ func (e *DecisionEngine) GetCurrentIntent() string {
 		return "intent:" + string(e.currentAction.Type)
 	}
 	return "intent:" + string(e.currentAction.Type) + " target:" + e.currentAction.TargetID
+}
+
+// GetCurrentReason returns a compact reason key the UI can expose without prose.
+func (e *DecisionEngine) GetCurrentReason() string {
+	if e == nil || e.currentAction == nil {
+		return "reason:idle"
+	}
+	for _, tag := range e.currentAction.Tags {
+		switch {
+		case tag == "memory" || strings.HasPrefix(tag, "memory:"):
+			return "reason:memory"
+		case strings.HasPrefix(tag, "need:") || tag == "survival":
+			return "reason:need"
+		case strings.HasPrefix(tag, "archetype:"):
+			return tag
+		case strings.HasPrefix(tag, "emotion:"):
+			return tag
+		case strings.HasPrefix(tag, "world:"):
+			return tag
+		case strings.HasPrefix(tag, "relationship:"):
+			return tag
+		case tag == "reconciliation":
+			return "reason:reconciliation"
+		case tag == "chaos":
+			return "reason:impulse"
+		}
+	}
+	return "reason:choice"
 }
 
 type targetScore struct {
@@ -950,12 +1051,102 @@ func (e *DecisionEngine) scoreTarget(action ActionType, target *Poble) float32 {
 		score += relationship.Familiarity * 0.20
 	}
 
+	score += e.targetMemoryScore(action, target.ID, relationship)
 	score += e.targetEmotionalScore(action, target)
 	if provider, ok := e.world.(proximityProvider); ok {
 		score += clampRange(provider.GetProximityScore(e.poble.ID, target.ID), -20, 20)
 	}
 
 	return score
+}
+
+func (e *DecisionEngine) targetMemoryScore(action ActionType, targetID string, relationship entities.Relationship) float32 {
+	if e == nil || e.poble == nil || targetID == "" {
+		return 0
+	}
+
+	strongest := NewMemorySystem(e.poble, nil).GetStrongestMemoryAbout(targetID)
+	if strongest == nil {
+		return 0
+	}
+
+	intensity := clampPercent(strongest.EmotionIntensity)
+	base := intensity / 7.0
+	if strongest.IsRepressed {
+		base += 5
+	}
+	if e.memoryAgeHours(*strongest) >= 24*30 {
+		base += 4
+	}
+
+	switch strongest.Type {
+	case entities.MemoryBetrayal:
+		switch action {
+		case ActionArgueWith, ActionThreaten, ActionPlanRevenge, ActionBetray:
+			return base + relationship.Resentment*0.14
+		case ActionTalkTo, ActionConfessTo:
+			if relationship.Trust >= 50 && relationship.Resentment < 70 {
+				return base * 0.45
+			}
+			return -base * 0.35
+		case ActionFlirtWith, ActionHaveSex, ActionPropose:
+			return -base * 0.70
+		}
+	case entities.MemoryTraumatic, entities.MemoryViolent:
+		switch action {
+		case ActionArgueWith, ActionThreaten, ActionFight, ActionPlanRevenge:
+			return base + relationship.Fear*0.10 + relationship.Resentment*0.12
+		case ActionTalkTo:
+			if relationship.Trust >= 65 {
+				return base * 0.35
+			}
+			return -base * 0.40
+		case ActionFlirtWith, ActionHaveSex:
+			return -base
+		}
+	case entities.MemoryNegative, entities.MemoryEmbarrassing:
+		switch action {
+		case ActionArgueWith, ActionGossipWith, ActionPlanRevenge:
+			return base * 0.75
+		case ActionTalkTo:
+			if relationship.Trust >= 55 || relationship.Affection >= 55 {
+				return base * 0.40
+			}
+			return -base * 0.20
+		}
+	case entities.MemoryRomantic, entities.MemoryErotic:
+		switch action {
+		case ActionFlirtWith, ActionHaveSex, ActionPropose, ActionSendLetter:
+			if relationship.Resentment < 55 {
+				return base + relationship.Attraction*0.10
+			}
+			return base * 0.25
+		case ActionArgueWith:
+			if relationship.Resentment >= 45 && e.poble.Personality.Jealousy >= 55 {
+				return base * 0.55
+			}
+			return -base * 0.45
+		}
+	case entities.MemoryPositive, entities.MemoryFunny, entities.MemoryAchievement:
+		switch action {
+		case ActionTalkTo, ActionFormAlliance, ActionTrade, ActionConfessTo:
+			return base * 0.70
+		case ActionArgueWith, ActionThreaten, ActionFight, ActionPlanRevenge:
+			return -base * 0.55
+		}
+	}
+
+	return 0
+}
+
+func (e *DecisionEngine) memoryAgeHours(memory entities.Memory) int {
+	if provider, ok := e.world.(currentTimeProvider); ok {
+		now := provider.GetCurrentTime()
+		if now.IsValid() && memory.Timestamp.IsValid() {
+			return maxInt(0, now.Diff(memory.Timestamp))
+		}
+	}
+	return 0
 }
 
 func (e *DecisionEngine) targetEmotionalScore(action ActionType, target *Poble) float32 {
@@ -1147,4 +1338,14 @@ func minInt(a, b int) int {
 		return a
 	}
 	return b
+}
+
+func clampInt(value, minValue, maxValue int) int {
+	if value < minValue {
+		return minValue
+	}
+	if value > maxValue {
+		return maxValue
+	}
+	return value
 }

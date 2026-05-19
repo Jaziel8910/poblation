@@ -1,0 +1,13 @@
+[TEMPLATE:END_QUARANTINE_CH4_001]
+tags: ending, quarantine, chapter4
+weight: 10
+---
+El futuro no termino con un golpe. Termino separado en habitaciones, esperando que la isla perdonara lo que nadie supo contener.
+---
+
+[TEMPLATE:END_QUARANTINE_CH4_002]
+tags: ending, quarantine, chapter4
+weight: 8
+---
+{ending_settlement} sobrevivio como una palabra dicha desde lejos. A veces eso es peor que desaparecer.
+---

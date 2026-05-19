@@ -435,6 +435,69 @@ func Gambling(participants []string, world *World) GamblingSession {
 	return session
 }
 
+func runMarketPulse(world *World) *GameEvent {
+	if world == nil || world.GetPopulation() < 2 || world.Calendar.Day%3 != 0 {
+		return nil
+	}
+	traders := marketTraders(world)
+	if len(traders) < 2 {
+		return nil
+	}
+	a := traders[0]
+	b := traders[1]
+	seedMarketInventory(a, ResourceFood)
+	seedMarketInventory(b, ResourceWood)
+	manager := NewEconomyManager(world)
+	result := manager.Trade(a.ID, b.ID, TradeoOffer{
+		GivingItems:  []Item{{ID: "market_food", Name: "Market Food", Type: "food", Quantity: 1, Value: 3}},
+		WantingItems: []Item{{ID: "market_wood", Name: "Market Wood", Type: "wood", Quantity: 1, Value: 4}},
+	})
+	if len(world.EventHistory) == 0 {
+		return nil
+	}
+	event := world.EventHistory[len(world.EventHistory)-1]
+	if result.Accepted && world.TechTree.Unlocked[TechCurrency] {
+		a.Money += 1
+		b.Money += 1
+	}
+	return &event
+}
+
+func marketTraders(world *World) []*Poble {
+	traders := append([]*Poble(nil), world.GetAllPobles()...)
+	sort.Slice(traders, func(i, j int) bool {
+		left := traders[i].Personality.Ambition + traders[i].Personality.Conscientiousness
+		right := traders[j].Personality.Ambition + traders[j].Personality.Conscientiousness
+		if left == right {
+			return traders[i].ID < traders[j].ID
+		}
+		return left > right
+	})
+	return traders
+}
+
+func seedMarketInventory(poble *Poble, resource ResourceType) {
+	if poble == nil {
+		return
+	}
+	item := marketItem(resource)
+	for _, existing := range poble.Inventory {
+		if itemKey(existing) == itemKey(item) && existing.Quantity > 0 {
+			return
+		}
+	}
+	poble.Inventory = mergeItems(poble.Inventory, []Item{item})
+}
+
+func marketItem(resource ResourceType) Item {
+	switch resource {
+	case ResourceWood:
+		return Item{ID: "market_wood", Name: "Market Wood", Type: "wood", Quantity: 1, Value: 4}
+	default:
+		return Item{ID: "market_food", Name: "Market Food", Type: "food", Quantity: 1, Value: 3}
+	}
+}
+
 func (m *EconomyManager) syncCurrency() {
 	if m == nil || m.world == nil {
 		return

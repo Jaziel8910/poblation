@@ -1,0 +1,7 @@
+[TEMPLATE:END_PLAGUE_CH3_001]
+tags: ending, plague, chapter3
+weight: 10
+---
+There were {ending_total_deaths} dead, {ending_total_births} births, and no clean math that made those numbers kind.
+---
+

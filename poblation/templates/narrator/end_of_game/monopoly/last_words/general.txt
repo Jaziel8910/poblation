@@ -1,0 +1,7 @@
+[TEMPLATE:END_MONOPOLY_LAST_001]
+tags: ending, monopoly, last_words
+weight: 10
+---
+Humanity came back. Then someone bought the room where it happened.
+---
+

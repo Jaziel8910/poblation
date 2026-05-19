@@ -323,13 +323,23 @@ func HandlePregnancy(motherID string, world World) PregnancyArc {
 		arc.ComplicationFlags = append(arc.ComplicationFlags, "consanguinity")
 	}
 
+	storePregnancyArcSecret(mother, actualFather, officialFather, now, arc.DueTime)
+	appendMemory(mother, entities.Memory{
+		ID:               lifecycleID("pregnancy_started", now, mother.ID),
+		Timestamp:        now,
+		Type:             entities.MemoryPositive,
+		Participants:     uniqueStrings([]string{mother.ID, actualFather, officialFather}),
+		EmotionIntensity: 72,
+		Tags:             []string{"pregnancy", "family", "future_child"},
+		Summary:          "A pregnancy began and the future stopped being abstract.",
+	})
+
 	if actualFather != "" && officialFather != "" && actualFather != officialFather {
 		father := world.GetPoble(actualFather)
 		if father != nil && father.Orientation.Sexual >= 0.75 {
 			arc.DramaGuaranteed = true
 			arc.ComplicationFlags = append(arc.ComplicationFlags, "third_party_drama")
 		}
-		storePregnancyArcSecret(mother, actualFather, officialFather, now)
 	}
 
 	if !hasCondition(mother, entities.ConditionPregnant) {
@@ -934,11 +944,17 @@ func choosePregnancyFathers(mother *entities.Poble, world World, rng *rand.Rand)
 	return actual, official
 }
 
-func storePregnancyArcSecret(mother *entities.Poble, actualFather string, officialFather string, now entities.GameTime) {
-	if mother == nil || actualFather == "" || officialFather == "" || actualFather == officialFather {
+func storePregnancyArcSecret(mother *entities.Poble, actualFather string, officialFather string, now entities.GameTime, due entities.GameTime) {
+	if mother == nil {
 		return
 	}
-	content := pregnancyArcPrefix + "actual_father=" + actualFather + "|official_father=" + officialFather
+	content := fmt.Sprintf("%sactual_father=%s|official_father=%s|due_at=%d", pregnancyArcPrefix, actualFather, officialFather, due.ToMinutes())
+	for i := range mother.Secrets {
+		if strings.HasPrefix(mother.Secrets[i].Content, pregnancyArcPrefix) {
+			mother.Secrets[i].Content = content
+			return
+		}
+	}
 	mother.Secrets = append(mother.Secrets, entities.NewSecret(
 		lifecycleID("pregnancy_secret", now, mother.ID, actualFather, officialFather),
 		entities.SecretPlannedBetrayal,

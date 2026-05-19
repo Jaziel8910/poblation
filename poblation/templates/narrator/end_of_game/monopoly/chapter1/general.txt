@@ -1,0 +1,7 @@
+[TEMPLATE:END_MONOPOLY_CH1_001]
+tags: ending, monopoly, chapter1
+weight: 10
+---
+{ending_settlement} survived long enough to invent price, debt, and the face people make when both belong to one person.
+---
+

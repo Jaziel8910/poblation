@@ -1,0 +1,56 @@
+[TEMPLATE:DIARY_FAMILY_001]
+tags: diary, family, lineage, private
+weight: 10
+---
+Hoy mire a {child_name} y entendi algo horrible: una persona puede ser futuro y deuda al mismo tiempo.
+---
+
+[TEMPLATE:DIARY_FAMILY_002]
+tags: diary, family, parents, private
+weight: 9
+---
+La familia no es refugio. Es memoria con llaves de la casa.
+---
+
+[TEMPLATE:DIARY_FAMILY_003]
+tags: diary, family, inheritance, private
+weight: 8
+---
+Si muero, alguien va a recibir mis cosas y mis problemas. Ojala sepa distinguirlos.
+---
+
+[TEMPLATE:DIARY_FAMILY_004]
+tags: diary, family, child, private
+weight: 11
+---
+No se si estoy criando a {child_name} o pidiendole perdon por adelantado.
+---
+
+[TEMPLATE:DIARY_FAMILY_005]
+tags: diary, family, secret, private
+weight: 7
+---
+Hay secretos que no terminan cuando uno los confiesa. Solo cambian de apellido.
+---
+
+[TEMPLATE:DIARY_FAMILY_006]
+tags: diary, family, grief, private
+weight: 8
+---
+La casa tiene sonidos heredados. Pasos, silencios, una puerta que nadie abre sin pensar en alguien.
+---
+
+[TEMPLATE:DIARY_FAMILY_007]
+tags: diary, family, lineage, private
+weight: 9
+---
+Todos hablan de reconstruir la humanidad. Nadie dice quien va a cargar con sus malas costumbres.
+---
+
+[TEMPLATE:DIARY_FAMILY_008]
+tags: diary, family, orphan, private
+weight: 6
+---
+Cuando un menor pierde a quien lo cuidaba, el pueblo entero promete. Despues cada quien vuelve a su hambre.
+---
+

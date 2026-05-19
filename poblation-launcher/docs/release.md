@@ -4,7 +4,7 @@
 
 Full release targets expected later:
 
-- Windows: `poblation_1.0.0.1_launcher_installer.exe`
+- Windows: `poblation_v1.0.0-beta.1_launcher_installer.exe`
 - macOS: `.app` bundle, signed/notarized outside this repo
 - Linux: AppImage and `.deb`
 

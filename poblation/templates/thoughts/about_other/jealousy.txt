@@ -1,0 +1,210 @@
+[TEMPLATE:JEALOUSY_001]
+tags: jealousy, about_other, sharp
+weight: 10
+---
+{target_name} mira a otros como si no supiera que yo cuento los segundos. Que ridiculo. Que exacto.
+---
+
+[TEMPLATE:JEALOUSY_002]
+tags: jealousy, about_other, quiet
+weight: 8
+---
+No quiero poseer a {target_name}. Solo quiero que nadie mas tenga esa version suya que a mi me cuesta tanto conseguir.
+---
+
+[TEMPLATE:JEALOUSY_003]
+tags: jealousy, about_other, resentful
+weight: 9
+---
+Hoy {target_name} dijo un nombre que no era el mio y la habitacion se volvio mas pequena.
+---
+
+[TEMPLATE:JEALOUSY_004]
+tags: jealousy, about_other, denial
+weight: 7
+---
+No son celos. Es vigilancia emocional con pesima prensa.
+---
+
+[TEMPLATE:JEALOUSY_005]
+tags: jealousy, about_other, memory
+weight: 9
+---
+Despues de {memory_recent}, cualquier risa de {target_name} con otra persona parece una prueba mal puesta sobre la mesa.
+---
+
+[TEMPLATE:JEALOUSY_006]
+tags: jealousy, about_other, archetype:lover
+weight: 11
+---
+Me molesta querer ser elegido con esta hambre. Peor: me molesta que {target_name} pueda notarlo.
+---
+
+[TEMPLATE:JEALOUSY_007]
+tags: jealousy, about_other, archetype:villain
+weight: 8
+---
+Si alguien quiere competir por {target_name}, al menos que tenga la decencia de saber que esta perdiendo tiempo.
+---
+
+[TEMPLATE:JEALOUSY_008]
+tags: jealousy, about_other, archetype:ghost
+weight: 7
+---
+No dije nada cuando {target_name} se acerco a otra voz. Guarde la cara. La cara pesa.
+---
+
+[TEMPLATE:JEALOUSY_009]
+tags: jealousy, about_other, social
+weight: 8
+---
+Todos fingen que no vieron como cambie de postura cuando {target_name} se rio. Todos mienten regular.
+---
+
+[TEMPLATE:JEALOUSY_010]
+tags: jealousy, about_other, fear
+weight: 9
+---
+No temo perder a {target_name}. Temo confirmar que nunca tuve el lugar que imagine.
+---
+
+[TEMPLATE:JEALOUSY_011]
+tags: jealousy, about_other, funny
+weight: 6
+---
+Mi dignidad salio a caminar cuando {target_name} sonrio. Todavia no vuelve.
+---
+
+[TEMPLATE:JEALOUSY_012]
+tags: jealousy, about_other, control
+weight: 8
+---
+Hay una parte de la aldea que puedo ordenar. {target_name} no es esa parte. Por eso molesta.
+---
+
+[TEMPLATE:JEALOUSY_013]
+tags: jealousy, about_other, private
+weight: 10
+---
+Si escribo el nombre de {target_name} menos veces, no significa que piense menos. Solo significa que aprendi verguenza.
+---
+
+[TEMPLATE:JEALOUSY_014]
+tags: jealousy, about_other, old_memory
+weight: 7
+---
+{memory_old} no deberia seguir contando. Igual aparece cada vez que {target_name} reparte ternura como si no costara.
+---
+
+[TEMPLATE:JEALOUSY_015]
+tags: jealousy, about_other, archetype:schemer
+weight: 8
+---
+La envidia es informacion. Hoy me dio tres datos y una mala idea.
+---
+
+[TEMPLATE:JEALOUSY_016]
+tags: jealousy, about_other, archetype:innocent
+weight: 8
+---
+Quiero alegrarme por {target_name}. Lo intento. La alegria me queda con una piedrita adentro.
+---
+
+[TEMPLATE:JEALOUSY_017]
+tags: jealousy, about_other, hunger
+weight: 8
+---
+Necesito comida, agua y que {target_name} deje de mirar hacia donde no estoy.
+---
+
+[TEMPLATE:JEALOUSY_018]
+tags: jealousy, about_other, night
+weight: 7
+---
+De noche todo baja la voz menos esa escena de {target_name} hablando con alguien mas.
+---
+
+[TEMPLATE:JEALOUSY_019]
+tags: jealousy, about_other, public
+weight: 8
+---
+La aldea tiene pocos secretos y demasiadas caras. La mia casi delata uno.
+---
+
+[TEMPLATE:JEALOUSY_020]
+tags: jealousy, about_other, bitter
+weight: 8
+---
+Que comico sobrevivir al fin del mundo para terminar compitiendo por una mirada.
+---
+
+[TEMPLATE:JEALOUSY_021]
+tags: jealousy, about_other, tender
+weight: 7
+---
+Ojala {target_name} supiera que mis celos no quieren hacer dano. Solo hacen ruido porque tienen miedo.
+---
+
+[TEMPLATE:JEALOUSY_022]
+tags: jealousy, about_other, violent_hint
+weight: 5
+---
+No voy a hacer nada. Esa frase seria mas tranquilizadora si no tuviera que repetirla.
+---
+
+[TEMPLATE:JEALOUSY_023]
+tags: jealousy, about_other, domestic
+weight: 7
+---
+Parti madera pensando en {target_name}. La madera colaboro mas que mi cabeza.
+---
+
+[TEMPLATE:JEALOUSY_024]
+tags: jealousy, about_other, pride
+weight: 8
+---
+No voy a pedir lugar. Si {target_name} no lo ve, que cargue con esa miopia.
+---
+
+[TEMPLATE:JEALOUSY_025]
+tags: jealousy, about_other, low_trust
+weight: 9
+---
+Con {relationship_status}, hasta una pausa de {target_name} parece tener doble fondo.
+---
+
+[TEMPLATE:JEALOUSY_026]
+tags: jealousy, about_other, settlement
+weight: 7
+---
+{settlement_name} es demasiado pequeno para fingir que no vi eso.
+---
+
+[TEMPLATE:JEALOUSY_027]
+tags: jealousy, about_other, morning
+weight: 6
+---
+Desperte normal. Luego recorde a {target_name}. La normalidad duro poco, como siempre.
+---
+
+[TEMPLATE:JEALOUSY_028]
+tags: jealousy, about_other, shame
+weight: 8
+---
+Me daria menos verguenza sentir celos si por lo menos fueran elegantes.
+---
+
+[TEMPLATE:JEALOUSY_029]
+tags: jealousy, about_other, direct
+weight: 9
+---
+Quiero preguntarle a {target_name} que significa esa otra persona. Quiero no sonar como una herida con nombre.
+---
+
+[TEMPLATE:JEALOUSY_030]
+tags: jealousy, about_other, unresolved
+weight: 10
+---
+No paso nada. Ese es el problema: mi cabeza trabaja horas extra con material mediocre.
+---
+

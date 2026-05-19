@@ -1,0 +1,139 @@
+[TEMPLATE:REACT_ILL_001]
+tags: reaction, illness, fear
+weight: 10
+---
+La enfermedad no pidio permiso. Solo entro y empezo a contar camas.
+---
+
+[TEMPLATE:REACT_ILL_002]
+tags: reaction, illness, care
+weight: 8
+---
+El cuidado se volvio trabajo, promesa y amenaza al mismo tiempo.
+---
+
+[TEMPLATE:REACT_ILL_003]
+tags: reaction, illness, scarcity
+weight: 8
+---
+La medicina alcanza hasta que alguien mira la ultima dosis demasiado tiempo.
+---
+
+[TEMPLATE:REACT_ILL_004]
+tags: reaction, illness, rumor
+weight: 7
+---
+Antes de saber el nombre del mal, ya habia tres versiones caminando por la aldea.
+---
+
+[TEMPLATE:REACT_ILL_005]
+tags: reaction, illness, grief
+weight: 8
+---
+La fiebre cambia la voz de una casa. Hasta las puertas parecen escuchar.
+---
+
+[TEMPLATE:REACT_ILL_006]
+tags: reaction, illness, government
+weight: 7
+---
+Cuando alguien tose, todos descubren cuanta autoridad creen merecer.
+---
+
+[TEMPLATE:REACT_ILL_007]
+tags: reaction, illness, memory
+weight: 7
+---
+Cada enfermo le presta una cara nueva al miedo viejo.
+---
+
+[TEMPLATE:REACT_ILL_008]
+tags: reaction, illness, unresolved
+weight: 10
+---
+Hoy nadie dijo final. Solo dijeron manana con menos seguridad.
+---
+
+[TEMPLATE:REACT_ILL_009]
+tags: reaction, illness, family
+weight: 8
+---
+Una cama enferma reorganiza una familia mas rapido que cualquier ley.
+---
+
+[TEMPLATE:REACT_ILL_010]
+tags: reaction, illness, debt
+weight: 7
+---
+Quien cuida hoy queda anotado en una cuenta que nadie escribe pero todos recuerdan.
+---
+
+[TEMPLATE:REACT_ILL_011]
+tags: reaction, illness, politics
+weight: 7
+---
+La cuarentena no separo solo cuerpos. Tambien separo a los que obedecen de los que negocian.
+---
+
+[TEMPLATE:REACT_ILL_012]
+tags: reaction, illness, love
+weight: 8
+---
+El amor suena distinto cuando tiene que lavar trapos, medir fiebre y no pedir aplausos.
+---
+
+[TEMPLATE:REACT_ILL_013]
+tags: reaction, illness, rumor
+weight: 8
+---
+Al tercer estornudo, la aldea ya tenia culpable, remedio falso y version oficial.
+---
+
+[TEMPLATE:REACT_ILL_014]
+tags: reaction, illness, orphan
+weight: 7
+---
+Los ninos aprendieron una palabra nueva mirando adultos evitar decirla.
+---
+
+[TEMPLATE:REACT_ILL_015]
+tags: reaction, illness, scarcity
+weight: 8
+---
+La ultima medicina no cura solo un cuerpo. Tambien revela quien vale mas para los vivos.
+---
+
+[TEMPLATE:REACT_ILL_016]
+tags: reaction, illness, faith
+weight: 7
+---
+Cuando fallan las manos, algunos prenden velas; otros empiezan a contar mentiras utiles.
+---
+
+[TEMPLATE:REACT_ILL_017]
+tags: reaction, illness, memory
+weight: 8
+---
+Cada tos nueva despierta una vieja lista de nombres que nadie quiere completar.
+---
+
+[TEMPLATE:REACT_ILL_018]
+tags: reaction, illness, work
+weight: 7
+---
+La enfermedad tambien trabaja: detiene cosechas, abre deudas y vuelve lento el futuro.
+---
+
+[TEMPLATE:REACT_ILL_019]
+tags: reaction, illness, shame
+weight: 7
+---
+Algunos esconden sintomas como si la fiebre fuera culpa y no aviso.
+---
+
+[TEMPLATE:REACT_ILL_020]
+tags: reaction, illness, recovery
+weight: 9
+---
+Sobrevivir no devolvio a nadie igual. Solo les dio permiso de seguir contando desde otra marca.
+---

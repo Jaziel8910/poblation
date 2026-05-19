@@ -1,0 +1,139 @@
+[TEMPLATE:REACT_WAR_001]
+tags: reaction, war, fear
+weight: 10
+---
+Otra vez aprendimos que una frontera puede ser solo una excusa con piedras alrededor.
+---
+
+[TEMPLATE:REACT_WAR_002]
+tags: reaction, war, bitter
+weight: 9
+---
+La humanidad sobrevivio para inventar bandos en miniatura. Brillante. Horrible.
+---
+
+[TEMPLATE:REACT_WAR_003]
+tags: reaction, war, grief
+weight: 8
+---
+Alguien va a contar esto como estrategia. Alguien mas solo va a contar cuerpos.
+---
+
+[TEMPLATE:REACT_WAR_004]
+tags: reaction, war, political
+weight: 7
+---
+El primer grito fue personal. El segundo ya sonaba a gobierno.
+---
+
+[TEMPLATE:REACT_WAR_005]
+tags: reaction, war, scarcity
+weight: 8
+---
+Cuando falta comida, la moral empieza a usar palabras mas cortas.
+---
+
+[TEMPLATE:REACT_WAR_006]
+tags: reaction, war, memory
+weight: 8
+---
+Nadie pelea solo por hoy. Siempre traen un ayer escondido en la mano.
+---
+
+[TEMPLATE:REACT_WAR_007]
+tags: reaction, war, public
+weight: 7
+---
+La plaza quedo quieta despues. Quietud mala, de esa que no perdona.
+---
+
+[TEMPLATE:REACT_WAR_008]
+tags: reaction, war, unresolved
+weight: 10
+---
+La pelea termino porque los cuerpos se cansaron. La razon no aparecio.
+---
+
+[TEMPLATE:REACT_WAR_009]
+tags: reaction, war, family
+weight: 8
+---
+Cada bando juro proteger a los suyos, y de pronto nadie sabia donde terminaba suyo.
+---
+
+[TEMPLATE:REACT_WAR_010]
+tags: reaction, war, revenge
+weight: 8
+---
+La venganza entro tarde a la reunion y aun asi todos le hicieron espacio.
+---
+
+[TEMPLATE:REACT_WAR_011]
+tags: reaction, war, economy
+weight: 7
+---
+Despues del primer golpe, el mercado empezo a hablar en voz baja y precios altos.
+---
+
+[TEMPLATE:REACT_WAR_012]
+tags: reaction, war, children
+weight: 7
+---
+Los ninos jugaron a repetir nombres de adultos. Eso fue lo mas feo del dia.
+---
+
+[TEMPLATE:REACT_WAR_013]
+tags: reaction, war, old_grudge
+weight: 8
+---
+Nadie admitio que esta guerra venia caminando desde un insulto viejo.
+---
+
+[TEMPLATE:REACT_WAR_014]
+tags: reaction, war, exile
+weight: 7
+---
+El exilio empezo como amenaza. Termino siendo una lista de casas que iban a quedar frias.
+---
+
+[TEMPLATE:REACT_WAR_015]
+tags: reaction, war, propaganda
+weight: 7
+---
+Cada lider llamo defensa a lo suyo y barbarie a lo del otro. La sangre no noto la diferencia.
+---
+
+[TEMPLATE:REACT_WAR_016]
+tags: reaction, war, funeral
+weight: 8
+---
+Los funerales llegaron antes que las explicaciones, como casi siempre.
+---
+
+[TEMPLATE:REACT_WAR_017]
+tags: reaction, war, institution
+weight: 7
+---
+El consejo prometio controlar el conflicto. Primero tuvo que admitir que ya lo estaba alimentando.
+---
+
+[TEMPLATE:REACT_WAR_018]
+tags: reaction, war, romance
+weight: 7
+---
+Algunas parejas descubrieron que amar a alguien no dice nada sobre de que lado va a caer.
+---
+
+[TEMPLATE:REACT_WAR_019]
+tags: reaction, war, silence
+weight: 8
+---
+Despues de gritar tanto, el silencio parecio una amenaza con mejor postura.
+---
+
+[TEMPLATE:REACT_WAR_020]
+tags: reaction, war, aftermath
+weight: 10
+---
+La paz no llego. Solo llego una pausa con miedo de llamarse descanso.
+---

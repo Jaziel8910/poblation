@@ -166,6 +166,7 @@ type AppModel struct {
 	Console            *engine.ConsoleSystem
 	ActiveEnding       *engine.Ending
 	Orchestrator       *engine.Orchestrator
+	Mode               config.GameMode
 
 	ctx             context.Context
 	cancel          context.CancelFunc
@@ -174,6 +175,7 @@ type AppModel struct {
 	rng             *rand.Rand
 	tickSub         chan engine.GameTick
 	lastIntents     map[string]string
+	intentReasons   map[string]string
 	speed           float64
 	isPaused        bool
 	templateLoadSub <-chan templateLoadUpdateMsg
@@ -207,9 +209,11 @@ func NewAppModel(w *world.World, clock *engine.TimeEngine) AppModel {
 		templateEngine: templates.NewTemplateEngine(rng),
 		rng:            rng,
 		lastIntents:    map[string]string{},
+		intentReasons:  map[string]string{},
 		speed:          1.0,
 		Console:        engine.NewConsoleSystem(w, clock, rng),
 		loading:        newTemplateLoadingState(),
+		Mode:           config.LoadOrDefault().Settings.Gameplay.ActiveMode,
 	}
 }
 
@@ -227,6 +231,8 @@ func NewAppModelWithOrchestrator(orchestrator *engine.Orchestrator) AppModel {
 	model.IsDebugMode = snapshot.Debug
 	model.speed = snapshot.Speed
 	model.isPaused = snapshot.IsPaused
+	model.lastIntents, model.intentReasons = intentMapsFromSnapshot(snapshot)
+	model.Mode = config.LoadOrDefault().Settings.Gameplay.ActiveMode
 	model.Console = engine.NewConsoleSystem(model.World, model.Engine, model.rng)
 	return model
 }
@@ -479,24 +485,36 @@ func (m AppModel) handleGlobalNavigation(msg tea.KeyMsg) (tea.Model, tea.Cmd) {
 	}
 	switch {
 	case key.Matches(msg, m.KeyMap.Mind):
-		return m.switchToView(VIEW_MIND, "", "")
+		return m.switchToAllowedView(VIEW_MIND, "", "")
 	case key.Matches(msg, m.KeyMap.World):
-		return m.switchToView(VIEW_WORLD_EXPLORE, "", "")
+		return m.switchToAllowedView(VIEW_WORLD_EXPLORE, "", "")
 	case key.Matches(msg, m.KeyMap.Pobles):
-		return m.switchToView(VIEW_POBLES_LIST, "", "")
+		return m.switchToAllowedView(VIEW_POBLES_LIST, "", "")
 	case key.Matches(msg, m.KeyMap.Events):
-		return m.switchToView(VIEW_EVENTS_FEED, "", "")
+		return m.switchToAllowedView(VIEW_EVENTS_FEED, "", "")
 	case key.Matches(msg, m.KeyMap.Settlement):
-		return m.switchToView(VIEW_SETTLEMENT, "", "")
+		return m.switchToAllowedView(VIEW_SETTLEMENT, "", "")
 	case key.Matches(msg, m.KeyMap.Pause):
+		if !modeCanControlTime(m.Mode) {
+			return m.modeBlockedNotice("pausar el tiempo")
+		}
 		return m.togglePause(), nil
 	case key.Matches(msg, m.KeyMap.SpeedUp):
+		if !modeCanControlTime(m.Mode) {
+			return m.modeBlockedNotice("cambiar velocidad")
+		}
 		return m.changeSpeed(2.0), nil
 	case key.Matches(msg, m.KeyMap.SpeedDown):
+		if !modeCanControlTime(m.Mode) {
+			return m.modeBlockedNotice("cambiar velocidad")
+		}
 		return m.changeSpeed(0.5), nil
 	case key.Matches(msg, m.KeyMap.Back):
 		return m.goBack(), nil
 	case key.Matches(msg, m.KeyMap.Debug):
+		if !m.modeAllowsView(VIEW_DEBUG) {
+			return m.modeBlockedNotice("abrir debug")
+		}
 		return m.openDebug(), nil
 	default:
 		return m.updateCurrentSubModel(msg)
@@ -561,7 +579,7 @@ func (m AppModel) handleOrchestratedGameTick(msg GameTickMsg) (tea.Model, tea.Cm
 	m.ActiveEnding = snapshot.ActiveEnding
 	m.speed = snapshot.Speed
 	m.isPaused = snapshot.IsPaused
-	m.lastIntents = map[string]string{}
+	m.lastIntents, m.intentReasons = intentMapsFromSnapshot(snapshot)
 
 	cmds := make([]tea.Cmd, 0, len(processed)+1)
 	for _, event := range processed {
@@ -648,6 +666,19 @@ func (m AppModel) switchToView(view ViewType, selectedPobleID, selectedBuildingI
 	return m.activateCurrentView()
 }
 
+func (m AppModel) switchToAllowedView(view ViewType, selectedPobleID, selectedBuildingID string) (tea.Model, tea.Cmd) {
+	if !m.modeAllowsView(view) {
+		return m.modeBlockedNotice(view.String())
+	}
+	return m.switchToView(view, selectedPobleID, selectedBuildingID)
+}
+
+func (m AppModel) modeBlockedNotice(target string) (tea.Model, tea.Cmd) {
+	note := NewNotification(NotificationDrama, fmt.Sprintf("Modo %s no permite %s.", m.effectiveMode(), target))
+	m.NotificationQueue = append(m.NotificationQueue, note)
+	return m, expireNotificationCmd(note.ID, 3*time.Second)
+}
+
 func (m AppModel) activateCurrentView() (tea.Model, tea.Cmd) {
 	sub, ok := m.SubModels[m.CurrentView]
 	if !ok || sub == nil {
@@ -682,6 +713,7 @@ func (m AppModel) goBack() AppModel {
 
 func (m AppModel) openDebug() AppModel {
 	m.IsDebugMode = true
+	m.Mode = config.GameModeGod
 	return m.changeView(VIEW_DEBUG, "", "")
 }
 
@@ -774,7 +806,7 @@ func (m AppModel) expireNotification(id string) AppModel {
 
 func (m AppModel) renderStatusBar(width int) string {
 	current := m.currentWorldState()
-	title := statusTitleStyle.Render("POBLATION")
+	title := statusTitleStyle.Render("POBLATION " + strings.ToUpper(string(m.effectiveMode())))
 	rest := fmt.Sprintf(" · Día %d · %02d:%02d · Población: %d · %s",
 		current.Day.Day,
 		current.Day.Hour,
@@ -873,11 +905,41 @@ func (m AppModel) renderNavigationBar(width int) string {
 		text := "ENTER seguir  ESC cancelar"
 		return navBarStyle.Width(width).Render(truncateRunes(text, width-2))
 	}
-	text := "M mente  W mundo  P pobles  E eventos  S settlement  SPACE pausa  +/- velocidad  ENTER seleccionar  ESC atras  ` debug"
+	text := navigationHelpForMode(m.effectiveMode())
 	if width < 80 {
-		text = "M mente  W mundo  P pobles  E eventos  SPACE pausa  ESC atras"
+		text = compactNavigationHelpForMode(m.effectiveMode())
 	}
 	return navBarStyle.Width(width).Render(truncateRunes(text, width-2))
+}
+
+func navigationHelpForMode(mode config.GameMode) string {
+	switch mode {
+	case config.GameModeObserver:
+		return "Observer  W mundo  P pobles  E eventos  S settlement  ESC atras  modo: `mode director`"
+	case config.GameModeJournalist:
+		return "Periodista  E eventos  S settlement  W mundo  periodico por consola  ESC atras"
+	case config.GameModeKnown:
+		return "Conocidos  M mente  P pobles  E eventos  ENTER seleccionar  ESC atras"
+	case config.GameModeGod:
+		return "Dios  M mente  W mundo  P pobles  E eventos  S settlement  SPACE pausa  +/- velocidad  ` debug"
+	default:
+		return "Director  M mente  W mundo  P pobles  E eventos  S settlement  SPACE pausa  +/- velocidad  ESC atras"
+	}
+}
+
+func compactNavigationHelpForMode(mode config.GameMode) string {
+	switch mode {
+	case config.GameModeJournalist:
+		return "Periodista  E eventos  S settlement  ESC atras"
+	case config.GameModeKnown:
+		return "Conocidos  M mente  P pobles  ESC atras"
+	case config.GameModeObserver:
+		return "Observer  W mundo  E eventos  ESC atras"
+	case config.GameModeGod:
+		return "Dios  M/W/P/E  SPACE pausa  ` debug"
+	default:
+		return "Director  M/W/P/E/S  SPACE pausa  ESC"
+	}
 }
 
 func (m AppModel) renderNotificationOverlay(width int) string {
@@ -925,6 +987,9 @@ func (m AppModel) executeConsoleCommand(raw string) AppModel {
 		m.Console = engine.NewConsoleSystem(m.World, m.Engine, m.rng)
 	}
 	result := m.Console.Execute(command)
+	if result.ModeHint != "" {
+		m = m.setMode(result.ModeHint)
+	}
 	if result.ClearFeed {
 		m.EventFeed = nil
 		m.NotificationQueue = nil
@@ -1007,6 +1072,8 @@ func defaultSubModels() map[ViewType]tea.Model {
 			models[view] = uiviews.NewExploreModel()
 		case VIEW_HOUSE_EXPLORE:
 			models[view] = uiviews.NewHouseModel()
+		case VIEW_SETTLEMENT:
+			models[view] = uiviews.NewSettlementModel()
 		case VIEW_MINIGAME_SEX:
 			models[view] = uiviews.NewEncounterModel()
 		case VIEW_MINIGAME_FIGHT:
@@ -1067,6 +1134,76 @@ func (m AppModel) currentViewBlocksGlobalNavigation() bool {
 	return ok && blocker.BlocksGlobalNavigation()
 }
 
+func (m AppModel) effectiveMode() config.GameMode {
+	if m.Mode == "" {
+		return config.GameModeDirector
+	}
+	return m.Mode
+}
+
+func (m AppModel) setMode(mode config.GameMode) AppModel {
+	if _, ok := config.ParseGameMode(string(mode)); !ok {
+		return m
+	}
+	m.Mode = mode
+	m.IsDebugMode = mode == config.GameModeGod
+	if m.Console != nil {
+		m.Console.CurrentMode = mode
+		m.Console.GodMode = mode == config.GameModeGod
+		m.Console.NewspaperMode = mode == config.GameModeJournalist
+	}
+	_, _ = config.UpdateSettings(func(settings *config.Settings) {
+		settings.Gameplay.ActiveMode = mode
+	})
+	if !m.modeAllowsView(m.CurrentView) {
+		m = m.changeView(defaultViewForMode(mode), "", "")
+	}
+	return m
+}
+
+func (m AppModel) modeAllowsView(view ViewType) bool {
+	if view == VIEW_MENU || view == VIEW_SETTINGS {
+		return true
+	}
+	if view == VIEW_ENDINGS && m.ActiveEnding != nil {
+		return true
+	}
+	switch m.effectiveMode() {
+	case config.GameModeGod:
+		return true
+	case config.GameModeDirector:
+		return view != VIEW_DEBUG
+	case config.GameModeObserver:
+		return view == VIEW_MAIN_MAP || view == VIEW_WORLD_EXPLORE || view == VIEW_POBLES_LIST ||
+			view == VIEW_POBLE_DETAIL || view == VIEW_EVENTS_FEED || view == VIEW_SETTLEMENT ||
+			view == VIEW_NEWSPAPER || view == VIEW_ENDINGS
+	case config.GameModeJournalist:
+		return view == VIEW_NEWSPAPER || view == VIEW_EVENTS_FEED || view == VIEW_SETTLEMENT ||
+			view == VIEW_WORLD_EXPLORE || view == VIEW_MAIN_MAP || view == VIEW_ENDINGS
+	case config.GameModeKnown:
+		return view == VIEW_MAIN_MAP || view == VIEW_MIND || view == VIEW_DIALOGUE ||
+			view == VIEW_HOUSE_EXPLORE || view == VIEW_POBLES_LIST || view == VIEW_POBLE_DETAIL ||
+			view == VIEW_EVENTS_FEED
+	default:
+		return true
+	}
+}
+
+func modeCanControlTime(mode config.GameMode) bool {
+	return mode == "" || mode == config.GameModeDirector || mode == config.GameModeGod
+}
+
+func defaultViewForMode(mode config.GameMode) ViewType {
+	switch mode {
+	case config.GameModeJournalist:
+		return VIEW_NEWSPAPER
+	case config.GameModeKnown:
+		return VIEW_POBLES_LIST
+	default:
+		return VIEW_MAIN_MAP
+	}
+}
+
 func (m AppModel) snapshotForViews() uiviews.AppStateSnapshot {
 	return uiviews.AppStateSnapshot{
 		World:              m.World,
@@ -1080,7 +1217,33 @@ func (m AppModel) snapshotForViews() uiviews.AppStateSnapshot {
 		TemplateEngine:     m.templateEngine,
 		IsDirectorMode:     m.IsDebugMode,
 		Ending:             m.ActiveEnding,
+		LastIntents:        copyStringMap(m.lastIntents),
+		IntentReasons:      copyStringMap(m.intentReasons),
 	}
+}
+
+func intentMapsFromSnapshot(snapshot engine.UISnapshot) (map[string]string, map[string]string) {
+	intents := make(map[string]string, len(snapshot.Pobles))
+	reasons := make(map[string]string, len(snapshot.Pobles))
+	for _, poble := range snapshot.Pobles {
+		if strings.TrimSpace(poble.ID) == "" {
+			continue
+		}
+		intents[poble.ID] = poble.CurrentIntent
+		reasons[poble.ID] = poble.IntentReason
+	}
+	return intents, reasons
+}
+
+func copyStringMap(input map[string]string) map[string]string {
+	if len(input) == 0 {
+		return map[string]string{}
+	}
+	output := make(map[string]string, len(input))
+	for key, value := range input {
+		output[key] = value
+	}
+	return output
 }
 
 func templateRoot() string {

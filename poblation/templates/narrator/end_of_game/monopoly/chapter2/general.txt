@@ -1,0 +1,7 @@
+[TEMPLATE:END_MONOPOLY_CH2_001]
+tags: ending, monopoly, chapter2
+weight: 10
+---
+{ending_richest} did not need a throne. Money learned to sit for them.
+---
+

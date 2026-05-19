@@ -5,6 +5,7 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/user/poblation/internal/config"
 	"github.com/user/poblation/internal/entities"
 	"github.com/user/poblation/internal/world"
 )
@@ -65,6 +66,20 @@ func TestConsoleTechUnlocksImmediately(t *testing.T) {
 
 	if !gameWorld.TechTree.Unlocked[world.TechNavigation] {
 		t.Fatal("expected NAVIGATION unlocked")
+	}
+}
+
+func TestConsoleModeCommandReturnsModeHint(t *testing.T) {
+	gameWorld, clock, _, _ := seededConsoleWorld(t)
+	console := NewConsoleSystem(gameWorld, clock, rand.New(rand.NewSource(45)))
+
+	result := console.Execute("modo journalist")
+
+	if result.ModeHint != config.GameModeJournalist {
+		t.Fatalf("expected journalist mode hint, got %q", result.ModeHint)
+	}
+	if result.ViewHint != ConsoleViewNewspaper {
+		t.Fatalf("expected newspaper view hint, got %q", result.ViewHint)
 	}
 }
 

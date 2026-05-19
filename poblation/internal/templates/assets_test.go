@@ -2,8 +2,114 @@ package templates
 
 import (
 	"math/rand"
+	"os"
+	"path/filepath"
+	"regexp"
+	"strings"
 	"testing"
 )
+
+func TestRepositoryTotalTemplateFloor(t *testing.T) {
+	engine := NewTemplateEngine(rand.New(rand.NewSource(41)))
+	if err := engine.LoadTemplates("../../templates"); err != nil {
+		t.Fatalf("load all repository templates: %v", err)
+	}
+
+	stats := engine.GetStats()
+	if stats.Total < 1800 {
+		t.Fatalf("expected at least 1800 curated templates for beta floor, got %d", stats.Total)
+	}
+	requiredTopLevel := map[string]int{
+		"thoughts":  600,
+		"dialogues": 600,
+		"dreams":    100,
+		"diary":     100,
+		"narrator":  160,
+		"reactions": 90,
+		"letters":   50,
+	}
+	for topLevel, minimum := range requiredTopLevel {
+		total := 0
+		for category, count := range stats.TotalByCategory {
+			if category == topLevel || len(category) > len(topLevel) && category[:len(topLevel)+1] == topLevel+"/" {
+				total += count
+			}
+		}
+		if total < minimum {
+			t.Fatalf("expected top-level category %s to have at least %d templates, got %d", topLevel, minimum, total)
+		}
+	}
+}
+
+func TestRepositoryTemplateIDsAreUniqueAndClean(t *testing.T) {
+	header := regexp.MustCompile(`^\[TEMPLATE:([A-Za-z0-9_.:_-]+)\]$`)
+	seen := map[string]string{}
+	banned := []string{
+		"felt a wave of",
+		"couldn't help but",
+		"deep down",
+		"a part of me",
+		"something inside",
+		"eyes filled with",
+		"heart racing",
+		"took a deep breath",
+		"couldn't shake the feeling",
+	}
+
+	err := filepath.WalkDir("../../templates", func(path string, entry os.DirEntry, walkErr error) error {
+		if walkErr != nil {
+			return walkErr
+		}
+		if entry.IsDir() || strings.ToLower(filepath.Ext(path)) != ".txt" {
+			return nil
+		}
+		content, readErr := os.ReadFile(path)
+		if readErr != nil {
+			return readErr
+		}
+		lower := strings.ToLower(string(content))
+		for _, phrase := range banned {
+			if strings.Contains(lower, phrase) {
+				t.Fatalf("template file %s contains banned phrase %q", path, phrase)
+			}
+		}
+		for _, line := range strings.Split(strings.ReplaceAll(string(content), "\r\n", "\n"), "\n") {
+			match := header.FindStringSubmatch(strings.TrimSpace(line))
+			if match == nil {
+				continue
+			}
+			if previous, ok := seen[match[1]]; ok {
+				t.Fatalf("duplicate template id %s in %s and %s", match[1], previous, path)
+			}
+			seen[match[1]] = path
+		}
+		return nil
+	})
+	if err != nil {
+		t.Fatalf("scan templates: %v", err)
+	}
+	if len(seen) < 1800 {
+		t.Fatalf("expected scan to find at least 1800 curated template ids, got %d", len(seen))
+	}
+}
+
+func TestRepositoryRejectsGeneratedFillerPacks(t *testing.T) {
+	for _, path := range []string{
+		"../../templates/dialogues/generated",
+		"../../templates/diary/generated",
+		"../../templates/dreams/generated",
+		"../../templates/letters/generated",
+		"../../templates/narrator/generated",
+		"../../templates/reactions/generated",
+		"../../templates/thoughts/generated",
+		"../../templates/rumours/generated",
+		"../../templates/newspaper/generated",
+	} {
+		if _, err := os.Stat(path); err == nil {
+			t.Fatalf("generated filler pack must not exist: %s", path)
+		}
+	}
+}
 
 func TestRepositoryThoughtTemplatesLoad(t *testing.T) {
 	engine := NewTemplateEngine(rand.New(rand.NewSource(42)))
@@ -20,6 +126,7 @@ func TestRepositoryThoughtTemplatesLoad(t *testing.T) {
 		"about_self/desire":    20,
 		"by_archetype/ghost":   25,
 		"by_archetype/prophet": 25,
+		"about_other/jealousy": 30,
 	}
 	for category, count := range stats.TotalByCategory {
 		minimum := 30
@@ -61,6 +168,8 @@ func TestRepositoryDialogueTemplatesLoad(t *testing.T) {
 		"threat/general":      20,
 		"sex/tension":         25,
 		"sex/aftermath":       25,
+		"political/general":   10,
+		"religious/general":   10,
 	}
 	for category, minimum := range specialCategories {
 		if count := stats.TotalByCategory[category]; count < minimum {
@@ -135,8 +244,9 @@ func TestRepositoryLetterTemplatesLoad(t *testing.T) {
 	}
 
 	requiredCategories := map[string]int{
-		"love/general": 15,
-		"hate/general": 10,
+		"love/general":    15,
+		"hate/general":    10,
+		"apology/general": 8,
 	}
 	stats := engine.GetStats()
 	for category, minimum := range requiredCategories {
@@ -153,22 +263,24 @@ func TestRepositoryNarratorTemplatesLoad(t *testing.T) {
 	}
 
 	requiredCategories := map[string]int{
-		"death/natural":       20,
-		"death/murder":        15,
-		"death/illness":       15,
-		"death/suicide":       10,
-		"birth/general":       20,
-		"disaster/storm":      10,
-		"disaster/earthquake": 10,
-		"disaster/plague":     10,
-		"end_of_game/love":    5,
-		"end_of_game/dynasty": 4,
-		"end_of_game/war":     4,
-		"end_of_game/utopia":  4,
-		"end_of_game/cult":    4,
-		"end_of_game/alone":   4,
-		"end_of_game/reset":   4,
-		"end_of_game/myth":    4,
+		"death/natural":                         20,
+		"death/murder":                          15,
+		"death/illness":                         15,
+		"death/suicide":                         10,
+		"birth/general":                         20,
+		"disaster/storm":                        10,
+		"disaster/earthquake":                   10,
+		"disaster/plague":                       10,
+		"end_of_game/love":                      5,
+		"end_of_game/dynasty":                   4,
+		"end_of_game/war":                       4,
+		"end_of_game/utopia":                    4,
+		"end_of_game/cult":                      4,
+		"end_of_game/alone":                     4,
+		"end_of_game/reset":                     4,
+		"end_of_game/myth":                      4,
+		"end_of_game/plague/chapter1/general":   1,
+		"end_of_game/monopoly/chapter1/general": 1,
 	}
 	stats := engine.GetStats()
 	for category, minimum := range requiredCategories {
@@ -190,6 +302,9 @@ func TestRepositoryReactionTemplatesLoad(t *testing.T) {
 		"discovery":               8,
 		"birth":                   8,
 		"violence/fight_physical": 5,
+		"war/general":             8,
+		"illness/general":         8,
+		"weather/general":         8,
 	}
 	stats := engine.GetStats()
 	for category, minimum := range requiredCategories {

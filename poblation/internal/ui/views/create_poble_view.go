@@ -28,6 +28,7 @@ const (
 	createStepBasic createStep = iota + 1
 	createStepOrientation
 	createStepArchetype
+	createStepTraits
 	createStepHistory
 	createStepConfirm
 	createStepRevision
@@ -54,6 +55,7 @@ type CreatePobleModel struct {
 	romanticChoice        string
 	sexualIntensityChoice string
 	archetypeChoice       string
+	traitChoice           string
 	secretSeed            string
 	basedOn               string
 	revisionChoice        string
@@ -128,6 +130,7 @@ func (m CreatePobleModel) OnEnter() (tea.Model, tea.Cmd) {
 	m.romanticChoice = "procedural"
 	m.sexualIntensityChoice = "procedural"
 	m.archetypeChoice = "sorprendeme"
+	m.traitChoice = "procedural"
 	m.secretSeed = ""
 	m.basedOn = ""
 	m.revisionChoice = "step3"
@@ -197,6 +200,8 @@ func (m CreatePobleModel) setStep(step createStep) (tea.Model, tea.Cmd) {
 		m.form = m.orientationForm()
 	case createStepArchetype:
 		m.form = m.archetypeForm()
+	case createStepTraits:
+		m.form = m.traitsForm()
 	case createStepHistory:
 		m.form = m.historyForm()
 	case createStepConfirm:
@@ -223,6 +228,8 @@ func (m CreatePobleModel) finishCurrentStep() (tea.Model, tea.Cmd) {
 	case createStepOrientation:
 		return m.setStep(createStepArchetype)
 	case createStepArchetype:
+		return m.setStep(createStepTraits)
+	case createStepTraits:
 		return m.setStep(createStepHistory)
 	case createStepHistory:
 		return m.setStep(createStepConfirm)
@@ -238,6 +245,9 @@ func (m CreatePobleModel) finishCurrentStep() (tea.Model, tea.Cmd) {
 	case createStepRevision:
 		if m.revisionChoice == "step1" {
 			return m.setStep(createStepBasic)
+		}
+		if m.revisionChoice == "step4" {
+			return m.setStep(createStepTraits)
 		}
 		return m.setStep(createStepArchetype)
 	default:
@@ -324,6 +334,29 @@ func (m CreatePobleModel) archetypeForm() *huh.Form {
 	).WithTheme(menuModalTheme())
 }
 
+func (m CreatePobleModel) traitsForm() *huh.Form {
+	return huh.NewForm(
+		huh.NewGroup(
+			huh.NewSelect[string]().
+				Title("Empuje de personalidad").
+				Value(&m.traitChoice).
+				Options(
+					huh.NewOption("Procedural coherente", "procedural"),
+					huh.NewOption("Mas tierno / cooperativo", "soft"),
+					huh.NewOption("Mas dominante / politico", "control"),
+					huh.NewOption("Mas oscuro / peligroso", "dark"),
+					huh.NewOption("Mas caotico / impulsivo", "chaos"),
+					huh.NewOption("Mas sabio / curioso", "curious"),
+				),
+			huh.NewNote().
+				Title("Que cambia").
+				DescriptionFunc(func() string {
+					return traitChoiceDescription(m.traitChoice)
+				}, &m.traitChoice),
+		).Title("Paso 4 - Rasgos"),
+	).WithTheme(menuModalTheme())
+}
+
 func (m CreatePobleModel) historyForm() *huh.Form {
 	return huh.NewForm(
 		huh.NewGroup(
@@ -367,6 +400,7 @@ func (m CreatePobleModel) revisionForm() *huh.Form {
 				Value(&m.revisionChoice).
 				Options(
 					huh.NewOption("Volver al Paso 3", "step3"),
+					huh.NewOption("Volver al Paso 4", "step4"),
 					huh.NewOption("Volver al Paso 1", "step1"),
 				),
 		).Title("Revisar ficha"),
@@ -410,6 +444,7 @@ func (m *CreatePobleModel) generatePreview() error {
 		preview.Archetype = entities.ArchetypeCustom
 	}
 	applyIntensityChoice(preview, m.sexualIntensityChoice, m.romanticChoice)
+	applyTraitChoice(preview, m.traitChoice)
 	seedInitialSecret(preview, m.secretSeed)
 
 	m.preview = preview
@@ -428,6 +463,7 @@ func (m CreatePobleModel) renderPreviewSheet() string {
 		renderSheetLine("Sexo", p.Sex.String()),
 		renderSheetLine("Edad", fmt.Sprintf("%d", p.Age)),
 		renderSheetLine("Arquetipo", strings.Title(strings.ToLower(p.Archetype.String()))),
+		renderSheetLine("Empuje", traitChoiceLabel(m.traitChoice)),
 		renderSheetLine("Orientacion", summarizeOrientation(p)),
 		renderSheetLine("Mood inicial", strings.Title(strings.ToLower(p.CurrentMood.String()))),
 		"",
@@ -456,15 +492,17 @@ func (m CreatePobleModel) renderPreviewSheet() string {
 func (m CreatePobleModel) stepLabel() string {
 	switch m.step {
 	case createStepBasic:
-		return "Paso 1 de 5 - Info basica"
+		return "Paso 1 de 6 - Info basica"
 	case createStepOrientation:
-		return "Paso 2 de 5 - Orientacion"
+		return "Paso 2 de 6 - Orientacion"
 	case createStepArchetype:
-		return "Paso 3 de 5 - Arquetipo"
+		return "Paso 3 de 6 - Arquetipo"
+	case createStepTraits:
+		return "Paso 4 de 6 - Rasgos"
 	case createStepHistory:
-		return "Paso 4 de 5 - Historia"
+		return "Paso 5 de 6 - Historia"
 	case createStepConfirm:
-		return "Paso 5 de 5 - Confirmacion"
+		return "Paso 6 de 6 - Confirmacion"
 	case createStepRevision:
 		return "Revision"
 	default:
@@ -598,6 +636,82 @@ func applyIntensityChoice(poble *entities.Poble, intensityChoice, romanticChoice
 		poble.Orientation.Intensity = 0.03
 		poble.Personality.Horniness = 5
 	}
+}
+
+func applyTraitChoice(poble *entities.Poble, choice string) {
+	if poble == nil {
+		return
+	}
+	switch choice {
+	case "soft":
+		poble.Personality.Agreeableness = clampCreateTrait(poble.Personality.Agreeableness+18, 0, 100)
+		poble.Personality.Loyalty = clampCreateTrait(poble.Personality.Loyalty+16, 0, 100)
+		poble.Personality.Cruelty = clampCreateTrait(poble.Personality.Cruelty-18, 0, 100)
+	case "control":
+		poble.Personality.Ambition = clampCreateTrait(poble.Personality.Ambition+22, 0, 100)
+		poble.Personality.Conscientiousness = clampCreateTrait(poble.Personality.Conscientiousness+14, 0, 100)
+		poble.Needs.Power = clampCreateTrait(poble.Needs.Power+18, 0, 100)
+	case "dark":
+		poble.Personality.Cruelty = clampCreateTrait(poble.Personality.Cruelty+20, 0, 100)
+		poble.Personality.Agreeableness = clampCreateTrait(poble.Personality.Agreeableness-16, 0, 100)
+		poble.Personality.Jealousy = clampCreateTrait(poble.Personality.Jealousy+12, 0, 100)
+	case "chaos":
+		poble.Personality.Conscientiousness = clampCreateTrait(poble.Personality.Conscientiousness-20, 0, 100)
+		poble.Personality.Extraversion = clampCreateTrait(poble.Personality.Extraversion+14, 0, 100)
+		poble.Personality.Neuroticism = clampCreateTrait(poble.Personality.Neuroticism+10, 0, 100)
+	case "curious":
+		poble.Personality.Openness = clampCreateTrait(poble.Personality.Openness+22, 0, 100)
+		poble.Personality.Conscientiousness = clampCreateTrait(poble.Personality.Conscientiousness+8, 0, 100)
+		poble.Orientation.Fluidity = clampCreateUnit(poble.Orientation.Fluidity+0.12, 0, 1)
+	}
+}
+
+func traitChoiceLabel(choice string) string {
+	switch choice {
+	case "soft":
+		return "tierno/cooperativo"
+	case "control":
+		return "dominante/politico"
+	case "dark":
+		return "oscuro/peligroso"
+	case "chaos":
+		return "caotico/impulsivo"
+	case "curious":
+		return "curioso/sabio"
+	default:
+		return "procedural"
+	}
+}
+
+func traitChoiceDescription(choice string) string {
+	switch choice {
+	case "soft":
+		return "Sube cooperacion y lealtad, baja crueldad. Bueno para fundadores que intentan cuidar sin romper todo de entrada."
+	case "control":
+		return "Sube ambicion, disciplina y necesidad de poder. Sirve para lideres, tiranos suaves o futuros politicos."
+	case "dark":
+		return "Sube crueldad y celos, baja amabilidad. No lo vuelve caricatura, pero si deja mas filo para drama."
+	case "chaos":
+		return "Baja disciplina y sube impulso social. Ideal para empezar con alguien que mueve el agua aunque nadie se lo pidio."
+	case "curious":
+		return "Sube apertura y flexibilidad. Ayuda a fundadores exploradores, inventores o gente que cambia con lo vivido."
+	default:
+		return "El generador conserva las correlaciones normales del arquetipo y decide los matices."
+	}
+}
+
+func clampCreateTrait(value float32, low float32, high float32) float32 {
+	if value < low {
+		return low
+	}
+	if value > high {
+		return high
+	}
+	return value
+}
+
+func clampCreateUnit(value float32, low float32, high float32) float32 {
+	return clampCreateTrait(value, low, high)
 }
 
 func seedInitialSecret(poble *entities.Poble, secretSeed string) {

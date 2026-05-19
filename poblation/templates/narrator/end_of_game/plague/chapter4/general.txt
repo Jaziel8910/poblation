@@ -1,0 +1,7 @@
+[TEMPLATE:END_PLAGUE_CH4_001]
+tags: ending, plague, chapter4
+weight: 10
+---
+The last event anyone could still point at was this: {ending_last_event}. After that, even blame got tired.
+---
+

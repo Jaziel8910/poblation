@@ -2,7 +2,7 @@
 
 ![POBLATION](assets/branding/poblation-wordmark.png)
 
-Version `1.0.0.1` - THE LAUNCHER UPDATE.
+Version `v1.0.0-beta.1` - BETA V1.0.0.
 
 Native Go + Fyne launcher for POBLATION. It downloads public GitHub releases, keeps local versions in `~/.poblation/versions`, shows save previews, and can launch offline using the last installed build.
 
@@ -31,5 +31,5 @@ make launcher-release
 The Windows installer is written to:
 
 ```text
-dist/poblation_1.0.0.1_launcher_installer.exe
+dist/poblation_v1.0.0-beta.1_launcher_installer.exe
 ```

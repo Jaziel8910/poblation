@@ -1,0 +1,13 @@
+[TEMPLATE:END_SCANDAL_CH2_001]
+tags: ending, scandal, chapter2
+weight: 10
+---
+{ending_total_secrets} secretos se abrieron como puertas mal cerradas. Nadie pudo fingir inocencia sin pisar la historia de alguien mas.
+---
+
+[TEMPLATE:END_SCANDAL_CH2_002]
+tags: ending, scandal, chapter2
+weight: 8
+---
+Los amantes, testigos y enemigos hicieron algo peor que destruir el mundo: lo volvieron imposible de creer.
+---

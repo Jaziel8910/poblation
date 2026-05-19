@@ -16,6 +16,12 @@ type NewsItem struct {
 func EmbeddedNews() []NewsItem {
 	return []NewsItem{
 		{
+			Version: "v1.0.0-beta.1",
+			Title:   "BETA V1.0.0",
+			Date:    time.Date(2026, 5, 18, 0, 0, 0, 0, time.UTC),
+			Summary: "Beta jugable: memoria social visible, settlement profundo, finales ampliados, 1814 templates curados y launcher actualizado.",
+		},
+		{
 			Version: "v1.0.0.1",
 			Title:   "THE LAUNCHER UPDATE",
 			Date:    time.Date(2026, 5, 16, 0, 0, 0, 0, time.UTC),

@@ -1,0 +1,13 @@
+[TEMPLATE:END_QUARANTINE_CH1_001]
+tags: ending, quarantine, chapter1
+weight: 10
+---
+{ending_title}: el dia {ending_day}, {ending_settlement} dejo de hablar de amor, poder o futuro. Empezo a contar respiraciones.
+---
+
+[TEMPLATE:END_QUARANTINE_CH1_002]
+tags: ending, quarantine, chapter1
+weight: 8
+---
+La enfermedad no llego como guerra. Llego como costumbre: una tos, una marca, una cama cerrada, una puerta que nadie queria tocar.
+---

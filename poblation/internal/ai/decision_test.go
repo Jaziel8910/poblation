@@ -140,6 +140,87 @@ func TestEmotionalGuiltWithBurningSecretConfesses(t *testing.T) {
 	}
 }
 
+func TestRelationshipMemoryCreatesPastDrivenAction(t *testing.T) {
+	poble := newDecisionTestPoble("self", entities.ArchetypeCustom)
+	target := newDecisionTestPoble("target", entities.ArchetypeCustom)
+	relationship := entities.NewRelationship(target.ID, entities.RelationshipBetrayer)
+	relationship.Resentment = 82
+	relationship.Familiarity = 80
+	poble.Relationships[target.ID] = relationship
+	memory := entities.NewMemory("betrayal_1", entities.NewGameTime(4, 8, 0), entities.MemoryBetrayal, "Target left Self alone during the storm")
+	memory.Participants = []string{poble.ID, target.ID}
+	memory.EmotionIntensity = 94
+	memory.Tags = []string{"betrayal", "storm", "unresolved"}
+	poble.Memories = []entities.Memory{memory}
+
+	world := decisionTestWorld{pobles: []*Poble{&poble, &target}}
+	engine := NewDecisionEngine(&poble, world, rand.New(rand.NewSource(8)))
+
+	actions := engine.CheckRelationshipGoals()
+	if !hasMemoryDrivenAction(actions, target.ID) {
+		t.Fatalf("expected a memory-driven action toward target, got %+v", actions)
+	}
+}
+
+func TestOldBetrayalMemoryChangesTargetRanking(t *testing.T) {
+	poble := newDecisionTestPoble("self", entities.ArchetypeCustom)
+	plain := newDecisionTestPoble("plain", entities.ArchetypeCustom)
+	betrayer := newDecisionTestPoble("betrayer", entities.ArchetypeCustom)
+
+	plainRel := entities.NewRelationship(plain.ID, entities.RelationshipAcquaintance)
+	plainRel.Familiarity = 85
+	plainRel.Resentment = 35
+	betrayerRel := entities.NewRelationship(betrayer.ID, entities.RelationshipAcquaintance)
+	betrayerRel.Familiarity = 85
+	betrayerRel.Resentment = 35
+	poble.Relationships[plain.ID] = plainRel
+	poble.Relationships[betrayer.ID] = betrayerRel
+
+	memory := entities.NewMemory("old_betrayal", entities.NewGameTime(1, 9, 0), entities.MemoryBetrayal, "Betrayer sold Self out and nobody repaired it")
+	memory.Participants = []string{poble.ID, betrayer.ID}
+	memory.EmotionIntensity = 90
+	memory.Tags = []string{"betrayal", "unresolved"}
+	poble.Memories = []entities.Memory{memory}
+
+	world := decisionTestWorld{
+		pobles: []*Poble{&poble, &plain, &betrayer},
+		now:    entities.NewGameTime(80, 8, 0),
+	}
+	engine := NewDecisionEngine(&poble, world, rand.New(rand.NewSource(10)))
+
+	targets := engine.EvaluateTarget(ActionArgueWith)
+	if len(targets) == 0 || targets[0] != betrayer.ID {
+		t.Fatalf("expected old betrayal to rank betrayer first for argument, got %+v", targets)
+	}
+}
+
+func TestWarmOldMemoryCanDriveReconciliation(t *testing.T) {
+	poble := newDecisionTestPoble("self", entities.ArchetypeCustom)
+	target := newDecisionTestPoble("target", entities.ArchetypeCustom)
+	relationship := entities.NewRelationship(target.ID, entities.RelationshipFriend)
+	relationship.Affection = 68
+	relationship.Trust = 62
+	relationship.Resentment = 44
+	relationship.Familiarity = 90
+	poble.Relationships[target.ID] = relationship
+
+	memory := entities.NewMemory("old_good", entities.NewGameTime(2, 7, 0), entities.MemoryPositive, "Target stayed when Self expected everyone to leave")
+	memory.Participants = []string{poble.ID, target.ID}
+	memory.EmotionIntensity = 86
+	poble.Memories = []entities.Memory{memory}
+
+	world := decisionTestWorld{pobles: []*Poble{&poble, &target}, now: entities.NewGameTime(40, 12, 0)}
+	engine := NewDecisionEngine(&poble, world, rand.New(rand.NewSource(11)))
+
+	actions := engine.CheckRelationshipGoals()
+	for _, action := range actions {
+		if action.TargetID == target.ID && action.Type == ActionTalkTo && hasActionTag(action, "reconciliation") {
+			return
+		}
+	}
+	t.Fatalf("expected warm memory to create reconciliation talk, got %+v", actions)
+}
+
 func TestShouldInterruptCurrentActionTreatsSleepAsSticky(t *testing.T) {
 	poble := newDecisionTestPoble("self", entities.ArchetypeGhost)
 	engine := NewDecisionEngine(&poble, nil, rand.New(rand.NewSource(5)))
@@ -151,6 +232,29 @@ func TestShouldInterruptCurrentActionTreatsSleepAsSticky(t *testing.T) {
 	if !engine.ShouldInterruptCurrentAction(Action{Type: ActionDrink, Priority: 100, Tags: []string{"survival"}}) {
 		t.Fatal("expected survival emergency to interrupt sleep")
 	}
+}
+
+func hasMemoryDrivenAction(actions []Action, targetID string) bool {
+	for _, action := range actions {
+		if action.TargetID != targetID {
+			continue
+		}
+		for _, tag := range action.Tags {
+			if tag == "memory" {
+				return true
+			}
+		}
+	}
+	return false
+}
+
+func hasActionTag(action Action, target string) bool {
+	for _, tag := range action.Tags {
+		if tag == target {
+			return true
+		}
+	}
+	return false
 }
 
 func newDecisionTestPoble(id string, archetype entities.ArchetypeID) Poble {

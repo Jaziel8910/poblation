@@ -25,14 +25,27 @@ type World = simworld.World
 type EndingType string
 
 const (
-	END_LOVE    EndingType = "END_LOVE"
-	END_DYNASTY EndingType = "END_DYNASTY"
-	END_WAR     EndingType = "END_WAR"
-	END_UTOPIA  EndingType = "END_UTOPIA"
-	END_CULT    EndingType = "END_CULT"
-	END_ALONE   EndingType = "END_ALONE"
-	END_RESET   EndingType = "END_RESET"
-	END_MYTH    EndingType = "END_MYTH"
+	END_LOVE       EndingType = "END_LOVE"
+	END_DYNASTY    EndingType = "END_DYNASTY"
+	END_WAR        EndingType = "END_WAR"
+	END_UTOPIA     EndingType = "END_UTOPIA"
+	END_CULT       EndingType = "END_CULT"
+	END_ALONE      EndingType = "END_ALONE"
+	END_RESET      EndingType = "END_RESET"
+	END_MYTH       EndingType = "END_MYTH"
+	END_PLAGUE     EndingType = "END_PLAGUE"
+	END_MONOPOLY   EndingType = "END_MONOPOLY"
+	END_QUARANTINE EndingType = "END_QUARANTINE"
+	END_SCANDAL    EndingType = "END_SCANDAL"
+
+	END_FAMILY_EMPIRE        EndingType = "END_FAMILY_EMPIRE"
+	END_ETERNAL_DICTATORSHIP EndingType = "END_ETERNAL_DICTATORSHIP"
+	END_FAILED_REVOLUTION    EndingType = "END_FAILED_REVOLUTION"
+	END_ETERNAL_ARCHIVE      EndingType = "END_ETERNAL_ARCHIVE"
+	END_ECONOMIC_COLLAPSE    EndingType = "END_ECONOMIC_COLLAPSE"
+	END_EXODUS               EndingType = "END_EXODUS"
+	END_TECH_ISOLATION       EndingType = "END_TECH_ISOLATION"
+	END_LAST_CHILD           EndingType = "END_LAST_CHILD"
 )
 
 // EndingChecker owns threshold values for GDD ending conditions.
@@ -44,6 +57,8 @@ type EndingChecker struct {
 	UtopiaPeaceDays        int
 	UtopiaTechLevel        int
 	CultAdherentShare      float32
+	MonopolyWealthShare    float32
+	QuarantineHealthShare  float32
 }
 
 // Ending stores the complete final screen payload.
@@ -105,6 +120,8 @@ func NewEndingChecker() EndingChecker {
 		UtopiaPeaceDays:        50 * 365,
 		UtopiaTechLevel:        3,
 		CultAdherentShare:      0.80,
+		MonopolyWealthShare:    0.72,
+		QuarantineHealthShare:  0.70,
 	}
 }
 
@@ -133,11 +150,23 @@ func (c EndingChecker) DetectEndingType(world *World) (EndingType, bool) {
 		ending EndingType
 		ok     bool
 	}{
+		{END_PLAGUE, c.isPlagueEnding(world)},
+		{END_QUARANTINE, c.isQuarantineEnding(world)},
 		{END_WAR, c.isWarEnding(world)},
 		{END_LOVE, c.isLoveEnding(world)},
+		{END_LAST_CHILD, c.isLastChildEnding(world)},
 		{END_ALONE, c.isAloneEnding(world)},
 		{END_RESET, c.isResetEnding(world)},
+		{END_ECONOMIC_COLLAPSE, c.isEconomicCollapseEnding(world)},
+		{END_EXODUS, c.isExodusEnding(world)},
+		{END_TECH_ISOLATION, c.isTechIsolationEnding(world)},
+		{END_FAILED_REVOLUTION, c.isFailedRevolutionEnding(world)},
+		{END_ETERNAL_DICTATORSHIP, c.isEternalDictatorshipEnding(world)},
+		{END_ETERNAL_ARCHIVE, c.isEternalArchiveEnding(world)},
+		{END_FAMILY_EMPIRE, c.isFamilyEmpireEnding(world)},
 		{END_MYTH, c.isMythEnding(world)},
+		{END_SCANDAL, c.isScandalEnding(world)},
+		{END_MONOPOLY, c.isMonopolyEnding(world)},
 		{END_UTOPIA, c.isUtopiaEnding(world)},
 		{END_CULT, c.isCultEnding(world)},
 		{END_DYNASTY, c.isDynastyEnding(world)},
@@ -187,11 +216,128 @@ func (c EndingChecker) isDynastyEnding(world *World) bool {
 	return familyPowerShare(world, leader) >= c.DynastyLeadershipShare
 }
 
+func (c EndingChecker) isFamilyEmpireEnding(world *World) bool {
+	if world == nil || world.GetPopulation() < 20 {
+		return false
+	}
+	leader := currentLeader(world)
+	if leader == nil {
+		return false
+	}
+	return generationDepth(leader, knownPobleMap(world), map[string]bool{}) >= 4 &&
+		familyPowerShare(world, leader) >= 0.75 &&
+		world.Government != nil &&
+		(world.Government.Type == simworld.GovernmentMonarchy || world.Government.Type == simworld.GovernmentOligarchy || world.Government.Type == simworld.GovernmentDictatorship)
+}
+
 func (c EndingChecker) isWarEnding(world *World) bool {
 	if world.GetPopulation() != 0 {
 		return false
 	}
 	return hasEventMatching(world, "war", "combat", "violence", "fight")
+}
+
+func (c EndingChecker) isPlagueEnding(world *World) bool {
+	if world.GetPopulation() != 0 {
+		return false
+	}
+	return hasEventMatching(world, "plague", "illness", "infection", "sickness")
+}
+
+func (c EndingChecker) isMonopolyEnding(world *World) bool {
+	if world.GetPopulation() < 5 || !economyCanMonopolize(world) {
+		return false
+	}
+	_, share := richestWealthShare(world)
+	return share >= c.MonopolyWealthShare
+}
+
+func (c EndingChecker) isQuarantineEnding(world *World) bool {
+	if world == nil || world.GetPopulation() < 5 {
+		return false
+	}
+	if !hasEventMatching(world, "sti", "illness", "plague", "infection", "sickness") {
+		return false
+	}
+	return healthCrisisShare(world) >= c.QuarantineHealthShare
+}
+
+func (c EndingChecker) isScandalEnding(world *World) bool {
+	if world == nil || world.GetPopulation() < 6 {
+		return false
+	}
+	affairs := countEvents(world, "affair", "encounter", "secret")
+	reveals := countEvents(world, "revelation", "secret", "witness")
+	return affairs >= maxInt(3, world.GetPopulation()/2) &&
+		(reveals >= maxInt(2, world.GetPopulation()/3) || len(world.RumourPool) >= maxInt(3, world.GetPopulation()/2))
+}
+
+func (c EndingChecker) isEternalDictatorshipEnding(world *World) bool {
+	if world == nil || world.Government == nil || world.Government.Leader == nil {
+		return false
+	}
+	if world.Government.Type != simworld.GovernmentDictatorship && world.Government.Type != simworld.GovernmentMonarchy {
+		return false
+	}
+	daysInPower := world.Calendar.Day - world.Government.EstablishedAt.Day
+	return daysInPower >= 365 &&
+		world.Government.Stability >= 70 &&
+		world.Government.Legitimacy <= 55 &&
+		currentLeader(world) != nil
+}
+
+func (c EndingChecker) isFailedRevolutionEnding(world *World) bool {
+	if world == nil || world.Government == nil {
+		return false
+	}
+	authoritarian := world.Government.Type == simworld.GovernmentDictatorship ||
+		world.Government.Type == simworld.GovernmentOligarchy ||
+		world.Government.Type == simworld.GovernmentMonarchy
+	return authoritarian &&
+		hasEventMatching(world, "revolution") &&
+		(world.Government.Stability >= 55 || hasEventMatching(world, "coup"))
+}
+
+func (c EndingChecker) isEternalArchiveEnding(world *World) bool {
+	if world == nil {
+		return false
+	}
+	privatePages := 0
+	for _, poble := range world.GetAllKnownPobles() {
+		if poble == nil {
+			continue
+		}
+		privatePages += len(poble.DiaryEntries) + len(poble.Letters) + len(poble.Memories)
+	}
+	return world.GetPopulation() == 0 &&
+		techUnlocked(world, simworld.TechWriting) &&
+		(len(world.EventHistory) >= 50 || privatePages >= 80)
+}
+
+func (c EndingChecker) isEconomicCollapseEnding(world *World) bool {
+	if world == nil || world.GetPopulation() < 5 || !techUnlocked(world, simworld.TechCurrency) {
+		return false
+	}
+	collapseSignals := countEvents(world, "scarcity", "debt", "theft", "resource", "monopoly")
+	return collapseSignals >= maxInt(5, world.GetPopulation()/2) &&
+		totalLivingWealth(world) <= maxInt(1, world.GetPopulation()/3)
+}
+
+func (c EndingChecker) isExodusEnding(world *World) bool {
+	if world == nil || world.GetPopulation() == 0 || !techUnlocked(world, simworld.TechNavigation) {
+		return false
+	}
+	return countEvents(world, "exodus", "island_travel", "migration", "navigation") >= 3 ||
+		discoveredIslandCount(world) >= 4 && world.GetPopulation() <= maxInt(2, len(world.GetAllKnownPobles())/4)
+}
+
+func (c EndingChecker) isTechIsolationEnding(world *World) bool {
+	if world == nil || world.GetPopulation() == 0 {
+		return false
+	}
+	return (techUnlocked(world, simworld.TechComputers) || techUnlocked(world, simworld.TechAIResearch)) &&
+		countEvents(world, "isolation", "isolate", "communication", "digital") >= maxInt(4, world.GetPopulation()/3) &&
+		averageBelonging(world) >= 72
 }
 
 func (c EndingChecker) isUtopiaEnding(world *World) bool {
@@ -210,6 +356,14 @@ func (c EndingChecker) isCultEnding(world *World) bool {
 
 func (c EndingChecker) isAloneEnding(world *World) bool {
 	return world.GetPopulation() == 1 && !hasReproductionRoute(world)
+}
+
+func (c EndingChecker) isLastChildEnding(world *World) bool {
+	if world == nil || world.GetPopulation() != 1 {
+		return false
+	}
+	living := world.GetAllPobles()
+	return len(living) == 1 && living[0] != nil && living[0].Age < 18 && len(world.GetAllKnownPobles()) > 2
 }
 
 func (c EndingChecker) isResetEnding(world *World) bool {
@@ -434,6 +588,30 @@ func endingTitle(endingType EndingType) string {
 		return "Lo Hicieron de Nuevo"
 	case END_MYTH:
 		return "Los Olvidados"
+	case END_PLAGUE:
+		return "La Fiebre Escribio el Final"
+	case END_MONOPOLY:
+		return "El Ultimo Mercado"
+	case END_QUARANTINE:
+		return "La Isla En Cuarentena"
+	case END_SCANDAL:
+		return "Todos Lo Supieron"
+	case END_FAMILY_EMPIRE:
+		return "El Imperio Familiar"
+	case END_ETERNAL_DICTATORSHIP:
+		return "La Dictadura Eterna"
+	case END_FAILED_REVOLUTION:
+		return "La Revolucion Fallida"
+	case END_ETERNAL_ARCHIVE:
+		return "El Archivo Eterno"
+	case END_ECONOMIC_COLLAPSE:
+		return "La Cuenta Final"
+	case END_EXODUS:
+		return "El Exodo"
+	case END_TECH_ISOLATION:
+		return "La Isla de Pantallas"
+	case END_LAST_CHILD:
+		return "El Ultimo Nino"
 	default:
 		return "Final sin nombre"
 	}
@@ -541,6 +719,67 @@ func technologyLevelFromWorld(world *World) int {
 		return 3
 	}
 	return minInt(2, len(world.TechTree.Unlocked)/3)
+}
+
+func economyCanMonopolize(world *World) bool {
+	if world == nil {
+		return false
+	}
+	return world.Era == entities.EraTwo || world.Era == entities.EraThree || world.Era == entities.EraFour ||
+		techUnlocked(world, simworld.TechCurrency)
+}
+
+func richestWealthShare(world *World) (*entities.Poble, float32) {
+	if world == nil {
+		return nil, 0
+	}
+	total := 0
+	var richest *entities.Poble
+	for _, poble := range world.GetAllPobles() {
+		if poble == nil || poble.Money <= 0 {
+			continue
+		}
+		total += poble.Money
+		if richest == nil || poble.Money > richest.Money {
+			richest = poble
+		}
+	}
+	if richest == nil || total == 0 {
+		return nil, 0
+	}
+	return richest, float32(richest.Money) / float32(total)
+}
+
+func healthCrisisShare(world *World) float32 {
+	if world == nil {
+		return 0
+	}
+	living := world.GetAllPobles()
+	if len(living) == 0 {
+		return 0
+	}
+	affected := 0
+	for _, poble := range living {
+		if poble == nil {
+			continue
+		}
+		if poble.Health.HP <= 35 || len(poble.Health.STIs) > 0 || hasHealthCondition(poble, entities.ConditionSick) {
+			affected++
+		}
+	}
+	return float32(affected) / float32(len(living))
+}
+
+func hasHealthCondition(poble *entities.Poble, target entities.ConditionID) bool {
+	if poble == nil {
+		return false
+	}
+	for _, condition := range poble.Health.Conditions {
+		if condition == target {
+			return true
+		}
+	}
+	return false
 }
 
 func techUnlocked(world *World, techID simworld.TechID) bool {
@@ -805,6 +1044,43 @@ func mostMutatedRumour(world *World) string {
 		}
 	}
 	return bestContent
+}
+
+func totalLivingWealth(world *World) int {
+	total := 0
+	for _, poble := range world.GetAllPobles() {
+		if poble != nil && poble.Money > 0 {
+			total += poble.Money
+		}
+	}
+	return total
+}
+
+func discoveredIslandCount(world *World) int {
+	count := 0
+	if world == nil {
+		return count
+	}
+	for _, island := range world.Islands {
+		if island != nil && island.IsDiscovered {
+			count++
+		}
+	}
+	return count
+}
+
+func averageBelonging(world *World) float32 {
+	living := world.GetAllPobles()
+	if len(living) == 0 {
+		return 0
+	}
+	total := float32(0)
+	for _, poble := range living {
+		if poble != nil {
+			total += poble.Needs.Belonging
+		}
+	}
+	return total / float32(len(living))
 }
 
 func deadPobles(known []*entities.Poble) []*entities.Poble {

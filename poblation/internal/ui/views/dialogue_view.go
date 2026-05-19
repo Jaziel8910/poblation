@@ -521,7 +521,7 @@ func dialoguePlan(category string, relationship entities.Relationship) []string 
 	case "dialogues/argument/escalating":
 		return []string{"dialogues/greeting/post_fight", "dialogues/argument/petty", "dialogues/argument/escalating"}
 	case "dialogues/reconciliation/after_betrayal":
-		return []string{"dialogues/greeting/post_fight", "dialogues/reconciliation/after_betrayal"}
+		return []string{"dialogues/greeting/post_fight", "dialogues/reconciliation/old_wounds/general", "dialogues/reconciliation/after_betrayal"}
 	case "dialogues/confession/love":
 		if relationship.Attraction >= 65 {
 			return []string{"dialogues/flirt/subtle", "dialogues/confession/love"}
@@ -712,7 +712,14 @@ func selectDialogueCategory(participants []*entities.Poble) string {
 	primary := participants[0]
 	target := participants[1]
 	relationship := relationshipBetween(primary, target.ID)
+	memory := strongestDialogueMemory(primary, target.ID)
 	switch {
+	case memorySignalsOpenConflict(memory, relationship):
+		return "dialogues/argument/escalating"
+	case memorySignalsBetrayalRepair(memory, relationship):
+		return "dialogues/reconciliation/after_betrayal"
+	case memorySignalsIntimacy(memory, relationship):
+		return "dialogues/confession/love"
 	case relationship.Resentment >= 80:
 		return "dialogues/argument/escalating"
 	case relationship.Resentment >= 58:
@@ -728,6 +735,47 @@ func selectDialogueCategory(participants []*entities.Poble) string {
 	default:
 		return "dialogues/gossip/general"
 	}
+}
+
+func strongestDialogueMemory(source *entities.Poble, targetID string) *entities.Memory {
+	recent, old := relevantMemories(source, targetID)
+	switch {
+	case recent == nil:
+		return old
+	case old == nil:
+		return recent
+	case old.EmotionIntensity > recent.EmotionIntensity:
+		return old
+	default:
+		return recent
+	}
+}
+
+func memorySignalsOpenConflict(memory *entities.Memory, relationship entities.Relationship) bool {
+	if memory == nil {
+		return false
+	}
+	if memory.Type == entities.MemoryTraumatic || memory.Type == entities.MemoryBetrayal || memory.Type == entities.MemoryViolent {
+		return memory.EmotionIntensity >= 60 || relationship.Resentment >= 45
+	}
+	return memory.Type == entities.MemoryNegative && memory.EmotionIntensity >= 75 && relationship.Resentment >= 45
+}
+
+func memorySignalsBetrayalRepair(memory *entities.Memory, relationship entities.Relationship) bool {
+	if memory == nil {
+		return false
+	}
+	return memory.Type == entities.MemoryBetrayal && relationship.Trust >= 45 && relationship.Resentment < 75
+}
+
+func memorySignalsIntimacy(memory *entities.Memory, relationship entities.Relationship) bool {
+	if memory == nil {
+		return false
+	}
+	if memory.Type != entities.MemoryRomantic && memory.Type != entities.MemoryErotic {
+		return false
+	}
+	return memory.EmotionIntensity >= 55 && relationship.Attraction >= 55 && relationship.Resentment < 55
 }
 
 func buildDialogueOutcome(category string, participants []*entities.Poble) *DialogueOutcome {

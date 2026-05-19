@@ -10,6 +10,7 @@ import (
 	"time"
 	"unicode"
 
+	"github.com/user/poblation/internal/config"
 	"github.com/user/poblation/internal/entities"
 	"github.com/user/poblation/internal/events"
 	"github.com/user/poblation/internal/world"
@@ -34,10 +35,11 @@ type ConsoleHistoryEntry struct {
 
 // ConsoleResult describes what a command changed and what the UI should show.
 type ConsoleResult struct {
-	Feedback   string          `json:"feedback"`
-	ViewHint   ConsoleViewHint `json:"view_hint"`
-	Event      *events.GameEvent `json:"event,omitempty"`
-	ClearFeed  bool            `json:"clear_feed"`
+	Feedback  string            `json:"feedback"`
+	ViewHint  ConsoleViewHint   `json:"view_hint"`
+	ModeHint  config.GameMode   `json:"mode_hint,omitempty"`
+	Event     *events.GameEvent `json:"event,omitempty"`
+	ClearFeed bool              `json:"clear_feed"`
 }
 
 // ConsoleCommand stores metadata and executable behavior for one command.
@@ -50,14 +52,15 @@ type ConsoleCommand struct {
 
 // ConsoleSystem owns command registration, aliases, and execution history.
 type ConsoleSystem struct {
-	world           *world.World
-	timeEngine      *TimeEngine
-	rng             *rand.Rand
-	commands        map[string]ConsoleCommand
-	aliases         map[string]string
-	history         []ConsoleHistoryEntry
-	GodMode         bool
-	NewspaperMode   bool
+	world         *world.World
+	timeEngine    *TimeEngine
+	rng           *rand.Rand
+	commands      map[string]ConsoleCommand
+	aliases       map[string]string
+	history       []ConsoleHistoryEntry
+	GodMode       bool
+	NewspaperMode bool
+	CurrentMode   config.GameMode
 }
 
 // NewConsoleSystem creates the runtime command console.
@@ -67,12 +70,13 @@ func NewConsoleSystem(gameWorld *world.World, timeEngine *TimeEngine, rng *rand.
 	}
 
 	system := &ConsoleSystem{
-		world:      gameWorld,
-		timeEngine: timeEngine,
-		rng:        rng,
-		commands:   map[string]ConsoleCommand{},
-		aliases:    map[string]string{},
-		history:    []ConsoleHistoryEntry{},
+		world:       gameWorld,
+		timeEngine:  timeEngine,
+		rng:         rng,
+		commands:    map[string]ConsoleCommand{},
+		aliases:     map[string]string{},
+		history:     []ConsoleHistoryEntry{},
+		CurrentMode: config.GameModeDirector,
 	}
 	system.registerDefaults()
 	return system
@@ -118,15 +122,23 @@ func (c *ConsoleSystem) History() []ConsoleHistoryEntry {
 func (c *ConsoleSystem) registerDefaults() {
 	c.register(ConsoleCommand{
 		Name:        "god mode",
-		Description: "Activa o desactiva el modo Director.",
+		Description: "Alterna entre modo dios y director.",
 		Aliases:     []string{"god", "director", "modo dios"},
 		Handler: func(args []string) (ConsoleResult, error) {
 			c.GodMode = !c.GodMode
 			if c.GodMode {
-				return ConsoleResult{Feedback: "Modo Director activado. Ahora mandas demasiado."}, nil
+				c.CurrentMode = config.GameModeGod
+				return ConsoleResult{Feedback: "Modo dios activo. Debug y poderes abiertos.", ModeHint: config.GameModeGod}, nil
 			}
-			return ConsoleResult{Feedback: "Modo Director desactivado. La isla vuelve a respirar sola."}, nil
+			c.CurrentMode = config.GameModeDirector
+			return ConsoleResult{Feedback: "Modo director activo. Control creativo sin debug total.", ModeHint: config.GameModeDirector}, nil
 		},
+	})
+	c.register(ConsoleCommand{
+		Name:        "mode",
+		Description: "Cambia modo. Uso: mode {observer|director|god|journalist|known}.",
+		Aliases:     []string{"modo"},
+		Handler:     c.handleMode,
 	})
 	c.register(ConsoleCommand{
 		Name:        "kill",
@@ -438,10 +450,29 @@ func (c *ConsoleSystem) handleNewspaper(args []string) (ConsoleResult, error) {
 		return ConsoleResult{}, fmt.Errorf("No hay mundo cargado.")
 	}
 	c.NewspaperMode = true
+	c.CurrentMode = config.GameModeJournalist
 	return ConsoleResult{
 		Feedback: fmt.Sprintf("Modo periodista activo. Titular: Día %d, era %s, población %d.", c.world.Calendar.Day, c.world.Era, c.world.GetPopulation()),
 		ViewHint: ConsoleViewNewspaper,
+		ModeHint: config.GameModeJournalist,
 	}, nil
+}
+
+func (c *ConsoleSystem) handleMode(args []string) (ConsoleResult, error) {
+	if len(args) != 1 {
+		return ConsoleResult{}, fmt.Errorf("Uso: mode {observer|director|god|journalist|known}")
+	}
+	mode, ok := config.ParseGameMode(normalizeConsoleToken(args[0]))
+	if !ok {
+		return ConsoleResult{}, fmt.Errorf("Modo invalido. Usa observer, director, god, journalist o known.")
+	}
+	c.CurrentMode = mode
+	c.GodMode = mode == config.GameModeGod
+	if mode == config.GameModeJournalist {
+		c.NewspaperMode = true
+		return ConsoleResult{Feedback: modeFeedback(mode), ViewHint: ConsoleViewNewspaper, ModeHint: mode}, nil
+	}
+	return ConsoleResult{Feedback: modeFeedback(mode), ModeHint: mode}, nil
 }
 
 func (c *ConsoleSystem) handleConfession(args []string) (ConsoleResult, error) {
@@ -501,11 +532,11 @@ func (c *ConsoleSystem) handleWar(args []string) (ConsoleResult, error) {
 	}
 
 	event := events.GameEvent{
-		ID:           consoleID("war", c.now().ToMinutes()),
-		Type:         events.EventWarDeclaration,
-		Timestamp:    c.now(),
-		IsPublic:     true,
-		Description:  fmt.Sprintf("Estalló conflicto abierto entre %s y %s.", left, right),
+		ID:          consoleID("war", c.now().ToMinutes()),
+		Type:        events.EventWarDeclaration,
+		Timestamp:   c.now(),
+		IsPublic:    true,
+		Description: fmt.Sprintf("Estalló conflicto abierto entre %s y %s.", left, right),
 	}
 	c.appendEvent(event)
 	return ConsoleResult{
@@ -583,8 +614,8 @@ func (c *ConsoleSystem) handleReset(args []string) (ConsoleResult, error) {
 	}
 	c.appendEvent(event)
 	return ConsoleResult{
-		Feedback: fmt.Sprintf("Reset brutal hecho. Muertes: %d. Sobreviven %s y %s.", dead, survivors[0].Name, survivors[1].Name),
-		Event:    &event,
+		Feedback:  fmt.Sprintf("Reset brutal hecho. Muertes: %d. Sobreviven %s y %s.", dead, survivors[0].Name, survivors[1].Name),
+		Event:     &event,
 		ClearFeed: false,
 	}, nil
 }
@@ -1090,8 +1121,8 @@ func fertilityChance(mother, father *entities.Poble) float32 {
 	if father.Age > 50 {
 		chance *= 0.8
 	}
-	chance *= 1 - ((100-float32(mother.Mental.Stability))*0.003)
-	chance *= 1 - ((100-float32(father.Mental.Stability))*0.002)
+	chance *= 1 - ((100 - float32(mother.Mental.Stability)) * 0.003)
+	chance *= 1 - ((100 - float32(father.Mental.Stability)) * 0.002)
 	return clampFloat(chance, 0, 1)
 }
 
@@ -1203,6 +1234,23 @@ func buildThought(poble *entities.Poble) string {
 			return poble.Memories[len(poble.Memories)-1].Summary
 		}
 		return "Estoy aquí. Eso ya significa algo."
+	}
+}
+
+func modeFeedback(mode config.GameMode) string {
+	switch mode {
+	case config.GameModeObserver:
+		return "Modo observer activo. Puedes mirar el mundo sin tocar el tablero."
+	case config.GameModeDirector:
+		return "Modo director activo. Puedes guiar drama y ritmo sin debug total."
+	case config.GameModeGod:
+		return "Modo dios activo. Debug y poderes abiertos."
+	case config.GameModeJournalist:
+		return "Modo periodista activo. Solo texto, mundo y hechos verificables."
+	case config.GameModeKnown:
+		return "Modo conocidos activo. Entras por pobles, casas, mente y vinculos."
+	default:
+		return "Modo actualizado."
 	}
 }
 

@@ -464,6 +464,64 @@ func (m Memory) IsValid() bool {
 	return m.ID != "" && m.Timestamp.IsValid() && m.Type.IsValid() && isPercent(m.EmotionIntensity)
 }
 
+// Thought stores one private inner line generated from personality, needs, and memory.
+type Thought struct {
+	// ID stores unique thought identifier.
+	ID string `json:"id"`
+	// Timestamp stores when the thought happened.
+	Timestamp GameTime `json:"timestamp"`
+	// Text stores the rendered thought.
+	Text string `json:"text"`
+	// Tags stores searchable thought labels.
+	Tags []string `json:"tags"`
+}
+
+// Dream stores one remembered dream after sleeping.
+type Dream struct {
+	// ID stores unique dream identifier.
+	ID string `json:"id"`
+	// Timestamp stores when the dream happened.
+	Timestamp GameTime `json:"timestamp"`
+	// Text stores the rendered dream.
+	Text string `json:"text"`
+	// Category stores the dream family used by templates.
+	Category string `json:"category"`
+	// IsPrivate marks dreams hidden from public views.
+	IsPrivate bool `json:"is_private"`
+	// Tags stores searchable dream labels.
+	Tags []string `json:"tags"`
+}
+
+// DiaryEntry stores one private diary page owned by a Poble.
+type DiaryEntry struct {
+	// ID stores unique diary identifier.
+	ID string `json:"id"`
+	// Timestamp stores when the diary was written.
+	Timestamp GameTime `json:"timestamp"`
+	// Text stores the rendered diary entry.
+	Text string `json:"text"`
+	// Mood stores the mood at writing time.
+	Mood MoodType `json:"mood"`
+	// Tags stores searchable diary labels.
+	Tags []string `json:"tags"`
+}
+
+// Letter stores one private or sent letter between Pobles.
+type Letter struct {
+	// ID stores unique letter identifier.
+	ID string `json:"id"`
+	// Timestamp stores when the letter was written.
+	Timestamp GameTime `json:"timestamp"`
+	// ToID stores the intended recipient Poble ID.
+	ToID string `json:"to_id"`
+	// Text stores the rendered letter.
+	Text string `json:"text"`
+	// IsSent marks whether the letter left the writer's possession.
+	IsSent bool `json:"is_sent"`
+	// Tags stores searchable letter labels.
+	Tags []string `json:"tags"`
+}
+
 // SecretType identifies a hidden information category.
 type SecretType string
 
@@ -1280,6 +1338,14 @@ type Poble struct {
 	Secrets []Secret `json:"secrets"`
 	// Memories stores remembered events.
 	Memories []Memory `json:"memories"`
+	// Thoughts stores recent private inner monologue lines.
+	Thoughts []Thought `json:"thoughts"`
+	// Dreams stores recent remembered dreams.
+	Dreams []Dream `json:"dreams"`
+	// DiaryEntries stores private diary pages written by this Poble.
+	DiaryEntries []DiaryEntry `json:"diary_entries"`
+	// Letters stores private or sent letters written by this Poble.
+	Letters []Letter `json:"letters"`
 	// Relationships stores directed relationships by target Poble ID.
 	Relationships map[string]Relationship `json:"relationships"`
 	// Health stores physical health data.
@@ -1338,6 +1404,10 @@ func NewPoble(id, name string, age int, sex Sex) Poble {
 		Appearance:     "",
 		Secrets:        []Secret{},
 		Memories:       []Memory{},
+		Thoughts:       []Thought{},
+		Dreams:         []Dream{},
+		DiaryEntries:   []DiaryEntry{},
+		Letters:        []Letter{},
 		Relationships:  map[string]Relationship{},
 		Health:         NewHealthState(age),
 		Mental:         NewMentalState(),

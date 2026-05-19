@@ -1,0 +1,7 @@
+[TEMPLATE:END_MONOPOLY_CH3_001]
+tags: ending, monopoly, chapter3
+weight: 10
+---
+The era was {ending_era}, the tech level was {ending_tech}, and the old dream of everyone sharing equally had become rude folklore.
+---
+

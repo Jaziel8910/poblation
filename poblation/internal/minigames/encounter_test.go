@@ -106,3 +106,67 @@ func TestDetermineEncounterTypeReadsContext(t *testing.T) {
 		t.Fatalf("expected angry encounter from hostile context, got %s", got)
 	}
 }
+
+func TestApplyEncounterAftermathRecordsHealthPregnancyAndSTIEvents(t *testing.T) {
+	home := t.TempDir()
+	t.Setenv("HOME", home)
+	t.Setenv("USERPROFILE", home)
+
+	gameWorld := world.NewWorld(88)
+	first := entities.NewPoble("a", "Ada", 26, entities.Female)
+	second := entities.NewPoble("b", "Bruno", 27, entities.Male)
+	first.Health.Fertility = 1
+	second.Health.Fertility = 1
+	second.Health.STIs = []entities.STIType{entities.STISyphilis}
+	first.Health.HP = 12
+	second.Health.HP = 80
+	gameWorld.AddPoble(&first, world.Location{IslandID: "island_0"})
+	gameWorld.AddPoble(&second, world.Location{IslandID: "island_0"})
+
+	ctx := EncounterContext{
+		A:            gameWorld.GetPoble("a"),
+		B:            gameWorld.GetPoble("b"),
+		StartedAt:    entities.NewGameTime(7, 23, 0),
+		Relationship: entities.NewRelationship("b", entities.RelationshipLover),
+	}
+	ctx.Power = derivePowerDynamic(ctx.A, ctx.B, ctx.Relationship)
+	aftermath := GenerateAftermath(ctx, ResolvePreferenceMatch(ctx.A, ctx.B))
+	aftermath.PregnancyTriggered = true
+	aftermath.STITransmitted = entities.STISyphilis
+	aftermath.HealthFallout.HPDelta = [2]int{-9, -2}
+	aftermath.HealthFallout.Conditions[0] = []entities.ConditionID{entities.ConditionExhausted}
+
+	ApplyEncounterAftermath(aftermath, gameWorld)
+
+	ada := gameWorld.GetPoble("a")
+	if ada == nil {
+		t.Fatal("expected Ada to survive this fallout")
+	}
+	if !hasEncounterCondition(ada, entities.ConditionPregnant) {
+		t.Fatal("expected pregnancy condition from encounter")
+	}
+	if !hasEncounterSTI(ada, entities.STISyphilis) {
+		t.Fatal("expected STI transmission from encounter")
+	}
+	if len(gameWorld.EventHistory) < 3 {
+		t.Fatalf("expected encounter events in history, got %d", len(gameWorld.EventHistory))
+	}
+}
+
+func hasEncounterCondition(poble *entities.Poble, condition entities.ConditionID) bool {
+	for _, current := range poble.Health.Conditions {
+		if current == condition {
+			return true
+		}
+	}
+	return false
+}
+
+func hasEncounterSTI(poble *entities.Poble, sti entities.STIType) bool {
+	for _, current := range poble.Health.STIs {
+		if current == sti {
+			return true
+		}
+	}
+	return false
+}

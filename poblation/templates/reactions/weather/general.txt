@@ -1,0 +1,139 @@
+[TEMPLATE:REACT_WEATHER_001]
+tags: reaction, weather, storm
+weight: 10
+---
+El cielo hizo ruido y la aldea recordo que todavia vive prestada.
+---
+
+[TEMPLATE:REACT_WEATHER_002]
+tags: reaction, weather, drought
+weight: 8
+---
+La tierra seca no discute. Solo espera a que todos entiendan tarde.
+---
+
+[TEMPLATE:REACT_WEATHER_003]
+tags: reaction, weather, flood
+weight: 8
+---
+El agua entro como si hubiera pagado renta antes que ellos.
+---
+
+[TEMPLATE:REACT_WEATHER_004]
+tags: reaction, weather, cold
+weight: 7
+---
+El frio vuelve sinceras las prioridades. Primero fuego. Luego orgullo.
+---
+
+[TEMPLATE:REACT_WEATHER_005]
+tags: reaction, weather, heat
+weight: 7
+---
+Con calor, nadie pelea mejor. Solo sudan las malas decisiones.
+---
+
+[TEMPLATE:REACT_WEATHER_006]
+tags: reaction, weather, memory
+weight: 8
+---
+Cada tormenta nueva conversa con la primera que nadie supo nombrar.
+---
+
+[TEMPLATE:REACT_WEATHER_007]
+tags: reaction, weather, economy
+weight: 7
+---
+El clima toco los recursos y todos fingieron no calcular culpables.
+---
+
+[TEMPLATE:REACT_WEATHER_008]
+tags: reaction, weather, unresolved
+weight: 10
+---
+Cuando paro la lluvia, quedo lo peor: ver que cosas no resistieron.
+---
+
+[TEMPLATE:REACT_WEATHER_009]
+tags: reaction, weather, harvest
+weight: 8
+---
+El clima no tiene enemigos, pero hoy dejo claro a quienes iba a cobrar primero.
+---
+
+[TEMPLATE:REACT_WEATHER_010]
+tags: reaction, weather, shelter
+weight: 7
+---
+Las casas buenas parecieron virtud. Las malas, sentencia.
+---
+
+[TEMPLATE:REACT_WEATHER_011]
+tags: reaction, weather, politics
+weight: 7
+---
+Despues del temporal, todos preguntaron por ayuda y algunos preguntaron por votos.
+---
+
+[TEMPLATE:REACT_WEATHER_012]
+tags: reaction, weather, family
+weight: 8
+---
+La lluvia junto familias que se evitaban y separo vecinos que juraban ser fuertes.
+---
+
+[TEMPLATE:REACT_WEATHER_013]
+tags: reaction, weather, illness
+weight: 7
+---
+El frio encontro cuerpos cansados y les propuso quedarse mas tiempo.
+---
+
+[TEMPLATE:REACT_WEATHER_014]
+tags: reaction, weather, memory
+weight: 8
+---
+Los viejos midieron el viento como quien reconoce una deuda antigua.
+---
+
+[TEMPLATE:REACT_WEATHER_015]
+tags: reaction, weather, scarcity
+weight: 8
+---
+La sequia no grita. Por eso asusta mas cuando al fin todos la escuchan.
+---
+
+[TEMPLATE:REACT_WEATHER_016]
+tags: reaction, weather, work
+weight: 7
+---
+Un techo roto convierte cualquier plan grande en una lista de clavos.
+---
+
+[TEMPLATE:REACT_WEATHER_017]
+tags: reaction, weather, rumor
+weight: 7
+---
+La tormenta todavia no terminaba y ya habia quien juraba haberla visto venir por castigo.
+---
+
+[TEMPLATE:REACT_WEATHER_018]
+tags: reaction, weather, grief
+weight: 8
+---
+No todas las perdidas tienen nombre. Algunas son semillas, herramientas y camas mojadas.
+---
+
+[TEMPLATE:REACT_WEATHER_019]
+tags: reaction, weather, trade
+weight: 7
+---
+El camino cortado hizo que cada saco de comida pareciera noticia politica.
+---
+
+[TEMPLATE:REACT_WEATHER_020]
+tags: reaction, weather, recovery
+weight: 10
+---
+Cuando salio el sol, nadie celebro fuerte. Primero contaron lo que seguia en pie.
+---

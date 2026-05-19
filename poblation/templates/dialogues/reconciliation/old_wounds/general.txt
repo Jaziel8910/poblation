@@ -1,0 +1,70 @@
+[TEMPLATE:RECON_DIALOGUE_OLD_001]
+tags: dialogue, reconciliation, old_wound
+weight: 10
+---
+No vine a decir que ya no importa. Vine porque importa demasiado y estoy cansado.
+---
+
+[TEMPLATE:RECON_DIALOGUE_OLD_002]
+tags: dialogue, reconciliation, memory
+weight: 9
+---
+Cada vez que intento hablarte normal, {memory_old} se sienta en mi lengua.
+---
+
+[TEMPLATE:RECON_DIALOGUE_OLD_003]
+tags: dialogue, reconciliation, resentment
+weight: 8
+---
+Puedo bajar la voz. No puedo bajar lo que hiciste.
+---
+
+[TEMPLATE:RECON_DIALOGUE_OLD_004]
+tags: dialogue, reconciliation, trust
+weight: 10
+---
+Quiero creerte otra vez. Esa es la parte que me da rabia.
+---
+
+[TEMPLATE:RECON_DIALOGUE_OLD_005]
+tags: dialogue, reconciliation, unresolved
+weight: 7
+---
+No te estoy absolviendo. Estoy intentando no pudrirme contigo en la misma habitacion.
+---
+
+[TEMPLATE:RECON_DIALOGUE_OLD_006]
+tags: dialogue, reconciliation, apology
+weight: 9
+---
+Si vas a pedir perdon, no lo hagas bonito. Hazlo exacto.
+---
+
+[TEMPLATE:RECON_DIALOGUE_OLD_007]
+tags: dialogue, reconciliation, fragile
+weight: 8
+---
+Podemos intentarlo. Pero si finges que no paso nada, me levanto y se acabo.
+---
+
+[TEMPLATE:RECON_DIALOGUE_OLD_008]
+tags: dialogue, reconciliation, mixed_valence
+weight: 8
+---
+Te extrane. Tambien te odie un poco. No me pidas ordenar eso ahora.
+---
+
+[TEMPLATE:RECON_DIALOGUE_OLD_009]
+tags: dialogue, reconciliation, boundary
+weight: 7
+---
+Hablemos, si. Pero esta vez no voy a limpiar el desastre yo solo.
+---
+
+[TEMPLATE:RECON_DIALOGUE_OLD_010]
+tags: dialogue, reconciliation, old_warmth
+weight: 10
+---
+Todavia recuerdo cuando eras mi lugar seguro. No se si eso ayuda o empeora todo.
+---
+

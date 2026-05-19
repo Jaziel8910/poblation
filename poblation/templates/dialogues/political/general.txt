@@ -1,0 +1,139 @@
+[TEMPLATE:POLITICAL_001]
+tags: political, power, ruler
+weight: 10
+---
+{self_name}: Si nadie decide, decide el hambre. Prefiero que me odien con una regla clara.
+---
+
+[TEMPLATE:POLITICAL_002]
+tags: political, law, conflict
+weight: 9
+---
+{self_name}: La costumbre sirve hasta que alguien fuerte descubre que puede romperla.
+---
+
+[TEMPLATE:POLITICAL_003]
+tags: political, target, distrust
+weight: 8
+---
+{self_name}: {target_name}, no confundas silencio con permiso. Aqui ya todos estamos contando votos aunque no les llamemos asi.
+---
+
+[TEMPLATE:POLITICAL_004]
+tags: political, settlement
+weight: 8
+---
+{self_name}: {settlement_name} no es una familia. Una familia perdona demasiado. Esto necesita consecuencias.
+---
+
+[TEMPLATE:POLITICAL_005]
+tags: political, schemer
+weight: 7
+---
+{self_name}: No quiero mandar. Quiero que cuando pase algo malo, nadie pueda fingir que no habia estructura.
+---
+
+[TEMPLATE:POLITICAL_006]
+tags: political, rebellion
+weight: 8
+---
+{self_name}: La primera ley siempre suena razonable. La segunda ya trae dientes.
+---
+
+[TEMPLATE:POLITICAL_007]
+tags: political, memory
+weight: 8
+---
+{self_name}: Despues de {memory_recent}, seguir sin reglas es otra forma de repetirlo.
+---
+
+[TEMPLATE:POLITICAL_008]
+tags: political, economy
+weight: 7
+---
+{self_name}: El que controla la comida no necesita corona. Solo necesita que todos tengan hambre al mismo tiempo.
+---
+
+[TEMPLATE:POLITICAL_009]
+tags: political, public
+weight: 9
+---
+{self_name}: No me pidan justicia solo cuando les toca perder.
+---
+
+[TEMPLATE:POLITICAL_010]
+tags: political, unresolved
+weight: 10
+---
+{self_name}: Si quieren llamarlo consejo, llamenlo consejo. Igual alguien va a salir de aqui con menos poder.
+---
+
+[TEMPLATE:POLITICAL_011]
+tags: political, institution, archive
+weight: 8
+---
+{self_name}: Sin archivo, cada abuso nace nuevo. Con archivo, al menos tiene apellido.
+---
+
+[TEMPLATE:POLITICAL_012]
+tags: political, tax, scarcity
+weight: 7
+---
+{self_name}: El impuesto no molesta por quitar. Molesta porque obliga a preguntar quien decide que falta mas.
+---
+
+[TEMPLATE:POLITICAL_013]
+tags: political, succession, family
+weight: 8
+---
+{self_name}: Heredar poder no es lo mismo que merecerlo. Pero la sangre siempre llega temprano a la fila.
+---
+
+[TEMPLATE:POLITICAL_014]
+tags: political, corruption
+weight: 7
+---
+{self_name}: La corrupcion empieza pequena, casi domestica. Un favor, una llave, una puerta que solo se abre para amigos.
+---
+
+[TEMPLATE:POLITICAL_015]
+tags: political, exile, conflict
+weight: 8
+---
+{self_name}: Exiliar a alguien parece facil hasta que su ausencia aprende a hablar por toda la plaza.
+---
+
+[TEMPLATE:POLITICAL_016]
+tags: political, reform, clinic
+weight: 7
+---
+{self_name}: Si vamos a llamar civilizacion a esto, que la clinica tenga prioridad antes que la estatua.
+---
+
+[TEMPLATE:POLITICAL_017]
+tags: political, propaganda
+weight: 7
+---
+{self_name}: Cuando una noticia repite demasiado que todo esta bien, revisen primero la despensa.
+---
+
+[TEMPLATE:POLITICAL_018]
+tags: political, debt
+weight: 8
+---
+{self_name}: La deuda es una cadena educada. No hace ruido hasta que alguien intenta correr.
+---
+
+[TEMPLATE:POLITICAL_019]
+tags: political, trial
+weight: 8
+---
+{self_name}: Un tribunal sin memoria es teatro. Un tribunal con memoria puede volverse venganza si nadie lo vigila.
+---
+
+[TEMPLATE:POLITICAL_020]
+tags: political, child, future
+weight: 9
+---
+{self_name}: La politica real es decidir que problema no van a heredar los ninos.
+---

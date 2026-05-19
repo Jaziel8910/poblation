@@ -1,0 +1,7 @@
+[TEMPLATE:END_PLAGUE_CH1_001]
+tags: ending, plague, chapter1
+weight: 10
+---
+{ending_settlement} did not fall in one heroic instant. It thinned. One bed, one cup, one name avoided at a time.
+---
+

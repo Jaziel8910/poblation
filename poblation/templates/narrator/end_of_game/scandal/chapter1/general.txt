@@ -1,0 +1,13 @@
+[TEMPLATE:END_SCANDAL_CH1_001]
+tags: ending, scandal, chapter1
+weight: 10
+---
+{ending_title}: primero fue un secreto. Luego otro. Luego tantos que el silencio perdio autoridad.
+---
+
+[TEMPLATE:END_SCANDAL_CH1_002]
+tags: ending, scandal, chapter1
+weight: 8
+---
+En {ending_settlement}, la intimidad dejo de ser privada cuando los rumores aprendieron a caminar mas rapido que la culpa.
+---

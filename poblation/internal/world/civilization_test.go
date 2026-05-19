@@ -69,6 +69,126 @@ func TestEmergentLawsReactToMurderHistory(t *testing.T) {
 	}
 }
 
+func TestMaintainGovernmentStoresLegitimacyAndStability(t *testing.T) {
+	world := NewWorld(130)
+	addTestPobles(world, 21, entities.ArchetypeCaretaker)
+
+	event := MaintainGovernment(world)
+	if event == nil {
+		t.Fatal("expected government formation event")
+	}
+	if world.Government == nil {
+		t.Fatal("expected government")
+	}
+	if world.Government.Legitimacy <= 0 || world.Government.Stability <= 0 {
+		t.Fatalf("expected visible government metrics, got legitimacy=%d stability=%d", world.Government.Legitimacy, world.Government.Stability)
+	}
+	if world.Government.LastElection.ToMinutes() != world.Calendar.ToMinutes() {
+		t.Fatalf("expected first election clock to start at formation, got %+v", world.Government.LastElection)
+	}
+}
+
+func TestRunElectionCanReplaceWeakLeader(t *testing.T) {
+	world := NewWorld(131)
+	addTestPobles(world, 21, entities.ArchetypeCaretaker)
+	pobles := world.GetAllPobles()
+	weak := pobles[0]
+	strong := pobles[1]
+	weak.Personality.Ambition = 1
+	weak.Personality.Loyalty = 1
+	weak.Personality.Conscientiousness = 1
+	weak.Personality.Agreeableness = 1
+	strong.Personality.Ambition = 100
+	strong.Personality.Loyalty = 100
+	strong.Personality.Conscientiousness = 100
+	strong.Personality.Agreeableness = 100
+	oldLeader := weak.ID
+	world.Government = &GovernmentSystem{
+		Type:         GovernmentDemocracy,
+		Leader:       &oldLeader,
+		Laws:         emergentLaws(world),
+		Legitimacy:   45,
+		Stability:    55,
+		LastElection: entities.NewGameTime(0, 0, 0),
+	}
+	world.Calendar = entities.NewGameTime(31, 0, 0)
+
+	event := runElection(world)
+	if event == nil {
+		t.Fatal("expected election event")
+	}
+	if world.Government.Leader == nil || *world.Government.Leader != strong.ID {
+		t.Fatalf("expected strongest candidate to win, got %v", world.Government.Leader)
+	}
+	if !hasAnyTag(event.Tags, "election") {
+		t.Fatalf("expected election tag, got %+v", event.Tags)
+	}
+}
+
+func TestRunGovernmentCrisisChangesBrokenGovernment(t *testing.T) {
+	world := NewWorld(132)
+	addTestPobles(world, 21, entities.ArchetypeWarrior)
+	leader := world.GetAllPobles()[0].ID
+	world.Government = &GovernmentSystem{
+		Type:       GovernmentTribal,
+		Leader:     &leader,
+		Laws:       emergentLaws(world),
+		Legitimacy: 10,
+		Stability:  12,
+		LastCrisis: entities.NewGameTime(0, 0, 0),
+	}
+	world.Calendar = entities.NewGameTime(20, 0, 0)
+	world.EventHistory = append(world.EventHistory, GameEvent{
+		ID:           "fight",
+		Type:         ai.GameEventConflict,
+		Time:         entities.NewGameTime(19, 0, 0),
+		PrimaryActor: leader,
+		Tags:         []string{"violence"},
+		Description:  "the settlement was cracking in public",
+	})
+
+	event := runGovernmentCrisis(world)
+	if event == nil {
+		t.Fatal("expected crisis event")
+	}
+	if !hasAnyTag(event.Tags, "coup", "revolution") {
+		t.Fatalf("expected coup or revolution tag, got %+v", event.Tags)
+	}
+	if world.Government.Type == GovernmentTribal {
+		t.Fatal("expected government type to change after crisis")
+	}
+}
+
+func TestRunLawEnforcementTurnsLawsIntoEvents(t *testing.T) {
+	world := NewWorld(133)
+	addTestPobles(world, 21, entities.ArchetypeCaretaker)
+	leader := world.GetAllPobles()[0].ID
+	world.Government = &GovernmentSystem{
+		Type:       GovernmentDemocracy,
+		Leader:     &leader,
+		Laws:       []Law{{ID: "law_property", Description: "property is protected", Penalty: "restitution", IsEnforced: true}},
+		Legitimacy: 50,
+		Stability:  50,
+	}
+	world.Calendar = entities.NewGameTime(7, 0, 0)
+	world.EventHistory = append(world.EventHistory, GameEvent{
+		ID:           "theft",
+		Type:         ai.GameEventSocialNegative,
+		Time:         entities.NewGameTime(6, 23, 0),
+		PrimaryActor: leader,
+		Tags:         []string{"theft"},
+		Description:  "stored food vanished",
+	})
+
+	event := runLawEnforcement(world)
+	if event == nil {
+		t.Fatal("expected law enforcement event")
+	}
+	if !hasAnyTag(event.Tags, "law", "enforcement", "law_property") {
+		t.Fatalf("expected law enforcement tags, got %+v", event.Tags)
+	}
+}
+
 func TestAttemptDiscoveryUnlocksTechAndFeatures(t *testing.T) {
 	world := NewWorld(14)
 	addTestPobles(world, 4, entities.ArchetypeSage)

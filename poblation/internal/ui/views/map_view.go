@@ -30,6 +30,8 @@ type AppStateSnapshot struct {
 	TemplateEngine     *templates.TemplateEngine
 	IsDirectorMode     bool
 	Ending             *gameengine.Ending
+	LastIntents        map[string]string
+	IntentReasons      map[string]string
 }
 
 // ConsoleCommandMsg lets the root app process a command typed in the feed console.
@@ -338,6 +340,12 @@ func (m MapModel) renderMindPanel(panelWidth int) string {
 		BodyStyle.Render(fmt.Sprintf("Mood: %s", poble.CurrentMood.String())),
 		BodyStyle.Render(fmt.Sprintf("Estabilidad %d · Terapia %d", poble.Mental.Stability, poble.Mental.TherapyLevel)),
 		BodyStyle.Render(fmt.Sprintf("Traumas %d · Secretos %d", len(poble.Mental.Traumas), len(poble.Secrets))),
+	}
+	if intent := m.state.LastIntents[poble.ID]; intent != "" {
+		lines = append(lines, AccentStyle.Render("Ahora: "+humanIntent(intent)))
+	}
+	if reason := m.state.IntentReasons[poble.ID]; reason != "" {
+		lines = append(lines, MutedStyle.Width(maxInt(18, panelWidth-4)).Render("Por que: "+humanReason(reason, *poble)))
 	}
 	if len(poble.Mental.Conditions) > 0 {
 		conditions := make([]string, 0, len(poble.Mental.Conditions))

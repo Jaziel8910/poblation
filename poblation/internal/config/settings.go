@@ -10,8 +10,29 @@ import (
 
 const (
 	// GameVersion is the current desktop build string shown in UI surfaces.
-	GameVersion = "1.0.0.1"
+	GameVersion = "1.0.0-beta.1"
 )
+
+// GameMode controls which views and powers the player can access.
+type GameMode string
+
+const (
+	GameModeObserver   GameMode = "observer"
+	GameModeDirector   GameMode = "director"
+	GameModeGod        GameMode = "god"
+	GameModeJournalist GameMode = "journalist"
+	GameModeKnown      GameMode = "known"
+)
+
+// ParseGameMode validates a user-facing mode string.
+func ParseGameMode(value string) (GameMode, bool) {
+	switch GameMode(value) {
+	case GameModeObserver, GameModeDirector, GameModeGod, GameModeJournalist, GameModeKnown:
+		return GameMode(value), true
+	default:
+		return "", false
+	}
+}
 
 // Profile stores player-facing persistent preferences and unlocks.
 type Profile struct {
@@ -53,13 +74,14 @@ type AudioSettings struct {
 
 // GameplaySettings stores pacing and safety preferences.
 type GameplaySettings struct {
-	AutoSaveEnabled        bool    `json:"autosave_enabled"`
-	AutoSaveMinutes        int     `json:"autosave_minutes"`
-	PauseOnFocusLoss       bool    `json:"pause_on_focus_loss"`
-	DefaultSimulationSpeed float64 `json:"default_simulation_speed"`
-	TutorialHints          bool    `json:"tutorial_hints"`
-	ConfirmDangerousActs   bool    `json:"confirm_dangerous_acts"`
-	DramaDensity           string  `json:"drama_density"`
+	AutoSaveEnabled        bool     `json:"autosave_enabled"`
+	AutoSaveMinutes        int      `json:"autosave_minutes"`
+	PauseOnFocusLoss       bool     `json:"pause_on_focus_loss"`
+	DefaultSimulationSpeed float64  `json:"default_simulation_speed"`
+	TutorialHints          bool     `json:"tutorial_hints"`
+	ConfirmDangerousActs   bool     `json:"confirm_dangerous_acts"`
+	DramaDensity           string   `json:"drama_density"`
+	ActiveMode             GameMode `json:"active_mode"`
 }
 
 // ContentSettings stores adult and hard-theme toggles.
@@ -129,6 +151,7 @@ func DefaultProfile() Profile {
 				TutorialHints:          true,
 				ConfirmDangerousActs:   true,
 				DramaDensity:           "normal",
+				ActiveMode:             GameModeDirector,
 			},
 			Content: ContentSettings{
 				AdultContentEnabled: false,
@@ -268,6 +291,9 @@ func normalizeProfile(profile Profile) Profile {
 	}
 	if profile.Settings.Gameplay.DramaDensity == "" {
 		profile.Settings.Gameplay.DramaDensity = defaults.Settings.Gameplay.DramaDensity
+	}
+	if _, ok := ParseGameMode(string(profile.Settings.Gameplay.ActiveMode)); !ok {
+		profile.Settings.Gameplay.ActiveMode = defaults.Settings.Gameplay.ActiveMode
 	}
 	if profile.UnlockedEndings == nil {
 		profile.UnlockedEndings = []string{}

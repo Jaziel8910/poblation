@@ -1,0 +1,7 @@
+[TEMPLATE:END_PLAGUE_CH2_001]
+tags: ending, plague, chapter2
+weight: 10
+---
+By day {ending_day}, the fever had become the closest thing to government. Everyone obeyed it.
+---
+

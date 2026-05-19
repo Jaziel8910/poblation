@@ -2,7 +2,7 @@
 
 ![POBLATION](assets/branding/poblation-wordmark.png)
 
-Version `1.0.0.1` - THE LAUNCHER UPDATE.
+Version `v1.0.0-beta.1` - BETA V1.0.0.
 
 Drama de terminal, pobles raros, secretos privados y una civilizacion que se arma con decisiones feas.
 
@@ -39,7 +39,7 @@ There is no official Homebrew formula yet. If one ships later, it will live in t
 Windows players should use:
 
 ```text
-poblation_1.0.0.1_launcher_installer.exe
+poblation_v1.0.0-beta.1_launcher_installer.exe
 ```
 
 The installer places the launcher under `~/.poblation/launcher/bin/`, creates launcher settings, and the launcher downloads playable versions from GitHub Releases.

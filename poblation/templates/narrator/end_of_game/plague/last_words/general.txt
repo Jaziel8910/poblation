@@ -1,0 +1,7 @@
+[TEMPLATE:END_PLAGUE_LAST_001]
+tags: ending, plague, last_words
+weight: 10
+---
+The plague did not win loudly. It won by making silence practical.
+---
+

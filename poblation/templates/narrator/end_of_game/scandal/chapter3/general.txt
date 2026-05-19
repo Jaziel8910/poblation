@@ -1,0 +1,13 @@
+[TEMPLATE:END_SCANDAL_CH3_001]
+tags: ending, scandal, chapter3
+weight: 10
+---
+{ending_dramatic_event} fue el titular moral. Despues de eso, cada mirada parecia juicio y cada casa parecia expediente.
+---
+
+[TEMPLATE:END_SCANDAL_CH3_002]
+tags: ending, scandal, chapter3
+weight: 8
+---
+El poder politico sobrevivio menos que el chisme. La economia sobrevivio menos que la verguenza.
+---

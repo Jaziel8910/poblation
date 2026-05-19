@@ -292,6 +292,14 @@ func (m HouseModel) diaryMarkdown() string {
 		}
 		return strings.Join(lines, "\n\n")
 	}
+	if m.HouseOwner != nil && len(m.HouseOwner.DiaryEntries) > 0 {
+		for index := len(m.HouseOwner.DiaryEntries) - 1; index >= 0 && len(lines) < 10; index-- {
+			entry := m.HouseOwner.DiaryEntries[index]
+			lines = append(lines, fmt.Sprintf("### Dia %d Â· %02d:%02d", entry.Timestamp.Day, entry.Timestamp.Hour, entry.Timestamp.Minute))
+			lines = append(lines, entry.Text)
+		}
+		return strings.Join(lines, "\n\n")
+	}
 	if m.HouseOwner != nil && len(m.HouseOwner.Memories) > 0 {
 		for index, memory := range m.HouseOwner.Memories {
 			if index >= 4 {
@@ -313,6 +321,16 @@ func (m HouseModel) letterMarkdown() string {
 	}
 	lines := []string{"## Carta sin enviar"}
 	if m.HouseOwner != nil {
+		if len(m.HouseOwner.Letters) > 0 {
+			letter := m.HouseOwner.Letters[len(m.HouseOwner.Letters)-1]
+			to := "alguien"
+			if letter.ToID != "" {
+				to = letter.ToID
+			}
+			lines = append(lines, fmt.Sprintf("**Para:** %s", to), "")
+			lines = append(lines, letter.Text)
+			return strings.Join(lines, "\n")
+		}
 		if secret := firstHiddenSecret(m.HouseOwner); secret != nil {
 			lines = append(lines,
 				fmt.Sprintf("**Para:** quien sea que pudiera soportar escuchar a %s", name),
@@ -443,10 +461,10 @@ func buildHouseObjects(building *world.Building, owner *entities.Poble) []houseO
 	}
 
 	objects := []houseObject{}
-	if building != nil && (building.HasPrivateDiary || len(building.PrivateDiaryEntries) > 0 || (owner != nil && len(owner.Memories) > 0)) {
+	if building != nil && (building.HasPrivateDiary || len(building.PrivateDiaryEntries) > 0 || (owner != nil && (len(owner.DiaryEntries) > 0 || len(owner.Memories) > 0))) {
 		objects = append(objects, houseObject{Kind: houseObjectDiary, Icon: "📓", Title: "Diario", Summary: "Paginas privadas y cosas que nunca salieron por la boca.", Interactive: true})
 	}
-	if owner != nil && (len(owner.Secrets) > 0 || len(owner.Memories) > 0) {
+	if owner != nil && (len(owner.Letters) > 0 || len(owner.Secrets) > 0 || len(owner.Memories) > 0) {
 		objects = append(objects, houseObject{Kind: houseObjectLetter, Icon: "💌", Title: "Carta sin enviar", Summary: "Una verdad que se quedo doblada.", Interactive: true})
 	}
 	objects = append(objects, houseObject{Kind: houseObjectBox, Icon: "📦", Title: "Caja cerrada", Summary: "Necesita confirmacion para abrir.", Interactive: true})

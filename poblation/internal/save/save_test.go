@@ -42,6 +42,22 @@ func TestSaveLoadRoundTrip(t *testing.T) {
 	if loaded.Metadata.Population != gameWorld.GetPopulation() {
 		t.Fatalf("expected metadata population %d, got %d", gameWorld.GetPopulation(), loaded.Metadata.Population)
 	}
+	loadedPoble := loaded.WorldState.GetPoble("p1")
+	if loadedPoble == nil || len(loadedPoble.Memories) != 1 || loadedPoble.Memories[0].ID != "memory_storm" {
+		t.Fatalf("expected poble memory to survive save/load, got %+v", loadedPoble)
+	}
+	if len(loadedPoble.Thoughts) != 1 || loadedPoble.Thoughts[0].ID != "thought_storm" {
+		t.Fatalf("expected poble thoughts to survive save/load, got %+v", loadedPoble.Thoughts)
+	}
+	if len(loadedPoble.Dreams) != 1 || loadedPoble.Dreams[0].ID != "dream_storm" {
+		t.Fatalf("expected poble dreams to survive save/load, got %+v", loadedPoble.Dreams)
+	}
+	if len(loadedPoble.DiaryEntries) != 1 || loadedPoble.DiaryEntries[0].ID != "diary_storm" {
+		t.Fatalf("expected poble diary entries to survive save/load, got %+v", loadedPoble.DiaryEntries)
+	}
+	if len(loadedPoble.Letters) != 1 || loadedPoble.Letters[0].ID != "letter_storm" {
+		t.Fatalf("expected poble letters to survive save/load, got %+v", loadedPoble.Letters)
+	}
 }
 
 func TestAutoSaveAndListSaves(t *testing.T) {
@@ -97,6 +113,40 @@ func sampleWorld() *world.World {
 	poble.IsAlive = true
 	poble.Money = 15
 	poble.Inventory = []entities.Item{{ID: "fish", Name: "Fish", Type: "food", Quantity: 2, Value: 3}}
+	memory := entities.NewMemory("memory_storm", entities.NewGameTime(2, 20, 0), entities.MemoryNegative, "Ami remembered the first bad storm.")
+	memory.Participants = []string{"p1"}
+	memory.EmotionIntensity = 72
+	memory.Tags = []string{"storm", "weather", "unresolved"}
+	poble.Memories = []entities.Memory{memory}
+	poble.Thoughts = []entities.Thought{{
+		ID:        "thought_storm",
+		Timestamp: entities.NewGameTime(2, 21, 0),
+		Text:      "The storm still sounds wrong in Ami's head.",
+		Tags:      []string{"thought", "weather"},
+	}}
+	poble.Dreams = []entities.Dream{{
+		ID:        "dream_storm",
+		Timestamp: entities.NewGameTime(2, 23, 0),
+		Text:      "Ami dreamed the settlement had no roof.",
+		Category:  "dreams/nightmare/general",
+		IsPrivate: true,
+		Tags:      []string{"dream", "storm"},
+	}}
+	poble.DiaryEntries = []entities.DiaryEntry{{
+		ID:        "diary_storm",
+		Timestamp: entities.NewGameTime(3, 6, 0),
+		Text:      "I wrote it down because everyone else kept pretending.",
+		Mood:      entities.MoodAnxious,
+		Tags:      []string{"diary", "storm"},
+	}}
+	poble.Letters = []entities.Letter{{
+		ID:        "letter_storm",
+		Timestamp: entities.NewGameTime(3, 7, 0),
+		ToID:      "p2",
+		Text:      "I should have told you about the storm.",
+		IsSent:    false,
+		Tags:      []string{"letter", "unsent"},
+	}}
 	gameWorld.AddPoble(&poble, world.Location{IslandID: "island_0", BuildingID: "island_0_home_0"})
 	gameWorld.Calendar = entities.NewGameTime(3, 12, 0)
 	gameWorld.EventHistory = append(gameWorld.EventHistory, world.GameEvent{

@@ -1,0 +1,7 @@
+[TEMPLATE:END_MONOPOLY_CH4_001]
+tags: ending, monopoly, chapter4
+weight: 10
+---
+The most dramatic event was still {ending_dramatic_event}. The market simply found a way to charge admission to the aftermath.
+---
+

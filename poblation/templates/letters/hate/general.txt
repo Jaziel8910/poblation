@@ -88,3 +88,92 @@ No necesito que sufras igual. Necesito que dejes de caminar por el mundo como si
 {self_name}
 ---
 
+[TEMPLATE:LETTER_HATE_011]
+tags: letter, hate, memory
+weight: 8
+---
+{target_name},
+Cada vez que alguien menciona {memory_old}, mi cabeza te pone al lado aunque no estuvieras ahi. Eso tambien me molesta.
+{self_name}
+---
+
+[TEMPLATE:LETTER_HATE_012]
+tags: letter, hate, family
+weight: 7
+---
+{target_name},
+Lo que hiciste no se quedo entre nosotros. Ahora hasta los nombres de la casa suenan distinto.
+{self_name}
+---
+
+[TEMPLATE:LETTER_HATE_013]
+tags: letter, hate, debt
+weight: 8
+---
+{target_name},
+No quiero disculpas con flores. Quiero que pagues la parte invisible: las noches que me dejaste vigilando mi propia confianza.
+{self_name}
+---
+
+[TEMPLATE:LETTER_HATE_014]
+tags: letter, hate, secret
+weight: 8
+---
+{target_name},
+Guarde tu secreto demasiado tiempo. Ya no se si era lealtad o miedo de ver que todos me creyeran tarde.
+{self_name}
+---
+
+[TEMPLATE:LETTER_HATE_015]
+tags: letter, hate, power
+weight: 7
+---
+{target_name},
+Te gustaba decir que solo cuidabas el orden. Curioso como el orden siempre terminaba obedeciendote a ti.
+{self_name}
+---
+
+[TEMPLATE:LETTER_HATE_016]
+tags: letter, hate, grief
+weight: 8
+---
+{target_name},
+Hay muertos que duelen menos que verte usar su nombre para ganar una discusion.
+{self_name}
+---
+
+[TEMPLATE:LETTER_HATE_017]
+tags: letter, hate, inheritance
+weight: 7
+---
+{target_name},
+Si esta rabia pasa a otra generacion, tambien va a llevar tu firma aunque nadie la vea.
+{self_name}
+---
+
+[TEMPLATE:LETTER_HATE_018]
+tags: letter, hate, almost_forgive
+weight: 9
+---
+{target_name},
+Lo peor es que algunos dias casi te entiendo. Y entonces tengo que odiarte de nuevo para no perderme.
+{self_name}
+---
+
+[TEMPLATE:LETTER_HATE_019]
+tags: letter, hate, exile
+weight: 8
+---
+{target_name},
+No se si quiero que te vayas de la aldea o solo de mi memoria. Lo segundo parece mas dificil.
+{self_name}
+---
+
+[TEMPLATE:LETTER_HATE_020]
+tags: letter, hate, last
+weight: 10
+---
+{target_name},
+Esta es la ultima carta que no mando. Si vuelvo a hablarte, sera con testigos o con silencio.
+{self_name}
+---

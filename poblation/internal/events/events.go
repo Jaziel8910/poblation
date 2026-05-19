@@ -220,7 +220,7 @@ func CheckNaturalEvents(world World, rng *rand.Rand) []GameEvent {
 		if poble == nil || !poble.IsAlive {
 			continue
 		}
-		events = append(events, checkDeathByAge(poble, ws, rng)...)
+		events = append(events, checkDeathByAge(poble, world, ws, rng)...)
 		events = append(events, checkIllness(poble, ws, rng)...)
 		events = append(events, checkPregnancy(poble, world, rng)...)
 	}
@@ -229,7 +229,7 @@ func CheckNaturalEvents(world World, rng *rand.Rand) []GameEvent {
 	return events
 }
 
-func checkDeathByAge(poble *entities.Poble, ws entities.WorldState, rng *rand.Rand) []GameEvent {
+func checkDeathByAge(poble *entities.Poble, world World, ws entities.WorldState, rng *rand.Rand) []GameEvent {
 	maxAge := lifeExpectancy(ws.Era)
 	if poble.Age <= maxAge {
 		return nil
@@ -240,16 +240,12 @@ func checkDeathByAge(poble *entities.Poble, ws entities.WorldState, rng *rand.Ra
 	if rng.Float32() >= chance {
 		return nil
 	}
-	return []GameEvent{{
-		ID:           fmt.Sprintf("death_natural:%s:%d", poble.ID, ws.Day.Day),
-		Type:         EventDeathNatural,
-		Timestamp:    ws.Day,
-		Participants: []string{poble.ID},
-		IsPublic:     true,
-		Consequences: []Consequence{
-			{TargetID: poble.ID, Type: ConsequenceDeathCaused, Value: 1},
-		},
-	}}
+	event := HandleDeath(poble, DeathCauseNaturalAge, world)
+	if event.ID == "" {
+		return nil
+	}
+	event.Timestamp = ws.Day
+	return []GameEvent{event}
 }
 
 func checkIllness(poble *entities.Poble, ws entities.WorldState, rng *rand.Rand) []GameEvent {
@@ -280,10 +276,38 @@ func checkPregnancy(poble *entities.Poble, world World, rng *rand.Rand) []GameEv
 	if poble.Sex != entities.Female && poble.Sex != entities.Intersex {
 		return nil
 	}
-	if poble.Health.Fertility < 0.1 || poble.Age < 16 || poble.Age > 48 {
+	if hasCondition(poble, entities.ConditionPregnant) {
+		arc := decodePregnancyArcSecret(poble)
+		dueAt := taggedIntValue(arc, "due_at")
+		ws := world.GetWorldState()
+		if dueAt > 0 && ws.Day.ToMinutes() < dueAt && pregnancyLossOccurs(poble, ws, dueAt, rng) {
+			poble.Health.Conditions = removeCondition(poble.Health.Conditions, entities.ConditionPregnant)
+			removePregnancyArcSecret(poble)
+			poble.Mental.Stability = clampInt(poble.Mental.Stability-14, 0, 100)
+			poble.Needs.Safety = clampFloat(poble.Needs.Safety+18, 0, 100)
+			return []GameEvent{{
+				ID:           fmt.Sprintf("miscarriage:%s:%d", poble.ID, ws.Day.Day),
+				Type:         EventMiscarriage,
+				Timestamp:    ws.Day,
+				Participants: uniqueStrings([]string{poble.ID, arc["actual_father"], arc["official_father"]}),
+				IsPublic:     false,
+				Consequences: []Consequence{
+					{TargetID: poble.ID, Type: ConsequenceMentalChange, Value: -14},
+					{TargetID: poble.ID, Type: ConsequenceNeedChange, Value: 18},
+				},
+				ChildEvents: []string{fmt.Sprintf("family_grief:%s:%d", poble.ID, ws.Day.Day)},
+			}}
+		}
+		if dueAt > 0 && ws.Day.ToMinutes() >= dueAt {
+			fatherID := arc["actual_father"]
+			_, event := HandleBirth(poble.ID, fatherID, world)
+			if event.ID != "" {
+				return []GameEvent{event}
+			}
+		}
 		return nil
 	}
-	if hasCondition(poble, entities.ConditionPregnant) {
+	if poble.Health.Fertility < 0.1 || poble.Age < 16 || poble.Age > 48 {
 		return nil
 	}
 	if poble.Needs.Sex < 60 {
@@ -306,11 +330,12 @@ func checkPregnancy(poble *entities.Poble, world World, rng *rand.Rand) []GameEv
 		chance := poble.Health.Fertility * 0.04
 		if rng.Float32() < chance {
 			ws := world.GetWorldState()
+			arc := HandlePregnancy(poble.ID, world)
 			return []GameEvent{{
 				ID:           fmt.Sprintf("pregnancy:%s:%s:%d", poble.ID, targetID, ws.Day.Day),
 				Type:         EventPregnancy,
 				Timestamp:    ws.Day,
-				Participants: []string{poble.ID, targetID},
+				Participants: uniqueStrings([]string{poble.ID, targetID, arc.FatherActual, arc.FatherOfficial}),
 				IsPublic:     false,
 				Consequences: []Consequence{
 					{TargetID: poble.ID, Type: ConsequencePregnancyCaused, Value: 1},
@@ -320,6 +345,44 @@ func checkPregnancy(poble *entities.Poble, world World, rng *rand.Rand) []GameEv
 		}
 	}
 	return nil
+}
+
+func pregnancyLossOccurs(poble *entities.Poble, ws entities.WorldState, dueAt int, rng *rand.Rand) bool {
+	if rng == nil || poble == nil || dueAt <= 0 {
+		return false
+	}
+	hoursUntilDue := dueAt - ws.Day.ToMinutes()
+	if hoursUntilDue <= 24 {
+		return false
+	}
+	chance := float32(0.0015)
+	if poble.Health.HP < 50 {
+		chance += 0.006
+	}
+	if poble.Age < 18 || poble.Age > 38 {
+		chance += 0.004
+	}
+	if len(poble.Health.Conditions) > 1 {
+		chance += 0.003
+	}
+	if poble.Mental.Stability < 35 {
+		chance += 0.002
+	}
+	return rng.Float32() < chance
+}
+
+func removePregnancyArcSecret(poble *entities.Poble) {
+	if poble == nil || len(poble.Secrets) == 0 {
+		return
+	}
+	filtered := poble.Secrets[:0]
+	for _, secret := range poble.Secrets {
+		if strings.HasPrefix(secret.Content, pregnancyArcPrefix) {
+			continue
+		}
+		filtered = append(filtered, secret)
+	}
+	poble.Secrets = filtered
 }
 
 func checkWeatherEvents(ws entities.WorldState, rng *rand.Rand) []GameEvent {
@@ -636,7 +699,7 @@ func applyImmediateConsequence(c Consequence, world World) {
 		// Rumour creation is handled by the rumour system; signal only.
 	case ConsequencePregnancyCaused:
 		if !hasCondition(poble, entities.ConditionPregnant) {
-			poble.Health.Conditions = append(poble.Health.Conditions, entities.ConditionPregnant)
+			HandlePregnancy(poble.ID, world)
 		}
 	case ConsequenceItemGained, ConsequenceItemLost:
 		// Item changes handled by inventory system; signal only.
@@ -761,4 +824,22 @@ func uniqueStrings(values []string) []string {
 		result = append(result, value)
 	}
 	return result
+}
+
+func taggedIntValue(fields map[string]string, key string) int {
+	if fields == nil {
+		return 0
+	}
+	value := strings.TrimSpace(fields[key])
+	if value == "" {
+		return 0
+	}
+	total := 0
+	for _, r := range value {
+		if r < '0' || r > '9' {
+			return 0
+		}
+		total = total*10 + int(r-'0')
+	}
+	return total
 }

@@ -1,0 +1,13 @@
+[TEMPLATE:END_QUARANTINE_CH3_001]
+tags: ending, quarantine, chapter3
+weight: 10
+---
+{ending_dramatic_event} fue el punto donde todos entendieron que el cuerpo tambien escribe leyes.
+---
+
+[TEMPLATE:END_QUARANTINE_CH3_002]
+tags: ending, quarantine, chapter3
+weight: 8
+---
+La memoria del mundo se lleno de sintomas: secretos medicos, culpas privadas, rumores con olor a panico y promesas de no acercarse mas.
+---

@@ -44,6 +44,39 @@ func TestHandleDeathCreatesInheritanceRumourAndGenerationEnd(t *testing.T) {
 	}
 }
 
+func TestNaturalDeathScanUsesFullLifecycleFallout(t *testing.T) {
+	founder := entities.NewPoble("founder", "Noah", 91, entities.Male)
+	child := entities.NewPoble("child", "Kira", 15, entities.Female)
+	founder.Money = 77
+	child.Parents[0] = founder.ID
+
+	world := testWorld{
+		pobles: map[string]*entities.Poble{
+			founder.ID: &founder,
+			child.ID:   &child,
+		},
+		state: entities.WorldState{
+			Day:      entities.NewGameTime(10, 8, 0),
+			Era:      entities.EraZero,
+			TechTree: entities.NewTechTree(),
+		},
+	}
+
+	generated := checkDeathByAge(&founder, world, world.state, lifecycleRNG(world.state.Day, "force"))
+	if len(generated) != 1 {
+		t.Fatalf("expected natural death event, got %#v", generated)
+	}
+	if founder.IsAlive {
+		t.Fatal("expected natural death scan to mark founder dead")
+	}
+	if child.Money != 77 {
+		t.Fatalf("expected inheritance from natural death scan, got %d", child.Money)
+	}
+	if !containsChildEvent(generated[0].ChildEvents, "orphaned_child") {
+		t.Fatalf("expected orphan fallout, got %#v", generated[0].ChildEvents)
+	}
+}
+
 func TestHandleBirthAddsBabyToConcreteWorld(t *testing.T) {
 	world := simworld.NewWorld(1)
 	mother := entities.NewPoble("mother", "Amina", 24, entities.Female)

@@ -1,0 +1,209 @@
+[TEMPLATE:RECON_THOUGHT_001]
+tags: thought, reconciliation, old_wound, mixed_valence
+weight: 10
+---
+Quiero hablar con {target_name}. Tambien quiero que {target_pronoun} adivine exactamente que rompio. Asi de justo soy hoy.
+---
+
+[TEMPLATE:RECON_THOUGHT_002]
+tags: thought, reconciliation, memory, mixed_valence
+weight: 9
+---
+{memory_old} no desaparecio. Solo aprendio a sentarse entre {target_name} y yo sin pedir permiso.
+---
+
+[TEMPLATE:RECON_THOUGHT_003]
+tags: thought, reconciliation, stubborn
+weight: 8
+---
+Si perdono primero, pierdo. Si no perdono nunca, tambien. Que sistema tan estupido.
+---
+
+[TEMPLATE:RECON_THOUGHT_004]
+tags: thought, reconciliation, resentment
+weight: 11
+---
+{target_name} todavia me importa. Esa es la parte humillante del rencor.
+---
+
+[TEMPLATE:RECON_THOUGHT_005]
+tags: thought, reconciliation, trust
+weight: 7
+---
+La confianza no murio. Esta debajo de la mesa, fingiendo que no escucha.
+---
+
+[TEMPLATE:RECON_THOUGHT_006]
+tags: thought, reconciliation, old_wound
+weight: 10
+---
+Podria decirle: "me dolio". Pero seguro saldria como chiste, amenaza o tos.
+---
+
+[TEMPLATE:RECON_THOUGHT_007]
+tags: thought, reconciliation, memory
+weight: 9
+---
+{memory_recent} no tiene el mismo filo de antes. Eso me asusta mas que el filo.
+---
+
+[TEMPLATE:RECON_THOUGHT_008]
+tags: thought, reconciliation, family
+weight: 6
+---
+Hay gente que se va y ya. {target_name} se queda incluso cuando no esta.
+---
+
+[TEMPLATE:RECON_THOUGHT_009]
+tags: thought, reconciliation, pride
+weight: 7
+---
+Pedir perdon seria facil si mi orgullo no tuviera muebles propios.
+---
+
+[TEMPLATE:RECON_THOUGHT_010]
+tags: thought, reconciliation, unresolved
+weight: 10
+---
+No quiero volver a como era antes. Quiero algo que sepa lo que paso y aun asi camine.
+---
+
+[TEMPLATE:RECON_THOUGHT_011]
+tags: thought, reconciliation, fear
+weight: 8
+---
+Si {target_name} me perdona demasiado rapido, voy a desconfiar. Si tarda, tambien.
+---
+
+[TEMPLATE:RECON_THOUGHT_012]
+tags: thought, reconciliation, private
+weight: 9
+---
+Ensaye una frase bonita. Sonaba falsa. Ensaye una cruel. Sonaba mia. Mal asunto.
+---
+
+[TEMPLATE:RECON_THOUGHT_013]
+tags: thought, reconciliation, memory
+weight: 8
+---
+{target_name} no tiene que pagar eternamente. Que pena que mi cuerpo no haya recibido ese aviso.
+---
+
+[TEMPLATE:RECON_THOUGHT_014]
+tags: thought, reconciliation, shame
+weight: 7
+---
+Me debo una disculpa por todas las disculpas que espere de {target_name}.
+---
+
+[TEMPLATE:RECON_THOUGHT_015]
+tags: thought, reconciliation, old_wound
+weight: 10
+---
+La herida ya no sangra. Ahora administra horarios, miradas y rutas por {location_name}.
+---
+
+[TEMPLATE:RECON_THOUGHT_016]
+tags: thought, reconciliation, stubborn
+weight: 8
+---
+Si {target_name} da el primer paso, voy a fingir que no lo estaba esperando.
+---
+
+[TEMPLATE:RECON_THOUGHT_017]
+tags: thought, reconciliation, mixed_valence
+weight: 9
+---
+Extrañar a alguien que tambien te arruino el dia deberia tener otro nombre.
+---
+
+[TEMPLATE:RECON_THOUGHT_018]
+tags: thought, reconciliation, trust
+weight: 8
+---
+Queda una cuerda entre {target_name} y yo. Quemada, fea, util.
+---
+
+[TEMPLATE:RECON_THOUGHT_019]
+tags: thought, reconciliation, guilt
+weight: 7
+---
+Tal vez yo tambien hice una parte. No toda. No me emociono tanto.
+---
+
+[TEMPLATE:RECON_THOUGHT_020]
+tags: thought, reconciliation, grief
+weight: 6
+---
+Lo que perdimos no era perfecto. Eso no lo vuelve reemplazable.
+---
+
+[TEMPLATE:RECON_THOUGHT_021]
+tags: thought, reconciliation, old_warmth
+weight: 10
+---
+Hubo un tiempo en que ver a {target_name} me descansaba la cara. Todavia recuerdo como se hacia.
+---
+
+[TEMPLATE:RECON_THOUGHT_022]
+tags: thought, reconciliation, boundary
+weight: 9
+---
+Puedo abrir la puerta. No tengo que quitarle la cerradura.
+---
+
+[TEMPLATE:RECON_THOUGHT_023]
+tags: thought, reconciliation, resentment
+weight: 8
+---
+El rencor me protege. Tambien me cobra renta.
+---
+
+[TEMPLATE:RECON_THOUGHT_024]
+tags: thought, reconciliation, confession
+weight: 7
+---
+No se si quiero confesar algo o acusar a {target_name}. Las dos frases empiezan igual.
+---
+
+[TEMPLATE:RECON_THOUGHT_025]
+tags: thought, reconciliation, old_wound
+weight: 8
+---
+Si hablamos de {memory_recent}, tengo que escuchar su version. Que castigo tan adulto.
+---
+
+[TEMPLATE:RECON_THOUGHT_026]
+tags: thought, reconciliation, fear
+weight: 6
+---
+Me da miedo que arreglarlo no duela. Entonces todo este teatro habra sido mio.
+---
+
+[TEMPLATE:RECON_THOUGHT_027]
+tags: thought, reconciliation, family
+weight: 7
+---
+En un pueblo pequeno, dejar de hablarle a alguien es construir una pared en medio de la cocina.
+---
+
+[TEMPLATE:RECON_THOUGHT_028]
+tags: thought, reconciliation, private
+weight: 9
+---
+Hoy casi fui amable con {target_name}. Me contuve por costumbre, no por conviccion.
+---
+
+[TEMPLATE:RECON_THOUGHT_029]
+tags: thought, reconciliation, memory
+weight: 10
+---
+{memory_old} no me dice que huya. Me dice que mire bien donde piso.
+---
+
+[TEMPLATE:RECON_THOUGHT_030]
+tags: thought, reconciliation, unresolved
+weight: 8
+---
+No necesito final feliz. Necesito una conversacion que no salga con sangre en los nudillos.
+---

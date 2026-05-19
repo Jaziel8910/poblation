@@ -1,0 +1,179 @@
+[TEMPLATE:LETTER_APOLOGY_001]
+tags: letter, apology, unsent
+weight: 10
+---
+{target_name},
+No se si pedir perdon arregla algo o solo me deja menos solo con lo que hice. Igual lo escribo porque callarme ya se volvio cobardia.
+{self_name}
+---
+
+[TEMPLATE:LETTER_APOLOGY_002]
+tags: letter, apology, memory
+weight: 9
+---
+{target_name},
+Desde {memory_recent} cargo una frase que no encuentra puerta. Era mas facil tener razon que tener cuidado.
+{self_name}
+---
+
+[TEMPLATE:LETTER_APOLOGY_003]
+tags: letter, apology, bitter
+weight: 8
+---
+{target_name},
+Perdon por la parte que fue mia. La otra parte todavia la estoy odiando, con bastante organizacion.
+{self_name}
+---
+
+[TEMPLATE:LETTER_APOLOGY_004]
+tags: letter, apology, love
+weight: 8
+---
+{target_name},
+Te trate como si fueras seguro. Eso fue injusto. Nada vivo es seguro, menos tu conmigo cerca.
+{self_name}
+---
+
+[TEMPLATE:LETTER_APOLOGY_005]
+tags: letter, apology, shame
+weight: 7
+---
+{target_name},
+No mando esto porque si contestas bien me rompo, y si contestas mal tambien.
+{self_name}
+---
+
+[TEMPLATE:LETTER_APOLOGY_006]
+tags: letter, apology, political
+weight: 7
+---
+{target_name},
+Use la palabra necesario porque sonaba mas limpia que miedo. No era limpia.
+{self_name}
+---
+
+[TEMPLATE:LETTER_APOLOGY_007]
+tags: letter, apology, grief
+weight: 8
+---
+{target_name},
+Si algun dia hablamos de esto, por favor no lo hagas suave. Lo suave me deja escaparme.
+{self_name}
+---
+
+[TEMPLATE:LETTER_APOLOGY_008]
+tags: letter, apology, unresolved
+weight: 10
+---
+{target_name},
+No se si quiero que leas esto. Tal vez solo queria existir cinco minutos como alguien capaz de admitirlo.
+{self_name}
+---
+
+[TEMPLATE:LETTER_APOLOGY_009]
+tags: letter, apology, memory, family
+weight: 8
+---
+{target_name},
+Me acorde de {memory_old} y me dio verguenza seguir contando la historia como si yo hubiera sido solo victima.
+{self_name}
+---
+
+[TEMPLATE:LETTER_APOLOGY_010]
+tags: letter, apology, public
+weight: 7
+---
+{target_name},
+Te pedi paciencia delante de todos porque era mas facil que pedirte perdon a solas.
+{self_name}
+---
+
+[TEMPLATE:LETTER_APOLOGY_011]
+tags: letter, apology, debt
+weight: 8
+---
+{target_name},
+No te debo una frase bonita. Te debo dias donde mis actos no vuelvan a cobrarte lo mismo.
+{self_name}
+---
+
+[TEMPLATE:LETTER_APOLOGY_012]
+tags: letter, apology, jealousy
+weight: 7
+---
+{target_name},
+Llame cuidado a mis celos porque sonaba menos pequeno. Fue miedo con ropa limpia.
+{self_name}
+---
+
+[TEMPLATE:LETTER_APOLOGY_013]
+tags: letter, apology, death
+weight: 8
+---
+{target_name},
+Despues de la muerte, todo perdon llega tarde. Por eso escribo antes de que la terquedad gane otra vez.
+{self_name}
+---
+
+[TEMPLATE:LETTER_APOLOGY_014]
+tags: letter, apology, child
+weight: 7
+---
+{target_name},
+Si los pequenos nos miran, que al menos vean a alguien volver sobre sus pasos sin inventarse una excusa.
+{self_name}
+---
+
+[TEMPLATE:LETTER_APOLOGY_015]
+tags: letter, apology, politics
+weight: 7
+---
+{target_name},
+Vote por miedo, hable por orgullo y despues le llame orden al dano. No hay ley que limpie eso sola.
+{self_name}
+---
+
+[TEMPLATE:LETTER_APOLOGY_016]
+tags: letter, apology, illness
+weight: 8
+---
+{target_name},
+Cuando estabas enfermo pense primero en lo que yo podia perder. Esa es la parte que mas me cuesta escribir.
+{self_name}
+---
+
+[TEMPLATE:LETTER_APOLOGY_017]
+tags: letter, apology, inheritance
+weight: 7
+---
+{target_name},
+Herede malas formas y aun asi las use como si fueran destino. No quiero pasarlas intactas.
+{self_name}
+---
+
+[TEMPLATE:LETTER_APOLOGY_018]
+tags: letter, apology, almost_repair
+weight: 9
+---
+{target_name},
+No te pido volver al antes. El antes tambien sabia esconder grietas. Te pido intentar un despues menos cobarde.
+{self_name}
+---
+
+[TEMPLATE:LETTER_APOLOGY_019]
+tags: letter, apology, resentment
+weight: 8
+---
+{target_name},
+Me acostumbre tanto a mi resentimiento que cuando te hice dano casi lo senti justo. No lo era.
+{self_name}
+---
+
+[TEMPLATE:LETTER_APOLOGY_020]
+tags: letter, apology, final
+weight: 10
+---
+{target_name},
+Si esta carta no cambia nada, que al menos cambie esto: yo ya no puedo fingir que no se donde empezo mi culpa.
+{self_name}
+---

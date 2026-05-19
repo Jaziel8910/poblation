@@ -1,0 +1,13 @@
+[TEMPLATE:END_SCANDAL_CH4_001]
+tags: ending, scandal, chapter4
+weight: 10
+---
+Cuando todos lo supieron, nadie quedo limpio. {ending_leader} pudo mandar, pero ya no podia convencer.
+---
+
+[TEMPLATE:END_SCANDAL_CH4_002]
+tags: ending, scandal, chapter4
+weight: 8
+---
+El final no fue castigo divino. Fue una comunidad descubriendo que saberlo todo tambien puede matar un mundo.
+---

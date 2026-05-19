@@ -1,0 +1,13 @@
+[TEMPLATE:END_QUARANTINE_LAST_001]
+tags: ending, quarantine, last_words
+weight: 10
+---
+Nadie sabia si abrir la puerta era esperanza o sentencia.
+---
+
+[TEMPLATE:END_QUARANTINE_LAST_002]
+tags: ending, quarantine, last_words
+weight: 8
+---
+La ultima regla fue sencilla: si todavia respiras, no te acerques.
+---

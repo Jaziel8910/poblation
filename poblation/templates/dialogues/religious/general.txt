@@ -1,0 +1,139 @@
+[TEMPLATE:RELIGIOUS_001]
+tags: religious, prophet, ritual
+weight: 10
+---
+{self_name}: No dije que fuera verdad. Dije que todos actuaron distinto despues de escucharlo.
+---
+
+[TEMPLATE:RELIGIOUS_002]
+tags: religious, grief
+weight: 8
+---
+{self_name}: A veces inventamos nombres para no admitir que el vacio no contesta.
+---
+
+[TEMPLATE:RELIGIOUS_003]
+tags: religious, target
+weight: 8
+---
+{self_name}: {target_name}, si esto te parece absurdo, perfecto. Casi todo lo que sobrevive empieza dando pena.
+---
+
+[TEMPLATE:RELIGIOUS_004]
+tags: religious, law
+weight: 7
+---
+{self_name}: Un rito es una regla con fuego alrededor. Por eso la gente obedece antes de entender.
+---
+
+[TEMPLATE:RELIGIOUS_005]
+tags: religious, settlement
+weight: 8
+---
+{self_name}: {settlement_name} necesita algo que no sea solo comida y pelea. Aunque sea una mentira util.
+---
+
+[TEMPLATE:RELIGIOUS_006]
+tags: religious, memory
+weight: 8
+---
+{self_name}: {memory_old} todavia pide una explicacion. Yo solo tengo simbolos y mala letra.
+---
+
+[TEMPLATE:RELIGIOUS_007]
+tags: religious, doubt
+weight: 9
+---
+{self_name}: Creer no me sale limpio. Me sale como una rodilla raspada.
+---
+
+[TEMPLATE:RELIGIOUS_008]
+tags: religious, control
+weight: 7
+---
+{self_name}: Cuidado con quien dice hablar por los muertos. A veces solo quiere hablar mas alto que los vivos.
+---
+
+[TEMPLATE:RELIGIOUS_009]
+tags: religious, ritual
+weight: 8
+---
+{self_name}: Si repetimos esto cada noche, algun dia va a parecer tradicion en vez de miedo.
+---
+
+[TEMPLATE:RELIGIOUS_010]
+tags: religious, unresolved
+weight: 10
+---
+{self_name}: No se si hay alguien mirando. Lo grave es que igual me porto como si hubiera testigos.
+---
+
+[TEMPLATE:RELIGIOUS_011]
+tags: religious, funeral, memory
+weight: 8
+---
+{self_name}: Un funeral es una forma ordenada de admitir que el cuerpo termino antes que la historia.
+---
+
+[TEMPLATE:RELIGIOUS_012]
+tags: religious, child, tradition
+weight: 7
+---
+{self_name}: Los ninos no heredan creencias completas. Heredan gestos, canciones y miedos que alguien llamo sagrados.
+---
+
+[TEMPLATE:RELIGIOUS_013]
+tags: religious, illness
+weight: 7
+---
+{self_name}: Rezar por un enfermo no cura la fiebre, pero a veces cura la crueldad de mirar desde lejos.
+---
+
+[TEMPLATE:RELIGIOUS_014]
+tags: religious, power
+weight: 7
+---
+{self_name}: Si un templo nunca contradice al poderoso, no es templo. Es mueble.
+---
+
+[TEMPLATE:RELIGIOUS_015]
+tags: religious, secret
+weight: 8
+---
+{self_name}: Hay confesiones que no buscan perdon. Buscan un lugar donde dejar de pudrirse.
+---
+
+[TEMPLATE:RELIGIOUS_016]
+tags: religious, grief, family
+weight: 8
+---
+{self_name}: La familia llama alma a lo que no soporta llamar ausencia.
+---
+
+[TEMPLATE:RELIGIOUS_017]
+tags: religious, law
+weight: 7
+---
+{self_name}: Una ley castiga la mano. Un rito intenta asustar la intencion antes de que aprenda camino.
+---
+
+[TEMPLATE:RELIGIOUS_018]
+tags: religious, doubt, old_memory
+weight: 8
+---
+{self_name}: Despues de {memory_old}, creer me parece raro. No creer tambien. Asi que camino en medio.
+---
+
+[TEMPLATE:RELIGIOUS_019]
+tags: religious, market
+weight: 7
+---
+{self_name}: Cuando el mercado vende amuletos caros, la fe empieza a oler demasiado a deuda.
+---
+
+[TEMPLATE:RELIGIOUS_020]
+tags: religious, apocalypse
+weight: 9
+---
+{self_name}: Si el mundo se acaba, quiero que nos encuentre haciendo algo mas digno que culpar al vecino.
+---

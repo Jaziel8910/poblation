@@ -1,0 +1,13 @@
+[TEMPLATE:END_QUARANTINE_CH2_001]
+tags: ending, quarantine, chapter2
+weight: 10
+---
+{ending_population} pobles siguieron vivos, pero vivir ya no significaba mezclarse. Cada abrazo empezo a sonar como una apuesta.
+---
+
+[TEMPLATE:END_QUARANTINE_CH2_002]
+tags: ending, quarantine, chapter2
+weight: 8
+---
+Los nombres importantes dejaron de ser lideres y amantes. Ahora eran quienes sabian cuidar, aislar, mentir o aguantar fiebre.
+---

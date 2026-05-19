@@ -6,6 +6,7 @@ import (
 	"sort"
 	"strings"
 
+	"github.com/user/poblation/internal/ai"
 	"github.com/user/poblation/internal/config"
 	"github.com/user/poblation/internal/entities"
 	"github.com/user/poblation/internal/events"
@@ -88,12 +89,24 @@ type EncounterAftermath struct {
 	Witnesses          []string                 `json:"witnesses"`
 	CreatedSecrets     []entities.Secret        `json:"created_secrets"`
 	CreatedMemories    [2]entities.Memory       `json:"created_memories"`
+	HealthFallout      EncounterHealthFallout   `json:"health_fallout"`
 	RelationshipShift  int                      `json:"relationship_shift"`
 	IsSecret           bool                     `json:"is_secret"`
 	PregnancyTriggered bool                     `json:"pregnancy_triggered"`
 	STITransmitted     entities.STIType         `json:"sti_transmitted"`
 	VisibleSummary     string                   `json:"visible_summary"`
 	InternalSummary    string                   `json:"internal_summary"`
+}
+
+// EncounterHealthFallout stores concrete physical consequences from the encounter.
+type EncounterHealthFallout struct {
+	UsedProtection bool                      `json:"used_protection"`
+	PregnancyRisk  int                       `json:"pregnancy_risk"`
+	STIRisk        int                       `json:"sti_risk"`
+	HPDelta        [2]int                    `json:"hp_delta"`
+	Conditions     [2][]entities.ConditionID `json:"conditions"`
+	DeathCause     events.DeathCause         `json:"death_cause,omitempty"`
+	Summary        string                    `json:"summary"`
 }
 
 // EncounterRecord stores one saved summary of the encounter.
@@ -404,6 +417,7 @@ func GenerateAftermath(ctx EncounterContext, prefMatch EncounterPreferenceMatch)
 	reactionA := buildReaction(ctx.A, encounterType, profileA, prefMatch, ctx.Relationship, true)
 	reactionB := buildReaction(ctx.B, encounterType, profileB, prefMatch, reverseRelationship(ctx), false)
 
+	usedProtection := shouldUseProtection(ctx, encounterType)
 	aftermath := EncounterAftermath{
 		Type:               encounterType,
 		Power:              ctx.Power,
@@ -411,10 +425,11 @@ func GenerateAftermath(ctx EncounterContext, prefMatch EncounterPreferenceMatch)
 		Reactions:          [2]AftermathReaction{reactionA, reactionB},
 		Witnesses:          append([]string{}, ctx.Witnesses...),
 		CreatedSecrets:     buildEncounterSecrets(ctx, encounterType),
+		HealthFallout:      buildEncounterHealthFallout(ctx, encounterType, usedProtection),
 		RelationshipShift:  int(reactionA.RelationshipDelta + reactionB.RelationshipDelta),
 		IsSecret:           encounterType == EncounterSecret || encounterType == EncounterTransactional || encounterType == EncounterLast || placeFeelsSecret(ctx.Location),
-		PregnancyTriggered: shouldTriggerPregnancy(ctx, shouldUseProtection(ctx, encounterType)),
-		STITransmitted:     pickSTITransmission(ctx, shouldUseProtection(ctx, encounterType)),
+		PregnancyTriggered: shouldTriggerPregnancy(ctx, usedProtection),
+		STITransmitted:     pickSTITransmission(ctx, usedProtection),
 		VisibleSummary:     restrictedSummary(ctx),
 		InternalSummary:    internalSummary(ctx, encounterType),
 	}
@@ -498,11 +513,18 @@ func ApplyEncounterAftermath(aftermath EncounterAftermath, gameWorld *world.Worl
 	if aftermath.PregnancyTriggered {
 		if carrier := pregnancyCarrier(a, b); carrier != nil {
 			_ = events.HandlePregnancy(carrier.ID, gameWorld)
+			appendEncounterWorldEvent(gameWorld, ai.GameEventIntimacy, aftermath, "pregnancy", []string{carrier.ID, idOf(a), idOf(b)}, fmt.Sprintf("%s left the encounter carrying a possible pregnancy arc.", nameOf(carrier)), 0.74, -0.05)
 		}
 	}
 	if aftermath.STITransmitted != entities.STINone {
 		applySTITransmission(a, b, aftermath.STITransmitted)
+		source, _, target := stiCarrier(a, b)
+		if source != nil && target != nil {
+			appendEncounterWorldEvent(gameWorld, ai.GameEventSocialNegative, aftermath, "sti", []string{source.ID, target.ID}, fmt.Sprintf("%s may have transmitted %s to %s.", nameOf(source), aftermath.STITransmitted, nameOf(target)), 0.72, -0.42)
+		}
 	}
+	applyEncounterHealthFallout(a, b, aftermath, gameWorld)
+	appendEncounterWorldEvent(gameWorld, ai.GameEventIntimacy, aftermath, "encounter", []string{idOf(a), idOf(b)}, aftermath.VisibleSummary, 0.44, 0.08)
 	registerWitnesses(gameWorld, a, b, aftermath)
 }
 
@@ -987,6 +1009,115 @@ func applyReactionToBodyAndMood(poble *entities.Poble, reaction AftermathReactio
 	poble.EmotionalState.ActiveEmotions = appendUniqueEmotion(poble.EmotionalState.ActiveEmotions, reaction.DominantEmotion)
 }
 
+func buildEncounterHealthFallout(ctx EncounterContext, encounterType EncounterType, usedProtection bool) EncounterHealthFallout {
+	fallout := EncounterHealthFallout{
+		UsedProtection: usedProtection,
+		PregnancyRisk:  encounterRiskPercent(ctx, "pregnancy_risk", usedProtection),
+		STIRisk:        encounterRiskPercent(ctx, "sti_risk", usedProtection),
+		HPDelta:        [2]int{-2, -2},
+		Summary:        "the encounter changed bodies lightly",
+	}
+	switch encounterType {
+	case EncounterTender, EncounterCurious, EncounterFirstEver:
+		fallout.HPDelta = [2]int{-1, -1}
+	case EncounterPassionate, EncounterComplicated:
+		fallout.HPDelta = [2]int{-4, -4}
+	case EncounterDesperate, EncounterAngry:
+		fallout.HPDelta = [2]int{-9, -7}
+		fallout.Conditions[0] = append(fallout.Conditions[0], entities.ConditionExhausted)
+		fallout.Conditions[1] = append(fallout.Conditions[1], entities.ConditionExhausted)
+		fallout.Summary = "the encounter left exhaustion and visible fallout"
+	case EncounterLast:
+		fallout.HPDelta = [2]int{-12, -10}
+		fallout.Conditions[0] = append(fallout.Conditions[0], entities.ConditionExhausted)
+		fallout.Summary = "the encounter felt like a body running out of road"
+	}
+	if ctx.A != nil && ctx.A.Health.HP+fallout.HPDelta[0] <= 0 {
+		fallout.DeathCause = events.DeathCauseAccident
+	}
+	if ctx.B != nil && ctx.B.Health.HP+fallout.HPDelta[1] <= 0 {
+		fallout.DeathCause = events.DeathCauseAccident
+	}
+	return fallout
+}
+
+func encounterRiskPercent(ctx EncounterContext, risk string, usedProtection bool) int {
+	if usedProtection {
+		return 0
+	}
+	base := 8
+	if risk == "sti_risk" {
+		base = 12
+		if source, _, target := stiCarrier(ctx.A, ctx.B); source != nil && target != nil {
+			base = 42
+		}
+	}
+	if risk == "pregnancy_risk" && pregnancyCarrier(ctx.A, ctx.B) != nil {
+		base = 26
+	}
+	if DetermineEncounterType(ctx) == EncounterDesperate || DetermineEncounterType(ctx) == EncounterPassionate {
+		base += 8
+	}
+	return clampInt(base, 0, 95)
+}
+
+func applyEncounterHealthFallout(a, b *entities.Poble, aftermath EncounterAftermath, gameWorld *world.World) {
+	participants := [2]*entities.Poble{a, b}
+	for index, poble := range participants {
+		if poble == nil || !poble.IsAlive {
+			continue
+		}
+		delta := aftermath.HealthFallout.HPDelta[index]
+		if delta != 0 {
+			poble.Health.HP = clampInt(poble.Health.HP+delta, 0, 100)
+		}
+		for _, condition := range aftermath.HealthFallout.Conditions[index] {
+			if condition.IsValid() && !hasCondition(poble, condition) {
+				poble.Health.Conditions = append(poble.Health.Conditions, condition)
+			}
+		}
+		if delta < -5 || len(aftermath.HealthFallout.Conditions[index]) > 0 {
+			appendEncounterWorldEvent(gameWorld, ai.GameEventSocialNegative, aftermath, "health", []string{poble.ID}, fmt.Sprintf("%s left the encounter with health fallout: %s.", nameOf(poble), aftermath.HealthFallout.Summary), 0.48, -0.24)
+		}
+		if aftermath.HealthFallout.DeathCause != "" && poble.Health.HP <= 0 {
+			death := events.HandleDeath(poble, aftermath.HealthFallout.DeathCause, gameWorld)
+			death.Description = fmt.Sprintf("%s died after an encounter turned physically unsafe.", nameOf(poble))
+			appendEncounterWorldEvent(gameWorld, ai.GameEventDeath, aftermath, "death", []string{poble.ID}, death.Description, 0.98, -0.95)
+		}
+	}
+}
+
+func appendEncounterWorldEvent(gameWorld *world.World, eventType ai.GameEventType, aftermath EncounterAftermath, suffix string, participants []string, description string, severity, valence float32) {
+	if gameWorld == nil {
+		return
+	}
+	if strings.TrimSpace(description) == "" {
+		description = aftermath.VisibleSummary
+	}
+	tags := []string{"encounter", "intimacy", strings.ToLower(aftermath.Type.String()), suffix}
+	if aftermath.IsSecret {
+		tags = append(tags, "secret", "affair")
+	}
+	if aftermath.PregnancyTriggered {
+		tags = append(tags, "pregnancy")
+	}
+	if aftermath.STITransmitted != entities.STINone {
+		tags = append(tags, "sti", strings.ToLower(aftermath.STITransmitted.String()))
+	}
+	event := world.GameEvent{
+		ID:           fmt.Sprintf("encounter_%s_%d_%s", suffix, gameWorld.Calendar.ToMinutes(), strings.Join(uniqueStrings(participants), "_")),
+		Type:         eventType,
+		Time:         gameWorld.Calendar,
+		PrimaryActor: firstNonEmpty(participants),
+		Participants: uniqueStrings(participants),
+		Severity:     severity,
+		Valence:      valence,
+		Description:  description,
+		Tags:         uniqueStrings(tags),
+	}
+	gameWorld.EventHistory = append(gameWorld.EventHistory, event)
+}
+
 func registerWitnesses(gameWorld *world.World, a, b *entities.Poble, aftermath EncounterAftermath) {
 	if gameWorld == nil {
 		return
@@ -1435,6 +1566,15 @@ func uniqueStrings(values []string) []string {
 	}
 	sort.Strings(result)
 	return result
+}
+
+func firstNonEmpty(values []string) string {
+	for _, value := range values {
+		if strings.TrimSpace(value) != "" {
+			return value
+		}
+	}
+	return ""
 }
 
 func clampPercent(value float32) float32 {

@@ -1,0 +1,13 @@
+[TEMPLATE:END_SCANDAL_LAST_001]
+tags: ending, scandal, last_words
+weight: 10
+---
+La ultima mentira no fallo por mala. Fallo porque ya no quedaba nadie dispuesto a ayudarla.
+---
+
+[TEMPLATE:END_SCANDAL_LAST_002]
+tags: ending, scandal, last_words
+weight: 8
+---
+Todos lo supieron. Esa fue la sentencia.
+---

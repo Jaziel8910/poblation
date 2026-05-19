@@ -89,3 +89,85 @@ func TestResetEndingUsesStatisticsFromWorld(t *testing.T) {
 		t.Fatalf("expected Mara as longest lived, got %s", ending.Statistics.LongestLivedPople)
 	}
 }
+
+func TestPlagueEndingBeatsGenericWarCollapse(t *testing.T) {
+	gameWorld := world.NewWorld(91)
+	gameWorld.EventHistory = append(gameWorld.EventHistory, ai.GameEvent{
+		ID:          "plague_final",
+		Type:        ai.GameEventDeath,
+		Time:        entities.NewGameTime(50, 0, 0),
+		Description: "plague took the last breath from the settlement",
+		Tags:        []string{"plague", "illness"},
+	})
+
+	ending := CheckEndingConditions(gameWorld)
+	if ending == nil || ending.Type != END_PLAGUE {
+		t.Fatalf("expected plague ending, got %+v", ending)
+	}
+}
+
+func TestMonopolyEndingDetectsCapturedEconomy(t *testing.T) {
+	gameWorld := world.NewWorld(92)
+	gameWorld.Era = entities.EraTwo
+	gameWorld.TechTree.Unlocked[world.TechCurrency] = true
+	for i := 0; i < 5; i++ {
+		poble := entities.NewPoble("m"+string(rune('a'+i)), "Market", 30, entities.Female)
+		poble.IsAlive = true
+		poble.Money = 10
+		if i == 0 {
+			poble.Money = 180
+		}
+		gameWorld.AddPoble(&poble, world.Location{IslandID: "island_0"})
+	}
+
+	ending := CheckEndingConditions(gameWorld)
+	if ending == nil || ending.Type != END_MONOPOLY {
+		t.Fatalf("expected monopoly ending, got %+v", ending)
+	}
+}
+
+func TestQuarantineEndingDetectsLivingHealthCollapse(t *testing.T) {
+	gameWorld := world.NewWorld(93)
+	for i := 0; i < 5; i++ {
+		poble := entities.NewPoble("q"+string(rune('a'+i)), "Sick", 30, entities.Female)
+		poble.IsAlive = true
+		poble.Health.HP = 20
+		poble.Health.Conditions = []entities.ConditionID{entities.ConditionSick}
+		gameWorld.AddPoble(&poble, world.Location{IslandID: "island_0"})
+	}
+	gameWorld.EventHistory = append(gameWorld.EventHistory, ai.GameEvent{
+		ID:          "sti_crisis",
+		Type:        ai.GameEventSocialNegative,
+		Time:        entities.NewGameTime(20, 0, 0),
+		Description: "sti and illness spread through the settlement",
+		Tags:        []string{"sti", "illness"},
+	})
+
+	ending := CheckEndingConditions(gameWorld)
+	if ending == nil || ending.Type != END_QUARANTINE {
+		t.Fatalf("expected quarantine ending, got %+v", ending)
+	}
+}
+
+func TestScandalEndingDetectsSecretEncounterCollapse(t *testing.T) {
+	gameWorld := world.NewWorld(94)
+	for i := 0; i < 6; i++ {
+		poble := entities.NewPoble("s"+string(rune('a'+i)), "Rumor", 30, entities.Female)
+		poble.IsAlive = true
+		gameWorld.AddPoble(&poble, world.Location{IslandID: "island_0"})
+	}
+	for i := 0; i < 4; i++ {
+		gameWorld.EventHistory = append(gameWorld.EventHistory, ai.GameEvent{
+			ID:          "affair_secret_" + string(rune('a'+i)),
+			Type:        ai.GameEventSocialNegative,
+			Time:        entities.NewGameTime(10+i, 0, 0),
+			Description: "secret encounter became a public revelation",
+			Tags:        []string{"affair", "secret", "revelation"},
+		})
+	}
+
+	ending := CheckEndingConditions(gameWorld)
+	if ending == nil || ending.Type != END_SCANDAL {
+		t.Fatalf("expected scandal ending, got %+v", ending)
+	}
+}

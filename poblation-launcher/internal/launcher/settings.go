@@ -9,8 +9,8 @@ import (
 )
 
 const (
-	AppVersion        = "1.0.0.1"
-	BuildName         = "THE LAUNCHER UPDATE"
+	AppVersion        = "1.0.0-beta.1"
+	BuildName         = "BETA V1.0.0"
 	MaxVersionsToKeep = 3
 )
 
