@@ -6,12 +6,12 @@ This is the first public build that is meant to be installed and played without 
 
 Recommended for Windows:
 
-1. Download `poblation_v1.0.0.2_launcher_installer.exe`.
-2. Run it.
-3. Open `POBLATION Launcher.cmd` from the Desktop.
-4. Choose Play, or run `poblation-launcher play`.
+1. Download `POBLATION_v1.0.0.2_WINDOWS_READY.zip`.
+2. Unzip it.
+3. Double-click `OPEN POBLATION.bat`.
+4. Read `TUTORIAL.txt` if you are not used to terminal games.
 
-Manual download:
+Inside the zip there is also a direct game exe for technical players:
 
 - `poblation_windows_amd64.exe`
 
@@ -22,6 +22,9 @@ The game executable is portable. It embeds the template content it needs and pre
 - Fixed the GitHub game exe failing when `templates/` was not beside it.
 - Replaced the heavy GUI launcher with a lightweight terminal launcher.
 - Fixed the Desktop launcher shortcut so it points to the installed launcher.
+- Added one-click `OPEN POBLATION.bat`.
+- Added `TUTORIAL.txt` for non-technical players.
+- Added one ready-to-play zip so players do not have to guess which asset to install.
 - Added a root README so GitHub shows the project properly.
 - Added issue templates for bugs and beta feedback.
 - Added launcher smoke testing through `play -smoke`.

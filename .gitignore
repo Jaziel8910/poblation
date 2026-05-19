@@ -1,0 +1,13 @@
+# Release artifacts
+*.zip
+*.zip.sha256
+release-package/
+
+# Local caches
+.gocache/
+.codex-gocache/
+.codex-gomodcache/
+
+# OS/editor noise
+Thumbs.db
+.DS_Store

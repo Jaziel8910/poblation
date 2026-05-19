@@ -1,0 +1,102 @@
+POBLATION - TUTORIAL PARA INSTALAR Y JUGAR
+==========================================
+
+Version: v1.0.0.2
+
+SI NO SABES NADA TECNICO, HAZ ESTO:
+
+1. Descarga este archivo:
+
+   POBLATION_v1.0.0.2_WINDOWS_READY.zip
+
+2. Click derecho al zip y elige:
+
+   Extraer todo...
+
+3. Abre la carpeta extraida.
+
+4. Dale doble click a:
+
+   OPEN POBLATION.bat
+
+5. Si Windows muestra una advertencia azul:
+
+   - Click en "Mas informacion"
+   - Click en "Ejecutar de todas formas"
+
+6. Se abrira el launcher.
+
+7. En el launcher, elige:
+
+   1) Play latest installed
+
+
+QUE ARCHIVO DESCARGO?
+---------------------
+
+Descarga el ZIP.
+
+NO descargues los .sha256 si no sabes que son.
+NO descargues "Source code" si solo quieres jugar.
+NO descargues el exe suelto si no sabes usar terminal.
+
+El archivo correcto para casi todo el mundo es:
+
+POBLATION_v1.0.0.2_WINDOWS_READY.zip
+
+
+QUE HAY DENTRO DEL ZIP?
+-----------------------
+
+- OPEN POBLATION.bat
+  Abre el launcher. Si falta el launcher, lo instala.
+
+- poblation_v1.0.0.2_launcher_installer.exe
+  Instalador del launcher.
+
+- poblation_windows_amd64.exe
+  El juego directo, para usuarios tecnicos.
+
+- TUTORIAL.txt
+  Este archivo.
+
+- README.md
+  Explicacion del juego.
+
+
+DONDE SE INSTALA?
+-----------------
+
+El launcher y el juego usan esta carpeta:
+
+C:\Users\TU_USUARIO\.poblation
+
+Tus saves viven ahi tambien.
+
+
+SI NO ABRE
+----------
+
+1. Abre OPEN POBLATION.bat otra vez.
+2. Si aparece texto de error, toma screenshot.
+3. Reportalo en GitHub o manda el screenshot.
+
+
+CONTROLES BASICOS
+-----------------
+
+M      Mente
+S      Settlement
+P      Pobles
+E      Eventos
+SPACE  Pausa
+ENTER  Seleccionar
+ESC    Atras
+Q      Salir
+
+
+AVISO
+-----
+
+POBLATION es para adultos. Tiene temas sexuales, muerte, violencia,
+obsesion, duelo, traicion, enfermedad y humor oscuro.

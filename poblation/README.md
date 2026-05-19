@@ -8,13 +8,13 @@
 
 ## Download
 
-The easiest Windows path is the launcher:
+The easiest Windows path is the ready-to-play zip:
 
 1. Open the latest GitHub Release.
-2. Download `poblation_v1.0.0.2_launcher_installer.exe`.
-3. Run it.
-4. Open `POBLATION Launcher.cmd` from your Desktop or from `C:\Users\<you>\.poblation\launcher`.
-5. Choose `Install/update latest release`, then `Play`.
+2. Download `POBLATION_v1.0.0.2_WINDOWS_READY.zip`.
+3. Unzip it.
+4. Double-click `OPEN POBLATION.bat`.
+5. Read `TUTORIAL.txt` if Windows asks anything confusing.
 
 Manual players can download `poblation_windows_amd64.exe`. The beta exe is portable: it carries the text templates it needs and prepares its local runtime under `~/.poblation`.
 
@@ -68,7 +68,7 @@ There is no official Homebrew formula yet. If one ships later, it will live in t
 Windows players should use:
 
 ```text
-poblation_v1.0.0.2_launcher_installer.exe
+POBLATION_v1.0.0.2_WINDOWS_READY.zip
 ```
 
 The installer places the launcher under `~/.poblation/launcher/bin/`, creates launcher settings, and the launcher downloads playable versions from GitHub Releases.

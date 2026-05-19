@@ -13,17 +13,17 @@
 
 ## Play The Beta
 
-**Recommended on Windows:** download the launcher installer from the latest release.
+**Recommended on Windows:** download the single ready-to-play zip from the latest release.
 
 1. Go to [POBLATION v1.0.0.2](https://github.com/Jaziel8910/poblation/releases/tag/v1.0.0.2).
-2. Download `poblation_v1.0.0.2_launcher_installer.exe`.
-3. Run it.
-4. Open `POBLATION Launcher.cmd` from your Desktop.
-5. Choose install/update, then play.
+2. Download `POBLATION_v1.0.0.2_WINDOWS_READY.zip`.
+3. Unzip it.
+4. Double-click `OPEN POBLATION.bat`.
+5. Read `TUTORIAL.txt` if Windows asks anything confusing.
 
 Manual option:
 
-- Download `poblation_windows_amd64.exe`.
+- Download `poblation_windows_amd64.exe` only if you already know how to run terminal apps.
 - Run it from a terminal.
 - The executable is portable and prepares its runtime under `~/.poblation`.
 

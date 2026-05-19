@@ -68,10 +68,15 @@ func main() {
 func writeLaunchScripts(root string) error {
 	launcherDir := filepath.Join(root, "launcher")
 	launcherEXEPath := filepath.Join(launcherDir, "bin", launcherFile)
+	openScript := filepath.Join(launcherDir, "OPEN POBLATION.bat")
 	menuScript := filepath.Join(launcherDir, "POBLATION Launcher.cmd")
 	playScript := filepath.Join(launcherDir, "Play POBLATION Beta.cmd")
-	menuBody := "@echo off\r\n\"%~dp0bin\\poblation-launcher.exe\"\r\n"
+	openBody := fmt.Sprintf("@echo off\r\n\"%s\"\r\npause\r\n", launcherEXEPath)
+	menuBody := openBody
 	playBody := "@echo off\r\n\"%~dp0bin\\poblation-launcher.exe\" play\r\npause\r\n"
+	if err := os.WriteFile(openScript, []byte(openBody), 0o755); err != nil {
+		return fmt.Errorf("crear acceso principal: %w", err)
+	}
 	if err := os.WriteFile(menuScript, []byte(menuBody), 0o755); err != nil {
 		return fmt.Errorf("crear acceso del launcher: %w", err)
 	}
@@ -79,9 +84,9 @@ func writeLaunchScripts(root string) error {
 		return fmt.Errorf("crear acceso para jugar: %w", err)
 	}
 	if desktop, err := os.UserHomeDir(); err == nil {
-		desktopPath := filepath.Join(desktop, "Desktop", "POBLATION Launcher.cmd")
-		desktopBody := fmt.Sprintf("@echo off\r\n\"%s\"\r\npause\r\n", launcherEXEPath)
-		_ = os.WriteFile(desktopPath, []byte(desktopBody), 0o755)
+		desktopDir := filepath.Join(desktop, "Desktop")
+		_ = os.WriteFile(filepath.Join(desktopDir, "OPEN POBLATION.bat"), []byte(openBody), 0o755)
+		_ = os.WriteFile(filepath.Join(desktopDir, "POBLATION Launcher.cmd"), []byte(openBody), 0o755)
 	}
 	return nil
 }
