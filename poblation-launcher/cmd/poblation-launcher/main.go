@@ -140,9 +140,11 @@ func installCommand(settings launcher.Settings, args []string) error {
 func playCommand(settings launcher.Settings, args []string) error {
 	version := settings.DefaultVersion
 	slot := 0
+	smoke := false
 	flags := flag.NewFlagSet("play", flag.ContinueOnError)
 	flags.StringVar(&version, "version", version, "installed version to run")
 	flags.IntVar(&slot, "slot", 0, "save slot to open")
+	flags.BoolVar(&smoke, "smoke", false, "verify the selected game starts and exits")
 	if err := flags.Parse(args); err != nil {
 		return err
 	}
@@ -166,13 +168,21 @@ func playCommand(settings launcher.Settings, args []string) error {
 	if _, err := os.Stat(record.Path); err != nil {
 		return fmt.Errorf("installed executable missing: %w", err)
 	}
-	return runGameAttached(record, slot)
+	return runGameAttached(record, playOptions{slot: slot, smoke: smoke})
 }
 
-func runGameAttached(record launcher.VersionRecord, slot int) error {
+type playOptions struct {
+	slot  int
+	smoke bool
+}
+
+func runGameAttached(record launcher.VersionRecord, options playOptions) error {
 	args := []string{}
-	if slot > 0 {
-		args = append(args, "--slot", strconv.Itoa(slot))
+	if options.slot > 0 {
+		args = append(args, "--slot", strconv.Itoa(options.slot))
+	}
+	if options.smoke {
+		args = append(args, "--smoke")
 	}
 	cmd := exec.Command(record.Path, args...)
 	cmd.Stdin = os.Stdin
@@ -344,6 +354,7 @@ func printHelp() {
 	fmt.Println("Commands:")
 	fmt.Println("  install [tag]       Download and verify a GitHub release")
 	fmt.Println("  play [tag]          Run an installed version")
+	fmt.Println("  play -smoke         Verify the selected game starts")
 	fmt.Println("  list                Show installed versions")
 	fmt.Println("  saves               Show save previews")
 	fmt.Println("  news                Show GitHub releases")

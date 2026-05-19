@@ -67,6 +67,7 @@ func main() {
 
 func writeLaunchScripts(root string) error {
 	launcherDir := filepath.Join(root, "launcher")
+	launcherEXEPath := filepath.Join(launcherDir, "bin", launcherFile)
 	menuScript := filepath.Join(launcherDir, "POBLATION Launcher.cmd")
 	playScript := filepath.Join(launcherDir, "Play POBLATION Beta.cmd")
 	menuBody := "@echo off\r\n\"%~dp0bin\\poblation-launcher.exe\"\r\n"
@@ -79,7 +80,8 @@ func writeLaunchScripts(root string) error {
 	}
 	if desktop, err := os.UserHomeDir(); err == nil {
 		desktopPath := filepath.Join(desktop, "Desktop", "POBLATION Launcher.cmd")
-		_ = os.WriteFile(desktopPath, []byte(menuBody), 0o755)
+		desktopBody := fmt.Sprintf("@echo off\r\n\"%s\"\r\npause\r\n", launcherEXEPath)
+		_ = os.WriteFile(desktopPath, []byte(desktopBody), 0o755)
 	}
 	return nil
 }
