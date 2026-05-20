@@ -213,8 +213,7 @@ func (m CreatePobleModel) View() string {
 
 	width := maxInt(58, m.state.Width-8)
 	height := maxInt(16, m.state.Height-5)
-	formWidth := minInt(76, maxInt(52, width-36))
-	sideWidth := maxInt(28, width-formWidth-3)
+	formWidth := minInt(86, maxInt(52, width-4))
 
 	header := lipgloss.JoinVertical(
 		lipgloss.Left,
@@ -231,55 +230,47 @@ func (m CreatePobleModel) View() string {
 		body = lipgloss.JoinVertical(lipgloss.Left, body, "", menuStatusStyle.Render(m.status))
 	}
 
-	formCard := createFormCardStyle.Width(formWidth).Render(body)
-	sideCard := createSideCardStyle.Width(sideWidth).Height(lipgloss.Height(formCard) - 2).Render(m.renderCreateSidePanel())
-	content := formCard
-	if width >= 98 {
-		content = lipgloss.JoinHorizontal(lipgloss.Top, formCard, "  ", sideCard)
-	} else {
-		content = lipgloss.JoinVertical(lipgloss.Left, formCard, sideCard)
-	}
+	summary := createSideCardStyle.Width(formWidth).Render(m.renderCreateSidePanel())
+	content := lipgloss.JoinVertical(
+		lipgloss.Left,
+		createFormCardStyle.Width(formWidth).Render(body),
+		"",
+		summary,
+	)
 
 	frame := createFrameStyle
 	if m.step == createStepConfirm || m.step == createStepRevision {
 		frame = createConfirmFrameStyle
 	}
-	return lipgloss.Place(width, height, lipgloss.Center, lipgloss.Center, frame.Render(content))
+	return lipgloss.Place(width, height, lipgloss.Center, lipgloss.Top, frame.Render(content))
 }
 
 func (m CreatePobleModel) renderCreateSidePanel() string {
+	count := maxInt(m.createdCount, currentFounderCount(m.state))
 	lines := []string{
-		createStepStyle.Render("Lo que estas creando"),
-		MutedStyle.Render("Un fundador no es un preset: es una bomba social con nombre."),
-		"",
-		createSideRow("Nombre", emptyFallback(m.name, "todavia sin nombre")),
-		createSideRow("Edad", emptyFallback(m.ageInput, "26")),
-		createSideRow("Sexo", createChoiceLabel(m.sexChoice)),
-		createSideRow("Deseo", createChoiceLabel(m.romanticChoice)),
-		createSideRow("Intensidad", createChoiceLabel(m.sexualIntensityChoice)),
-		createSideRow("Arquetipo", createChoiceLabel(m.archetypeChoice)),
-		createSideRow("Rasgo", traitChoiceLabel(m.traitChoice)),
-		createSideRow("Pobles listos", fmt.Sprintf("%d / 2 minimo", maxInt(m.createdCount, currentFounderCount(m.state)))),
-		"",
-		createStepStyle.Render("Consejo"),
+		createStepStyle.Render(fmt.Sprintf("Pobles iniciales: %d / 2 minimo", count)),
+		createSideRow("Nombre", emptyFallback(m.name, "sin nombre")),
+		createSideRow("Edad", emptyFallback(m.ageInput, "26")) + "   " +
+			createSideRow("Sexo", createChoiceLabel(m.sexChoice)) + "   " +
+			createSideRow("Arquetipo", createChoiceLabel(m.archetypeChoice)),
 	}
 	switch m.step {
 	case createStepMore:
-		lines = append(lines, BodyStyle.Render("Ya tienes el minimo. Ahora decide si quieres una fundacion mas grande."))
+		lines = append(lines, AccentStyle.Render("Ya tienes el minimo. Puedes empezar o crear mas Pobles."))
 	case createStepBasic:
-		lines = append(lines, BodyStyle.Render(fmt.Sprintf("Estas creando el Poble inicial #%d. Minimo obligatorio: 2.", currentFounderCount(m.state)+1)))
+		lines = append(lines, MutedStyle.Render(fmt.Sprintf("Creando Poble inicial #%d. Escribe nombre, sexo y edad.", currentFounderCount(m.state)+1)))
 	case createStepOrientation:
-		lines = append(lines, BodyStyle.Render("Esto guia deseo y tension, no una jaula fija."))
+		lines = append(lines, MutedStyle.Render("La orientacion guia deseo y tension, no encierra al Poble."))
 	case createStepArchetype:
-		lines = append(lines, BodyStyle.Render("El arquetipo empuja decisiones, memorias y drama."))
+		lines = append(lines, MutedStyle.Render("El arquetipo empuja decisiones, memorias y drama."))
 	case createStepTraits:
-		lines = append(lines, BodyStyle.Render("El empuje cambia como rompe, ama o controla."))
+		lines = append(lines, MutedStyle.Render("El empuje cambia como rompe, ama o controla."))
 	case createStepHistory:
-		lines = append(lines, BodyStyle.Render("Un secreto bueno vale mas que diez stats bonitas."))
+		lines = append(lines, MutedStyle.Render("Un secreto bueno vale mas que diez stats bonitas."))
 	case createStepConfirm:
-		lines = append(lines, BodyStyle.Render("Mira si parece una persona, no una ficha."))
+		lines = append(lines, MutedStyle.Render("Confirma si parece una persona, no solo una ficha."))
 	default:
-		lines = append(lines, BodyStyle.Render("Ajusta solo lo que se sienta falso."))
+		lines = append(lines, MutedStyle.Render("Ajusta solo lo que se sienta falso."))
 	}
 	return strings.Join(lines, "\n")
 }
