@@ -71,9 +71,9 @@ func writeLaunchScripts(root string) error {
 	openScript := filepath.Join(launcherDir, "OPEN POBLATION.bat")
 	menuScript := filepath.Join(launcherDir, "POBLATION Launcher.cmd")
 	playScript := filepath.Join(launcherDir, "Play POBLATION Beta.cmd")
-	openBody := fmt.Sprintf("@echo off\r\n\"%s\"\r\npause\r\n", launcherEXEPath)
+	openBody := terminalLaunchScript(launcherEXEPath, "")
 	menuBody := openBody
-	playBody := "@echo off\r\n\"%~dp0bin\\poblation-launcher.exe\" play\r\npause\r\n"
+	playBody := terminalLaunchScript(launcherEXEPath, "play")
 	if err := os.WriteFile(openScript, []byte(openBody), 0o755); err != nil {
 		return fmt.Errorf("crear acceso principal: %w", err)
 	}
@@ -89,6 +89,32 @@ func writeLaunchScripts(root string) error {
 		_ = os.WriteFile(filepath.Join(desktopDir, "POBLATION Launcher.cmd"), []byte(openBody), 0o755)
 	}
 	return nil
+}
+
+func terminalLaunchScript(launcherEXEPath, args string) string {
+	return fmt.Sprintf(`@echo off
+setlocal
+title POBLATION
+chcp 65001 >nul
+set "LAUNCHER=%s"
+set "ARG=%s"
+
+if not exist "%%LAUNCHER%%" (
+  echo No encuentro el launcher en:
+  echo %%LAUNCHER%%
+  pause
+  exit /b 1
+)
+
+where wt.exe >nul 2>nul
+if not errorlevel 1 (
+  start "" wt.exe -w 0 nt --title "POBLATION" powershell.exe -NoLogo -NoExit -ExecutionPolicy Bypass -Command "$Host.UI.RawUI.WindowTitle='POBLATION'; [Console]::OutputEncoding=[Text.UTF8Encoding]::UTF8; & '%%LAUNCHER%%' %%ARG%%"
+  exit /b 0
+)
+
+start "POBLATION" powershell.exe -NoLogo -NoExit -ExecutionPolicy Bypass -Command "$Host.UI.RawUI.WindowTitle='POBLATION'; [Console]::OutputEncoding=[Text.UTF8Encoding]::UTF8; & '%%LAUNCHER%%' %%ARG%%"
+exit /b 0
+`, launcherEXEPath, args)
 }
 
 func poblationRoot() (string, error) {

@@ -68,29 +68,46 @@ type CreatePobleModel struct {
 
 var (
 	createFrameStyle = lipgloss.NewStyle().
-				Border(lipgloss.RoundedBorder()).
-				BorderForeground(borderColor).
+				Border(lipgloss.HiddenBorder()).
 				Background(backgroundColor).
+				Foreground(primaryColor).
+				Padding(0, 1)
+
+	createConfirmFrameStyle = lipgloss.NewStyle().
+				Border(lipgloss.HiddenBorder()).
+				Background(backgroundColor).
+				Foreground(primaryColor).
+				Padding(0, 1)
+
+	createFormCardStyle = lipgloss.NewStyle().
+				Border(lipgloss.RoundedBorder()).
+				BorderForeground(lipgloss.Color("#3B4658")).
+				Background(lipgloss.Color("#10141C")).
 				Foreground(primaryColor).
 				Padding(1, 2)
 
-	createConfirmFrameStyle = lipgloss.NewStyle().
-				Border(lipgloss.DoubleBorder()).
-				BorderForeground(accentColor).
-				Background(surfaceColor).
+	createSideCardStyle = lipgloss.NewStyle().
+				Border(lipgloss.RoundedBorder()).
+				BorderForeground(lipgloss.Color("#3D706C")).
+				Background(lipgloss.Color("#0B1216")).
 				Foreground(primaryColor).
 				Padding(1, 2)
 
 	createTitleStyle = lipgloss.NewStyle().
-				Foreground(accentColor).
-				Bold(true)
+				Foreground(lipgloss.Color("#F7D27A")).
+				Bold(true).
+				MarginBottom(1)
 
 	createStepStyle = lipgloss.NewStyle().
-			Foreground(secondaryColor).
+			Foreground(lipgloss.Color("#67E8DD")).
 			Bold(true)
 
 	createHintStyle = lipgloss.NewStyle().
 			Foreground(mutedColor)
+
+	createKickerStyle = lipgloss.NewStyle().
+				Foreground(lipgloss.Color("#FF7A90")).
+				Bold(true)
 )
 
 // NewCreatePobleModel returns the founder creation flow.
@@ -170,23 +187,111 @@ func (m CreatePobleModel) View() string {
 		return createFrameStyle.Render("Preparando el creador...")
 	}
 
+	width := maxInt(58, m.state.Width-8)
+	height := maxInt(16, m.state.Height-5)
+	formWidth := minInt(76, maxInt(52, width-36))
+	sideWidth := maxInt(28, width-formWidth-3)
+
 	header := lipgloss.JoinVertical(
 		lipgloss.Left,
+		createKickerStyle.Render("NUEVA CIVILIZACION"),
 		createTitleStyle.Render("Ficha de personaje"),
 		createStepStyle.Render(m.stepLabel()),
+		createProgressBar(int(m.step), 6, minInt(42, formWidth-8)),
 		createHintStyle.Render("ESC cancela la nueva civilizacion."),
 	)
 
+	m.form = m.form.WithWidth(maxInt(36, formWidth-8))
 	body := lipgloss.JoinVertical(lipgloss.Left, header, "", m.form.View())
 	if strings.TrimSpace(m.status) != "" {
 		body = lipgloss.JoinVertical(lipgloss.Left, body, "", menuStatusStyle.Render(m.status))
+	}
+
+	formCard := createFormCardStyle.Width(formWidth).Render(body)
+	sideCard := createSideCardStyle.Width(sideWidth).Height(lipgloss.Height(formCard) - 2).Render(m.renderCreateSidePanel())
+	content := formCard
+	if width >= 98 {
+		content = lipgloss.JoinHorizontal(lipgloss.Top, formCard, "  ", sideCard)
+	} else {
+		content = lipgloss.JoinVertical(lipgloss.Left, formCard, sideCard)
 	}
 
 	frame := createFrameStyle
 	if m.step == createStepConfirm || m.step == createStepRevision {
 		frame = createConfirmFrameStyle
 	}
-	return frame.Width(maxInt(56, m.state.Width-8)).Render(body)
+	return lipgloss.Place(width, height, lipgloss.Center, lipgloss.Center, frame.Render(content))
+}
+
+func (m CreatePobleModel) renderCreateSidePanel() string {
+	lines := []string{
+		createStepStyle.Render("Lo que estas creando"),
+		MutedStyle.Render("Un fundador no es un preset: es una bomba social con nombre."),
+		"",
+		createSideRow("Nombre", emptyFallback(m.name, "todavia sin nombre")),
+		createSideRow("Edad", emptyFallback(m.ageInput, "26")),
+		createSideRow("Sexo", createChoiceLabel(m.sexChoice)),
+		createSideRow("Deseo", createChoiceLabel(m.romanticChoice)),
+		createSideRow("Intensidad", createChoiceLabel(m.sexualIntensityChoice)),
+		createSideRow("Arquetipo", createChoiceLabel(m.archetypeChoice)),
+		createSideRow("Rasgo", traitChoiceLabel(m.traitChoice)),
+		"",
+		createStepStyle.Render("Consejo"),
+	}
+	switch m.step {
+	case createStepBasic:
+		lines = append(lines, BodyStyle.Render("Empieza simple. El juego ya le va a dar contradicciones."))
+	case createStepOrientation:
+		lines = append(lines, BodyStyle.Render("Esto guia deseo y tension, no una jaula fija."))
+	case createStepArchetype:
+		lines = append(lines, BodyStyle.Render("El arquetipo empuja decisiones, memorias y drama."))
+	case createStepTraits:
+		lines = append(lines, BodyStyle.Render("El empuje cambia como rompe, ama o controla."))
+	case createStepHistory:
+		lines = append(lines, BodyStyle.Render("Un secreto bueno vale mas que diez stats bonitas."))
+	case createStepConfirm:
+		lines = append(lines, BodyStyle.Render("Mira si parece una persona, no una ficha."))
+	default:
+		lines = append(lines, BodyStyle.Render("Ajusta solo lo que se sienta falso."))
+	}
+	return strings.Join(lines, "\n")
+}
+
+func createProgressBar(current, total, width int) string {
+	if total <= 0 {
+		return ""
+	}
+	if current < 1 {
+		current = 1
+	}
+	if current > total {
+		current = total
+	}
+	width = maxInt(10, width)
+	filled := int(float64(width) * (float64(current) / float64(total)))
+	bar := strings.Repeat("=", filled) + strings.Repeat("-", width-filled)
+	return AccentStyle.Render("["+bar+"]") + MutedStyle.Render(fmt.Sprintf(" %d/%d", current, total))
+}
+
+func createSideRow(label, value string) string {
+	return MutedStyle.Render(label+": ") + BodyStyle.Render(trimMenuText(value, 34))
+}
+
+func emptyFallback(value, fallback string) string {
+	value = strings.TrimSpace(value)
+	if value == "" {
+		return fallback
+	}
+	return value
+}
+
+func createChoiceLabel(value string) string {
+	value = strings.TrimSpace(value)
+	if value == "" {
+		return "procedural"
+	}
+	value = strings.ReplaceAll(value, "_", " ")
+	return value
 }
 
 func (m CreatePobleModel) setStep(step createStep) (tea.Model, tea.Cmd) {

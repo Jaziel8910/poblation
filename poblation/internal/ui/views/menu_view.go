@@ -766,32 +766,32 @@ func menuModalTheme() *huh.Theme {
 	theme := huh.ThemeBase()
 	button := lipgloss.NewStyle().Padding(0, 2).MarginRight(1)
 
-	theme.Form.Base = lipgloss.NewStyle().Background(surfaceColor).Foreground(primaryColor)
-	theme.Group.Title = lipgloss.NewStyle().Foreground(secondaryColor).Bold(true)
-	theme.Group.Description = lipgloss.NewStyle().Foreground(mutedColor)
-	theme.Focused.Base = lipgloss.NewStyle().PaddingLeft(1).BorderStyle(lipgloss.NormalBorder()).BorderLeft(true).BorderForeground(borderColor)
+	theme.Form.Base = lipgloss.NewStyle().Background(lipgloss.Color("#10141C")).Foreground(primaryColor)
+	theme.Group.Title = lipgloss.NewStyle().Foreground(lipgloss.Color("#67E8DD")).Bold(true)
+	theme.Group.Description = lipgloss.NewStyle().Foreground(lipgloss.Color("#9AA7B5"))
+	theme.Focused.Base = lipgloss.NewStyle().PaddingLeft(1).BorderStyle(lipgloss.ThickBorder()).BorderLeft(true).BorderForeground(lipgloss.Color("#FF7A90"))
 	theme.Focused.Card = theme.Focused.Base
-	theme.Focused.Title = lipgloss.NewStyle().Foreground(primaryColor).Bold(true)
-	theme.Focused.NoteTitle = lipgloss.NewStyle().Foreground(secondaryColor).Bold(true)
-	theme.Focused.Description = lipgloss.NewStyle().Foreground(mutedColor)
+	theme.Focused.Title = lipgloss.NewStyle().Foreground(lipgloss.Color("#F7D27A")).Bold(true)
+	theme.Focused.NoteTitle = lipgloss.NewStyle().Foreground(lipgloss.Color("#67E8DD")).Bold(true)
+	theme.Focused.Description = lipgloss.NewStyle().Foreground(lipgloss.Color("#B7C2CC"))
 	theme.Focused.ErrorIndicator = lipgloss.NewStyle().Foreground(dangerColor).SetString(" !")
 	theme.Focused.ErrorMessage = lipgloss.NewStyle().Foreground(dangerColor)
-	theme.Focused.SelectSelector = lipgloss.NewStyle().Foreground(accentColor).SetString("> ")
+	theme.Focused.SelectSelector = lipgloss.NewStyle().Foreground(lipgloss.Color("#FF7A90")).Bold(true).SetString("> ")
 	theme.Focused.Option = lipgloss.NewStyle().Foreground(primaryColor)
-	theme.Focused.FocusedButton = button.Foreground(backgroundColor).Background(accentColor).Bold(true)
-	theme.Focused.BlurredButton = button.Foreground(primaryColor).Background(borderColor)
+	theme.Focused.FocusedButton = button.Foreground(backgroundColor).Background(lipgloss.Color("#FF7A90")).Bold(true)
+	theme.Focused.BlurredButton = button.Foreground(primaryColor).Background(lipgloss.Color("#2F3947"))
 	theme.Focused.Next = theme.Focused.FocusedButton
-	theme.Focused.TextInput.Cursor = lipgloss.NewStyle().Foreground(successColor)
+	theme.Focused.TextInput.Cursor = lipgloss.NewStyle().Foreground(lipgloss.Color("#67E8DD"))
 	theme.Focused.TextInput.CursorText = lipgloss.NewStyle().Foreground(primaryColor)
 	theme.Focused.TextInput.Placeholder = lipgloss.NewStyle().Foreground(mutedColor)
-	theme.Focused.TextInput.Prompt = lipgloss.NewStyle().Foreground(accentColor).Bold(true)
+	theme.Focused.TextInput.Prompt = lipgloss.NewStyle().Foreground(lipgloss.Color("#FF7A90")).Bold(true)
 	theme.Focused.TextInput.Text = lipgloss.NewStyle().Foreground(primaryColor)
 
 	theme.Blurred = theme.Focused
 	theme.Blurred.Base = lipgloss.NewStyle().PaddingLeft(1)
 	theme.Blurred.Card = theme.Blurred.Base
-	theme.Blurred.NoteTitle = lipgloss.NewStyle().Foreground(mutedColor).Bold(true)
-	theme.Blurred.Title = lipgloss.NewStyle().Foreground(mutedColor)
-	theme.Blurred.Description = lipgloss.NewStyle().Foreground(mutedColor)
+	theme.Blurred.NoteTitle = lipgloss.NewStyle().Foreground(lipgloss.Color("#7E8B99")).Bold(true)
+	theme.Blurred.Title = lipgloss.NewStyle().Foreground(lipgloss.Color("#9AA7B5"))
+	theme.Blurred.Description = lipgloss.NewStyle().Foreground(lipgloss.Color("#7E8B99"))
 	return theme
 }

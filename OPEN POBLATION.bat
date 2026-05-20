@@ -1,6 +1,7 @@
 @echo off
 setlocal
 title POBLATION
+chcp 65001 >nul
 
 set "ROOT=%~dp0"
 set "LAUNCHER=%USERPROFILE%\.poblation\launcher\bin\poblation-launcher.exe"
@@ -12,10 +13,9 @@ echo =========
 echo.
 
 if exist "%LAUNCHER%" (
-  echo Opening installed launcher...
-  "%LAUNCHER%"
-  pause
-  exit /b %ERRORLEVEL%
+  echo Opening installed launcher in a better terminal...
+  call :open_launcher ""
+  exit /b 0
 )
 
 if exist "%INSTALLER%" (
@@ -30,9 +30,8 @@ if exist "%INSTALLER%" (
   )
   echo.
   echo Opening launcher...
-  "%LAUNCHER%"
-  pause
-  exit /b %ERRORLEVEL%
+  call :open_launcher ""
+  exit /b 0
 )
 
 echo Could not find the launcher or installer.
@@ -43,3 +42,13 @@ echo If you downloaded only the game exe, open a terminal and run:
 echo   poblation_windows_amd64.exe
 pause
 exit /b 1
+
+:open_launcher
+set "ARG=%~1"
+where wt.exe >nul 2>nul
+if not errorlevel 1 (
+  start "" wt.exe -w 0 nt --title "POBLATION" powershell.exe -NoLogo -NoExit -ExecutionPolicy Bypass -Command "$Host.UI.RawUI.WindowTitle='POBLATION'; [Console]::OutputEncoding=[Text.UTF8Encoding]::UTF8; & '%LAUNCHER%' %ARG%"
+  exit /b 0
+)
+start "POBLATION" powershell.exe -NoLogo -NoExit -ExecutionPolicy Bypass -Command "$Host.UI.RawUI.WindowTitle='POBLATION'; [Console]::OutputEncoding=[Text.UTF8Encoding]::UTF8; & '%LAUNCHER%' %ARG%"
+exit /b 0

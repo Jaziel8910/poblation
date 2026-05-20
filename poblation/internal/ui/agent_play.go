@@ -76,6 +76,12 @@ func RunAgentPlay(orchestrator *engine.Orchestrator, options AgentPlayOptions) e
 	if err := capture("menu", "Primera pantalla que ve un jugador al abrir POBLATION."); err != nil {
 		return err
 	}
+	if err := switchAgentView(&model, VIEW_CREATE_POBLE); err != nil {
+		return err
+	}
+	if err := capture("character-create", "Creador de fundador como pantalla real de inicio."); err != nil {
+		return err
+	}
 	if err := switchAgentView(&model, VIEW_MAIN_MAP); err != nil {
 		return err
 	}
