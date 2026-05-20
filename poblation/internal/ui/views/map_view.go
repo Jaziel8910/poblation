@@ -389,7 +389,7 @@ func (m MapModel) tileAt(island *world.Island, x, y int) tile {
 	}
 	if building, ok := derivedHomeAt(island, x, y); ok {
 		return tile{
-			symbol: "🏠",
+			symbol: "H",
 			label:  abbreviateName(building.Name),
 		}
 	}
@@ -414,7 +414,7 @@ func (m MapModel) pobleAt(islandID string, x, y int) (visiblePoble, bool) {
 
 func (m MapModel) pobleSymbol(pobleID string) string {
 	if m.state.World == nil {
-		return "🏠"
+		return "P"
 	}
 
 	for _, event := range m.state.World.ActiveEvents {
@@ -423,19 +423,19 @@ func (m MapModel) pobleSymbol(pobleID string) string {
 		}
 		switch {
 		case isViolentActiveEvent(event.Type):
-			return "🔥"
+			return "!!"
 		case isRomanticActiveEvent(event.Type):
-			return "❤️"
+			return "<3"
 		case isConversationActiveEvent(event.Type):
-			return "💬"
+			return ".."
 		}
 	}
 
 	poble := m.state.World.GetPoble(pobleID)
 	if poble != nil && poble.Needs.Sleep >= 78 {
-		return "💤"
+		return "zz"
 	}
-	return "🏠"
+	return "P"
 }
 
 func (m MapModel) currentIsland() *world.Island {
@@ -681,7 +681,7 @@ func renderFeedEvents(eventFeed []events.GameEvent, width int) string {
 
 func terrainRune(island *world.Island, x, y int) string {
 	if island == nil {
-		return "·"
+		return "."
 	}
 	if x == 0 || y == 0 || x == island.Size.Width-1 || y == island.Size.Height-1 {
 		return "~"
@@ -689,11 +689,11 @@ func terrainRune(island *world.Island, x, y int) string {
 	score := tileNoise(island.ID, x, y)
 	switch {
 	case score%13 == 0:
-		return "▲"
+		return "^"
 	case score%7 == 0 || island.Biome == world.BiomeForest:
-		return "🌿"
+		return "*"
 	default:
-		return "·"
+		return "."
 	}
 }
 
@@ -842,7 +842,7 @@ func truncateRunes(text string, limit int) string {
 	if limit == 1 {
 		return string(runes[:1])
 	}
-	return string(runes[:limit-1]) + "…"
+	return string(runes[:limit-1]) + "."
 }
 
 func clampInt(value, low, high int) int {

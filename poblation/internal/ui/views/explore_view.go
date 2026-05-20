@@ -494,20 +494,20 @@ func renderExploreIslandMap(w *world.World, island *world.Island, selectedX, sel
 		for x := 0; x < cols; x++ {
 			worldX := offsetX + x
 			if worldX == selectedX && worldY == selectedY {
-				line.WriteString(exploreSelectedStyle.Render("◎"))
+				line.WriteString(exploreSelectedStyle.Render("@"))
 				continue
 			}
 			if building, ok := exploreBuildingAt(island, worldX, worldY); ok {
-				symbol := "▣"
+				symbol := "B"
 				if building.Type == world.BuildingHome {
-					symbol = "⌂"
+					symbol = "H"
 				}
 				line.WriteString(symbol)
 				continue
 			}
 			if w != nil {
 				if poble, ok := explorePobleAt(w, island.ID, worldX, worldY); ok && poble != nil {
-					line.WriteString("◉")
+					line.WriteString("P")
 					continue
 				}
 			}

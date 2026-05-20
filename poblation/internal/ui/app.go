@@ -1296,7 +1296,7 @@ func truncateRunes(text string, limit int) string {
 	if limit <= 1 {
 		return string(runes[:limit])
 	}
-	return string(runes[:limit-1]) + "…"
+	return string(runes[:limit-1]) + "."
 }
 
 func maxInt(a, b int) int {

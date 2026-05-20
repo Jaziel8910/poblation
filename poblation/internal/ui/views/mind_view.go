@@ -75,9 +75,9 @@ func (m MindModel) View() string {
 
 func (m MindModel) cursor() string {
 	if m.cursorFrame%2 == 0 {
-		return "◉"
+		return "@"
 	}
-	return "◎"
+	return "o"
 }
 
 func (m MindModel) renderPobleMind(poble entities.Poble, layout LayoutManager) string {
