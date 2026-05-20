@@ -319,6 +319,10 @@ func (m AppModel) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 		return m.switchToView(VIEW_MENU, "", "")
 	case uiviews.CreatePobleCompleteMsg:
 		return m.finishPobleCreation(typed)
+	case uiviews.CreatePobleAddAnotherMsg:
+		return m.openNextFounderCreation()
+	case uiviews.CreatePobleStartWorldMsg:
+		return m.startCreatedCivilization()
 	case uiviews.RestartCivilizationMsg:
 		return m.beginNewCivilization()
 	case notificationExpiredMsg:
@@ -1395,28 +1399,93 @@ func (m AppModel) finishPobleCreation(msg uiviews.CreatePobleCompleteMsg) (tea.M
 		m = m.resetRuntime(time.Now().UnixNano())
 	}
 
-	origin := world.Location{IslandID: "island_0", X: 12, Y: 10}
-	_ = m.World.AddPoble(msg.Poble, origin)
-
-	if m.World.GetPopulation() == 1 {
-		if companion := spawnFoundingCompanion(msg.Poble); companion != nil {
-			companionLoc := world.Location{IslandID: "island_0", X: 18, Y: 10}
-			_ = m.World.AddPoble(companion, companionLoc)
-			linkFounders(msg.Poble, companion)
-		}
+	existing := append([]*entities.Poble(nil), m.World.GetAllPobles()...)
+	origin := foundingSpawnLocation(len(existing))
+	if !m.World.AddPoble(msg.Poble, origin) {
+		note := NewNotification(NotificationDrama, "No pude colocar ese Poble en la isla.")
+		m.NotificationQueue = append(m.NotificationQueue, note)
+		return m, expireNotificationCmd(note.ID, 3*time.Second)
+	}
+	created := m.World.GetPoble(msg.Poble.ID)
+	if created == nil {
+		created = msg.Poble
+	}
+	for _, other := range existing {
+		linkFounders(created, other)
 	}
 
-	m.SelectedPobleID = msg.Poble.ID
+	m.SelectedPobleID = created.ID
 	m.World.Calendar = m.Engine.GetCurrentTime()
-	m = m.changeView(VIEW_MAIN_MAP, msg.Poble.ID, "")
+
+	population := m.World.GetPopulation()
+	m = m.changeView(VIEW_CREATE_POBLE, created.ID, "")
 	model, viewCmd := m.activateCurrentView()
 	if updated, ok := model.(AppModel); ok {
 		m = updated
 	}
 
-	note := NewNotification(NotificationBirth, fmt.Sprintf("%s ya existe. La isla puede empezar.", msg.Poble.Name))
+	if population < 2 {
+		note := NewNotification(NotificationBirth, fmt.Sprintf("%s ya existe. Falta crear al menos 1 Poble mas.", created.Name))
+		m.NotificationQueue = append(m.NotificationQueue, note)
+		return m, tea.Batch(viewCmd, expireNotificationCmd(note.ID, 3*time.Second))
+	}
+
+	note := NewNotification(NotificationBirth, fmt.Sprintf("%s ya existe. Tienes %d Pobles iniciales.", created.Name, population))
+	m.NotificationQueue = append(m.NotificationQueue, note)
+	return m, tea.Batch(
+		viewCmd,
+		func() tea.Msg { return uiviews.CreatePobleAskMoreMsg{Count: population} },
+		expireNotificationCmd(note.ID, 3*time.Second),
+	)
+}
+
+func (m AppModel) openNextFounderCreation() (tea.Model, tea.Cmd) {
+	m = m.changeView(VIEW_CREATE_POBLE, "", "")
+	model, viewCmd := m.activateCurrentView()
+	if updated, ok := model.(AppModel); ok {
+		m = updated
+	}
+	return m, viewCmd
+}
+
+func (m AppModel) startCreatedCivilization() (tea.Model, tea.Cmd) {
+	if m.World == nil || m.World.GetPopulation() < 2 {
+		count := 0
+		if m.World != nil {
+			count = m.World.GetPopulation()
+		}
+		note := NewNotification(NotificationDrama, fmt.Sprintf("Necesitas 2 Pobles iniciales. Ahora tienes %d.", count))
+		m.NotificationQueue = append(m.NotificationQueue, note)
+		return m.openNextFounderCreation()
+	}
+	if m.SelectedPobleID == "" {
+		if pobles := m.World.GetAllPobles(); len(pobles) > 0 && pobles[0] != nil {
+			m.SelectedPobleID = pobles[0].ID
+		}
+	}
+	m = m.changeView(VIEW_MAIN_MAP, m.SelectedPobleID, "")
+	model, viewCmd := m.activateCurrentView()
+	if updated, ok := model.(AppModel); ok {
+		m = updated
+	}
+	note := NewNotification(NotificationInfo, fmt.Sprintf("La isla empieza con %d Pobles iniciales.", m.World.GetPopulation()))
 	m.NotificationQueue = append(m.NotificationQueue, note)
 	return m, tea.Batch(viewCmd, expireNotificationCmd(note.ID, 3*time.Second))
+}
+
+func foundingSpawnLocation(index int) world.Location {
+	positions := []world.Location{
+		{IslandID: "island_0", X: 12, Y: 10},
+		{IslandID: "island_0", X: 18, Y: 10},
+		{IslandID: "island_0", X: 14, Y: 13},
+		{IslandID: "island_0", X: 20, Y: 13},
+		{IslandID: "island_0", X: 16, Y: 16},
+		{IslandID: "island_0", X: 22, Y: 16},
+	}
+	if index >= 0 && index < len(positions) {
+		return positions[index]
+	}
+	return world.Location{IslandID: "island_0", X: 12 + (index%8)*2, Y: 10 + (index/8)*2}
 }
 
 func (m AppModel) resetRuntime(seed int64) AppModel {

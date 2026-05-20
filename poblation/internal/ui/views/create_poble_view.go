@@ -19,6 +19,17 @@ type CreatePobleCompleteMsg struct {
 	Config entities.PoblConfig
 }
 
+// CreatePobleAskMoreMsg opens the post-minimum founder choice.
+type CreatePobleAskMoreMsg struct {
+	Count int
+}
+
+// CreatePobleAddAnotherMsg asks the app shell to start another founder sheet.
+type CreatePobleAddAnotherMsg struct{}
+
+// CreatePobleStartWorldMsg asks the app shell to begin play with the current founders.
+type CreatePobleStartWorldMsg struct{}
+
 // CreatePobleCancelMsg asks the app shell to leave the creation flow.
 type CreatePobleCancelMsg struct{}
 
@@ -32,6 +43,7 @@ const (
 	createStepHistory
 	createStepConfirm
 	createStepRevision
+	createStepMore
 )
 
 type archetypeOption struct {
@@ -59,7 +71,9 @@ type CreatePobleModel struct {
 	secretSeed            string
 	basedOn               string
 	revisionChoice        string
-	confirmed             bool
+	confirmChoice         string
+	moreChoice            string
+	createdCount          int
 
 	preview       *entities.Poble
 	previewConfig entities.PoblConfig
@@ -151,7 +165,9 @@ func (m CreatePobleModel) OnEnter() (tea.Model, tea.Cmd) {
 	m.secretSeed = ""
 	m.basedOn = ""
 	m.revisionChoice = "step3"
-	m.confirmed = false
+	m.confirmChoice = "create"
+	m.moreChoice = "start"
+	m.createdCount = currentFounderCount(m.state)
 	m.preview = nil
 	if m.rng == nil {
 		m.rng = rand.New(rand.NewSource(time.Now().UnixNano()))
@@ -164,8 +180,16 @@ func (m CreatePobleModel) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 	if size, ok := msg.(tea.WindowSizeMsg); ok {
 		return m.Resize(size.Width, size.Height), nil
 	}
+	if ask, ok := msg.(CreatePobleAskMoreMsg); ok {
+		m.createdCount = ask.Count
+		m.moreChoice = "start"
+		return m.setStep(createStepMore)
+	}
 
 	if keyMsg, ok := msg.(tea.KeyMsg); ok && keyMsg.String() == "esc" {
+		if currentFounderCount(m.state) >= 2 || m.createdCount >= 2 {
+			return m, func() tea.Msg { return CreatePobleStartWorldMsg{} }
+		}
 		return m, func() tea.Msg { return CreatePobleCancelMsg{} }
 	}
 
@@ -235,12 +259,15 @@ func (m CreatePobleModel) renderCreateSidePanel() string {
 		createSideRow("Intensidad", createChoiceLabel(m.sexualIntensityChoice)),
 		createSideRow("Arquetipo", createChoiceLabel(m.archetypeChoice)),
 		createSideRow("Rasgo", traitChoiceLabel(m.traitChoice)),
+		createSideRow("Pobles listos", fmt.Sprintf("%d / 2 minimo", maxInt(m.createdCount, currentFounderCount(m.state)))),
 		"",
 		createStepStyle.Render("Consejo"),
 	}
 	switch m.step {
+	case createStepMore:
+		lines = append(lines, BodyStyle.Render("Ya tienes el minimo. Ahora decide si quieres una fundacion mas grande."))
 	case createStepBasic:
-		lines = append(lines, BodyStyle.Render("Empieza simple. El juego ya le va a dar contradicciones."))
+		lines = append(lines, BodyStyle.Render(fmt.Sprintf("Estas creando el Poble inicial #%d. Minimo obligatorio: 2.", currentFounderCount(m.state)+1)))
 	case createStepOrientation:
 		lines = append(lines, BodyStyle.Render("Esto guia deseo y tension, no una jaula fija."))
 	case createStepArchetype:
@@ -319,6 +346,8 @@ func (m CreatePobleModel) setStep(step createStep) (tea.Model, tea.Cmd) {
 		m.form = m.confirmForm()
 	case createStepRevision:
 		m.form = m.revisionForm()
+	case createStepMore:
+		m.form = m.moreFoundersForm()
 	default:
 		m.form = m.basicInfoForm()
 		m.step = createStepBasic
@@ -339,7 +368,7 @@ func (m CreatePobleModel) finishCurrentStep() (tea.Model, tea.Cmd) {
 	case createStepHistory:
 		return m.setStep(createStepConfirm)
 	case createStepConfirm:
-		if m.confirmed {
+		if m.confirmChoice == "create" {
 			created := m.preview
 			config := m.previewConfig
 			return m, func() tea.Msg {
@@ -355,6 +384,11 @@ func (m CreatePobleModel) finishCurrentStep() (tea.Model, tea.Cmd) {
 			return m.setStep(createStepTraits)
 		}
 		return m.setStep(createStepArchetype)
+	case createStepMore:
+		if m.moreChoice == "add" {
+			return m, func() tea.Msg { return CreatePobleAddAnotherMsg{} }
+		}
+		return m, func() tea.Msg { return CreatePobleStartWorldMsg{} }
 	default:
 		return m, nil
 	}
@@ -482,18 +516,39 @@ func (m CreatePobleModel) historyForm() *huh.Form {
 }
 
 func (m CreatePobleModel) confirmForm() *huh.Form {
-	m.confirmed = false
+	m.confirmChoice = "create"
 	return huh.NewForm(
 		huh.NewGroup(
 			huh.NewNote().
 				Title("Resumen final").
 				Description(m.renderPreviewSheet()),
-			huh.NewConfirm().
-				Title("Este personaje te parece bien?").
-				Affirmative("Si, al mundo").
-				Negative("No, revisar").
-				Value(&m.confirmed),
+			huh.NewSelect[string]().
+				Title("Que hacemos con este Poble?").
+				Value(&m.confirmChoice).
+				Options(
+					huh.NewOption("Crear este Poble", "create"),
+					huh.NewOption("Revisar la ficha", "revise"),
+				),
 		).Title("Paso 5 - Confirmacion"),
+	).WithTheme(menuModalTheme())
+}
+
+func (m CreatePobleModel) moreFoundersForm() *huh.Form {
+	count := maxInt(m.createdCount, currentFounderCount(m.state))
+	m.moreChoice = "start"
+	return huh.NewForm(
+		huh.NewGroup(
+			huh.NewNote().
+				Title("Fundacion lista").
+				Description(fmt.Sprintf("Ya creaste %d Pobles iniciales. El juego obliga minimo 2, pero puedes crear mas si quieres que la primera isla empiece con mas voces, relaciones y drama.", count)),
+			huh.NewSelect[string]().
+				Title("Quieres crear otro Poble inicial?").
+				Value(&m.moreChoice).
+				Options(
+					huh.NewOption(fmt.Sprintf("Empezar con estos %d Pobles", count), "start"),
+					huh.NewOption("Crear otro Poble", "add"),
+				),
+		).Title("Pobles iniciales"),
 	).WithTheme(menuModalTheme())
 }
 
@@ -610,9 +665,18 @@ func (m CreatePobleModel) stepLabel() string {
 		return "Paso 6 de 6 - Confirmacion"
 	case createStepRevision:
 		return "Revision"
+	case createStepMore:
+		return "Pobles iniciales"
 	default:
 		return "Creador"
 	}
+}
+
+func currentFounderCount(snapshot AppStateSnapshot) int {
+	if snapshot.World == nil {
+		return 0
+	}
+	return snapshot.World.GetPopulation()
 }
 
 func validateFounderAge(value string) error {
