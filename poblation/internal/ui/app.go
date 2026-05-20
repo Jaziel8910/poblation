@@ -1072,6 +1072,10 @@ func defaultSubModels() map[ViewType]tea.Model {
 			models[view] = uiviews.NewExploreModel()
 		case VIEW_HOUSE_EXPLORE:
 			models[view] = uiviews.NewHouseModel()
+		case VIEW_POBLES_LIST:
+			models[view] = uiviews.NewPoblesModel()
+		case VIEW_EVENTS_FEED:
+			models[view] = uiviews.NewEventsModel()
 		case VIEW_SETTLEMENT:
 			models[view] = uiviews.NewSettlementModel()
 		case VIEW_MINIGAME_SEX:

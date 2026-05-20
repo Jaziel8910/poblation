@@ -12,6 +12,7 @@ bin/
 *.test
 *.out
 coverage.out
+agent-runs/
 
 # Dependency directories
 vendor/

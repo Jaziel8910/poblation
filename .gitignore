@@ -2,6 +2,7 @@
 *.zip
 *.zip.sha256
 release-package/
+agent-runs/
 
 # Local caches
 .gocache/

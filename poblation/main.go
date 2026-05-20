@@ -10,6 +10,7 @@ import (
 	"os/signal"
 	"path/filepath"
 	"syscall"
+	"time"
 
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/user/poblation/internal/engine"
@@ -25,6 +26,9 @@ func main() {
 	speed := flag.Float64("speed", 1.0, "simulation speed multiplier")
 	slot := flag.Int("slot", 0, "save slot to load directly")
 	smoke := flag.Bool("smoke", false, "verify startup and exit")
+	agentPlay := flag.Bool("agent-play", false, "run an automated user-style play session with UI screenshots")
+	agentOut := flag.String("agent-out", "", "output directory for --agent-play artifacts")
+	agentSteps := flag.Int("agent-steps", 10, "simulation hours to advance during --agent-play")
 	flag.Parse()
 
 	ctx, stopSignals := signal.NotifyContext(context.Background(), os.Interrupt, syscall.SIGTERM)
@@ -47,6 +51,23 @@ func main() {
 	defer orchestrator.Stop()
 	if *smoke {
 		fmt.Println("POBLATION startup ok")
+		return
+	}
+	if *agentPlay {
+		out := *agentOut
+		if out == "" {
+			out = filepath.Join("..", "agent-runs", time.Now().Format("20060102-150405"))
+		}
+		if err := ui.RunAgentPlay(orchestrator, ui.AgentPlayOptions{
+			OutputDir: out,
+			Width:     120,
+			Height:    36,
+			Steps:     *agentSteps,
+		}); err != nil {
+			fmt.Fprintf(os.Stderr, "poblation agent play: %v\n", err)
+			os.Exit(1)
+		}
+		fmt.Printf("POBLATION agent play ok: %s\n", out)
 		return
 	}
 
