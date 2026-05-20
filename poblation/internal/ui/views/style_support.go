@@ -63,17 +63,20 @@ func (l LayoutManager) IsCompactHeight() bool {
 }
 
 func (l LayoutManager) IsTriplePanel() bool {
-	return l.Width >= 120
+	return false
 }
 
 func (l LayoutManager) MainPanelWidths() (int, int) {
-	total := maxInt(44, l.Width)
-	mapWidth := int(float64(total) * 0.4)
-	if mapWidth < 22 {
-		mapWidth = 22
+	total := maxInt(44, l.Width-6)
+	mapWidth := int(float64(total) * 0.46)
+	if mapWidth < 42 {
+		mapWidth = 42
 	}
-	if mapWidth > total-20 {
-		mapWidth = total - 20
+	if mapWidth > 86 {
+		mapWidth = 86
+	}
+	if mapWidth > total-32 {
+		mapWidth = total - 32
 	}
 	return mapWidth, total - mapWidth
 }

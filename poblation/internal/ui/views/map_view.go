@@ -84,15 +84,35 @@ var (
 	speedStyle         = AccentStyle
 	consolePromptStyle = AccentStyle
 
+	mapCellWidth = 3
+
 	selectedCellStyle = lipgloss.NewStyle().
-				Width(2).
+				Width(mapCellWidth).
 				Align(lipgloss.Center).
 				Foreground(accentColor).
 				Bold(true)
 
 	plainCellStyle = lipgloss.NewStyle().
-			Width(2).
+			Width(mapCellWidth).
 			Align(lipgloss.Center)
+
+	waterCellStyle  = plainCellStyle.Foreground(lipgloss.Color("#5DADEC"))
+	landCellStyle   = plainCellStyle.Foreground(lipgloss.Color("#4A4A4A"))
+	forestCellStyle = plainCellStyle.
+			Foreground(lipgloss.Color("#6BCB77")).
+			Bold(true)
+	mountainCellStyle = plainCellStyle.
+				Foreground(lipgloss.Color("#C9C9C9")).
+				Bold(true)
+	homeCellStyle = plainCellStyle.
+			Foreground(lipgloss.Color("#F2C078")).
+			Bold(true)
+	pobleCellStyle = plainCellStyle.
+			Foreground(lipgloss.Color("#FF6B6B")).
+			Bold(true)
+	eventCellStyle = plainCellStyle.
+			Foreground(lipgloss.Color("#FFD93D")).
+			Bold(true)
 )
 
 // NewMapModel returns the main map model with feed viewport and console ready.
@@ -312,12 +332,14 @@ func (m MapModel) renderMapPanel(panelWidth int) string {
 
 	innerWidth := maxInt(8, panelWidth-mapPanelStyle.GetHorizontalFrameSize())
 	innerHeight := maxInt(5, m.state.Height-mapPanelStyle.GetVerticalFrameSize())
-	cellCols := maxInt(4, innerWidth/2)
-	cellRows := maxInt(1, (innerHeight-3)/2)
+	cellCols := maxInt(4, innerWidth/mapCellWidth)
+	cellRows := maxInt(1, innerHeight-6)
 
 	grid := m.renderMapGrid(island, cellCols, cellRows)
+	legend := mutedStyle.Render("~ agua . suelo t bosque ^ monte H casa AB poble")
 	footer := lipgloss.JoinVertical(
 		lipgloss.Left,
+		legend,
 		mutedStyle.Render(m.selectedSummary()),
 		mutedStyle.Render(fmt.Sprintf("scroll %d,%d  isla %dx%d", m.scrollX, m.scrollY, island.Size.Width, island.Size.Height)),
 	)
@@ -359,19 +381,17 @@ func (m MapModel) renderMindPanel(panelWidth int) string {
 }
 
 func (m MapModel) renderMapGrid(island *world.Island, cols, rows int) string {
-	lines := make([]string, 0, rows*2)
+	lines := make([]string, 0, rows)
 	for y := 0; y < rows; y++ {
 		worldY := m.scrollY + y
-		top := strings.Builder{}
-		bottom := strings.Builder{}
+		line := strings.Builder{}
 		for x := 0; x < cols; x++ {
 			worldX := m.scrollX + x
 			current := m.tileAt(island, worldX, worldY)
 			selected := m.isSelectedAt(worldX, worldY)
-			top.WriteString(renderCell(current.symbol, selected))
-			bottom.WriteString(renderCell(current.label, selected))
+			line.WriteString(renderCell(current.symbol, selected))
 		}
-		lines = append(lines, top.String(), bottom.String())
+		lines = append(lines, line.String())
 	}
 	return strings.Join(lines, "\n")
 }
@@ -383,8 +403,8 @@ func (m MapModel) tileAt(island *world.Island, x, y int) tile {
 
 	if poble, ok := m.pobleAt(island.ID, x, y); ok {
 		return tile{
-			symbol: m.pobleSymbol(poble.ID),
-			label:  abbreviateName(poble.Name),
+			symbol: m.pobleSymbol(poble),
+			label:  "",
 		}
 	}
 	if building, ok := derivedHomeAt(island, x, y); ok {
@@ -412,13 +432,13 @@ func (m MapModel) pobleAt(islandID string, x, y int) (visiblePoble, bool) {
 	return visiblePoble{}, false
 }
 
-func (m MapModel) pobleSymbol(pobleID string) string {
+func (m MapModel) pobleSymbol(poble visiblePoble) string {
 	if m.state.World == nil {
-		return "P"
+		return abbreviateName(poble.Name)
 	}
 
 	for _, event := range m.state.World.ActiveEvents {
-		if !activeEventTouchesPoble(event, pobleID) {
+		if !activeEventTouchesPoble(event, poble.ID) {
 			continue
 		}
 		switch {
@@ -431,11 +451,11 @@ func (m MapModel) pobleSymbol(pobleID string) string {
 		}
 	}
 
-	poble := m.state.World.GetPoble(pobleID)
-	if poble != nil && poble.Needs.Sleep >= 78 {
+	fullPoble := m.state.World.GetPoble(poble.ID)
+	if fullPoble != nil && fullPoble.Needs.Sleep >= 78 {
 		return "zz"
 	}
-	return "P"
+	return abbreviateName(poble.Name)
 }
 
 func (m MapModel) currentIsland() *world.Island {
@@ -563,7 +583,7 @@ func (m MapModel) visibleCellWindow() (int, int) {
 	mapWidth, _ := m.panelWidths()
 	innerWidth := maxInt(8, mapWidth-mapPanelStyle.GetHorizontalFrameSize())
 	innerHeight := maxInt(5, m.state.Height-mapPanelStyle.GetVerticalFrameSize())
-	return maxInt(4, innerWidth/2), maxInt(1, (innerHeight-3)/2)
+	return maxInt(4, innerWidth/mapCellWidth), maxInt(1, innerHeight-6)
 }
 
 func (m MapModel) feedViewportSize() (int, int) {
@@ -591,15 +611,15 @@ func (m MapModel) selectedSummary() string {
 
 func (m MapModel) speedIndicator() string {
 	if m.state.IsPaused {
-		return "⏸"
+		return "PAUSA"
 	}
 	switch {
 	case m.state.Speed >= 4:
-		return "▶▶▶"
+		return "RUN x4"
 	case m.state.Speed >= 2:
-		return "▶▶"
+		return "RUN x2"
 	default:
-		return "▶"
+		return "RUN x1"
 	}
 }
 
@@ -667,6 +687,9 @@ func renderFeedEvents(eventFeed []events.GameEvent, width int) string {
 
 	lines := make([]string, 0, len(eventFeed))
 	for _, event := range eventFeed {
+		if !isMapFeedEventVisible(event) {
+			continue
+		}
 		prefix := eventIcon(event.Type) + " "
 		timestamp := fmt.Sprintf("[%03d %02d:%02d]", event.Timestamp.Day, event.Timestamp.Hour, event.Timestamp.Minute)
 		description := strings.TrimSpace(event.Description)
@@ -677,6 +700,33 @@ func renderFeedEvents(eventFeed []events.GameEvent, width int) string {
 		lines = append(lines, eventStyle(event.Type).Render(line))
 	}
 	return strings.Join(lines, "\n")
+}
+
+func isMapFeedEventVisible(event events.GameEvent) bool {
+	if strings.TrimSpace(event.Description) != "" {
+		return true
+	}
+	switch event.Type {
+	case events.EventBirth, events.EventBirthday, events.EventPregnancy, events.EventAdoption:
+		return true
+	case events.EventDeathNatural, events.EventDeathAccident, events.EventDeathMurder, events.EventSuicide,
+		events.EventFuneral:
+		return true
+	case events.EventMarriage, events.EventDivorce, events.EventAffairStart, events.EventAffairEnd,
+		events.EventBetrayalRevealed, events.EventForgiveness:
+		return true
+	case events.EventFightVerbal, events.EventFightPhysical, events.EventWarDeclaration,
+		events.EventPeaceTreaty, events.EventCoup, events.EventRevolution, events.EventExile:
+		return true
+	case events.EventElection, events.EventEraChange, events.EventTechDiscovered,
+		events.EventTradeEstablished, events.EventMonopolyFormed:
+		return true
+	case events.EventEarthquake, events.EventStorm, events.EventDrought, events.EventPlague,
+		events.EventFire, events.EventFlood, events.EventIslandDiscovery:
+		return true
+	default:
+		return false
+	}
 }
 
 func terrainRune(island *world.Island, x, y int) string {
@@ -691,7 +741,7 @@ func terrainRune(island *world.Island, x, y int) string {
 	case score%13 == 0:
 		return "^"
 	case score%7 == 0 || island.Biome == world.BiomeForest:
-		return "*"
+		return "t"
 	default:
 		return "."
 	}
@@ -734,7 +784,25 @@ func renderCell(value string, selected bool) string {
 	if selected {
 		return selectedCellStyle.Render(value)
 	}
-	return plainCellStyle.Render(value)
+	switch value {
+	case "~":
+		return waterCellStyle.Render(value)
+	case ".":
+		return landCellStyle.Render(value)
+	case "t":
+		return forestCellStyle.Render(value)
+	case "^":
+		return mountainCellStyle.Render(value)
+	case "H":
+		return homeCellStyle.Render(value)
+	case "!!", "<3", "..", "zz":
+		return eventCellStyle.Render(value)
+	default:
+		if strings.TrimSpace(value) != "" {
+			return pobleCellStyle.Render(value)
+		}
+		return plainCellStyle.Render(value)
+	}
 }
 
 func abbreviateName(name string) string {
@@ -750,6 +818,38 @@ func abbreviateName(name string) string {
 }
 
 func humanizeEventType(eventType events.EventType) string {
+	switch eventType {
+	case events.EventFightVerbal:
+		return "Discusion fuerte"
+	case events.EventFightPhysical:
+		return "Pelea fisica"
+	case events.EventElection:
+		return "Eleccion"
+	case events.EventTradeEstablished:
+		return "Intercambio cerrado"
+	case events.EventTechDiscovered:
+		return "Tecnologia descubierta"
+	case events.EventBetrayalRevealed:
+		return "Traicion revelada"
+	case events.EventBirth:
+		return "Nacimiento"
+	case events.EventPregnancy:
+		return "Embarazo"
+	case events.EventDeathNatural, events.EventDeathAccident, events.EventDeathMurder, events.EventSuicide:
+		return "Muerte"
+	case events.EventMarriage:
+		return "Matrimonio"
+	case events.EventDivorce:
+		return "Ruptura"
+	case events.EventFire:
+		return "Incendio"
+	case events.EventStorm:
+		return "Tormenta"
+	case events.EventPlague:
+		return "Plaga"
+	case events.EventEraChange:
+		return "Cambio de era"
+	}
 	parts := strings.Split(strings.ToLower(string(eventType)), "_")
 	for i := range parts {
 		if parts[i] == "" {

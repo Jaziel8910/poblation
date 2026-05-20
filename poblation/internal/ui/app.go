@@ -950,13 +950,16 @@ func (m AppModel) renderNotificationOverlay(width int) string {
 	if len(m.NotificationQueue) == 0 {
 		return ""
 	}
-	rendered := make([]string, 0, len(m.NotificationQueue))
-	for _, note := range m.NotificationQueue {
-		text := truncateRunes(note.Message, maxInt(12, width/2))
-		rendered = append(rendered, notificationStyle(note.Type).Render(text))
+	latest := m.NotificationQueue[len(m.NotificationQueue)-1]
+	text := strings.TrimSpace(latest.Message)
+	if text == "" {
+		text = string(latest.Type)
 	}
-	block := lipgloss.JoinVertical(lipgloss.Right, rendered...)
-	return lipgloss.PlaceHorizontal(width, lipgloss.Right, block)
+	if hidden := len(m.NotificationQueue) - 1; hidden > 0 {
+		text = fmt.Sprintf("%s  +%d mas", text, hidden)
+	}
+	text = truncateRunes("ALERTA  "+text, maxInt(12, width-2))
+	return notificationStyle(latest.Type).Width(width).Render(text)
 }
 
 func (m AppModel) currentWorldState() world.WorldState {
@@ -1039,11 +1042,32 @@ func NotificationFromEvent(event events.GameEvent) (Notification, bool) {
 	if !ok {
 		return Notification{}, false
 	}
-	message := event.Description
+	message := strings.TrimSpace(event.Description)
 	if strings.TrimSpace(message) == "" {
-		message = string(event.Type)
+		message = notificationEventLabel(event.Type)
 	}
 	return NewNotification(kind, message), true
+}
+
+func notificationEventLabel(eventType events.EventType) string {
+	switch eventType {
+	case events.EventFightVerbal:
+		return "Discusion fuerte"
+	case events.EventFightPhysical:
+		return "Pelea fisica"
+	case events.EventBetrayalRevealed:
+		return "Traicion revelada"
+	case events.EventDivorce:
+		return "Ruptura publica"
+	case events.EventCoup:
+		return "Golpe de poder"
+	case events.EventRevolution:
+		return "Revolucion"
+	case events.EventEraChange:
+		return "Cambio de era"
+	default:
+		return strings.ToLower(strings.ReplaceAll(string(eventType), "_", " "))
+	}
 }
 
 func notificationKindForEvent(eventType events.EventType) (NotificationType, bool) {
@@ -1273,7 +1297,7 @@ func templateRoot() string {
 func chromeHeight(m AppModel) int {
 	height := 2
 	if len(m.NotificationQueue) > 0 {
-		height += len(m.NotificationQueue)
+		height++
 	}
 	return height
 }

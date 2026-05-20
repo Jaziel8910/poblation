@@ -236,9 +236,7 @@ func notificationStyle(kind NotificationType) lipgloss.Style {
 	}
 
 	return lipgloss.NewStyle().
-		Background(DefaultTheme.Surface).
 		Foreground(color).
-		Border(lipgloss.RoundedBorder()).
-		BorderForeground(color).
+		Background(DefaultTheme.SurfaceAlt).
 		Padding(0, 1)
 }

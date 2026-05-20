@@ -151,15 +151,15 @@ func DailyResourceUpdate(world *World) {
 // Trade attempts a barter deal between two Pobles.
 func (m *EconomyManager) Trade(aID string, bID string, offer TradeoOffer) TradeResult {
 	if m == nil || m.world == nil {
-		return TradeResult{Summary: "trade failed because the world economy was missing"}
+		return TradeResult{Summary: "el intercambio fallo porque la economia del mundo no estaba lista"}
 	}
 	a := m.world.GetPoble(aID)
 	b := m.world.GetPoble(bID)
 	if a == nil || b == nil {
-		return TradeResult{Summary: "trade failed because one trader was missing"}
+		return TradeResult{Summary: "el intercambio fallo porque faltaba una de las partes"}
 	}
 	if !hasItems(a, offer.GivingItems) || !hasItems(b, offer.WantingItems) {
-		return TradeResult{Summary: "trade failed because someone promised goods they do not have"}
+		return TradeResult{Summary: "el intercambio fallo porque alguien prometio bienes que no tenia"}
 	}
 
 	givingValue := itemsValue(offer.GivingItems)
@@ -182,14 +182,14 @@ func (m *EconomyManager) Trade(aID string, bID string, offer TradeoOffer) TradeR
 		Accepted:          accepted,
 		Haggled:           haggled,
 		RelationshipDelta: -6,
-		Summary:           "the negotiation stalled and left a bad aftertaste",
+		Summary:           "la negociacion se trabo y dejo mal sabor",
 	}
 
 	if accepted {
 		moveItems(a, b, offer.GivingItems)
 		moveItems(b, a, offer.WantingItems)
 		result.RelationshipDelta = 8
-		result.Summary = "the trade went through and both sides walked away with something useful"
+		result.Summary = "el intercambio cerro y ambos salieron con algo util"
 		if givingValue > wantingValue {
 			result.AdvantageTo = bID
 		} else if wantingValue > givingValue {
@@ -198,7 +198,7 @@ func (m *EconomyManager) Trade(aID string, bID string, offer TradeoOffer) TradeR
 	} else if a.Archetype == entities.ArchetypeVillain || b.Archetype == entities.ArchetypeVillain {
 		result.AdvantageTo = villainParty(a, b)
 		result.RelationshipDelta = -12
-		result.Summary = "the negotiation turned predatory before it became an exchange"
+		result.Summary = "la negociacion se volvio depredadora antes de ser trato"
 	}
 
 	applyTradeRelationshipShift(a, b, result.RelationshipDelta)
@@ -322,7 +322,7 @@ func Theft(thiefID string, victimID string, world *World) TheftEvent {
 
 	if event.Discovered && lawAgainstTheft(world) {
 		event.LegalConsequence = propertyLawPenalty(world)
-		event.Summary = "the theft was discovered and the settlement demanded a price"
+		event.Summary = "el robo se descubrio y el asentamiento exigio un precio"
 		world.EventHistory = append(world.EventHistory, GameEvent{
 			ID:           event.ID,
 			Type:         ai.GameEventConflict,
@@ -340,7 +340,7 @@ func Theft(thiefID string, victimID string, world *World) TheftEvent {
 	}
 
 	if event.Discovered {
-		event.Summary = "the theft was discovered and now both sides know the relationship is poisoned"
+		event.Summary = "el robo se descubrio y la relacion quedo envenenada"
 	} else {
 		event.Summary = "the theft stayed hidden, but the thief still has to live inside the choice"
 	}
